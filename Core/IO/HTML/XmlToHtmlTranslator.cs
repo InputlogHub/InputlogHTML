@@ -73,20 +73,18 @@ namespace InputLog.Core.IO.HTML
             foreach (var sourceDir in dirInfoList)
             {
                 var destDir = Path.Combine(targetDir, Path.GetFileName(sourceDir));
-                if (!Directory.Exists(destDir))
-                {
-                    Directory.Move(sourceDir, destDir);
-                }
-                else
-                {
-                    // Copy new files and subdirectories from sourceDir to destDir
-                    CopyMissingFilesRecursively(sourceDir, destDir);
-                }
+                CopyMissingFilesRecursively(sourceDir, destDir);
             }
         }
 
         private static void CopyMissingFilesRecursively(string sourceDir, string destDir)
         {
+            // Ensure destination directory exists
+            if (!Directory.Exists(destDir))
+            {
+                Directory.CreateDirectory(destDir);
+            }
+
             // Copy files
             foreach (var file in Directory.GetFiles(sourceDir))
             {
@@ -101,10 +99,6 @@ namespace InputLog.Core.IO.HTML
             foreach (var subDir in Directory.GetDirectories(sourceDir))
             {
                 var destSubDir = Path.Combine(destDir, Path.GetFileName(subDir));
-                if (!Directory.Exists(destSubDir))
-                {
-                    Directory.CreateDirectory(destSubDir);
-                }
                 CopyMissingFilesRecursively(subDir, destSubDir);
             }
         }
