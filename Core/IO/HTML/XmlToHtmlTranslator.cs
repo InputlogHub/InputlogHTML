@@ -70,14 +70,42 @@ namespace InputLog.Core.IO.HTML
         /// </summary>
         private static void MoveStylingFolders(string targetDir, List<string> dirInfoList)
         {
-            foreach (var dir in dirInfoList)
+            foreach (var sourceDir in dirInfoList)
             {
-                var destPath = Path.Combine(targetDir, Path.GetFileName(dir));
-                if (!Directory.Exists(destPath))
+                var destDir = Path.Combine(targetDir, Path.GetFileName(sourceDir));
+                if (!Directory.Exists(destDir))
                 {
-                    Directory.Move(dir, destPath);
+                    Directory.Move(sourceDir, destDir);
                 }
-                //if directory exists, ignore
+                else
+                {
+                    // Copy new files and subdirectories from sourceDir to destDir
+                    CopyMissingFilesRecursively(sourceDir, destDir);
+                }
+            }
+        }
+
+        private static void CopyMissingFilesRecursively(string sourceDir, string destDir)
+        {
+            // Copy files
+            foreach (var file in Directory.GetFiles(sourceDir))
+            {
+                var destFile = Path.Combine(destDir, Path.GetFileName(file));
+                if (!File.Exists(destFile))
+                {
+                    File.Copy(file, destFile);
+                }
+            }
+
+            // Copy subdirectories
+            foreach (var subDir in Directory.GetDirectories(sourceDir))
+            {
+                var destSubDir = Path.Combine(destDir, Path.GetFileName(subDir));
+                if (!Directory.Exists(destSubDir))
+                {
+                    Directory.CreateDirectory(destSubDir);
+                }
+                CopyMissingFilesRecursively(subDir, destSubDir);
             }
         }
 
