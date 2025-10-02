@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Make User Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Make user @ViewBag.ID admin</h2>
+<p class="warning">Are you sure you wish to make this account an administrator?</p>
+@using (Html.BeginForm())
+{
+    <div>
+        <p>
+            <input type="submit" value="Make admin" />
+        </p>
+    </div>
+}
+

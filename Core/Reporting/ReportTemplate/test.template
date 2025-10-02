@@ -1,0 +1,315 @@
+<report>
+  <id>Lift Report</id>
+  <language>EN-US</language>
+  <title>TestFeedback op je schrijfproces: #__SESSION_Participant | #__SESSION_Date - #__SESSION_Time</title>
+   <block>
+    <title>Introductie</title>
+    <prepend format="complex">
+      <paragraph>Beste #__SESSION_Participant</paragraph>
+      <paragraph></paragraph>
+      <paragraph>Dit rapport beschrijft de manier waarop jouw tekst tot stand kwam. Het laat zien hoe je je schrijfproces hebt georganiseerd. In welke fase van het proces was je vlot aan het schrijven? Wanneer was je aan het lezen of nadenken? Heb je veel tijd besteed aan de bronnen? Heb je veel tekst geschrapt?</paragraph>
+      <paragraph></paragraph>
+      <paragraph>Doorloop dit rapport in twee stappen: </paragraph>
+	  <paragraph>1. Neem eerst dit rapport rustig door en vergelijk de gegevens met je antwoorden uit de vragenlijst.  </paragraph>
+	  <paragraph>2. Daarna vergelijk je je schrijfproces met dat van anderen. </paragraph>
+	  <paragraph></paragraph>
+	  <paragraph>De invalshoeken die we aanreiken, bieden je de handvatten om vanuit verschillende perspectieven na te denken over je schrijfaanpak. Succes.</paragraph>
+	  <paragraph></paragraph>
+      <paragraph>Het LIFT-team</paragraph>
+      <paragraph>Universiteit Antwerpen</paragraph>
+    </prepend>
+  </block>
+  
+  <block>
+    <title>Overzicht</title>
+    <prepend format="complex">
+      <paragraph>Je vindt in dit rapport gegevens over het verloop en de organisatie van je schrijfproces. Je krijgt meer informatie over:</paragraph>
+      <list>
+        <item>je tijdsgebruik</item>
+		<item>je lees- en denktijd</item>
+		<item>je tekstproductie</item>
+		<item>je schrijfvlotheid</item>
+		<item>je revisiegedrag</item>
+        <item>je brongebruik</item>
+		<item>je bronwissels</item>
+      </list>
+    </prepend>
+  </block>
+ 
+  
+  <block>
+    <title>Tijdsgebruik</title>
+    <prepend format="simple">Als je een tekst schrijft, moet je je tijd verdelen over verschillende deeltaken. Een deel van de tijd besteed je aan het schrijven (we noemen dit: actieve tekstproductie). Het andere deel van de tijd schrijf je niet. Je leest dan de bronnen, je herleest (stukken van) je eigen tekst of misschien ben je aan het nadenken of gewoon even afgeleid. Hoe heb jij je tijd verdeeld (uu:mm:ss)?</prepend>
+    <elements>
+	  
+	  <element>
+    <introduction></introduction>
+        <value>
+          <label bold="false">totale procestijd: </label>
+          <value_id>Pause_ProcessTime_2000</value_id>
+    </value>
+      </element>
+
+      <element>
+   <introduction></introduction>
+        <value>
+          <label bold="false">waarvan actieve schrijftijd: </label>
+          <value_id>Pause_ActiveTime_2000</value_id>
+    </value>
+    </element>
+    
+      <element>
+    <introduction></introduction>
+        <value>
+          <label bold="false">en waarvan denk- en leestijd: </label>
+          <value_id>Pause_PauseTime_2000</value_id>
+    </value>
+      </element>
+	  
+      <element>
+   <introduction></introduction>
+        <value>
+      <label bold="false">Gemiddeld heb je dus </label>
+      <value_id>Pause_PauseToActiveProp_2000</value_id>
+	  <append> van je tijd gebruikt om na te denken of te lezen. </append>
+    </value>
+      </element>	  
+	</elements>
+
+  </block>
+ 
+
+    <block>
+  <title>Lees- en denktijd</title>
+    <prepend format="simple">In het begin, het midden en het einde van je schrijfproces, gebruik je je tijd op een andere manier. In sommige fasen van het proces heb je voornamelijk tekst geproduceerd, in andere fasen heb je vooral de bronnen gelezen of nagedacht. Hoe heb jij je lees- en denktijd verdeeld? </prepend>
+    <elements>
+   
+      <element>
+  <introduction></introduction>
+        <value>
+      <label bold="false">begin van je proces:   </label>
+      <value_id>Pause_PausePerct_Int1</value_id>
+    </value>
+      </element>
+	  
+      <element>
+  <introduction></introduction>
+        <value>
+      <label bold="false">midden van je proces: </label>
+      <value_id>Pause_PausePerct_Int2</value_id>
+    </value>
+      </element>	  
+	  
+      <element>
+  <introduction></introduction>
+        <value>
+      <label bold="false">einde van je proces:    </label>
+      <value_id>Pause_PausePerct_Int3</value_id>
+    </value>
+      </element>	  
+     	  
+	 </elements>
+</block>
+
+
+    <block>
+  <title>Tekstproductie</title>
+    <prepend format="simple">In welke fase heb je het grootste gedeelte van je tekst geproduceerd?</prepend>
+    <elements>
+
+      <element>
+ <introduction></introduction>
+        <value>
+      <label bold="false">begin van je proces:   </label>
+      <value_id>Fluency_KeystrokesPerct_Int1</value_id>
+    </value>
+      </element>
+
+<element>
+ <introduction></introduction>
+        <value>
+      <label bold="false">midden van je proces: </label>
+      <value_id>Fluency_KeystrokesPerct_Int2</value_id>
+    </value>
+      </element>
+<element>
+ <introduction></introduction>
+        <value>
+      <label bold="false">einde van je proces:    </label>
+      <value_id>Fluency_KeystrokesPerct_Int3</value_id>
+    </value>
+      </element>
+
+	 </elements>
+</block>
+
+
+    <block>
+  <title>Vlotheid</title>
+    <prepend format="simple">Je schrijftempo verandert voortdurend. Dat komt omdat je bepaalde passages in je tekst soms moeilijker vindt om op papier te krijgen dan andere. In welke fase heb je het meest/minst vlot getypt?</prepend>
+    <elements>
+  	  
+      <element>
+  <introduction></introduction>
+        <value>
+      <label bold="false">begin van je proces: </label>
+      <value_id>Fluency_KeystrokesMin_Int1</value_id>
+      <append> letters per minuut </append>
+    </value>
+      </element>
+
+      <element>
+  <introduction></introduction>
+        <value>
+      <label bold="false">midden van je proces: </label>
+      <value_id>Fluency_KeystrokesMin_Int2</value_id>
+      <append> letters per minuut </append>
+    </value>
+      </element>
+	  
+	  <element>
+  <introduction></introduction>
+        <value>
+      <label bold="false">einde van je proces: </label>
+      <value_id>Fluency_KeystrokesMin_Int3</value_id>
+      <append> letters per minuut </append>
+    </value>
+      </element>
+	  
+	  <element>
+  <introduction></introduction>
+        <value>
+      <label bold="false">gemiddeld: </label>
+      <value_id>Fluency_Avg_StrokesPerMinute</value_id>
+      <append> letters per minuut </append>
+    </value>
+      </element>
+	  
+	 </elements>
+</block>
+
+
+    <block>
+  <title>Revisie</title>
+    <prepend format="simple">Het is bijna altijd zo dat je meer tekst typt dan er uiteindelijk overblijft. Je zet niet alles van de eerste keer perfect op papier. Je hebt dus waarschijnlijk stukken tekst geschrapt.  Hoe veel van hetgeen je geschreven hebt tijdens het proces, is er in je uiteindelijke tekst blijven staan? Hoe lager het percentage, hoe meer je geschrapt hebt. </prepend>
+    <elements>
+
+      <element>
+ <introduction></introduction>
+        <value>
+      <label bold="false">Percentage bewaarde tekst: </label>
+      <value_id>Summary_RevisionRatioInChar</value_id>
+    </value>
+      </element>
+	  
+	</elements>  
+  </block>
+ 
+   <block>
+    <title>Brongebruik</title>
+    <prepend format="simple">Je hebt bij het uitvoeren van de taak tijd gemaakt om de bronnen te raadplegen. Hoe heb je die brontijd gespreid over de verschillende fasen? In welke fase heb je het meest/ minst vaak de bronnen geraadpleegd? </prepend>
+	
+    <elements>
+	
+     <element>
+  <introduction></introduction>
+        <value>
+      <label bold="false">begin van je proces: </label>
+      <value_id>Focus_TimeInSources_Int1</value_id>
+    </value>
+      </element>
+
+      <element>
+  <introduction></introduction>
+        <value>
+      <label bold="false">midden van je proces: </label>
+      <value_id>Focus_TimeInSources_Int2</value_id>
+    </value>
+      </element>
+	  
+     <element>
+  <introduction></introduction>
+        <value>
+      <label bold="false">einde van je proces: </label>
+      <value_id>Focus_TimeInSources_Int3</value_id>
+    </value>
+      </element>
+  
+	</elements>  
+  </block>
+
+   
+  <block>
+    <title>Bronswitches</title>
+    <prepend format="complex">
+      <paragraph>Tijdens het schrijven heb je geregeld de bronteksten geraadpleegd. Hoe vaak heb je geswitcht tussen je eigen tekst en de bronnen? </paragraph>
+    </prepend>
+
+    <elements>	
+	    <element>
+   <introduction></introduction>
+        <value>
+      <label bold="false">begin van je proces: </label>
+      <value_id>Focus_TransitionMain_Sources_Int1</value_id>
+      <append> switches per minuut </append>
+    </value>
+      </element>
+
+     <element>
+<introduction></introduction>
+        <value>
+      <label bold="false">midden van je proces: </label>
+      <value_id>Focus_TransitionMain_Sources_Int2</value_id>
+      <append> switches per minuut</append>
+    </value>
+      </element>
+
+     <element>
+  <introduction></introduction>
+        <value>
+      <label bold="false">einde van je proces: </label>
+      <value_id>Focus_TransitionMain_Sources_Int3</value_id>
+      <append> switches per minuut</append>
+    </value>
+      </element>
+	  
+	 <element>
+  <introduction></introduction>
+        <value>
+      <label bold="false">gemiddeld: </label>
+      <value_id>Focus_TransitionMain_Sources_Tot</value_id>
+      <append> switches per minuut</append>
+    </value>
+     </element>
+    </elements>
+  </block>
+	
+  
+   <block>
+  <title>Procesgrafiek</title>
+    <prepend format="complex">
+  <paragraph>De procesgrafiek (zie appendix 1) toont je een grafische representatie van de manier waarop je je schrijfproces hebt ingevuld. Een korte toelichting: </paragraph>
+   <list>
+    <item>De x-as geeft het tijdsverloop weer, de tijd die je nodig had om je tekst te schrijven.</item>
+    <item>De blauwe lijn toont het aantal letters dat je geproduceerd hebt tijdens de taak. Hoe steiler de lijn, hoe meer tekst je produceerde op korte tijd. Het aantal letters kan je aflezen op de rechter y-as.</item>
+    <item>De groene lijn toont de lengte van je tekst op elk moment. Hoe groter de afstand tussen de blauwe en de groene lijn, hoe meer tekst je verwijderd hebt.</item>
+    <item>De groen-gestreepte lijn geeft aan op welke plaats je in de tekst aan het werk was. Als deze lijn overlapt met de volle groene lijn, ben je op het einde van de tekst aan het werk. Duikt de lijn naar de x-as, dan ben je naar het begin van je tekst teruggekeerd. </item>
+    <item>Tot slot vind je onderaan nog een oranje lijn. Die toont aan wanneer je de bronnen hebt geraadpleegd en wanneer je in je tekstdocument aan het werk was.</item>
+    </list>
+  </prepend>
+    <elements>
+      <element>
+    <introduction></introduction>
+        <value>
+          <label bold="false">Procesgrafiek</label>
+          <value_id>Process_ProcessGraph</value_id>
+        </value>
+      </element>
+    </elements>
+  </block>
+
+
+  
+ 
+  
+</report>

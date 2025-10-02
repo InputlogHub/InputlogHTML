@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Copy task";
+    Layout = "~/Views/Shared/_Layout_minimal.cshtml";
+}
+
+<h2>Start copy task</h2>
+
+Enter your code to start the copy task.
+
+    <form action="/Copy/Choose" method="post">
+        <input type="text" name="code">
+        <input type="submit" value="Start" />
+    </form>
+
+

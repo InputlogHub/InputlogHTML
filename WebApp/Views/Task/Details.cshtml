@@ -1,0 +1,28 @@
+﻿@model WebApp.Models.TaskDetailsViewModel
+
+@{
+    ViewBag.Title = "Task Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Task Details</h2>
+<b>Identifier: </b><span id="TaskGuid">@Model.Task.Guid</span><br />
+<b>Date & Time:</b> @Model.Task.Time <br />
+<b>Status:</b> @Model.Task.StatusString()
+
+<h2>Tools</h2>
+<ul>
+@foreach (WebApp.Models.AnalysisModel an in Model.Analyses)
+{
+    <li>@an.Name</li>
+}
+</ul>
+
+@if (Model.Task.ResultAvailable())
+{
+    <h2>Results</h2>
+    <ul>
+        <li><a href="file:///@Model.OutputPath" target="_blank">View</a></li>
+        <li>@Html.RouteLink("Download", "Results", new { Model.Task.ID, Name="Results.zip" }, null)</li>
+    </ul>
+}

@@ -1,0 +1,53 @@
+<copytask>
+  <title>German</title>
+  <description>procedure to measure motor and typing speed</description>
+  <language>DE</language>
+  <general_instructions>Herzlich willkommen!
+
+In dieser Sitzung werden Sie Buchstaben, Wörter oder eine Wortgruppe schreiben. 
+Probieren Sie, dies so schnell und so fehlerfrei wie möglich zu tun. 
+Falls Sie einen Fehler machen, brauchen Sie diesen nicht zu korrigieren. Die Korrektheit ist bei dem gesamten Test nicht von Belang.
+Drücken Sie bei einem bemerkten Fehler einfach auf „Eingabe“, denn es geht nicht darum, wie richtig, sondern darum, wie schnell Sie schreiben. 
+Die Zeit läuft, sobald Sie den ersten Buchstaben gedrückt haben.
+</general_instructions>
+  <layouts>
+    <layout>AZERTY</layout>
+    <layout>QWERTY</layout>
+    <layout>QWERTZ</layout>
+  </layouts>
+  <task title="Geschwindigkeitsaufgabe" unlimited="true" timelimit="15">
+    <instructions>Tippen Sie die Buchstaben „d“ und „k“ so schnell und so oft wie möglich hintereinander. Sie haben dafür 15 Sekunden Zeit. Die Zeit läuft, sobald Sie die das erste Zeichen eingegeben haben.</instructions>
+    <target>dkdkdkdkdkdkdkdkdkdkdkdkdkdk... </target>
+  </task>
+  <task title="Satz" unlimited="true" timelimit="30">
+    <instructions>Tippen Sie den folgenden Satz so schnell und so oft wie möglich. Dafür haben Sie 30 Sekunden Zeit. Verwenden Sie keine Punkte; drücken Sie „Eingabe“ nach jedem fertig geschriebenen Satz. 
+Die Zeit läuft, sobald Sie das erste Zeichen eingegeben haben.</instructions>
+    <target>der Mann macht das ganze Fass still leer</target>
+  </task>
+  <task title="Beispiel" repetition="7" example="true">
+    <instructions>Dies ist ein Beispiel. In den folgenden Aufgaben bitten wir Sie, jeweils drei Wörter sieben Mal hintereinander zu tippen. Im Beispiel haben wir das mit den Wörtern: "ein schöner Morgen" getan. 
+Bei dieser Aufgabe steht Ihnen so viel Zeit wie nötig zur Verfügung.</instructions>
+    <target>ein schöner Morgen</target>
+  </task>
+  <task title="Wortgruppe 1" synthesize="true" repetition="7">
+    <instructions>Tippen Sie die folgenden Wörter sieben Mal. Drücken Sie jedes Mal auf „Eingabe“, wenn Sie die drei Wörter fertig geschrieben haben, und schreiben Sie in der nächsten Zeile weiter. 
+Auch hier ist es nicht wichtig, dass Sie alles richtig schreiben, sondern einzig die Schnelligkeit zählt.</instructions>
+    <target>ein stinkender Herrenschuh</target>
+  </task>
+  <task title="Wortgruppe 2" synthesize="true" repetition="7">
+    <instructions>Tippen Sie die folgenden Wörter sieben Mal.</instructions>
+    <target>vier schlafende Kleinkinder</target>
+  </task>
+  <task title="Wortgruppe 3" synthesize="true" repetition="7">
+    <instructions>Tippen Sie die folgenden Wörter sieben Mal.</instructions>
+    <target>neun sportliche Weitwerfer</target>
+  </task>
+  <task title="Wortgruppe 4" repetition="7">
+    <instructions>Tippen Sie die folgenden Wörter sieben Mal.</instructions>
+    <target>zehn hybride Jazzclubs</target>
+  </task>
+  <task title="Konsonanten">
+    <instructions>Zum Schluss: Tippen Sie die Konsonantenfolge einmal ab. Es gibt kein Zeitlimit.</instructions>
+    <target>tjxgfl pgkfkq dtdrgt npwdvf</target>
+  </task>
+</copytask>

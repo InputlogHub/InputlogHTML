@@ -1,0 +1,154 @@
+<resources>
+	<session_info>
+		<participant_information>Gwybodaeth y cyfranogwr</participant_information>
+		<intro>Nodwch ychydig o wybodaeth am eich hun a'r sesiwn tasg copïo.</intro>
+		<name_label>Enw llawn</name_label>
+		<age_label>Oedran</age_label>
+		<gender>Rhyw</gender>
+		<gender_types> 
+			<male>G (gwryw)</male>
+			<female>B (benyw)</female>
+			<undefined>X (Eraill)</undefined>
+		</gender_types>
+		<session>Sesiwn</session>
+		<kblayout>Allweddell</kblayout>
+	</session_info>
+	<buttons>
+		<start>Dechrau</start>
+		<continue>Ymlaen</continue>
+		<finish>Gorffen</finish>
+		<download>Lawrlwytho data</download>
+		<resend>Ailddanfon</resend>
+		<progress>Cynudd</progress>
+	</buttons>
+	<messages>
+		<!-- Alert for session identification: you must enter your name -->
+		<enter_name>Nodwch eich enw.</enter_name>
+		<!-- Alert for session identification: you must provide a valid age -->
+		<valid_age>Nodwch oedran dilys.</valid_age>
+		<!-- Select gender -->
+		<select_gender>Dewiswch eich rhyw.</select_gender>
+		<!-- Select a keyboard layout -->
+		<select_layout>Dewisiwch cynllun eich allweddell.</select_layout>
+		<!-- Title for: successfully transmitted and copytask downloaded -->
+		<thanks>Diolch am gyfrannu yn y dasg copïo. </thanks>
+		<!-- Message for: Successfully transmitted and copytask completed -->
+		<download_finish>Fe gewch chi lawrlwytho eich idfx, neu gorffen, neu dychwelid i'r trosolwg.</download_finish>
+		<!-- Alert for: Time to complete a copytask has finished -->
+		<time_up>Dyna'ch amser</time_up>
+		<!-- Alert for: message when trying to close the copytask before completing the task and or transmitting/downloading the results -->
+		<alert_closing>Ydych chi wir am ganslo'r dasg copïo yma?</alert_closing>
+		<!-- Title for: we are trying to transmit your data to the server -->
+		<contacting_server>Wrthi'n safio'ch data i'r gweweinydd...</contacting_server>
+		<!-- Message for: we are trying to transmit your data to the server (please wait) -->
+		<no_closing>Peidiwchâ chau'r ffenestr yma eto. Os oes eisiau, fe gewch chi lawrlwytho'r data i'ch cyfrifiadur yn y cyfamser.</no_closing>
+		<!-- Message for: we could not transmit your data to the server -->
+		<fail>Ni fedrwyd lanlwytho'r dogfen i'r gweweinydd. Dylech ei lawrlwytho i'ch gyfrifiadur, neu gwasu'r botwm ailddanfon.</fail>
+	</messages>
+
+ <agreement>
+Cytunaf i gymryd rhan yn yr astudiaeth hon. Gan gymryd rhan yn y prosiect hwn, rydych yn caniatáu inni gadw eich mewnbwn trwy gydol y sesiwn. Cytunaf fod cymryd yn yr astudiaeth hon yn wirfoddol; gallaf adael heb orfod rhoi rheswm ar unrhyw adeg yn ystod yr astudiaeth.
+Rwyf yn deall y caiff fy nata ei storio ar arweinydd data diogel ym Mhrifysgol Antwerp. Ond ymchwilwyr dilys fydd â mynediad i’r data ar yr amod eu bod nhw’n cadw cyfrinachedd y data a gasglwyd.
+</agreement>
+
+<agreement_required>
+Y mae rhaid i chi wirio eich bod wedi cytuno i gymryd rhan yn yr astudiaeth hon
+</agreement_required>
+
+<mandatory_input>
+* Angen mewnbwn
+</mandatory_input>
+
+<questionnaire>
+	<!-- Header of the questionnaire page -->
+	<questions_title>Cwestiynnau Terfynnol</questions_title>
+
+	<!-- Alerts for required questionnaire information -->
+	<alerts>
+			<error_required>Y mae rhaid i chi gwbwlhau’r holl faesydd angenrheidiol (*)</error_required>
+	</alerts>
+
+<!-- Questions about handedness -->
+	<handedness_message>Dynodwch eich blaenoriaeth wrth ddefnyddio <em>dwylo</em> yn ystod y gweithgareddoedd dilynnol</handedness_message>
+	<handedness_always_left>chwith pob tro</handedness_always_left>
+		<handedness_usually_left>chwith gan amlaf</handedness_usually_left>
+		<handedness_both_equally>heb flaenoriaeth</handedness_both_equally>
+		<handedness_usually_right>dde gan amlaf</handedness_usually_right>
+		<handedness_always_right>dde pob tro</handedness_always_right>
+		<label_handwriting>llawysgrifen</label_handwriting>
+		<label_throwing>taflu</label_throwing>
+		<label_brushing_teeth>brwsio dannedd</label_brushing_teeth>
+		<label_eating_with_spoon>bwyto gyda llwy</label_eating_with_spoon>
+
+<!-- Other questions -->
+	<!-- Computer used -->
+	<label_question_computer>Math o gyfrifiadur a ddefnyddir am y prawf?</label_question_computer>
+	<options_question_computer>
+		<option_computer>desktop</option_computer>
+		<option_computer>gluniadur</option_computer>
+	</options_question_computer>
+
+<!-- Browser used -->
+	<label_question_browser>Math o borwr a ddefnyddir am y prawf?</label_question_browser>
+	<options_question_browser>
+		<option_browser>Google Chrome</option_browser>
+		<option_browser>Internet Explorer</option_browser>
+		<option_browser>Edge</option_browser>
+		<option_browser>Mozilla Firefox</option_browser>
+		<option_browser>Opera</option_browser>
+		<option_browser>Safari</option_browser>
+		<option_browser>arall</option_browser>
+		<option_browser>nid wyf yn sicr</option_browser>
+	</options_question_browser>
+	
+<!-- Keyboard familiarity -->
+	<label_question_keyboard>Math o fysellfwrdd am y prawf?</label_question_keyboard>
+	<options_question_keyboard>
+		<option_keyboard>yn gyfarwydd iawn</option_keyboard>
+		<option_keyboard>gyfarwydd</option_keyboard>
+		<option_keyboard>ddim yn gyfarwydd</option_keyboard>
+	</options_question_keyboard>
+
+	<!-- Dominant language -->
+	<label_question_language>Pwy iaith/ieithoedd sydd well gennych wrth ysgrifennu?</label_question_language>
+		<options_question_language>
+			<option_language>Cymraeg</option_language>
+			<option_language>Saesneg</option_language>
+			<option_language>Iseldireg</option_language>
+			<option_language>Ffrangeg</option_language>
+			<option_language>Almaeneg</option_language>
+			<option_language>Pwyleg</option_language>
+			<option_language>Sbaeneg</option_language>
+			<option_language>Swedeg</option_language>
+			<option_language>Twrceg</option_language>
+			<option_language>Arall</option_language>
+		</options_question_language>
+	<!-- Language disorder -->
+	<label_question_disorder>Anhwylder iaith</label_question_disorder>
+		<label_question_disorder_specify>Enwch yr anhwylder (os oes un)</label_question_disorder_specify>
+		<options_question_disorder>
+			<option_disorder>oes</option_disorder>
+			<option_disorder>nac oes</option_disorder>
+			<option_disorder>nid wyf yn sicr</option_disorder>
+		</options_question_disorder>
+	
+<!-- Highest level of education -->
+	<label_question_education>Beth yw eich uchaf cymhwyster addysg?</label_question_education>
+		<options_question_education>
+			<option_education>Addysg gynradd</option_education>
+			<option_education>Addysg uwchradd</option_education>
+			<option_education>Addysg drydyddol (alwadigaethol)</option_education>
+			<option_education>Bagloriaeth</option_education>
+			<option_education>Gradd meistr</option_education>
+			<option_education>Doethuriaeth</option_education>
+		</options_question_education>
+
+<!-- Highest level of repetition -->
+		<label_question_repetition>Ai hwn ydy'r tro gyntaf i chi gyflawni'r dasg hon?</label_question_repetition>
+		<options_question_repetition>
+			<option_repetition>ydy</option_repetition>
+			<option_repetition>nac ydy</option_repetition>
+		</options_question_repetition>
+
+	</questionnaire>
+</resources>

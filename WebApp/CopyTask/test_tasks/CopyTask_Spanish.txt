@@ -1,0 +1,57 @@
+<copytask>
+  <title>Spanish</title>
+  <description>procedure to measure typing speed</description>
+  <language>ES</language>
+  <general_instructions>Bienvenida/o
+
+En esta sesión vamos a pedirte que escribas letras, palabras y frases que aparecerán en la pantalla.
+Intenta hacerlo lo mejor y más rápido posible.
+Si cometes un error, no es necesario que lo corrijas. Los errores tipográficos no son un problema. Puedes continuar escribiendo. Es más importante la velocidad de tecleo que la exactitud.
+</general_instructions>
+  <layouts>
+    <layout>AZERTY</layout>
+    <layout>QWERTY</layout>
+    <layout>QWERTZ</layout>
+  </layouts>
+  <task title="Velocidad de tecleo" unlimited="true" timelimit="15">
+    <instructions>Teclea repetidamente las letras 'd' y 'k' lo más rápido posible durante 15 segundos. 
+El objetivo es producir el mayor número de letras posibles.
+El tiempo empieza cuando presiones la primera tecla.</instructions>
+    <target>dkdkdkdkdkdkdkdkdkdkdkdkdkdk... </target>
+  </task>
+  <task title="Frase" unlimited="true" timelimit="30">
+    <instructions>Escribe la frase siguiente el mayor número de veces posible  durante 30 segundos.
+No utilices mayúsculas ni puntos: presiona 'Enter' después de cada frase.
+El tiempo empezará cuando escribas la primera letra.</instructions>
+    <target>el perro corre por la calle ancha</target>
+  </task>
+  <task title="Ejemplo 1" repetition="7" example="true">
+    <instructions>Esto es un ejemplo.
+En las siguientes actividades te pediremos que escribas siete veces series de tres palabras.
+En este ejemplo, la copia se realizó con las palabras: 'una película maravillosa'
+</instructions>
+    <target>una película maravillosa</target>
+  </task>
+  <task title="Palabras 1" synthesize="true" repetition="7">
+    <instructions>Escribe siete veces la siguiente serie de tres palabras. Presiona 'Enter' después de cada frase.
+    </instructions>
+    <target>tres animales miedosos</target>
+  </task>
+  <task title="Palabras 2" synthesize="true" repetition="7">
+    <instructions>Escribe siete veces la siguiente serie de tres palabras. </instructions>
+    <target>dos camiones estropeados</target>
+  </task>
+  <task title="Palabras 3" synthesize="true" repetition="7">
+    <instructions>Escribe siete veces la siguiente serie de tres palabras.</instructions>
+    <target>tres alumnos despistados</target>
+  </task>
+  <task title="Palabras 4" repetition="7">
+    <instructions>Escribe siete veces la siguiente serie de tres palabras.</instructions>
+    <target>un flashback pixelado</target>
+  </task>
+  <task title="Consonantes">
+    <instructions>Finalmente, escribe una sola vez estos cuatro bloques de consontantes.
+</instructions>
+    <target>tjxgfl pgkfkq dtdrgt npwdvf</target>
+  </task>
+</copytask>

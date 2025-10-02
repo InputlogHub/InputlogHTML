@@ -1,0 +1,56 @@
+﻿<copytask>
+  <title>Polish</title>
+  <description>Instrukcja</description>
+  <language>PL</language>
+  <general_instructions>Twoim zadaniem będzie przepisanie liter, słów i zdań, które zobaczysz na ekranie.
+Spróbuj zrobić to tak szybko i poprawnie jak to możliwe.
+Jednak jeśli się pomylisz, nie musisz się poprawiać. Błędy w pisowni nie będą problemem, możesz pisać dalej. Prędkość jest ważniejsza niż poprawność.</general_instructions>
+  <layouts>
+    <layout>AZERTY</layout>
+    <layout>QWERTY</layout>
+    <layout>QWERTZ</layout>
+  </layouts>
+  <task title="Szybkość pisania" timelimit="15">
+    <instructions>Naciskaj bez przerwy litery "d" i "k" tak szybko jak to możliwe przez 15 sekund.
+Twoim zadaniem jest wpisać jak najwięcej liter.
+Program zacznie odmierzać czas, gdy wpiszesz pierwszą literę.</instructions>
+    <target>dkdkdkdkdkdkdkdkdkdkdkdkdkdk...</target>
+  </task>
+  <task title="Zdanie" unlimited="true" timelimit="30">
+    <instructions>W ciągu 30 sekund przepisz poniższe zdanie tyle razy, ile dasz radę i tak szybko jak to możliwe.
+Nie używaj wielkich liter ani kropek: wciśnij "Enter" na końcu każdego zdania.
+
+Program zacznie odmierzać czas, gdy wpiszesz pierwszą literę.</instructions>
+    <target>kot siedzi pod domem i wolno macha ogonem</target>
+  </task>
+  <task title="Przykład 1" repetition="7" example="true">
+    <instructions>Twoim kolejnym zadaniem będzie przepisanie sekwencji trzech słów po siedem razy.
+W poniższym przykładzie tą sekwencją są słowa: "dwa niebieskie kwiaty".
+W tym zadaniu nie ma limitu czasowego.</instructions>
+    <target>dwa niebieskie kwiaty</target>
+  </task>
+  <task title="Słowa 1" synthesize="true" repetition="7">
+    <instructions>Przepisz poniższe słowa siedem razy.
+Aby przejść do kolejnej linijki, wciśnij "Enter".</instructions>
+    <target>trzy relaksacyjne techniki</target>
+  </task>
+  <task title="Słowa 2" synthesize="true" repetition="7">
+    <instructions>Przepisz poniższe słowa siedem razy.
+Aby przejść do kolejnej linijki, wciśnij "Enter".</instructions>
+    <target>dwie niespotykane poprawki</target>
+  </task>
+  <task title="Słowa 3" synthesize="true" repetition="7">
+    <instructions>Przepisz poniższe słowa siedem razy.
+Aby przejść do kolejnej linijki, wciśnij "Enter".</instructions>
+    <target>oba nieszkodliwe narkotyki</target>
+  </task>
+  <task title="Słowa 4" repetition="7">
+    <instructions>Przepisz poniższe słowa siedem razy.
+Aby przejść do kolejnej linijki, wciśnij "Enter".</instructions>
+    <target>trzy tryumfalne gzymsy</target>
+  </task>
+  <task title="Spółgłoski">
+    <instructions>Przepisz poniższe spółgłoski podzielone na cztery bloki.</instructions>
+    <target>tjxgfl pgkfkq dtdrgt npwdvf</target>
+  </task>
+</copytask>

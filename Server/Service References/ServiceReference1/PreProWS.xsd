@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://lt3serv.ugent.be/" targetNamespace="http://lt3serv.ugent.be/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="acquire" type="tns:acquire" />
+  <xs:element name="acquireResponse" type="tns:acquireResponse" />
+  <xs:element name="check" type="tns:check" />
+  <xs:element name="checkResponse" type="tns:checkResponse" />
+  <xs:element name="submit" type="tns:submit" />
+  <xs:element name="submitResponse" type="tns:submitResponse" />
+  <xs:complexType name="acquire">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text_id" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="acquireResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="check">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text_id" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="checkResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="submit">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="language" type="xs:string" />
+      <xs:element minOccurs="0" name="text" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="submitResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

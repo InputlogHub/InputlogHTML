@@ -1,0 +1,1139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5358123-5DA9-4217-AFC8-DD3759E9DC41}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>Inputlog</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>C:\Users\eva.IC\Documents\Inputlog\Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>https://www.inputlog.net/faq/</SupportUrl>
+    <ProductName>Inputlog</ProductName>
+    <PublisherName>University of Antwerp</PublisherName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>8.0.0.1</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C08F32FAB00F808D857CA25029382B29169308FB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Gui.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CheckBoxComboBox">
+      <HintPath>.\CheckBoxComboBox.dll</HintPath>
+    </Reference>
+    <Reference Include="DSOFramer">
+      <HintPath>..\EmbeddedWord\Resources\DSOFramer.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ICSharpCode.SharpZipLib.dll.0.85.4.369\lib\net20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Flow\AbstractFlowController.cs" />
+    <Compile Include="Flow\AbstractFlowPage.cs" />
+    <Compile Include="Flow\FlowGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flow\FlowGUI.Designer.cs">
+      <DependentUpon>FlowGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiPathChangedEvent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReplaceTypeDescriptionProvider.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Settings\AvailableLanguages.cs" />
+    <Compile Include="Tabs\AnalysisMap.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\Bigram\BigramAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Bigram\BigramAnalysisControl.Designer.cs">
+      <DependentUpon>BigramAnalysisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AbstractAnalyzer.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\Bigram\BigramAnalyzer.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\Copytask\CopytaskAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Copytask\CopytaskAnalysisControl.Designer.cs">
+      <DependentUpon>CopytaskAnalysisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Copytask\CopytaskAnalyzer.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\Fluency\FluencyAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Fluency\FluencyAnalysisControl.Designer.cs">
+      <DependentUpon>FluencyAnalysisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Fluency\FluencyAnalyzer.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\General\GeneralEyetrackAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\General\GeneralAnalyzer.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\General\GeneralEyetrackAnalyzer.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\AnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\AnalysisControl.designer.cs">
+      <DependentUpon>AnalysisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Linear\LinearAnalyzer.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\Linguistic\LinguisticAnalyzer.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\Pause\PauseAnalyzer.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\ProcessGraph\ProcessGraphAnalyzer.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\Revision\RevisionMatrixAnalyzer.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\ServerAnalysisLauncher.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\SNotation\SNotationAnalyzer.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\Source\FocusAnalyzer.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\Summary\SummaryAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Summary\SummaryAnalysisControl.Designer.cs">
+      <DependentUpon>SummaryAnalysisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Summary\SummaryAnalyzer.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\Token\TokenAnalyzer.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\WordPauses\WordPausesAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\WordPauses\WordPausesAnalysisControl.Designer.cs">
+      <DependentUpon>WordPausesAnalysisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\WordPauses\WordPausesAnalyzer.cs" />
+    <Compile Include="Tabs\Analyze\AnalyzeModel.cs" />
+    <Compile Include="Tabs\Analyze\Reporting\AnalysisReportingTargets.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\Reporting\AnalysisReportingTargets.Designer.cs">
+      <DependentUpon>AnalysisReportingTargets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\Reporting\EditBlock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\Reporting\EditBlock.Designer.cs">
+      <DependentUpon>EditBlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\Reporting\EditReportingBlocks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\Reporting\EditReportingBlocks.Designer.cs">
+      <DependentUpon>EditReportingBlocks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\Reporting\GenerateReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\Reporting\GenerateReports.Designer.cs">
+      <DependentUpon>GenerateReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\Reporting\ANullableReportingBlockCbDecorator.cs" />
+    <Compile Include="Tabs\Analyze\Reporting\ReportElementControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\Reporting\ReportElementControl.Designer.cs">
+      <DependentUpon>ReportElementControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\Reporting\ReportingBlockCBDecorator.cs" />
+    <Compile Include="Tabs\Analyze\Reporting\ReportingTarget.cs" />
+    <Compile Include="Tabs\Preprocess\PreprocessModel.cs" />
+    <Compile Include="Tabs\Preprocess\Conversion\ConversionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Conversion\ConversionForm.Designer.cs">
+      <DependentUpon>ConversionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\EventProcessor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\EventProcessor.Designer.cs">
+      <DependentUpon>EventProcessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Filters\TimeFilterHelp\TimeConfigurationInfoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Filters\TimeFilterHelp\TimeConfigurationInfoPanel.Designer.cs">
+      <DependentUpon>TimeConfigurationInfoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Filters\TimeFilterHelp\Time_Configuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Filters\TimeFilterHelp\Time_Configuration.Designer.cs">
+      <DependentUpon>Time_Configuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Merge\FlowControlWrapper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Merge\FlowControlWrapper.Designer.cs">
+      <DependentUpon>FlowControlWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Merge\FileExtSelectionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Merge\FileExtSelectionControl.Designer.cs">
+      <DependentUpon>FileExtSelectionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Merge\FlowPages\DragonFlowController.cs" />
+    <Compile Include="Tabs\Preprocess\Merge\FlowPages\EyetrackFlowController.cs" />
+    <Compile Include="Tabs\Preprocess\Merge\FlowPages\FileSelectAndMatch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Merge\FlowPages\FileSelectAndMatch.Designer.cs">
+      <DependentUpon>FileSelectAndMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Merge\FlowPages\FileSelectAndMatchFlowPage.cs" />
+    <Compile Include="Tabs\Preprocess\Merge\FlowPages\OffsetControler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Merge\FlowPages\OffsetControler.Designer.cs">
+      <DependentUpon>OffsetControler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Merge\FlowPages\OffsetControlFlowPage.cs" />
+    <Compile Include="Tabs\Preprocess\Merge\FlowPages\ProcessControlFlowPage.cs" />
+    <Compile Include="Tabs\Preprocess\Merge\FlowPages\ProcessController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Merge\FlowPages\ProcessController.Designer.cs">
+      <DependentUpon>ProcessController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Merge\MergeSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Merge\MergeSelector.Designer.cs">
+      <DependentUpon>MergeSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Merge\AFileSelectionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Preprocess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Preprocess.Designer.cs">
+      <DependentUpon>Preprocess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Recoders\IdfxRecoder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Recoders\NegatvePauseRemover.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Recoders\RemoveTaskbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Record\Plugin\AbstractPlugin.cs" />
+    <Compile Include="Tabs\Record\Record.Resources.Designer.cs" />
+    <Compile Include="Tabs\Record\RecordSettings.cs" />
+    <Compile Include="Tools\Copytask Creator\CopyTaskCreator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Copytask Creator\CopyTaskCreator.Designer.cs">
+      <DependentUpon>CopyTaskCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Copytask Creator\TaskControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tools\Copytask Creator\TaskControl.Designer.cs">
+      <DependentUpon>TaskControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Copytask Creator\XMLUtil.cs" />
+    <Compile Include="Tools\CopytaskFixFilenames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\CopytaskFixFilenames.Designer.cs">
+      <DependentUpon>CopytaskFixFilenames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Reporting\ResourceEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Reporting\ResourceEditor.Designer.cs">
+      <DependentUpon>ResourceEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Reporting\TemplateErrorReporter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Reporting\TemplateErrorReporter.Designer.cs">
+      <DependentUpon>TemplateErrorReporter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\TemplateBuilder\Block.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tools\TemplateBuilder\Block.Designer.cs">
+      <DependentUpon>Block.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\TemplateBuilder\PropertyButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tools\TemplateBuilder\PropertyButton.Designer.cs">
+      <DependentUpon>PropertyButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\TemplateBuilder\TemplateBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\TemplateBuilder\TemplateBuilder.Designer.cs">
+      <DependentUpon>TemplateBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\ChartImageUtils.cs" />
+    <Compile Include="Util\ColoredCheckedListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\ControlExtensionMethods.cs" />
+    <Compile Include="Util\ControlDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\CopytaskIDFXManipulator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\CopytaskIDFXManipulator.Designer.cs">
+      <DependentUpon>CopytaskIDFXManipulator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\FileValidationResultDialog.Designer.cs">
+      <DependentUpon>ControlDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\RecentFilesList.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\Linguistic\LinguisticAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Linguistic\LinguisticAnalysisControl.Designer.cs">
+      <DependentUpon>LinguisticAnalysisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\ProcessGraph\ProcessGraphAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\ProcessGraph\ProcessGraphAnalysisControl.Designer.cs">
+      <DependentUpon>ProcessGraphAnalysisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\SetClipboardHelper.cs" />
+    <Compile Include="Util\STAThreadHelper.cs" />
+    <Compile Include="Tabs\Analyze\AnalysesControls\AnalysisWrapper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\AnalysisWrapper.Designer.cs">
+      <DependentUpon>AnalysisWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\CollapsedView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\CollapsedView.Designer.cs">
+      <DependentUpon>CollapsedView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Source\FocusAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Source\FocusAnalysisControl.Designer.cs">
+      <DependentUpon>FocusAnalysisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\General\GeneralAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\General\GeneralAnalysisControl.Designer.cs">
+      <DependentUpon>GeneralAnalysisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Linear\LinearAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Linear\LinearAnalysisControl.Designer.cs">
+      <DependentUpon>LinearAnalysisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Pause\PauseAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Pause\PauseAnalysisControl.Designer.cs">
+      <DependentUpon>PauseAnalysisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Revision\RevisionMatrixAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Revision\RevisionMatrixAnalysisControl.Designer.cs">
+      <DependentUpon>RevisionMatrixAnalysisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\ServerAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\SNotation\SNotationAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\SNotation\SNotationAnalysisControl.Designer.cs">
+      <DependentUpon>SNotationAnalysisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Token\TokenAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalysesControls\Token\TokenAnalysisControl.Designer.cs">
+      <DependentUpon>TokenAnalysisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalyzeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\AnalyzeDialog.Designer.cs">
+      <DependentUpon>AnalyzeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Recoders\FocusRewrite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Recoders\FocusRewrite.Designer.cs">
+      <DependentUpon>FocusRewrite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Recoders\FocusRewriteDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Recoders\FocusRewriteDialog.Designer.cs">
+      <DependentUpon>FocusRewriteDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Filters\Time.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Filters\Time.Designer.cs">
+      <DependentUpon>Time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Filters\Window.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Filters\Window.Designer.cs">
+      <DependentUpon>Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\ProcessControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\ProcessControl.Designer.cs">
+      <DependentUpon>ProcessControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\FilterWrapper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\FilterWrapper.Designer.cs">
+      <DependentUpon>FilterWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Filters\EventType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Filters\EventType.Designer.cs">
+      <DependentUpon>EventType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\FilterConfiguration.cs" />
+    <Compile Include="Tabs\Preprocess\FilterDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\FilterDialog.Designer.cs">
+      <DependentUpon>FilterDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\FilterExportOptions.cs" />
+    <Compile Include="Tabs\Analyze\ImportExport\AnalysisConfiguration.cs" />
+    <Compile Include="Tabs\Analyze\ImportExport\AnalysisConfigurationXMLDeserializer.cs" />
+    <Compile Include="Tabs\Analyze\ImportExport\AnalysisConfigurationXMLSerializer.cs" />
+    <Compile Include="Tabs\Analyze\ImportExport\ExportAnalysisConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\ImportExport\ExportAnalysisConfiguration.Designer.cs">
+      <DependentUpon>ExportAnalysisConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\ImportExport\ExportOptions.cs" />
+    <Compile Include="Tabs\Postprocess\Postprocess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Postprocess\Postprocess.Designer.cs">
+      <DependentUpon>Postprocess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Postprocess\WizardPages\Form\FileResultProcessPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Postprocess\WizardPages\Form\FileResultProcessPage.Designer.cs">
+      <DependentUpon>FileResultProcessPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Postprocess\WizardPages\Page\FileSelectPage.cs" />
+    <Compile Include="Tabs\Postprocess\WizardPages\Form\FileWizardPageForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Postprocess\WizardPages\Form\FileWizardPageForm.Designer.cs">
+      <DependentUpon>FileWizardPageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Postprocess\WizardPages\Page\MergeAnalysisProcessPage.cs" />
+    <Compile Include="Tabs\Postprocess\WizardPages\Page\MergeAnalysis_Intro.cs" />
+    <Compile Include="Tabs\Postprocess\WizardPages\Form\MergeAnalysis_Intro_Form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Postprocess\WizardPages\Form\MergeAnalysis_Intro_Form.Designer.cs">
+      <DependentUpon>MergeAnalysis_Intro_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Postprocess\WizardPages\Form\ProcessPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Postprocess\WizardPages\Form\ProcessPage.Designer.cs">
+      <DependentUpon>ProcessPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualization\BigramGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualization\BigramGraph.Designer.cs">
+      <DependentUpon>BigramGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualization\FluencyGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualization\FluencyGraph.designer.cs">
+      <DependentUpon>FluencyGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualization\FluencyStdDevGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualization\FluencyStdDevGraph.designer.cs">
+      <DependentUpon>FluencyStdDevGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualization\MultiFluencyGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualization\ProcessGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualization\ProcessGraph.designer.cs">
+      <DependentUpon>ProcessGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualization\ProcessGraphDataPoint.cs" />
+    <Compile Include="Visualization\Visualization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualization\VisualizationExtensions.cs" />
+    <Compile Include="vpproject\Wizard\WizardPage.cs" />
+    <Compile Include="vpproject\Wizard\WizardProcessor.cs" />
+    <Compile Include="vpproject\Wizard\WizardSkeleton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vpproject\Wizard\WizardSkeleton.Designer.cs">
+      <DependentUpon>WizardSkeleton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\EmbeddedWord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Util\EmbeddedWord.Designer.cs">
+      <DependentUpon>EmbeddedWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Session\RecordSession.cs" />
+    <Compile Include="Session\SessionDataException.cs" />
+    <Compile Include="Util\ExceptionMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util\ExceptionMessageBox.Designer.cs">
+      <DependentUpon>ExceptionMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Gui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui.Designer.cs">
+      <DependentUpon>Gui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiMain.cs" />
+    <Compile Include="Tabs\Record\Plugin\PluginException.cs" />
+    <Compile Include="Tabs\Record\Plugin\PluginOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Record\Plugin\PluginOptions.Designer.cs">
+      <DependentUpon>PluginOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Record\Plugin\WinLog\WinLog.cs" />
+    <Compile Include="Tabs\Record\Plugin\WordLog\WordLogOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Record\Plugin\WordLog\WordLogOptions.Designer.cs">
+      <DependentUpon>WordLogOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tabs\Record\Plugin\WordLog\WordLogFrontend.cs" />
+    <Compile Include="Settings\SettingsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\SettingsWindow.Designer.cs">
+      <DependentUpon>SettingsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Tabs\Analyses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\Tabs\Analyses.Designer.cs">
+      <DependentUpon>Analyses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Analyze\Analyze.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Analyze\Analyze.Designer.cs">
+      <DependentUpon>Analyze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Conversion\Convert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Preprocess\Conversion\Convert.Designer.cs">
+      <DependentUpon>Convert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Replay\Play.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Replay\Play.Designer.cs">
+      <DependentUpon>Play.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Record\Record.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Record\Record.Designer.cs">
+      <DependentUpon>Record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Tabs\BaseSettingsTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\Tabs\BaseSettingsTab.Designer.cs">
+      <DependentUpon>BaseSettingsTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Tabs\General.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\Tabs\General.Designer.cs">
+      <DependentUpon>General.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Tabs\Logging.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\Tabs\Logging.Designer.cs">
+      <DependentUpon>Logging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\InputValidation.cs" />
+    <Compile Include="Util\SettingsManipulation.cs" />
+    <Compile Include="Util\TransparentPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Util\TransparentPanel.Designer.cs">
+      <DependentUpon>TransparentPanel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Flow\FlowGUI.resx">
+      <DependentUpon>FlowGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\Bigram\BigramAnalysisControl.resx">
+      <DependentUpon>BigramAnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\Copytask\CopytaskAnalysisControl.resx">
+      <DependentUpon>CopytaskAnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\Fluency\FluencyAnalysisControl.resx">
+      <DependentUpon>FluencyAnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\General\GeneralEyetrackAnalysisControl.resx">
+      <DependentUpon>GeneralEyetrackAnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\AnalysisControl.resx">
+      <DependentUpon>AnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\Source\FocusAnalysisControl.resx">
+      <DependentUpon>FocusAnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\Summary\SummaryAnalysisControl.resx">
+      <DependentUpon>SummaryAnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\WordPauses\WordPausesAnalysisControl.resx">
+      <DependentUpon>WordPausesAnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\Reporting\AnalysisReportingTargets.resx">
+      <DependentUpon>AnalysisReportingTargets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\Reporting\EditBlock.resx">
+      <DependentUpon>EditBlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\Reporting\EditReportingBlocks.resx">
+      <DependentUpon>EditReportingBlocks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\Reporting\GenerateReports.resx">
+      <DependentUpon>GenerateReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\Reporting\ReportElementControl.resx">
+      <DependentUpon>ReportElementControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Conversion\ConversionForm.resx">
+      <DependentUpon>ConversionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\EventProcessor.resx">
+      <DependentUpon>EventProcessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\Linguistic\LinguisticAnalysisControl.resx">
+      <DependentUpon>LinguisticAnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\ProcessGraph\ProcessGraphAnalysisControl.resx">
+      <DependentUpon>ProcessGraphAnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Filters\TimeFilterHelp\TimeConfigurationInfoPanel.resx">
+      <DependentUpon>TimeConfigurationInfoPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Filters\TimeFilterHelp\Time_Configuration.resx">
+      <DependentUpon>Time_Configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Merge\FlowControlWrapper.resx">
+      <DependentUpon>FlowControlWrapper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Merge\FileExtSelectionControl.resx">
+      <DependentUpon>FileExtSelectionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Merge\FlowPages\FileSelectAndMatch.resx">
+      <DependentUpon>FileSelectAndMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Merge\FlowPages\OffsetControler.resx">
+      <DependentUpon>OffsetControler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Merge\FlowPages\ProcessController.resx">
+      <DependentUpon>ProcessController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Merge\MergeSelector.resx">
+      <DependentUpon>MergeSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Preprocess.resx">
+      <DependentUpon>Preprocess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Recoders\IdfxRecoder.resx">
+      <DependentUpon>IdfxRecoder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Recoders\NegatvePauseRemover.resx">
+      <DependentUpon>NegatvePauseRemover.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Recoders\RemoveTaskbar.resx">
+      <DependentUpon>RemoveTaskbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Record\Record.Resources.resx" />
+    <EmbeddedResource Include="Tabs\Replay\Play.resx">
+      <DependentUpon>Play.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Copytask Creator\CopyTaskCreator.resx">
+      <DependentUpon>CopyTaskCreator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Copytask Creator\TaskControl.resx">
+      <DependentUpon>TaskControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\CopytaskFixFilenames.resx">
+      <DependentUpon>CopytaskFixFilenames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Reporting\ResourceEditor.resx">
+      <DependentUpon>ResourceEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Reporting\TemplateErrorReporter.resx">
+      <DependentUpon>TemplateErrorReporter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\TemplateBuilder\Block.resx">
+      <DependentUpon>Block.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\TemplateBuilder\PropertyButton.resx">
+      <DependentUpon>PropertyButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\TemplateBuilder\TemplateBuilder.resx">
+      <DependentUpon>TemplateBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\ControlDialog.resx">
+      <DependentUpon>ControlDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\AnalysisWrapper.resx">
+      <DependentUpon>AnalysisWrapper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\CollapsedView.resx">
+      <DependentUpon>CollapsedView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\General\GeneralAnalysisControl.resx">
+      <DependentUpon>GeneralAnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\Linear\LinearAnalysisControl.resx">
+      <DependentUpon>LinearAnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\Pause\PauseAnalysisControl.resx">
+      <DependentUpon>PauseAnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\Revision\RevisionMatrixAnalysisControl.resx">
+      <DependentUpon>RevisionMatrixAnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\ServerAnalysisControl.resx">
+      <DependentUpon>ServerAnalysisControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\SNotation\SNotationAnalysisControl.resx">
+      <DependentUpon>SNotationAnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalysesControls\Token\TokenAnalysisControl.resx">
+      <DependentUpon>TokenAnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\AnalyzeDialog.resx">
+      <DependentUpon>AnalyzeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Recoders\FocusRewrite.resx">
+      <DependentUpon>FocusRewrite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Recoders\FocusRewriteDialog.resx">
+      <DependentUpon>FocusRewriteDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Filters\Time.resx">
+      <DependentUpon>Time.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\FilterDialog.resx">
+      <DependentUpon>FilterDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\ImportExport\ExportAnalysisConfiguration.resx">
+      <DependentUpon>ExportAnalysisConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Filters\Window.resx">
+      <DependentUpon>Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Filters\EventType.resx">
+      <DependentUpon>EventType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\ProcessControl.resx">
+      <DependentUpon>ProcessControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\FilterWrapper.resx">
+      <DependentUpon>FilterWrapper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Postprocess\Postprocess.resx">
+      <DependentUpon>Postprocess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Postprocess\WizardPages\Form\FileResultProcessPage.resx">
+      <DependentUpon>FileResultProcessPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Postprocess\WizardPages\Form\FileWizardPageForm.resx">
+      <DependentUpon>FileWizardPageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Postprocess\WizardPages\Form\MergeAnalysis_Intro_Form.resx">
+      <DependentUpon>MergeAnalysis_Intro_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Postprocess\WizardPages\Form\ProcessPage.resx">
+      <DependentUpon>ProcessPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\CopytaskIDFXManipulator.resx">
+      <DependentUpon>CopytaskIDFXManipulator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualization\BigramGraph.resx">
+      <DependentUpon>BigramGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualization\FluencyGraph.resx">
+      <DependentUpon>FluencyGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualization\FluencyStdDevGraph.resx">
+      <DependentUpon>FluencyStdDevGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualization\MultiFluencyGraph.resx">
+      <DependentUpon>MultiFluencyGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualization\ProcessGraph.resx">
+      <DependentUpon>ProcessGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualization\Visualization.resx">
+      <DependentUpon>Visualization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vpproject\Wizard\WizardSkeleton.resx">
+      <DependentUpon>WizardSkeleton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\EmbeddedWord.resx">
+      <DependentUpon>EmbeddedWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\ExceptionMessageBox.resx">
+      <DependentUpon>ExceptionMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui.resx">
+      <DependentUpon>Gui.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Record\Plugin\PluginOptions.resx">
+      <DependentUpon>PluginOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Record\Plugin\WordLog\WordLogOptions.resx">
+      <DependentUpon>WordLogOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsWindow.resx">
+      <DependentUpon>SettingsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Tabs\Analyses.resx">
+      <DependentUpon>Analyses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Analyze\Analyze.resx">
+      <DependentUpon>Analyze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Preprocess\Conversion\Convert.resx">
+      <DependentUpon>Convert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Record\Record.resx">
+      <DependentUpon>Record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Tabs\BaseSettingsTab.resx">
+      <DependentUpon>BaseSettingsTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Tabs\General.resx">
+      <DependentUpon>General.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Tabs\Logging.resx">
+      <DependentUpon>Logging.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\TransparentPanel.resx">
+      <DependentUpon>TransparentPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gui.pfx" />
+    <None Include="GuiPass.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\InputLog.Core.csproj">
+      <Project>{0E631E0E-B309-45F6-A9E3-F1B2B1F8F1A5}</Project>
+      <Name>InputLog.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmbeddedWord\EmbeddedWord.csproj">
+      <Project>{D1FE893C-B5C6-46AB-908E-26DCA254D4F8}</Project>
+      <Name>EmbeddedWord</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CheckBoxComboBox.dll" />
+    <Content Include="resources\arrows-merge.ico" />
+    <Content Include="resources\bullet_toggle_minus.bmp" />
+    <Content Include="resources\button_icons\add.png" />
+    <Content Include="resources\button_icons\bullet_toggle_minus.png" />
+    <Content Include="resources\button_icons\bullet_toggle_plus.png" />
+    <Content Include="resources\button_icons\cross.png" />
+    <Content Include="resources\button_icons\cross_grey.png" />
+    <Content Include="resources\button_icons\down.png" />
+    <Content Include="resources\button_icons\folder_explore.png" />
+    <Content Include="resources\button_icons\up.png" />
+    <Content Include="resources\cross_Red.png" />
+    <Content Include="resources\HorizontalMerge.jpg" />
+    <Content Include="resources\ILWizard.bmp" />
+    <Content Include="resources\information_icon.png" />
+    <Content Include="resources\info_icon.bmp" />
+    <Content Include="resources\InputLog-Logo.gif" />
+    <Content Include="resources\inputlog.ico" />
+    <Content Include="resources\inputlog_web.gif" />
+    <Content Include="resources\keyLines.png" />
+    <Content Include="resources\media_playback_pause.png" />
+    <Content Include="resources\media_playback_start.png" />
+    <Content Include="resources\media_playback_stop.png" />
+    <Content Include="resources\media_playlist_repeat.png" />
+    <Content Include="resources\media_seek_backward.png" />
+    <Content Include="resources\media_seek_forward.png" />
+    <Content Include="resources\media_skip_backward.png" />
+    <Content Include="resources\media_skip_end.png" />
+    <Content Include="resources\media_skip_forward.png" />
+    <Content Include="resources\media_skip_start.png" />
+    <Content Include="resources\searchT.png" />
+    <Content Include="resources\server-busy.gif" />
+    <Content Include="resources\splash.jpg" />
+    <Content Include="resources\splash_installer.jpg" />
+    <Content Include="resources\VerticalMerge.jpg" />
+    <None Include="Flow\resources\imageres.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Flow\resources\button_icons\" />
+    <Folder Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

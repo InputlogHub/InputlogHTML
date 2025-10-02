@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Cancel Project";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Cancel project</h2>
+<p class="warning">Are you sure you wish to cancel this task?</p>
+@using (Html.BeginForm())
+{
+    <input type="hidden" name="full" value="@ViewBag.Full" />
+    <div>
+        <p>
+            <input type="submit" value="Delete" />
+        </p>
+    </div>
+}
+

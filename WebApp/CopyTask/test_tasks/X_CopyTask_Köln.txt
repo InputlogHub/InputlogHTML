@@ -1,0 +1,38 @@
+﻿<copytask>
+  <skipFinalQuestions>true</skipFinalQuestions>
+  <title>X_Köln copy task</title>
+  <description>procedure to measure motor and typing speed</description>
+  <language>DE</language>
+  <general_instructions>Herzlich willkommen!
+
+In dieser Sitzung werden Sie Buchstabenfolgen und einen Satz schreiben. 
+Probieren Sie, dies so schnell und so fehlerfrei wie möglich zu tun. 
+Falls Sie einen Fehler machen, brauchen Sie diesen aber nicht zu korrigieren. Die Korrektheit ist bei dem gesamten Test nicht ausschlaggebend.
+ 
+Die Zeit läuft, sobald Sie den ersten Buchstaben gedrückt haben.
+</general_instructions>
+  <layouts>
+    <layout>AZERTY</layout>
+    <layout>QWERTY</layout>
+    <layout>QWERTZ</layout>
+  </layouts>
+  <task title="Beispiel" practice="true">
+    <instructions>Dies ist eine Übungsaufgabe. Wir bitten Sie, die folgende Wortkombination einmal abzutippen.
+Hierfür gibt es keine Zeitvorgaben.</instructions>
+    <target>ein schöner Morgen</target>
+  </task>
+  <task title="Satz 1" synthesize="true">
+    <instructions>Tippen Sie den folgenden Satz so schnell wie möglich ab.  
+Wenn Sie fertig sind, klicken Sie auf "Weiter".</instructions>
+    <target>Gestern sah ich meine Katze mit einem Hund spielen.</target>
+  </task>
+  <task title="Satz 2" synthesize="true">
+    <instructions>Bitte schreiben Sie einen vollständigen Satz.</instructions>
+    <target></target>
+  </task>
+  <task title="Schnelltippen" unlimited="true" timelimit="10">
+    <instructions>Fast geschafft!
+Tippen Sie die Buchstaben „d“ und „k“ so schnell und so oft wie möglich hintereinander. Sie haben dafür 10 Sekunden Zeit. Die Zeit läuft, sobald Sie den ersten Buchstaben eingegeben haben.</instructions>
+    <target>dkdkdkdkdkd</target>
+  </task>
+</copytask>

@@ -1,0 +1,44 @@
+﻿@model WebApp.Models.UserDetailsViewModel
+
+@{
+    ViewBag.Title = "Mail Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Mails in the database</h2>
+<ul>
+@foreach (string name in ViewBag.Names)
+{
+    <li>@Html.ActionLink("Edit " + name, "EditMail", new { ID = name })</li>
+}
+</ul>
+
+<h2>Send test email</h2>
+@using (Html.BeginForm("SendTestMail", "Admin"))
+{
+    <div class="editor-label">
+        <label>Mail Type</label>
+    </div>
+    <div class="editor-field">
+        <select name="type">
+        @foreach (string name in ViewBag.Names)
+        {
+            <option value="@name">@name</option>
+        }
+        </select>
+    </div>
+    
+    <div class="editor-label">
+        <label>Receiver Address</label>
+    </div>
+    <div class="editor-field">
+        <div>
+            <input type="email" size="36" value="@ViewBag.Adminmail" name="mail"/>
+        </div>
+    </div>
+    <div>
+        <p>
+            <input type="submit" value="Send" />
+        </p>
+    </div>
+}

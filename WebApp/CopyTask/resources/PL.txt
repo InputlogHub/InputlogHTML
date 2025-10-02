@@ -1,0 +1,161 @@
+﻿<resources>
+ <session_info>
+      <participant_information>Informacje o uczestniku</participant_information>
+      <intro>Proszę wpisać swoje dane oraz informacje dotyczące sesji.</intro>
+	<name_label>Imię i nazwisko</name_label>
+	<age_label>Wiek</age_label>
+	<gender>Płeć</gender>
+	<gender_types> 
+	  <male>M (mężczyzna)</male>
+	  <female>K (Kobieta)</female>
+	  <undefined>X (inna)</undefined>
+	</gender_types>
+	<session>Sesja</session>
+	<kblayout>Klawiatura</kblayout>
+ </session_info>
+
+<agreement>
+Zgadzam się na udział w niniejszym badaniu. Badanie polega na przepisywaniu tekstu na klawiaturze, które będzie rejestrowane w trakcie trwania sesji.
+Mój udział jest dobrowolny i w każdej chwili mogę zrezygnować bez podawania powodu.
+Moje dane będą przechowywane na zabezpieczonym serwerze na Uniwersytecie w Antwerpii. Tylko upoważnieni naukowcy będą mieli dostęp do tych danych pod warunkiem, że zachowają ich poufność.
+</agreement>
+
+<agreement_required>
+Musisz zaznaczyć, że zgadzasz się na udział w badaniu.
+</agreement_required>
+
+<mandatory_input>
+* Wymagane dane wejściowe
+</mandatory_input>
+
+<buttons>
+	<start>Start</start>
+	<continue>Dalej</continue>
+	<finish>Koniec</finish>
+	<download>Pobierz dane</download>
+	<resend>Wyślij ponownie</resend>
+	<progress>Postęp</progress>
+</buttons>
+
+<messages>
+	<!-- Alert for session identification: you must enter your name -->
+	<enter_name>Wpisz imię i nazwisko.</enter_name>
+	<!-- Alert for session identification: you must provide a valid age -->
+	<valid_age>Wpisz poprawny wiek.</valid_age>
+	<!-- Select gender -->
+	<select_gender>Proszę wybrać swoją płeć.</select_gender>
+	<!-- Select a keyboard layout -->
+	<select_layout>Wybierz układ klawiatury, której używasz.</select_layout>
+	<!-- Title for: successfully transmitted and copytask downloaded -->
+	<thanks>Dziękujemy za udział w badaniu</thanks>
+	<!-- Message for: Successfully transmitted and copytask completed -->
+	<download_finish>Możesz pobrać plik idfx lub kliknąć "Koniec", aby wrócić do menu głównego.</download_finish>
+	<!-- Alert for: Time to complete a copytask has finished -->
+	<time_up>Koniec czasu</time_up>
+	<!-- Alert for: message when trying to close the copytask before completing the task and or transmitting/downloading the results -->
+	<alert_closing>Czy na pewno chcesz przerwać badanie?</alert_closing>
+	<!-- Title for: we are trying to transmit your data to the server -->
+	<contacting_server>Zapisuję dane na serwerze...</contacting_server>
+	<!-- Message for: we are trying to transmit your data to the server (please wait) -->
+	<no_closing>Nie zamykaj jeszcze tego okna. Jeśli chcesz, możesz w tym czasie pobrać dane.</no_closing>
+	<!-- Message for: we could not transmit your data to the server -->
+	<fail>Nie można przesłać danych na serwer. Pobierz je lub spróbuj jeszcze raz, klikając "Wyślij ponownie".</fail>
+</messages>
+
+<questionnaire>
+	<!-- Header of the questionnaire page -->
+	<questions_title>Pytania podsumowujące</questions_title>
+
+	<!-- Alerts for required questionnaire information -->
+	<alerts>
+			<error_required>Musisz wypełnić wszystkie wymagane pola (*)</error_required>
+	</alerts>
+
+<!-- Questions about handedness -->
+	<handedness_message>Zaznacz, którą <em>ręką</em> wykonujesz poniższe czynności:</handedness_message>
+	<handedness_always_left>zawsze lewą</handedness_always_left>
+		<handedness_usually_left>zwykle lewą</handedness_usually_left>
+		<handedness_both_equally>obiema po równo</handedness_both_equally>
+		<handedness_always_right>zawsze prawą</handedness_always_right>
+		<handedness_usually_right>zwykle prawą</handedness_usually_right>
+		<label_handwriting>pisanie odręczne</label_handwriting>
+		<label_throwing>rzucanie</label_throwing>
+		<label_brushing_teeth>mycie zębów</label_brushing_teeth>
+		<label_eating_with_spoon>jedzenie łyżką</label_eating_with_spoon>
+
+<!-- Other questions -->
+	<!-- Computer used -->
+	<label_question_computer>Na jakim komputerze wykonano to badanie?</label_question_computer>
+	<options_question_computer>
+		<option_computer>komputerze stacjonarnym</option_computer>
+		<option_computer>laptopie</option_computer>
+	</options_question_computer>
+
+<!-- Browser used -->
+	<label_question_browser>W jakiej przeglądarce wykonano to badanie?</label_question_browser>
+	<options_question_browser>
+		<option_browser>Google Chrome</option_browser>
+		<option_browser>Internet Explorer</option_browser>
+		<option_browser>Edge</option_browser>
+		<option_browser>Mozilla Firefox</option_browser>
+		<option_browser>Opera</option_browser>
+		<option_browser>Safari</option_browser>
+		<option_browser>inna</option_browser>
+		<option_browser>nie wiem</option_browser>
+	</options_question_browser>
+
+	<!-- Keyboard familiarity -->
+	<label_question_keyboard>	Na jakiej klawiaturze wykonano to badanie?</label_question_keyboard>
+	<options_question_keyboard>
+		<option_keyboard>bardzo znanej</option_keyboard>
+		<option_keyboard>znanej</option_keyboard>
+		<option_keyboard>nieznanej</option_keyboard>
+	</options_question_keyboard>
+	
+	<!-- Dominant language -->
+	<label_question_language>Który/które języki są u ciebie dominujące, gdy piszesz?</label_question_language>
+		<options_question_language>
+		    <option_language>polski</option_language>
+			<option_language>niemiecki</option_language>
+			<option_language>angielski</option_language>
+			<option_language>niderlandzki</option_language>
+			<option_language>francuski</option_language>
+			<option_language>hiszpański</option_language>
+			<option_language>szwedzki</option_language>
+			<option_language>turecki</option_language>
+			<option_language>walijski</option_language>
+			<option_language>inny</option_language>
+		</options_question_language>
+
+	<!-- Language disorder -->
+	<label_question_disorder>Zaburzenia języka</label_question_disorder>
+		<label_question_disorder_specify>Wymień jakie (jeśli dotyczy)</label_question_disorder_specify>
+		<options_question_disorder>
+			<option_disorder>tak</option_disorder>
+			<option_disorder>nie</option_disorder>
+			<option_disorder>nie wiem</option_disorder>
+		</options_question_disorder>
+	<label_specify_disorder>Wymień (optionalne)</label_specify_disorder>
+
+<!-- Highest level of education -->
+	<label_question_education>Jakie masz wykształcenie?</label_question_education>
+		<options_question_education>
+			<option_education>podstawowe</option_education>
+			<option_education>zasadnicze zawodowe</option_education>
+			<option_education>średnie</option_education>
+			<option_education>wyższe: licencjat</option_education>			
+			<option_education>wyższe: magister</option_education>
+			<option_education>wyższe: inżynier</option_education>
+			<option_education>wyższe: magister inżynier</option_education>
+			<option_education>wyższe: doktorat</option_education>
+		</options_question_education>
+
+<!-- Highest level of repetition -->
+		<label_question_repetition>Czy bierzesz udział w tym badaniu po raz pierwszy?</label_question_repetition>
+		<options_question_repetition>
+			<option_repetition>tak</option_repetition>
+			<option_repetition>nie</option_repetition>
+		</options_question_repetition>
+
+	</questionnaire>
+</resources>

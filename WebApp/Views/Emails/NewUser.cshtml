@@ -1,0 +1,48 @@
+﻿To: @ViewBag.To
+From: Inputlog <inputlog@uantwerpen.be/>
+Subject: Inputlog new user notification
+<html>
+<head><title></title></head>
+<body>
+    <table style="width:775px;background-color:#e5e5e5;">
+        <tr style="height:11px;width:100%;">
+        </tr>
+        <tr style="height:11px;width:100%;">
+            <td style="width:90px;"></td>
+            <td style="background-color:#fff; padding:16px 20px">
+                <img src="cid:@ViewBag.cid" alt="Inputlog header" />
+                <p style="padding:8px 20px; font-size:10.5pt; line-height:125%; font-family:'Calibri','sans-serif'; color:#17375e;">
+                    Dear @ViewBag.AdminName,<br />
+                    A new user, @ViewBag.Username, has created an account and validated his email address on the inputlog webserver.<br />
+                    <br />
+                    <br />
+                    <b>Personal Information:</b><br />
+                    <br />
+                    <b>Full name: </b> @ViewBag.Fullname <br />
+                    <b>E-mail: </b> @ViewBag.Mail <br />
+                    <b>Institute: </b> @ViewBag.Affiliation <br />
+                    <b>Address: </b> @ViewBag.Address <br />
+                    <b>Postal Code: </b> @ViewBag.Postal <br />
+                    <b>City: </b> @ViewBag.City <br />
+                    <b>Country: </b> @ViewBag.Country <br />
+                    <b>Information about research: </b> <br />
+                    @ViewBag.Research
+                    <br />
+                    You can validate this account by clicking the following link: <a href="@ViewBag.Link">@ViewBag.Link</a>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <a href="https://www.inputlog.net">Inputlog.net</a>
+                    <br />
+                    <br />
+                </p>
+            </td>
+            <td style="width:90px;"></td>
+        </tr>
+        <tr style="height:11px;width:100%;">
+        </tr>
+    </table>
+</body>
+</html>

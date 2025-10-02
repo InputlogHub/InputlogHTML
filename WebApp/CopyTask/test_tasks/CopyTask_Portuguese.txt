@@ -1,0 +1,59 @@
+<copytask>
+  <title>Portuguese</title>
+  <description>procedimento para medir a competência de digitação</description>
+  <language>PT</language>
+  <general_instructions>Bem-vindo
+
+Nesta sessão vamos pedir-lhe que digite letras, palavras e frases que aparecem no ecrã.
+Tente fazer isto o mais rápido possível e com o menor número de erros que conseguir.
+Se se enganar, não é preciso corrigir. Os erros de digitação não são um problema. Pode simplesmente continuar a digitar. A correção é menos importante do que a rapidez de digitação.
+</general_instructions>
+  <layouts>
+    <layout>AZERTY</layout>
+    <layout>QWERTY</layout>
+    <layout>QWERTZ</layout>
+  </layouts>
+  <task title="Velocidade de digitação" unlimited="true" timelimit="15">
+    <instructions>Continue a digitar as letras 'd' e 'k' o mais rápido possível durante 15 segundos. O objetivo é produzir o maior número de letras possível.
+O seu tempo começa quando digitar o primeiro caractere.</instructions>
+    <target>dkdkdkdkdkdkdkdkdkdkdkdkdkdk... </target>
+  </task>
+  <task title="Frase" unlimited="true" timelimit="30">
+    <instructions>Digite a frase que está em baixo o mais rápido que conseguir durante 30 segundos.
+Não use letras maiúsculas ou pontos finais: clique em 'Enter' depois de cada frase.
+
+O seu tempo vai começar depois de digitar o primeiro caractere.</instructions>
+    <target>o gato dormia em cima da cadeira preta</target>
+  </task>
+  <task title="Exemplo 1" repetition="7" example="true">
+    <instructions>Isto é um exemplo. 
+Nas próximas tarefas vamos pedir-lhe que digite conjuntos de três palavras sete vezes.
+Neste exemplo, isto foi feito para as palavras: 'uma tarde bonita'.
+Para esta tarefa não há tempo limite. 
+</instructions>
+    <target>uma tarde bonita</target>
+  </task>
+  <task title="Palavras 1" synthesize="true" repetition="7">
+    <instructions>Digite estas palavras sete vezes.
+Para ir para a linha seguinte, clique em 'Enter'.
+</instructions>
+    <target>quatro bolachas deliciosas</target>
+  </task>
+  <task title="Palavras 2" synthesize="true" repetition="7">
+    <instructions>Digite estas palavras sete vezes.
+</instructions>
+    <target>cinco bolinhas amarelas</target>
+  </task>
+  <task title="Palavras 3" synthesize="true" repetition="7">
+    <instructions>Digite estas palavras sete vezes.</instructions>
+    <target>quatro poltronas pequenas</target>
+  </task>
+  <task title="Palavras 4" repetition="7">
+    <instructions>Digite estas palavras sete vezes.</instructions>
+    <target>um workshop newtoniano</target>
+  </task>
+  <task title="Consoantes">
+    <instructions>Por fim, digite estes quatro blocos de consoantes uma vez. </instructions>
+    <target>tjxgfl pgkfkq dtdrgt npwdvf</target>
+  </task>
+</copytask>

@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "Description";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<img src="@Url.Content("~/Content/DescriptionHeader.PNG")" alt="Flow image"/>
+<h2>Project description: Merging writing process data with lexica</h2>
+<div class="section">
+<p>
+    During the last 20 years writing research2 has focused explicitly on the analysis of writing processes. More recently, 
+    logging programs (like Inputlog) enabled research2ers to record process data (e.g. keystrokes & pauses) in much more detail 
+    without interfering the cognitive activities. 
+</p>
+<p>
+    In the current project we aggregate the logged process data from the letter level (keystroke) to the word level by merging them 
+    with lexica and Naturally Language Processing tools. This creates a very valuable basis for more linguistically oriented writing 
+    process research2.
+</p>
+</div>
+
+<h4>Goal</h4>
+<div class="section">
+    The logged process data from the letter level (keystroke) to the word level by merging them with existing lexica and using NLP tools. 
+    Linking writing process data to lexica and using NLP tools enables research2ers to analyze the data on a higher, more complex level. 
+</div>
+<h4>Three steps</h4>
+<div class="section">
+The flow of the linguistic analysis consists of three steps:
+<ol>
+    <li>aggregate letter to word level</li>
+    <li>parsing the S-notation</li>
+    <li>enriching process data with linguistic information</li>
+</ol>
+<div style="width:400px; margin: 24px auto;">
+<img src="@Url.Content("~/Content/Flow.png")" alt="Flow image"/>
+</div>
+At this stage the Inputlog process data are enriched with the following linguistic information: 
+<ul>
+    <li>part-of-speech tags, </li>
+    <li>lemmas, </li>
+    <li>chunks, </li>
+    <li>syllable boundaries </li>
+    <li>and word frequencies. </li>
+</ul>
+</div>
+<h3>Funding </h3>
+<div class="section">
+This project has been partly funded by the Flemish Research2 Foundation (FWO), Belgium <br />
+Budget: 27 000 euro.
+</div>
+<h3>Period</h3>
+<div class="section">
+2010-2012
+</div>
+<h3>Promotor: </h3> 
+<div class="section">
+<a href="https://webhosting.uantwerpen.be/lvanwaes/index.html">Luuk Van Waes, University of Antwerp</a>
+</div>
+<h3>Co-promotors: </h3>
+<div class="section">
+<ul>
+    <li><a href="https://research.flw.ugent.be/en/veronique.hoste">V&eacute;ronique Hoste (University College Ghent)</a></li>
+    <li><a href="https://research.flw.ugent.be/en/lieve.macken">Lieve Macken (University College Ghent)</a></li>
+    <li><a href="https://www.uantwerpen.be/en/staff/marielle-leijten/">Mari&euml;lle Leijten (Flanders Research2 Foundation/University 
+        of Antwerp)</a></li>
+</ul>
+</div>
+
+<h3>Read more</h3>
+<div class="section">
+<p>
+    Leijten, M., Macken, L., Hoste, V., Van Horenbeeck, E., & Van Waes, L. (2012). From Character to Word Level: 
+    Enabling the Linguistic Analyses of Inputlog Process Data M. Piotrowski, C. Mahlow & R. Dale (Eds.), European Association 
+    for Computational Linguistics, EACL - Computational Linguistics and Writing (CL&amp;W 2012): Linguistic and Cognitive Aspects of
+    Document Creation and Document Engineering (pp. 1-8).<br />
+<a href="@Url.Content("~/Content/CLW201201.pdf")">View pdf</a>
+</p>
+<p>
+    Macken, L., Hoste, V., Leijten, M., & Van Waes, L.(2012). From keystrokes to annotated process data: Enriching the output
+    of Inputlog with linguistic information. In N. Calzolari et al. (Eds.), Proceedings of the Eight International Conference on 
+    Language Resources and Evaluation (LREC'12), pp. 2224-2229. European Language Resources Association (ELRA): Istanbul, Turkey 
+    [ISBN: 978-2-9517408-7-7]<br />
+<a href="@Url.Content("~/Content/LREC2012.pdf")">View pdf</a>
+</p>
+</div>

@@ -1,0 +1,103 @@
+﻿@model WebApp.Models.TaskIndexViewModel
+
+@{
+    ViewBag.Title = "Project Overview";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+<!--
+    function confirmation() {
+        var answer = confirm("Reset this task? This will only restart files that could not be processed correctly.");
+        if (answer) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+//-->
+</script>
+
+<h2>Project overview</h2>
+<table id="projecttable" class="tablesorter">
+    <thead>
+    <tr>
+        <th>User &nbsp;</th>
+        <th>Unique ID</th>
+        <th>Status</th>
+        <th>Date &amp; Time</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+	@foreach (WebApp.Models.TaskModel task in Model.Tasks)
+    {
+        <tr>
+            <td>@Html.ActionLink(task.UserID, "Details", "User", new { ID = task.UserID }, null)</td>
+            <td>@task.Guid</td>
+            <td>@task.StatusString()</td>
+            <td>@task.Time</td>
+            <td>
+                @Html.ActionLink("Details", "Details", "Task", new {task.ID }, null)
+                @if (!task.Done())
+                {
+                    @Html.Raw("&#124;&nbsp;") // display pipe
+                    @Html.ActionLink("Cancel", "Delete", "Task", new {task.ID, ViewBag.Full }, null)
+                }
+                @if (!task.Done() && task.HasStarted())
+                {
+                    @Html.Raw("&nbsp;&#124;&nbsp;") // display pipe
+                    @Html.ActionLink("Reset", "Reset", "Task", new {task.ID }, new {onclick = "confirmation()" })
+                }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<div id="pager" class="pager">
+	<form>
+		<img src="@Url.Content("~/Content/first.png")" class="first"/>
+		<img src="@Url.Content("~/Content/prev.png")" class="prev"/>
+		<input type="text" class="pagedisplay"/>
+		<img src="@Url.Content("~/Content/next.png")" class="next"/>
+		<img src="@Url.Content("~/Content/last.png")" class="last"/>
+		<select class="pagesize">
+			<option value="50" selected="selected">50 per page</option>
+			<option value="100">100 per page</option>
+			<option value="250">250 per page</option>
+			<option value="500">500 per page</option>
+            <option value="1000">1000 per page</option>
+		</select>
+	</form>
+</div>
+<script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.4.1.min.js")"></script> 
+<script type="text/javascript" src="@Url.Content("~/Scripts/jquery.tablesorter.js")"></script> 
+<script type="text/javascript" src="@Url.Content("~/Scripts/jquery.tablesorter.pager.js")"></script> 
+<script defer="defer">
+    $.tablesorter.addParser({
+        id: "datetime",
+        is: function (s) {
+            return false;
+        },
+        format: function (s, table) {
+            s = s.replace(/\-/g, "/");
+            s = s.replace(/(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/, "$3/$2/$1");
+            return $.tablesorter.formatFloat(new Date(s).getTime());
+        },
+        type: "numeric"
+    });
+    $(document).ready(function () {
+        $("#projecttable")
+		.tablesorter({
+		    widthFixed: true,
+		    sortList: [[3, 1]],
+		    dateFormat: 'dd/mm/yyyy',
+		    headers:
+            {
+                3: { sorter: 'datetime' }
+            }
+         })
+		.tablesorterPager({ container: $("#pager") });
+    }
+	);
+</script>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E631E0E-B309-45F6-A9E3-F1B2B1F8F1A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InputLog</RootNamespace>
+    <AssemblyName>InputLogCore</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Events\Windows\WindowsMouseMovementEventPart.cs" />
+    <Compile Include="Events\Windows\WindowsMouseRightClickEventPart.cs" />
+    <Compile Include="Events\Windows\WindowsFocusEventPart.cs" />
+    <Compile Include="Events\Windows\WindowsKeyboardEventPart.cs" />
+    <Compile Include="Events\Windows\WindowsMouseLeftClickEventPart.cs" />
+    <Compile Include="Events\Windows\WindowsMouseEventPart.cs" />
+    <Compile Include="Events\EventPart.cs" />
+    <Compile Include="Events\FocusChangeEventPart.cs" />
+    <Compile Include="Events\KeyboardEventPart.cs" />
+    <Compile Include="Events\MouseEventPart.cs" />
+    <Compile Include="Events\Word\WordFocusChangeEventPart.cs" />
+    <Compile Include="Events\Word\WordKeyboardEventPart.cs" />
+    <Compile Include="Events\Word\WordMouseEventPart.cs" />
+    <Compile Include="Hooks\FocusEventListener.cs" />
+    <Compile Include="IO\Common\AbstractEventReader.cs" />
+    <Compile Include="IO\Common\AbstractEventWriter.cs" />
+    <Compile Include="IO\Common\WindowsEventPartWriter.cs" />
+    <Compile Include="IO\Common\WordEventPartWriter.cs" />
+    <Compile Include="IO\TXT\TxtWindowsWriter.cs" />
+    <Compile Include="IO\XML\XMLEventPartReader.cs" />
+    <Compile Include="IO\XML\XmlEventReader.cs" />
+    <Compile Include="IO\XML\XMLElements.cs" />
+    <Compile Include="IO\XML\XMLWindowsPartReader.cs" />
+    <Compile Include="IO\XML\XMLWindowsWriter.cs" />
+    <Compile Include="Events\Event.cs" />
+    <Compile Include="IO\Common\EventLogWriter.cs" />
+    <Compile Include="IO\Common\EventLogFactory.cs" />
+    <Compile Include="IO\Common\EventLogReader.cs" />
+    <Compile Include="IO\Common\EventPartReader.cs" />
+    <Compile Include="IO\Common\EventPartWriter.cs" />
+    <Compile Include="IO\Common\EventWriter.cs" />
+    <Compile Include="IO\Common\EventReader.cs" />
+    <Compile Include="IO\Common\LogFormat.cs" />
+    <Compile Include="IO\LEGACY_XML\LegacyXMLEventReader.cs" />
+    <Compile Include="IO\TXT\TxtEventReader.cs" />
+    <Compile Include="IO\TXT\TxtEventWriter.cs" />
+    <Compile Include="IO\XML\XMLEventWriter.cs" />
+    <Compile Include="IO\TXT\TxtWordWriter.cs" />
+    <Compile Include="IO\XML\XMLWordWriter.cs" />
+    <Compile Include="Hooks\KeyboardEventListener.cs" />
+    <Compile Include="Hooks\MouseEventListener.cs" />
+    <Compile Include="Hooks\NativeMethods.cs" />
+    <Compile Include="Hooks\SystemMonitor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Hooks\WindowsEventListener.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Util\Pair.cs" />
+    <Compile Include="Util\SerializableDictionary.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

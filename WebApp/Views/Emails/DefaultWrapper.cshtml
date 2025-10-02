@@ -1,0 +1,22 @@
+﻿To: @ViewBag.To
+From: Inputlog <inputlog@uantwerpen.be/>
+Subject: @ViewBag.Subject
+<html>
+<head><title></title></head>
+<body>
+    <table style="width:775px;background-color:#e5e5e5;">
+        <tr style="height:11px;width:100%;">
+        </tr>
+        <tr style="height:11px;width:100%;">
+            <td style="width:90px;"></td>
+            <td style="background-color:#fff; padding:16px 20px">
+                <img src="cid:@ViewBag.cid" alt="Inputlog header" />
+                @Html.Raw(ViewBag.Content)
+            </td>
+            <td style="width:90px;"></td>
+        </tr>
+        <tr style="height:11px;width:100%;">
+        </tr>
+    </table>
+</body>
+</html>

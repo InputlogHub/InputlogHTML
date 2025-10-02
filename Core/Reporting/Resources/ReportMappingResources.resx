@@ -1,0 +1,1902 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Bigram_5FastestBigrams_Avg_analysis" xml:space="preserve">
+    <value>Bigram Analysis</value>
+  </data>
+  <data name="Bigram_5FastestBigrams_Avg_description" xml:space="preserve">
+    <value>Mean IKI of 5 fastest typed bigrams</value>
+  </data>
+  <data name="Bigram_5FastestBigrams_Avg_method" xml:space="preserve">
+    <value>report_5FastestBigrams_Avg</value>
+  </data>
+  <data name="Bigram_5FastestBigrams_Stdev_analysis" xml:space="preserve">
+    <value>Bigram Analysis</value>
+  </data>
+  <data name="Bigram_5FastestBigrams_Stdev_description" xml:space="preserve">
+    <value>Stdev.  IKI of 5 fastest typed bigrams</value>
+  </data>
+  <data name="Bigram_5FastestBigrams_Stdev_method" xml:space="preserve">
+    <value>report_5FastestBigrams_Stdev</value>
+  </data>
+  <data name="Bigram_5HFBigrams_Avg_analysis" xml:space="preserve">
+    <value>Bigram Analysis</value>
+  </data>
+  <data name="Bigram_5HFBigrams_Avg_description" xml:space="preserve">
+    <value>Mean IKI of  5 Highest Frequent bigrams</value>
+  </data>
+  <data name="Bigram_5HFBigrams_Avg_method" xml:space="preserve">
+    <value>report_5HFBigrams_Avg</value>
+  </data>
+  <data name="Bigram_5HFBigrams_Stdev_analysis" xml:space="preserve">
+    <value>Bigram Analysis</value>
+  </data>
+  <data name="Bigram_5HFBigrams_Stdev_description" xml:space="preserve">
+    <value>Standard deviation IKI of  5 Highest Frequent bigrams</value>
+  </data>
+  <data name="Bigram_5HFBigrams_Stdev_method" xml:space="preserve">
+    <value>report_5HFBigrams_Stdev</value>
+  </data>
+  <data name="Bigram_5LFBigrams_Avg_analysis" xml:space="preserve">
+    <value>Bigram Analysis</value>
+  </data>
+  <data name="Bigram_5LFBigrams_Avg_description" xml:space="preserve">
+    <value>Mean IKI of  5 Lowest Frequent bigrams</value>
+  </data>
+  <data name="Bigram_5LFBigrams_Avg_method" xml:space="preserve">
+    <value>report_5LFBigrams_Avg</value>
+  </data>
+  <data name="Bigram_5LFBigrams_Stdev_analysis" xml:space="preserve">
+    <value>Bigram Analysis</value>
+  </data>
+  <data name="Bigram_5LFBigrams_Stdev_description" xml:space="preserve">
+    <value>Standard deviation IKI of  5 Lowest Frequent bigrams</value>
+  </data>
+  <data name="Bigram_5LFBigrams_Stdev_method" xml:space="preserve">
+    <value>report_5LFBigrams_Stdev</value>
+  </data>
+  <data name="Bigram_5SlowestBigrams_Avg_analysis" xml:space="preserve">
+    <value>Bigram Analysis</value>
+  </data>
+  <data name="Bigram_5SlowestBigrams_Avg_description" xml:space="preserve">
+    <value>Mean IKI of 5 slowest typed bigrams</value>
+  </data>
+  <data name="Bigram_5SlowestBigrams_Avg_method" xml:space="preserve">
+    <value>report_5SlowestBigrams_Avg</value>
+  </data>
+  <data name="Bigram_5SlowestBigrams_Stdev_analysis" xml:space="preserve">
+    <value>Bigram Analysis</value>
+  </data>
+  <data name="Bigram_5SlowestBigrams_Stdev_description" xml:space="preserve">
+    <value>Stdev.  IKI of 5 slowest typed bigrams</value>
+  </data>
+  <data name="Bigram_5SlowestBigrams_Stdev_method" xml:space="preserve">
+    <value>report_5SlowestBigrams_Stdev</value>
+  </data>
+  <data name="Bigram_TransitionTime_CharChar_Avg_analysis" xml:space="preserve">
+    <value>Bigram Analysis</value>
+  </data>
+  <data name="Bigram_TransitionTime_CharChar_Avg_description" xml:space="preserve">
+    <value>Overall Mean IKI between two characters</value>
+  </data>
+  <data name="Bigram_TransitionTime_CharChar_Avg_method" xml:space="preserve">
+    <value>report_TransitionTime_CharChar_Avg</value>
+  </data>
+  <data name="Bigram_TransitionTime_CharChar_Stdev_analysis" xml:space="preserve">
+    <value>Bigram Analysis</value>
+  </data>
+  <data name="Bigram_TransitionTime_CharChar_Stdev_description" xml:space="preserve">
+    <value>Overall Stdev. IKI between two characters</value>
+  </data>
+  <data name="Bigram_TransitionTime_CharChar_Stdev_method" xml:space="preserve">
+    <value>report_TransitionTime_CharChar_Stdev</value>
+  </data>
+  <data name="Fluency_Avg_StrokesPerMinute_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_Avg_StrokesPerMinute_description" xml:space="preserve">
+    <value>Mean keystrokes per minute</value>
+  </data>
+  <data name="Fluency_Avg_StrokesPerMinute_method" xml:space="preserve">
+    <value>report_AvgSPM</value>
+  </data>
+  <data name="Fluency_COV_PerctMaximum_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_COV_PerctMaximum_description" xml:space="preserve">
+    <value>Coefficient of Variation of % Abs.Maximum</value>
+  </data>
+  <data name="Fluency_COV_PerctMaximum_method" xml:space="preserve">
+    <value>report_AbsCoefVar</value>
+  </data>
+  <data name="Fluency_FluencyGraph_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_FluencyGraph_description" xml:space="preserve">
+    <value>Fluency graph (10 intervals)</value>
+  </data>
+  <data name="Fluency_FluencyGraph_method" xml:space="preserve">
+    <value>report_Fluency_Graph</value>
+  </data>
+  <data name="Fluency_Mean_PerctMaximum_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_Mean_PerctMaximum_description" xml:space="preserve">
+    <value>Mean of % Abs. Maximum</value>
+  </data>
+  <data name="Fluency_Mean_PerctMaximum_method" xml:space="preserve">
+    <value>report_AbsMeanInterval</value>
+  </data>
+  <data name="Fluency_Median_PerctMaximum_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_Median_PerctMaximum_description" xml:space="preserve">
+    <value>Median of % Abs. Maximum</value>
+  </data>
+  <data name="Fluency_Median_PerctMaximum_method" xml:space="preserve">
+    <value>report_AbsMedian</value>
+  </data>
+  <data name="Fluency_PersMaximum_PersCoefVar_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_PersMaximum_PersCoefVar_description" xml:space="preserve">
+    <value>Coefficient of Variation of % Pers.Maximum</value>
+  </data>
+  <data name="Fluency_PersMaximum_PersCoefVar_method" xml:space="preserve">
+    <value>report_PersMaximum_PersCoefVar</value>
+  </data>
+  <data name="Fluency_PersMaximum_PersMaxStdev_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_PersMaximum_PersMaxStdev_description" xml:space="preserve">
+    <value>Standard Deviation of % Pers.Maximum</value>
+  </data>
+  <data name="Fluency_PersMaximum_PersMaxStdev_method" xml:space="preserve">
+    <value>report_PersMaximum_PersMaxStdev</value>
+  </data>
+  <data name="Fluency_PersMaximum_PersMeanInterval_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_PersMaximum_PersMeanInterval_description" xml:space="preserve">
+    <value>Mean of % Pers.Maximum</value>
+  </data>
+  <data name="Fluency_PersMaximum_PersMeanInterval_method" xml:space="preserve">
+    <value>report_PersMaximum_PersMeanInterval</value>
+  </data>
+  <data name="Fluency_PersMaximum_PersMedian_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_PersMaximum_PersMedian_description" xml:space="preserve">
+    <value>Median of % Pers.Maximum</value>
+  </data>
+  <data name="Fluency_PersMaximum_PersMedian_method" xml:space="preserve">
+    <value>report_PersMaximum_PersMedian</value>
+  </data>
+  <data name="Fluency_Stdev_PerctMaximum_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_Stdev_PerctMaximum_description" xml:space="preserve">
+    <value>Standard Deviation of % Abs. Maximum</value>
+  </data>
+  <data name="Fluency_Stdev_PerctMaximum_method" xml:space="preserve">
+    <value>report_AbsMaxStdev</value>
+  </data>
+  <data name="Fluency_Stdev_StrokesPerMinute_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_Stdev_StrokesPerMinute_description" xml:space="preserve">
+    <value>Standard deviation keystrokes per minute</value>
+  </data>
+  <data name="Fluency_Stdev_StrokesPerMinute_method" xml:space="preserve">
+    <value>report_StdevSPM</value>
+  </data>
+  <data name="Fluency_TaskMaximum_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_TaskMaximum_description" xml:space="preserve">
+    <value>Set value for task maximum</value>
+  </data>
+  <data name="Fluency_TaskMaximum_method" xml:space="preserve">
+    <value>report_TaskMaximum</value>
+  </data>
+  <data name="Fluency_TaskMaximum_SPM_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_TaskMaximum_SPM_description" xml:space="preserve">
+    <value>Most fluent character production within task (20 s calculated moving mean)</value>
+  </data>
+  <data name="Fluency_TaskMaximum_SPM_method" xml:space="preserve">
+    <value>report_TaskMaximum_SPM</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesCoefVar_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesCoefVar_description" xml:space="preserve">
+    <value>Coefficient of Variation of Strokes/Interval</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesCoefVar_method" xml:space="preserve">
+    <value>report_TaskMaximum_StrokesCoefVar</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMaxStdev_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMaxStdev_description" xml:space="preserve">
+    <value>Standard Deviation of Strokes/Interval</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMaxStdev_method" xml:space="preserve">
+    <value>report_TaskMaximum_StrokesMaxStdev</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMeanInterval_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMeanInterval_description" xml:space="preserve">
+    <value>Mean of Strokes/Interval</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMeanInterval_method" xml:space="preserve">
+    <value>report_TaskMaximum_StrokesMeanInterval</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMedian_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMedian_description" xml:space="preserve">
+    <value>Median of Strokes/Interval</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMedian_method" xml:space="preserve">
+    <value>report_TaskMaximum_StrokesMedian</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinCoefVar_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinCoefVar_description" xml:space="preserve">
+    <value>Coefficient of Variation of Strokes/Min.</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinCoefVar_method" xml:space="preserve">
+    <value>report_TaskMaximum_StrokesMinCoefVar</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinInterval_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinInterval_description" xml:space="preserve">
+    <value>Mean of Strokes/Min.</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinInterval_method" xml:space="preserve">
+    <value>report_TaskMaximum_StrokesMinInterval</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinMaxStdev_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinMaxStdev_description" xml:space="preserve">
+    <value>Standard Deviation of Strokes/Min.</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinMaxStdev_method" xml:space="preserve">
+    <value>report_TaskMaximum_StrokesMinMaxStdev</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinMedian_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinMedian_description" xml:space="preserve">
+    <value>Median of Strokes/Min.</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinMedian_method" xml:space="preserve">
+    <value>report_TaskMaximum_StrokesMinMedian</value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskCoefVar_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskCoefVar_description" xml:space="preserve">
+    <value>Coefficient of Variation of % Task Maximum</value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskCoefVar_method" xml:space="preserve">
+    <value>report_TaskMaximum_TaskCoefVar</value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskMaxStdev_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskMaxStdev_description" xml:space="preserve">
+    <value>Standard Deviation of % Task Maximum</value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskMaxStdev_method" xml:space="preserve">
+    <value>report_TaskMaximum_TaskMaxStdev</value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskMeanInterval_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskMeanInterval_description" xml:space="preserve">
+    <value>Mean of % Task Maximum</value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskMeanInterval_method" xml:space="preserve">
+    <value>report_TaskMaximum_TaskMeanInterval</value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskMedian_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskMedian_description" xml:space="preserve">
+    <value>Median of % Task Maximum</value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskMedian_method" xml:space="preserve">
+    <value>report_TaskMaximum_TaskMedian</value>
+  </data>
+  <data name="Pause_ActiveTime_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_ActiveTime_1000_description" xml:space="preserve">
+    <value>Total active writing time (min). Uses treshold of 1000 ms.</value>
+  </data>
+  <data name="Pause_ActiveTime_1000_method" xml:space="preserve">
+    <value>report_ActiveTime_1000</value>
+  </data>
+  <data name="Pause_ActiveTime_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_ActiveTime_2000_description" xml:space="preserve">
+    <value>Total active writing time (min). Uses treshold of 2000 ms.</value>
+  </data>
+  <data name="Pause_ActiveTime_2000_method" xml:space="preserve">
+    <value>report_ActiveTime_2000</value>
+  </data>
+  <data name="Pause_ActiveTime_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_ActiveTime_30_description" xml:space="preserve">
+    <value>Total active writing time (min). Uses treshold of 30 ms.</value>
+  </data>
+  <data name="Pause_ActiveTime_30_method" xml:space="preserve">
+    <value>report_ActiveTime_30</value>
+  </data>
+  <data name="Pause_ActiveTime_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_ActiveTime_DEFAULT_description" xml:space="preserve">
+    <value>Total active writing time (min). Uses default treshold specified in user interface.</value>
+  </data>
+  <data name="Pause_ActiveTime_DEFAULT_method" xml:space="preserve">
+    <value>report_ActiveTime_DEFAULT</value>
+  </data>
+  <data name="Pause_COV_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_COV_1000_description" xml:space="preserve">
+    <value>Coefficient of variation of Mean pause length. Uses treshold of 1000 ms.</value>
+  </data>
+  <data name="Pause_COV_1000_method" xml:space="preserve">
+    <value>report_PauseCOV_1000</value>
+  </data>
+  <data name="Pause_COV_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_COV_2000_description" xml:space="preserve">
+    <value>Coefficient of variation of Mean pause length. Uses treshold of 2000 ms.</value>
+  </data>
+  <data name="Pause_COV_2000_method" xml:space="preserve">
+    <value>report_PauseCOV_2000</value>
+  </data>
+  <data name="Pause_COV_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_COV_30_description" xml:space="preserve">
+    <value>Coefficient of variation of Mean pause length. Uses treshold of 30 ms.</value>
+  </data>
+  <data name="Pause_COV_30_method" xml:space="preserve">
+    <value>report_PauseCOV_30</value>
+  </data>
+  <data name="Pause_COV_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_COV_DEFAULT_description" xml:space="preserve">
+    <value>Coefficient of variation of Mean pause length. Uses default treshold specified in user interface.</value>
+  </data>
+  <data name="Pause_COV_DEFAULT_method" xml:space="preserve">
+    <value>report_PauseCOV_DEFAULT</value>
+  </data>
+  <data name="Pause_FirstKey_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_FirstKey_1000_description" xml:space="preserve">
+    <value>Length of initial pause time (start till first key). Uses treshold of 1000 ms.</value>
+  </data>
+  <data name="Pause_FirstKey_1000_method" xml:space="preserve">
+    <value>report_PauseFirstKey_1000</value>
+  </data>
+  <data name="Pause_FirstKey_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_FirstKey_2000_description" xml:space="preserve">
+    <value>Length of initial pause time (start till first key). Uses treshold of 2000 ms.</value>
+  </data>
+  <data name="Pause_FirstKey_2000_method" xml:space="preserve">
+    <value>report_PauseFirstKey_2000</value>
+  </data>
+  <data name="Pause_FirstKey_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_FirstKey_30_description" xml:space="preserve">
+    <value>Length of initial pause time (start till first key). Uses treshold of 30 ms.</value>
+  </data>
+  <data name="Pause_FirstKey_30_method" xml:space="preserve">
+    <value>report_PauseFirstKey_30</value>
+  </data>
+  <data name="Pause_FirstKey_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_FirstKey_DEFAULT_description" xml:space="preserve">
+    <value>Length of initial pause time (start till first key). Uses default treshold specified in user interface.</value>
+  </data>
+  <data name="Pause_FirstKey_DEFAULT_method" xml:space="preserve">
+    <value>report_PauseFirstKey_DEFAULT</value>
+  </data>
+  <data name="Pause_GeoMean_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_GeoMean_1000_description" xml:space="preserve">
+    <value>Geometric Mean pause length. Uses treshold of 1000 ms.</value>
+  </data>
+  <data name="Pause_GeoMean_1000_method" xml:space="preserve">
+    <value>report_PauseGeoMean_1000</value>
+  </data>
+  <data name="Pause_GeoMean_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_GeoMean_2000_description" xml:space="preserve">
+    <value>Geometric Mean pause length. Uses treshold of 2000 ms.</value>
+  </data>
+  <data name="Pause_GeoMean_2000_method" xml:space="preserve">
+    <value>report_PauseGeoMean_2000</value>
+  </data>
+  <data name="Pause_GeoMean_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_GeoMean_30_description" xml:space="preserve">
+    <value>Geometric Mean pause length. Uses treshold of 30 ms.</value>
+  </data>
+  <data name="Pause_GeoMean_30_method" xml:space="preserve">
+    <value>report_PauseGeoMean_30</value>
+  </data>
+  <data name="Pause_GeoMean_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_GeoMean_DEFAULT_description" xml:space="preserve">
+    <value>Geometric Mean pause length. Uses default treshold specified in user interface.</value>
+  </data>
+  <data name="Pause_GeoMean_DEFAULT_method" xml:space="preserve">
+    <value>report_PauseGeoMean_DEFAULT</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_1000_description" xml:space="preserve">
+    <value>Boxplot with (geometric?) Mean pause length at character, word and sentence level. Uses treshold of 1000 ms.</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_1000_method" xml:space="preserve">
+    <value>report_PauseLevels_BoxPlot_1000</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_2000_description" xml:space="preserve">
+    <value>Boxplot with (geometric?) Mean pause length at character, word and sentence level. Uses treshold of 2000 ms.</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_2000_method" xml:space="preserve">
+    <value>report_PauseLevels_BoxPlot_2000</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_30_description" xml:space="preserve">
+    <value>Boxplot with (geometric?) Mean pause length at character, word and sentence level. Uses treshold of 30 ms.</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_30_method" xml:space="preserve">
+    <value>report_PauseLevels_BoxPlot_30</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_DEFAULT_description" xml:space="preserve">
+    <value>Boxplot with (geometric?) Mean pause length at character, word and sentence level. Uses default treshold specified in user interface.</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_DEFAULT_method" xml:space="preserve">
+    <value>report_PauseLevels_BoxPlot_DEFAULT</value>
+  </data>
+  <data name="Pause_PauseTime_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_1000_description" xml:space="preserve">
+    <value>Total pause time (min). Uses treshold of 1000 ms.</value>
+  </data>
+  <data name="Pause_PauseTime_1000_method" xml:space="preserve">
+    <value>report_PauseTime_1000</value>
+  </data>
+  <data name="Pause_PauseTime_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_2000_description" xml:space="preserve">
+    <value>Total pause time (min). Uses treshold of 2000 ms.</value>
+  </data>
+  <data name="Pause_PauseTime_2000_method" xml:space="preserve">
+    <value>report_PauseTime_2000</value>
+  </data>
+  <data name="Pause_PauseTime_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_30_description" xml:space="preserve">
+    <value>Total pause time (min). Uses treshold of 30 ms.</value>
+  </data>
+  <data name="Pause_PauseTime_30_method" xml:space="preserve">
+    <value>report_PauseTime_30</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_1000_description" xml:space="preserve">
+    <value>Mean pause time between words. Uses treshold of 1000 ms.</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_1000_method" xml:space="preserve">
+    <value>report_PauseTime_BetweenWords_Avg_1000</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_2000_description" xml:space="preserve">
+    <value>Mean pause time between words. Uses treshold of 2000 ms.</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_2000_method" xml:space="preserve">
+    <value>report_PauseTime_BetweenWords_Avg_2000</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_30_description" xml:space="preserve">
+    <value>Mean pause time between words. Uses treshold of 30 ms.</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_30_method" xml:space="preserve">
+    <value>report_PauseTime_BetweenWords_Avg_30</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_DEFAULT_description" xml:space="preserve">
+    <value>Mean pause time between words. Uses default treshold specified in user interface.</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_DEFAULT_method" xml:space="preserve">
+    <value>report_PauseTime_BetweenWords_Avg_DEFAULT</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_1000_description" xml:space="preserve">
+    <value>Between Words Coefficient of Variation [1000]</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_1000_method" xml:space="preserve">
+    <value>report_PauseCOV_BetweenWords_1000</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_2000_description" xml:space="preserve">
+    <value>Between Words Coefficient of Variation [200]</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_2000_method" xml:space="preserve">
+    <value>report_PauseCOV_BetweenWords_2000</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_30_description" xml:space="preserve">
+    <value>Between Words Coefficient of Variation [30]</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_30_method" xml:space="preserve">
+    <value>report_PauseCOV_BetweenWords_30</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_DEFAULT_description" xml:space="preserve">
+    <value>Between Words Coefficient of Variation [DEFAULT]</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_DEFAULT_method" xml:space="preserve">
+    <value>report_PauseCOV_BetweenWords_DEFAULT</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_1000_description" xml:space="preserve">
+    <value>Between Words Geometric Mean of Pauses [1000]</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_1000_method" xml:space="preserve">
+    <value>report_PauseGeoMean_BetweenWords_1000</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_2000_description" xml:space="preserve">
+    <value>Between Words Geometric Mean of Pauses [200]</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_2000_method" xml:space="preserve">
+    <value>report_PauseGeoMean_BetweenWords_2000</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_30_description" xml:space="preserve">
+    <value>Between Words Geometric Mean of Pauses [30]</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_30_method" xml:space="preserve">
+    <value>report_PauseGeoMean_BetweenWords_30</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_DEFAULT_description" xml:space="preserve">
+    <value>Between Words Geometric Mean of Pauses [DEFAULT]</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_DEFAULT_method" xml:space="preserve">
+    <value>report_PauseGeoMean_BetweenWords_DEFAULT</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_1000_description" xml:space="preserve">
+    <value>Standard deviation pause time between words. Uses treshold of 1000 ms.</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_1000_method" xml:space="preserve">
+    <value>report_PauseTime_BetweenWords_Stdev_1000</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_2000_description" xml:space="preserve">
+    <value>Standard deviation pause time between words. Uses treshold of 2000 ms.</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_2000_method" xml:space="preserve">
+    <value>report_PauseTime_BetweenWords_Stdev_2000</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_30_description" xml:space="preserve">
+    <value>Standard deviation pause time between words. Uses treshold of 30 ms.</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_30_method" xml:space="preserve">
+    <value>report_PauseTime_BetweenWords_Stdev_30</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_DEFAULT_description" xml:space="preserve">
+    <value>Standard deviation pause time between words. Uses default treshold specified in user interface.</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_DEFAULT_method" xml:space="preserve">
+    <value>report_PauseTime_BetweenWords_Stdev_DEFAULT</value>
+  </data>
+  <data name="Pause_PauseTime_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseTime_DEFAULT_description" xml:space="preserve">
+    <value>Total pause time (min). Uses default treshold specified in user interface.</value>
+  </data>
+  <data name="Pause_PauseTime_DEFAULT_method" xml:space="preserve">
+    <value>report_PauseTime_DEFAULT</value>
+  </data>
+  <data name="Pause_PauseToActiveProp_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseToActiveProp_1000_description" xml:space="preserve">
+    <value>Proportion of active writing time versus pause time. Uses treshold of 1000 ms.</value>
+  </data>
+  <data name="Pause_PauseToActiveProp_1000_method" xml:space="preserve">
+    <value>report_PauseToActiveTime_Proportionally_1000</value>
+  </data>
+  <data name="Pause_PauseToActiveProp_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseToActiveProp_2000_description" xml:space="preserve">
+    <value>Proportion of active writing time versus pause time. Uses treshold of 2000 ms.</value>
+  </data>
+  <data name="Pause_PauseToActiveProp_2000_method" xml:space="preserve">
+    <value>report_PauseToActiveTime_Proportionally_2000</value>
+  </data>
+  <data name="Pause_PauseToActiveProp_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseToActiveProp_30_description" xml:space="preserve">
+    <value>Proportion of active writing time versus pause time. Uses treshold of 30 ms.</value>
+  </data>
+  <data name="Pause_PauseToActiveProp_30_method" xml:space="preserve">
+    <value>report_PauseToActiveTime_Proportionally_30</value>
+  </data>
+  <data name="Pause_PauseToActiveProp_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PauseToActiveProp_DEFAULT_description" xml:space="preserve">
+    <value>Proportion of active writing time versus pause time. Uses default treshold specified in user interface.</value>
+  </data>
+  <data name="Pause_PauseToActiveProp_DEFAULT_method" xml:space="preserve">
+    <value>report_PauseToActiveTime_Proportionally_DEFAULT</value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_1000_description" xml:space="preserve">
+    <value>Mean P-burst length (characters)</value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_1000_method" xml:space="preserve">
+    <value>report_Pburst_AvgProd_1000</value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_2000_description" xml:space="preserve">
+    <value>Mean P-burst length (characters)</value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_2000_method" xml:space="preserve">
+    <value>report_Pburst_AvgProd_2000</value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_30_description" xml:space="preserve">
+    <value>Mean P-burst length (characters)</value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_30_method" xml:space="preserve">
+    <value>report_Pburst_AvgProd_30</value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_DEFAULT_description" xml:space="preserve">
+    <value>Mean P-burst length (characters)</value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_DEFAULT_method" xml:space="preserve">
+    <value>report_Pburst_AvgProd_DEFAULT</value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_1000_description" xml:space="preserve">
+    <value>Mean P-burst duration (seconds)</value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_1000_method" xml:space="preserve">
+    <value>report_Pburst_AvgTime_1000</value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_2000_description" xml:space="preserve">
+    <value>Mean P-burst duration (seconds)</value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_2000_method" xml:space="preserve">
+    <value>report_Pburst_AvgTime_2000</value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_30_description" xml:space="preserve">
+    <value>Mean P-burst duration (seconds)</value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_30_method" xml:space="preserve">
+    <value>report_Pburst_AvgTime_30</value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_DEFAULT_description" xml:space="preserve">
+    <value>Mean P-burst duration (seconds)</value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_DEFAULT_method" xml:space="preserve">
+    <value>report_Pburst_AvgTime_DEFAULT</value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_1000_description" xml:space="preserve">
+    <value>Median P-burst length (characters)</value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_1000_method" xml:space="preserve">
+    <value>report_Pburst_MedianProd_1000</value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_2000_description" xml:space="preserve">
+    <value>Median P-burst length (characters)</value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_2000_method" xml:space="preserve">
+    <value>report_Pburst_MedianProd_2000</value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_30_description" xml:space="preserve">
+    <value>Median P-burst length (characters)</value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_30_method" xml:space="preserve">
+    <value>report_Pburst_MedianProd_30</value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_DEFAULT_description" xml:space="preserve">
+    <value>Median P-burst length (characters)</value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_DEFAULT_method" xml:space="preserve">
+    <value>report_Pburst_MedianProd_DEFAULT</value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_1000_description" xml:space="preserve">
+    <value>Median P-burst duration (seconds)</value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_1000_method" xml:space="preserve">
+    <value>report_Pburst_MedianTime_1000</value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_2000_description" xml:space="preserve">
+    <value>Median P-burst duration (seconds)</value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_2000_method" xml:space="preserve">
+    <value>report_Pburst_MedianTime_2000</value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_30_description" xml:space="preserve">
+    <value>Median P-burst duration (seconds)</value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_30_method" xml:space="preserve">
+    <value>report_Pburst_MedianTime_30</value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_DEFAULT_description" xml:space="preserve">
+    <value>Median P-burst duration (seconds)</value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_DEFAULT_method" xml:space="preserve">
+    <value>report_Pburst_MedianTime_DEFAULT</value>
+  </data>
+  <data name="Pause_Pburst_Nr_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_Nr_1000_description" xml:space="preserve">
+    <value>Number of P-bursts</value>
+  </data>
+  <data name="Pause_Pburst_Nr_1000_method" xml:space="preserve">
+    <value>report_Pburst_Nr_1000</value>
+  </data>
+  <data name="Pause_Pburst_Nr_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_Nr_2000_description" xml:space="preserve">
+    <value>Number of P-bursts</value>
+  </data>
+  <data name="Pause_Pburst_Nr_2000_method" xml:space="preserve">
+    <value>report_Pburst_Nr_2000</value>
+  </data>
+  <data name="Pause_Pburst_Nr_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_Nr_30_description" xml:space="preserve">
+    <value>Number of P-bursts</value>
+  </data>
+  <data name="Pause_Pburst_Nr_30_method" xml:space="preserve">
+    <value>report_Pburst_Nr_30</value>
+  </data>
+  <data name="Pause_Pburst_Nr_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_Nr_DEFAULT_description" xml:space="preserve">
+    <value>Number of P-bursts</value>
+  </data>
+  <data name="Pause_Pburst_Nr_DEFAULT_method" xml:space="preserve">
+    <value>report_Pburst_Nr_DEFAULT</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_1000_description" xml:space="preserve">
+    <value>Number of P-Bursts per min.</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_1000_method" xml:space="preserve">
+    <value>report_Pburst_PerMinute_1000</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_2000_description" xml:space="preserve">
+    <value>Number of P-Bursts per min.</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_2000_method" xml:space="preserve">
+    <value>report_Pburst_PerMinute_2000</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_30_description" xml:space="preserve">
+    <value>Number of P-Bursts per min.</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_30_method" xml:space="preserve">
+    <value>report_Pburst_PerMinute_30</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_DEFAULT_description" xml:space="preserve">
+    <value>Number of P-Bursts per min.</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_DEFAULT_method" xml:space="preserve">
+    <value>report_Pburst_PerMinute_DEFAULT</value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_1000_description" xml:space="preserve">
+    <value>Standard deviation P-burst length (characters)</value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_1000_method" xml:space="preserve">
+    <value>report_Pburst_StdevProd_1000</value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_2000_description" xml:space="preserve">
+    <value>Standard deviation P-burst length (characters)</value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_2000_method" xml:space="preserve">
+    <value>report_Pburst_StdevProd_2000</value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_30_description" xml:space="preserve">
+    <value>Standard deviation P-burst length (characters)</value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_30_method" xml:space="preserve">
+    <value>report_Pburst_StdevProd_30</value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_DEFAULT_description" xml:space="preserve">
+    <value>Standard deviation P-burst length (characters)</value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_DEFAULT_method" xml:space="preserve">
+    <value>report_Pburst_StdevProd_DEFAULT</value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_1000_description" xml:space="preserve">
+    <value>Standard deviation P-burst duration (seconds)</value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_1000_method" xml:space="preserve">
+    <value>report_Pburst_StdevTime_1000</value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_2000_description" xml:space="preserve">
+    <value>Standard deviation P-burst duration (seconds)</value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_2000_method" xml:space="preserve">
+    <value>report_Pburst_StdevTime_2000</value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_30_description" xml:space="preserve">
+    <value>Standard deviation P-burst duration (seconds)</value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_30_method" xml:space="preserve">
+    <value>report_Pburst_StdevTime_30</value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_DEFAULT_description" xml:space="preserve">
+    <value>Standard deviation P-burst duration (seconds)</value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_DEFAULT_method" xml:space="preserve">
+    <value>report_Pburst_StdevTime_DEFAULT</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_1000_description" xml:space="preserve">
+    <value>P-Burst Threshold</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_1000_method" xml:space="preserve">
+    <value>report_Pburst_Threshold_1000</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_2000_description" xml:space="preserve">
+    <value>P-Burst Threshold</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_2000_method" xml:space="preserve">
+    <value>report_Pburst_Threshold_2000</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_30_description" xml:space="preserve">
+    <value>P-Burst Threshold</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_30_method" xml:space="preserve">
+    <value>report_Pburst_Threshold_30</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_DEFAULT_description" xml:space="preserve">
+    <value>P-Burst Threshold</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_DEFAULT_method" xml:space="preserve">
+    <value>report_Pburst_Threshold_DEFAULT</value>
+  </data>
+  <data name="Pause_TotalPauses_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_TotalPauses_1000_description" xml:space="preserve">
+    <value>Total number of pauses</value>
+  </data>
+  <data name="Pause_TotalPauses_1000_method" xml:space="preserve">
+    <value>report_TotalPauses_1000</value>
+  </data>
+  <data name="Pause_TotalPauses_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_TotalPauses_2000_description" xml:space="preserve">
+    <value>Total number of pauses</value>
+  </data>
+  <data name="Pause_TotalPauses_2000_method" xml:space="preserve">
+    <value>report_TotalPauses_2000</value>
+  </data>
+  <data name="Pause_TotalPauses_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_TotalPauses_30_description" xml:space="preserve">
+    <value>Total number of pauses</value>
+  </data>
+  <data name="Pause_TotalPauses_30_method" xml:space="preserve">
+    <value>report_TotalPauses_30</value>
+  </data>
+  <data name="Pause_TotalPauses_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_TotalPauses_DEFAULT_description" xml:space="preserve">
+    <value>Total number of pauses</value>
+  </data>
+  <data name="Pause_TotalPauses_DEFAULT_method" xml:space="preserve">
+    <value>report_TotalPauses_DEFAULT</value>
+  </data>
+  <data name="Process_ProcessGraph_analysis" xml:space="preserve">
+    <value>Process Graph Analysis</value>
+  </data>
+  <data name="Process_ProcessGraph_description" xml:space="preserve">
+    <value>Gaphic representation of writing process</value>
+  </data>
+  <data name="Process_ProcessGraph_method" xml:space="preserve">
+    <value>report_Process_Graph</value>
+  </data>
+  <data name="Revision_AverageDeletionLength_analysis" xml:space="preserve">
+    <value>Revision Analysis</value>
+  </data>
+  <data name="Revision_AverageDeletionLength_description" xml:space="preserve">
+    <value>Mean deletion length (characters)</value>
+  </data>
+  <data name="Revision_AverageDeletionLength_method" xml:space="preserve">
+    <value>report_AverageDeletionLength</value>
+  </data>
+  <data name="Revision_AverageInsertionLength_analysis" xml:space="preserve">
+    <value>Revision Analysis</value>
+  </data>
+  <data name="Revision_AverageInsertionLength_description" xml:space="preserve">
+    <value>Mean insertion length (characters)</value>
+  </data>
+  <data name="Revision_AverageInsertionLength_method" xml:space="preserve">
+    <value>report_AverageInsertionLength</value>
+  </data>
+  <data name="Revision_CummulativeDeletionLength_analysis" xml:space="preserve">
+    <value>Revision Analysis</value>
+  </data>
+  <data name="Revision_CummulativeDeletionLength_description" xml:space="preserve">
+    <value>Total number of characters deleted</value>
+  </data>
+  <data name="Revision_CummulativeDeletionLength_method" xml:space="preserve">
+    <value>report_CummulativeDeletionLength</value>
+  </data>
+  <data name="Revision_CummulativeInsertionLength_analysis" xml:space="preserve">
+    <value>Revision Analysis</value>
+  </data>
+  <data name="Revision_CummulativeInsertionLength_description" xml:space="preserve">
+    <value>Total number of characters inserted</value>
+  </data>
+  <data name="Revision_CummulativeInsertionLength_method" xml:space="preserve">
+    <value>report_CummulativeInsertionLength</value>
+  </data>
+  <data name="Revision_NrOfDeletions_analysis" xml:space="preserve">
+    <value>Revision Analysis</value>
+  </data>
+  <data name="Revision_NrOfDeletions_description" xml:space="preserve">
+    <value>Number of deletions</value>
+  </data>
+  <data name="Revision_NrOfDeletions_method" xml:space="preserve">
+    <value>report_NrDeletions</value>
+  </data>
+  <data name="Revision_NrOfInsertions_analysis" xml:space="preserve">
+    <value>Revision Analysis</value>
+  </data>
+  <data name="Revision_NrOfInsertions_description" xml:space="preserve">
+    <value>Number of insertions</value>
+  </data>
+  <data name="Revision_NrOfInsertions_method" xml:space="preserve">
+    <value>report_NrInsertions</value>
+  </data>
+  <data name="Revision_Rburst_AvgProduction_analysis" xml:space="preserve">
+    <value>Revision Analysis</value>
+  </data>
+  <data name="Revision_Rburst_AvgProduction_description" xml:space="preserve">
+    <value>Mean R-burst length (characters)</value>
+  </data>
+  <data name="Revision_Rburst_AvgProduction_method" xml:space="preserve">
+    <value>report_Rburst_AvgProduction</value>
+  </data>
+  <data name="Revision_Rburst_AvgTime_analysis" xml:space="preserve">
+    <value>Revision Analysis</value>
+  </data>
+  <data name="Revision_Rburst_AvgTime_description" xml:space="preserve">
+    <value>Mean R-burst duration (seconds)</value>
+  </data>
+  <data name="Revision_Rburst_AvgTime_method" xml:space="preserve">
+    <value>report_Rburst_AvgTime</value>
+  </data>
+  <data name="Revision_Rburst_MedianProduction_analysis" xml:space="preserve">
+    <value>Revision Analysis</value>
+  </data>
+  <data name="Revision_Rburst_MedianProduction_description" xml:space="preserve">
+    <value>Median R-burst length (characters)</value>
+  </data>
+  <data name="Revision_Rburst_MedianProduction_method" xml:space="preserve">
+    <value>report_Rburst_MedianProduction</value>
+  </data>
+  <data name="Revision_Rburst_MedianTime_analysis" xml:space="preserve">
+    <value>Revision Analysis</value>
+  </data>
+  <data name="Revision_Rburst_MedianTime_description" xml:space="preserve">
+    <value>Median R-burst duration (seconds)</value>
+  </data>
+  <data name="Revision_Rburst_MedianTime_method" xml:space="preserve">
+    <value>report_Rburst_MedianTime</value>
+  </data>
+  <data name="Revision_Rburst_Nr_analysis" xml:space="preserve">
+    <value>Revision Analysis</value>
+  </data>
+  <data name="Revision_Rburst_Nr_description" xml:space="preserve">
+    <value>Total number of R-bursts</value>
+  </data>
+  <data name="Revision_Rburst_Nr_method" xml:space="preserve">
+    <value>report_RburstNr</value>
+  </data>
+  <data name="Revision_Rburst_StdevProduction_analysis" xml:space="preserve">
+    <value>Revision Analysis</value>
+  </data>
+  <data name="Revision_Rburst_StdevProduction_description" xml:space="preserve">
+    <value>Standard deviation R-burst length (characters)</value>
+  </data>
+  <data name="Revision_Rburst_StdevProduction_method" xml:space="preserve">
+    <value>report_Rburst_StdevProduction</value>
+  </data>
+  <data name="Revision_Rburst_StdevTime_analysis" xml:space="preserve">
+    <value>Revision Analysis</value>
+  </data>
+  <data name="Revision_Rburst_StdevTime_description" xml:space="preserve">
+    <value>Standard deviation R-burst duration (seconds)</value>
+  </data>
+  <data name="Revision_Rburst_StdevTime_method" xml:space="preserve">
+    <value>report_Rburst_StdevTime</value>
+  </data>
+  <data name="Revision_RevisionsPer100Words_analysis" xml:space="preserve">
+    <value>Revision Analysis</value>
+  </data>
+  <data name="Revision_RevisionsPer100Words_description" xml:space="preserve">
+    <value>Mean number of revisions per 100 words</value>
+  </data>
+  <data name="Revision_RevisionsPer100Words_method" xml:space="preserve">
+    <value>report_RevisionsPer100Words</value>
+  </data>
+  <data name="Revision_RevisionsPerMinute_analysis" xml:space="preserve">
+    <value>Revision Analysis</value>
+  </data>
+  <data name="Revision_RevisionsPerMinute_description" xml:space="preserve">
+    <value>Mean number of revisions per minute</value>
+  </data>
+  <data name="Revision_RevisionsPerMinute_method" xml:space="preserve">
+    <value>report_RevisionsPerMinute</value>
+  </data>
+  <data name="SNotation_Linear_Text_analysis" xml:space="preserve">
+    <value>S-Notation</value>
+  </data>
+  <data name="SNotation_Linear_Text_description" xml:space="preserve">
+    <value>Linear tekst</value>
+  </data>
+  <data name="SNotation_Linear_Text_method" xml:space="preserve">
+    <value>report_SNotation_Linear_Text</value>
+  </data>
+  <data name="Focus_Nr_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Focus_Nr_description" xml:space="preserve">
+    <value>Number of sources consulted</value>
+  </data>
+  <data name="Focus_Nr_method" xml:space="preserve">
+    <value>report_NumberOfSources</value>
+  </data>
+  <data name="Focus_RelativeTime_MainDoc_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Focus_RelativeTime_MainDoc_description" xml:space="preserve">
+    <value>The relatieve time spent in the main document.</value>
+  </data>
+  <data name="Focus_RelativeTime_MainDoc_method" xml:space="preserve">
+    <value>report_RelativeTime_MainDoc</value>
+  </data>
+  <data name="Focus_TransitionLength_Avg_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Focus_TransitionLength_Avg_description" xml:space="preserve">
+    <value>Mean source transition length</value>
+  </data>
+  <data name="Focus_TransitionLength_Avg_method" xml:space="preserve">
+    <value>report_TransitionLength_Avg</value>
+  </data>
+  <data name="Focus_TransitionsPerMinute_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Focus_TransitionsPerMinute_description" xml:space="preserve">
+    <value>Mean number of source transitions per minute</value>
+  </data>
+  <data name="Focus_TransitionsPerMinute_method" xml:space="preserve">
+    <value>report_TransitionsPerMinute</value>
+  </data>
+  <data name="Summary_Process_AverageWordLength_analysis" xml:space="preserve">
+    <value>Summary Analysis</value>
+  </data>
+  <data name="Summary_Process_AverageWordLength_description" xml:space="preserve">
+    <value>Mean word length of all  words produced</value>
+  </data>
+  <data name="Summary_Process_AverageWordLength_method" xml:space="preserve">
+    <value>report_Process_AvgWordLength</value>
+  </data>
+  <data name="Summary_Process_AverageWordLength_STDEV_analysis" xml:space="preserve">
+    <value>Summary Analysis</value>
+  </data>
+  <data name="Summary_Process_AverageWordLength_STDEV_description" xml:space="preserve">
+    <value>Standard deviation word length of all  words produced</value>
+  </data>
+  <data name="Summary_Process_AverageWordLength_STDEV_method" xml:space="preserve">
+    <value>report_Process_AvgWordLength_STDEV</value>
+  </data>
+  <data name="Summary_Process_CharactersInclSpaces_analysis" xml:space="preserve">
+    <value>Summary Analysis</value>
+  </data>
+  <data name="Summary_Process_CharactersInclSpaces_description" xml:space="preserve">
+    <value>Total number of characters produced</value>
+  </data>
+  <data name="Summary_Process_CharactersInclSpaces_method" xml:space="preserve">
+    <value>report_Process_CharInclSpaces</value>
+  </data>
+  <data name="Summary_Process_CPM_analysis" xml:space="preserve">
+    <value>Summary Analysis</value>
+  </data>
+  <data name="Summary_Process_CPM_description" xml:space="preserve">
+    <value>Mean number of characters per minute</value>
+  </data>
+  <data name="Summary_Process_CPM_method" xml:space="preserve">
+    <value>report_Process_CharactersPerMinute</value>
+  </data>
+  <data name="Summary_Process_NrOfWords_analysis" xml:space="preserve">
+    <value>Summary Analysis</value>
+  </data>
+  <data name="Summary_Process_NrOfWords_description" xml:space="preserve">
+    <value>Total number of words produced</value>
+  </data>
+  <data name="Summary_Process_NrOfWords_method" xml:space="preserve">
+    <value>report_Process_NrOfWords</value>
+  </data>
+  <data name="Summary_Process_TotalTime_analysis" xml:space="preserve">
+    <value>Summary Analysis</value>
+  </data>
+  <data name="Summary_Process_TotalTime_description" xml:space="preserve">
+    <value>Total process time (min)</value>
+  </data>
+  <data name="Summary_Process_TotalTime_method" xml:space="preserve">
+    <value>report_Process_TotalTime</value>
+  </data>
+  <data name="Summary_Process_WPM_analysis" xml:space="preserve">
+    <value>Summary Analysis</value>
+  </data>
+  <data name="Summary_Process_WPM_description" xml:space="preserve">
+    <value>Mean number of words per minute (process)</value>
+  </data>
+  <data name="Summary_Process_WPM_method" xml:space="preserve">
+    <value>report_Process_WPM</value>
+  </data>
+  <data name="Summary_Product_CharactersInclSpaces_analysis" xml:space="preserve">
+    <value>Summary Analysis</value>
+  </data>
+  <data name="Summary_Product_CharactersInclSpaces_description" xml:space="preserve">
+    <value>Total number of characters in final text (incl. spaces)</value>
+  </data>
+  <data name="Summary_Product_CharactersInclSpaces_method" xml:space="preserve">
+    <value>report_Product_CharInclSpaces</value>
+  </data>
+  <data name="Summary_Product_CPM_analysis" xml:space="preserve">
+    <value>Summary Analysis</value>
+  </data>
+  <data name="Summary_Product_CPM_description" xml:space="preserve">
+    <value>Mean number of words per minute (product)</value>
+  </data>
+  <data name="Summary_Product_CPM_method" xml:space="preserve">
+    <value>report_Product_CharactersPerMinute</value>
+  </data>
+  <data name="Summary_Product_NrOfWords_analysis" xml:space="preserve">
+    <value>Summary Analysis</value>
+  </data>
+  <data name="Summary_Product_NrOfWords_description" xml:space="preserve">
+    <value>Total number of words in final text</value>
+  </data>
+  <data name="Summary_Product_NrOfWords_method" xml:space="preserve">
+    <value>report_Product_NrOfWords</value>
+  </data>
+  <data name="Summary_Product_TotalWords_analysis" xml:space="preserve">
+    <value>Summary Analysis</value>
+  </data>
+  <data name="Summary_Product_TotalWords_description" xml:space="preserve">
+    <value>Total number of wors in final text</value>
+  </data>
+  <data name="Summary_Product_TotalWords_method" xml:space="preserve">
+    <value>report_Product_TotalWords</value>
+  </data>
+  <data name="Summary_Product_WPM_analysis" xml:space="preserve">
+    <value>Summary Analysis</value>
+  </data>
+  <data name="Summary_Product_WPM_description" xml:space="preserve">
+    <value>Words per Minute</value>
+  </data>
+  <data name="Summary_Product_WPM_method" xml:space="preserve">
+    <value>report_Product_WPM</value>
+  </data>
+  <data name="Summary_RevisionProportionInChar_analysis" xml:space="preserve">
+    <value>Summary Analysis</value>
+  </data>
+  <data name="Summary_RevisionProportionInChar_description" xml:space="preserve">
+    <value>Revision proportion: number of characters in product divided by total number of characters typed.</value>
+  </data>
+  <data name="Summary_RevisionProportionInChar_method" xml:space="preserve">
+    <value>report_RevisionProportionInCharacters</value>
+  </data>
+  <data name="Summary_RevisionRatioInChar_analysis" xml:space="preserve">
+    <value>Summary Analysis</value>
+  </data>
+  <data name="Summary_RevisionRatioInChar_description" xml:space="preserve">
+    <value>Revision ratio: number of characters in product/process</value>
+  </data>
+  <data name="Summary_RevisionRatioInChar_method" xml:space="preserve">
+    <value>report_RevisionRatioInCharacters</value>
+  </data>
+  <data name="Focus_RelativeTime_Sources_description" xml:space="preserve">
+    <value>Time spent in sources</value>
+  </data>
+  <data name="Focus_RelativeTime_Sources_method" xml:space="preserve">
+    <value>report_RelativeTime_Sources</value>
+  </data>
+  <data name="Summary_Process_WritingPausing_description" xml:space="preserve">
+    <value>Percentage writing / pausing time</value>
+  </data>
+  <data name="Summary_Process_WritingPausing_method" xml:space="preserve">
+    <value>report_Process_WritingPausing</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Int1_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Int1_description" xml:space="preserve">
+    <value>Switches between main document and the sources per minute for interval 1</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Int1_method" xml:space="preserve">
+    <value>report_TransitionMain_Sources_Int1</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Int2_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Int2_description" xml:space="preserve">
+    <value>Switches between main document and the sources per minute for interval 2</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Int2_method" xml:space="preserve">
+    <value>report_TransitionMain_Sources_Int2</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Int3_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Int3_description" xml:space="preserve">
+    <value>Switches between main document and the sources per minute for interval 3</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Int3_method" xml:space="preserve">
+    <value>report_TransitionMain_Sources_Int3</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Tot_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Tot_description" xml:space="preserve">
+    <value>Switches between main document and the sources per minute for 3 intervals</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Tot_method" xml:space="preserve">
+    <value>report_TransitionMain_Sources_Tot</value>
+  </data>
+  <data name="Focus_TimeInSources_Int1_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Focus_TimeInSources_Int1_description" xml:space="preserve">
+    <value>Time in sources, interval 1</value>
+  </data>
+  <data name="Focus_TimeInSources_Int1_method" xml:space="preserve">
+    <value>report_TimeInSources_Int1</value>
+  </data>
+  <data name="Focus_TimeInSources_Int2_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Focus_TimeInSources_Int2_description" xml:space="preserve">
+    <value>Time in sources, interval 2</value>
+  </data>
+  <data name="Focus_TimeInSources_Int2_method" xml:space="preserve">
+    <value>report_TimeInSources_Int2</value>
+  </data>
+  <data name="Focus_TimeInSources_Int3_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Focus_TimeInSources_Int3_description" xml:space="preserve">
+    <value>Time in sources, interval 3</value>
+  </data>
+  <data name="Focus_TimeInSources_Int3_method" xml:space="preserve">
+    <value>report_TimeInSources_Int3</value>
+  </data>
+  <data name="Focus_TimeInSources_Tot_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Focus_TimeInSources_Tot_description" xml:space="preserve">
+    <value>Time in sources for 3 intervals</value>
+  </data>
+  <data name="Focus_TimeInSources_Tot_method" xml:space="preserve">
+    <value>report_TimeInSources_Tot</value>
+  </data>
+  <data name="Focus_Transition_Sources_Int1_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Focus_Transition_Sources_Int1_description" xml:space="preserve">
+    <value>Switches between the sources per minute, interval 1</value>
+  </data>
+  <data name="Focus_Transition_Sources_Int1_method" xml:space="preserve">
+    <value>report_Transition_Sources_Int1</value>
+  </data>
+  <data name="Focus_Transition_Sources_Int2_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Focus_Transition_Sources_Int2_description" xml:space="preserve">
+    <value>Switches between the sources per minute, interval 2</value>
+  </data>
+  <data name="Focus_Transition_Sources_Int2_method" xml:space="preserve">
+    <value>report_Transition_Sources_Int2</value>
+  </data>
+  <data name="Focus_Transition_Sources_Int3_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Focus_Transition_Sources_Int3_description" xml:space="preserve">
+    <value>Switches between the sources per minute, interval 3</value>
+  </data>
+  <data name="Focus_Transition_Sources_Int3_method" xml:space="preserve">
+    <value>report_Transition_Sources_Int3</value>
+  </data>
+  <data name="Focus_Transition_Sources_Tot_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Focus_Transition_Sources_Tot_description" xml:space="preserve">
+    <value>Switches between the sources per minute for 3 intervals</value>
+  </data>
+  <data name="Focus_Transition_Sources_Tot_method" xml:space="preserve">
+    <value>report_Transition_Sources_Tot</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Int1_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Int1_description" xml:space="preserve">
+    <value>Keystrokes per minute, interval 1</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Int1_method" xml:space="preserve">
+    <value>report_KeystrokesMin_Int1</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Int2_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Int2_description" xml:space="preserve">
+    <value>Keystrokes per minute, interval 2</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Int2_method" xml:space="preserve">
+    <value>report_KeystrokesMin_Int2</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Int3_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Int3_description" xml:space="preserve">
+    <value>Keystrokes per minute, interval 3</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Int3_method" xml:space="preserve">
+    <value>report_KeystrokesMin_Int3</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Tot_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Tot_description" xml:space="preserve">
+    <value>Keystrokes per minute for 3 intervals</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Tot_method" xml:space="preserve">
+    <value>report_KeystrokesMin_Tot</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Int1_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Int1_description" xml:space="preserve">
+    <value>Percentage strokes, interval 1</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Int1_method" xml:space="preserve">
+    <value>report_KeystrokesPerct_Int1</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Int2_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Int2_description" xml:space="preserve">
+    <value>Percentage strokes, interval 2</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Int2_method" xml:space="preserve">
+    <value>report_KeystrokesPerct_Int2</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Int3_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Int3_description" xml:space="preserve">
+    <value>Percentage strokes, interval 3</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Int3_method" xml:space="preserve">
+    <value>report_KeystrokesPerct_Int3</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Tot_analysis" xml:space="preserve">
+    <value>Fluency Analysis</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Tot_description" xml:space="preserve">
+    <value>Percentage strokes for 3 intervals</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Tot_method" xml:space="preserve">
+    <value>report_KeystrokesPerct_Tot</value>
+  </data>
+  <data name="Pause_PausePerct_Int1_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PausePerct_Int1_description" xml:space="preserve">
+    <value>Percentage pause time, interval 1</value>
+  </data>
+  <data name="Pause_PausePerct_Int1_method" xml:space="preserve">
+    <value>report_PausePerct_Int1</value>
+  </data>
+  <data name="Pause_PausePerct_Int2_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PausePerct_Int2_description" xml:space="preserve">
+    <value>Percentage pause time , interval 2</value>
+  </data>
+  <data name="Pause_PausePerct_Int2_method" xml:space="preserve">
+    <value>report_PausePerct_Int2</value>
+  </data>
+  <data name="Pause_PausePerct_Int3_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PausePerct_Int3_description" xml:space="preserve">
+    <value>Percentage pause time, interval 3</value>
+  </data>
+  <data name="Pause_PausePerct_Int3_method" xml:space="preserve">
+    <value>report_PausePerct_Int3</value>
+  </data>
+  <data name="Pause_PausePerct_Tot_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PausePerct_Tot_description" xml:space="preserve">
+    <value>Percentage pause time for 3 intervals</value>
+  </data>
+  <data name="Pause_PausePerct_Tot_method" xml:space="preserve">
+    <value>report_PausePerct_Tot</value>
+  </data>
+  <data name="Focus_RelativeTime_Sources_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Summary_Process_WritingPausing_analysis" xml:space="preserve">
+    <value>Summary Analysis</value>
+  </data>
+  <data name="Pause_ProcessTime_1000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_ProcessTime_1000_description" xml:space="preserve">
+    <value>Total Pause Time [1000]</value>
+  </data>
+  <data name="Pause_ProcessTime_1000_method" xml:space="preserve">
+    <value>report_ProcessTime_1000</value>
+  </data>
+  <data name="Pause_ProcessTime_2000_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_ProcessTime_2000_description" xml:space="preserve">
+    <value>Total Process Time [2000]</value>
+  </data>
+  <data name="Pause_ProcessTime_2000_method" xml:space="preserve">
+    <value>report_ProcessTime_2000</value>
+  </data>
+  <data name="Pause_ProcessTime_30_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_ProcessTime_30_description" xml:space="preserve">
+    <value>Total Process Time [30]</value>
+  </data>
+  <data name="Pause_ProcessTime_30_method" xml:space="preserve">
+    <value>report_ProcessTime_30</value>
+  </data>
+  <data name="Pause_ProcessTime_DEFAULT_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_ProcessTime_DEFAULT_description" xml:space="preserve">
+    <value>Total Process Time [DEFAULT]</value>
+  </data>
+  <data name="Pause_ProcessTime_DEFAULT_method" xml:space="preserve">
+    <value>report_ProcessTime_DEFAULT</value>
+  </data>
+  <data name="Pause_AvgPause_Int1_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_AvgPause_Int1_description" xml:space="preserve">
+    <value>Average pause time in interval 1</value>
+  </data>
+  <data name="Pause_AvgPause_Int1_method" xml:space="preserve">
+    <value>report_AvgPause_Int1</value>
+  </data>
+  <data name="Pause_AvgPause_Int2_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_AvgPause_Int2_description" xml:space="preserve">
+    <value>Average pause time in interval 2</value>
+  </data>
+  <data name="Pause_AvgPause_Int2_method" xml:space="preserve">
+    <value>report_AvgPause_Int2</value>
+  </data>
+  <data name="Pause_AvgPause_Int3_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_AvgPause_Int3_description" xml:space="preserve">
+    <value>Average pause time in interval 3</value>
+  </data>
+  <data name="Pause_AvgPause_Int3_method" xml:space="preserve">
+    <value>report_AvgPause_Int3</value>
+  </data>
+  <data name="Pause_PausePerMin_Int1_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PausePerMin_Int1_description" xml:space="preserve">
+    <value>Number of pauses per minute in interval 1</value>
+  </data>
+  <data name="Pause_PausePerMin_Int1_method" xml:space="preserve">
+    <value>report_PausePerMin_Int1</value>
+  </data>
+  <data name="Pause_PausePerMin_Int2_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PausePerMin_Int2_description" xml:space="preserve">
+    <value>Number of pauses per minute in interval 2</value>
+  </data>
+  <data name="Pause_PausePerMin_Int2_method" xml:space="preserve">
+    <value>report_PausePerMin_Int2</value>
+  </data>
+  <data name="Pause_PausePerMin_Int3_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_PausePerMin_Int3_description" xml:space="preserve">
+    <value>Number of pauses per minute in interval 3</value>
+  </data>
+  <data name="Pause_PausePerMin_Int3_method" xml:space="preserve">
+    <value>report_PausePerMin_Int3</value>
+  </data>
+  <data name="Pause_RelativePause_Int1_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_RelativePause_Int1_description" xml:space="preserve">
+    <value>Pause time in interval 1 relative to the total interval time</value>
+  </data>
+  <data name="Pause_RelativePause_Int1_method" xml:space="preserve">
+    <value>report_RelativePause_Int1</value>
+  </data>
+  <data name="Pause_RelativePause_Int2_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_RelativePause_Int2_description" xml:space="preserve">
+    <value>Pause time in interval 2 relative to the total interval time</value>
+  </data>
+  <data name="Pause_RelativePause_Int2_method" xml:space="preserve">
+    <value>report_RelativePause_Int2</value>
+  </data>
+  <data name="Pause_RelativePause_Int3_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_RelativePause_Int3_description" xml:space="preserve">
+    <value>Pause time in interval 3 relative to the total interval time</value>
+  </data>
+  <data name="Pause_RelativePause_Int3_method" xml:space="preserve">
+    <value>report_RelativePause_Int3</value>
+  </data>
+  <data name="Pause_RelativeWriting_Int1_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_RelativeWriting_Int1_description" xml:space="preserve">
+    <value>Relative writing time in interval 1</value>
+  </data>
+  <data name="Pause_RelativeWriting_Int1_method" xml:space="preserve">
+    <value>report_RelativeWriting_Int1</value>
+  </data>
+  <data name="Pause_RelativeWriting_Int2_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_RelativeWriting_Int2_description" xml:space="preserve">
+    <value>Relative writing time in interval 2</value>
+  </data>
+  <data name="Pause_RelativeWriting_Int2_method" xml:space="preserve">
+    <value>report_RelativeWriting_Int2</value>
+  </data>
+  <data name="Pause_RelativeWriting_Int3_analysis" xml:space="preserve">
+    <value>Pause Analysis</value>
+  </data>
+  <data name="Pause_RelativeWriting_Int3_description" xml:space="preserve">
+    <value>Relative writing time in interval 3</value>
+  </data>
+  <data name="Pause_RelativeWriting_Int3_method" xml:space="preserve">
+    <value>report_RelativeWriting_Int3</value>
+  </data>
+  <data name="Focus_RelativeTime_AvailableSources_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Focus_RelativeTime_AvailableSources_description" xml:space="preserve">
+    <value>Time spent in available sources</value>
+  </data>
+  <data name="Focus_RelativeTime_AvailableSources_method" xml:space="preserve">
+    <value>report_RelativeTime_AvailableSources</value>
+  </data>
+  <data name="Focus_RelativeTime_OtherSources_analysis" xml:space="preserve">
+    <value>Focus Analysis</value>
+  </data>
+  <data name="Focus_RelativeTime_OtherSources_description" xml:space="preserve">
+    <value>Time spent in other sources (not th availalble sources)</value>
+  </data>
+  <data name="Focus_RelativeTime_OtherSources_method" xml:space="preserve">
+    <value>report_RelativeTime_OtherSources</value>
+  </data>
+</root>

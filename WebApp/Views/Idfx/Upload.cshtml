@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Upload idfx file";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Upload an idfx</h2>
+
+@using (Html.BeginForm("Upload", "Idfx", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div>
+        <fieldset>
+            <legend>Data</legend>
+            <label>Project</label>
+            <input type="text" id="Project" name="project" /> <br />
+            <label>Document</label>
+            <input type="text" id="Document" name="document" />
+            <label>Comment</label>
+            <input type="text" id="Comment" name="comment" />
+        </fieldset>
+        <fieldset>
+            <legend>Analysis file</legend>
+            <input type="file" id="File" name="file" /><br />
+        </fieldset>
+                
+        <p>
+            <input type="submit" id="Submit" value="Upload idfx" />
+        </p>
+    </div>
+}
+

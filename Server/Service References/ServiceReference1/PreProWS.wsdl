@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://lt3serv.ugent.be/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="PreProWS" targetNamespace="http://lt3serv.ugent.be/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://lt3serv.ugent.be:80/PreProService/PreProWS?xsd=1" namespace="http://lt3serv.ugent.be/" />
+    </xsd:schema>
+  </types>
+  <message name="submit">
+    <part name="parameters" element="tns:submit" />
+  </message>
+  <message name="submitResponse">
+    <part name="parameters" element="tns:submitResponse" />
+  </message>
+  <message name="check">
+    <part name="parameters" element="tns:check" />
+  </message>
+  <message name="checkResponse">
+    <part name="parameters" element="tns:checkResponse" />
+  </message>
+  <message name="acquire">
+    <part name="parameters" element="tns:acquire" />
+  </message>
+  <message name="acquireResponse">
+    <part name="parameters" element="tns:acquireResponse" />
+  </message>
+  <portType name="PreProWS">
+    <operation name="submit">
+      <input wsam:Action="http://lt3serv.ugent.be/PreProWS/submitRequest" message="tns:submit" />
+      <output wsam:Action="http://lt3serv.ugent.be/PreProWS/submitResponse" message="tns:submitResponse" />
+    </operation>
+    <operation name="check">
+      <input wsam:Action="http://lt3serv.ugent.be/PreProWS/checkRequest" message="tns:check" />
+      <output wsam:Action="http://lt3serv.ugent.be/PreProWS/checkResponse" message="tns:checkResponse" />
+    </operation>
+    <operation name="acquire">
+      <input wsam:Action="http://lt3serv.ugent.be/PreProWS/acquireRequest" message="tns:acquire" />
+      <output wsam:Action="http://lt3serv.ugent.be/PreProWS/acquireResponse" message="tns:acquireResponse" />
+    </operation>
+  </portType>
+  <binding name="PreProWSPortBinding" type="tns:PreProWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="submit">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="check">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="acquire">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="PreProWS">
+    <port name="PreProWSPort" binding="tns:PreProWSPortBinding">
+      <soap:address location="http://lt3serv.ugent.be:80/PreProService/PreProWS" />
+    </port>
+  </service>
+</definitions>

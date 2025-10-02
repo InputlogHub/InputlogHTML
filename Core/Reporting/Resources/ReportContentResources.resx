@@ -1,0 +1,1305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Bigram_5FastestBigrams_Avg_introduction" xml:space="preserve">
+    <value>Duration of five fastest transitions between two characters. </value>
+  </data>
+  <data name="Bigram_5FastestBigrams_Avg_label" xml:space="preserve">
+    <value>Mean transition time within 5 fastest produced bigrams:</value>
+  </data>
+  <data name="Bigram_5FastestBigrams_Stdev_introduction" xml:space="preserve">
+    <value>Duration of five fastest transitions between two characters. </value>
+  </data>
+  <data name="Bigram_5FastestBigrams_Stdev_label" xml:space="preserve">
+    <value>Standard deviation time within 5 fastest produced bigrams:</value>
+  </data>
+  <data name="Bigram_5HFBigrams_Avg_introduction" xml:space="preserve">
+    <value>Transitions between two high frequent characters. </value>
+  </data>
+  <data name="Bigram_5HFBigrams_Avg_label" xml:space="preserve">
+    <value>Mean transition time within 5 highest frequent bigrams:</value>
+  </data>
+  <data name="Bigram_5HFBigrams_Stdev_introduction" xml:space="preserve">
+    <value>Transitions between two high frequent characters. </value>
+  </data>
+  <data name="Bigram_5HFBigrams_Stdev_label" xml:space="preserve">
+    <value>Standard deviation time within 5 highest frequent bigrams:</value>
+  </data>
+  <data name="Bigram_5LFBigrams_Avg_introduction" xml:space="preserve">
+    <value>Transitions between two low frequent characters. </value>
+  </data>
+  <data name="Bigram_5LFBigrams_Avg_label" xml:space="preserve">
+    <value>Mean transition time within 5 lowest frequent bigrams:</value>
+  </data>
+  <data name="Bigram_5LFBigrams_Stdev_introduction" xml:space="preserve">
+    <value>Transitions between two low frequent characters. </value>
+  </data>
+  <data name="Bigram_5LFBigrams_Stdev_label" xml:space="preserve">
+    <value>Standard deviation time within 5 lowest frequent bigrams:</value>
+  </data>
+  <data name="Bigram_5SlowestBigrams_Avg_introduction" xml:space="preserve">
+    <value>Duration of five slowest transitions between two characters. </value>
+  </data>
+  <data name="Bigram_5SlowestBigrams_Avg_label" xml:space="preserve">
+    <value>Mean transition time within 5 slowest produced bigrams:</value>
+  </data>
+  <data name="Bigram_5SlowestBigrams_Stdev_introduction" xml:space="preserve">
+    <value>Duration of five slowest transitions between two characters. </value>
+  </data>
+  <data name="Bigram_5SlowestBigrams_Stdev_label" xml:space="preserve">
+    <value>Standard deviation time within 5 slowest produced bigrams:</value>
+  </data>
+  <data name="Bigram_TransitionTime_CharChar_Avg_introduction" xml:space="preserve">
+    <value>Overall transition time between two characters.</value>
+  </data>
+  <data name="Bigram_TransitionTime_CharChar_Avg_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Bigram_TransitionTime_CharChar_Stdev_introduction" xml:space="preserve">
+    <value>Overall transition time between two characters.</value>
+  </data>
+  <data name="Bigram_TransitionTime_CharChar_Stdev_label" xml:space="preserve">
+    <value>Standard deviation: </value>
+  </data>
+  <data name="Fluency_Avg_StrokesPerMinute_introduction" xml:space="preserve">
+    <value>Number of keystrokes per minute.</value>
+  </data>
+  <data name="Fluency_Avg_StrokesPerMinute_label" xml:space="preserve">
+    <value>Mean transition time: </value>
+  </data>
+  <data name="Fluency_COV_PerctMaximum_introduction" xml:space="preserve">
+    <value>Coefficient of Variation  of  the maximum fluency calculated over 10 intervals (percentage)</value>
+  </data>
+  <data name="Fluency_FluencyGraph_introduction" xml:space="preserve">
+    <value>The graph in the appendix shows the fluency and the fluency dynamics during the writing process (10 intervals). Reference points are calculated with the following baselines: absolute maximum, personal maximum and task maximum.</value>
+  </data>
+  <data name="Fluency_FluencyGraph_label" xml:space="preserve">
+    <value>Fluency graph</value>
+  </data>
+  <data name="Fluency_Mean_PerctMaximum_introduction" xml:space="preserve">
+    <value>Mean  of  the maximum fluency calculated over 10 intervals (percentage)</value>
+  </data>
+  <data name="Fluency_Mean_PerctMaximum_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Fluency_Median_PerctMaximum_introduction" xml:space="preserve">
+    <value>Median  of  the maximum fluency calculated over 10 intervals (percentage)</value>
+  </data>
+  <data name="Fluency_Median_PerctMaximum_label" xml:space="preserve">
+    <value>Median: </value>
+  </data>
+  <data name="Fluency_PersMaximum_PersCoefVar_introduction" xml:space="preserve">
+    <value>Coefficient of Variation  of  the personal maximum fluency calculated over 10 intervals (percentage)</value>
+  </data>
+  <data name="Fluency_PersMaximum_PersCoefVar_label" xml:space="preserve">
+    <value>Coefficient of variation: </value>
+  </data>
+  <data name="Fluency_PersMaximum_PersMaxStdev_introduction" xml:space="preserve">
+    <value>Standard deviation of  the personal maximum fluency calculated over 10 intervals (percentage)</value>
+  </data>
+  <data name="Fluency_PersMaximum_PersMaxStdev_label" xml:space="preserve">
+    <value>Standard deviation:</value>
+  </data>
+  <data name="Fluency_PersMaximum_PersMeanInterval_introduction" xml:space="preserve">
+    <value>Mean  of  the personal maximum fluency calculated over 10 intervals (percentage)</value>
+  </data>
+  <data name="Fluency_PersMaximum_PersMeanInterval_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Fluency_PersMaximum_PersMedian_introduction" xml:space="preserve">
+    <value>Median  of  the personal maximum fluency calculated over 10 intervals (percentage)</value>
+  </data>
+  <data name="Fluency_PersMaximum_PersMedian_label" xml:space="preserve">
+    <value>Median: </value>
+  </data>
+  <data name="Fluency_Stdev_PerctMaximum_introduction" xml:space="preserve">
+    <value>Standard deviation of  the maximum fluency calculated over 10 intervals (percentage)</value>
+  </data>
+  <data name="Fluency_Stdev_PerctMaximum_label" xml:space="preserve">
+    <value>Standard deviation:</value>
+  </data>
+  <data name="Fluency_Stdev_StrokesPerMinute_introduction" xml:space="preserve">
+    <value>Keystrokes per minute.</value>
+  </data>
+  <data name="Fluency_Stdev_StrokesPerMinute_label" xml:space="preserve">
+    <value>Standard deviation:  </value>
+  </data>
+  <data name="Fluency_TaskMaximum_introduction" xml:space="preserve">
+    <value>Task maximum (reference point).</value>
+  </data>
+  <data name="Fluency_TaskMaximum_label" xml:space="preserve">
+    <value>Characters per minute: </value>
+  </data>
+  <data name="Fluency_TaskMaximum_SPM_introduction" xml:space="preserve">
+    <value>Most fluent character production within task (calculated moving mean for 20 s writing periods).</value>
+  </data>
+  <data name="Fluency_TaskMaximum_SPM_label" xml:space="preserve">
+    <value>Characters per minute: </value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesCoefVar_introduction" xml:space="preserve">
+    <value>Coefficient of Variation  of  the task maximum fluency calculated over 10 intervals (number of key strokes)</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesCoefVar_label" xml:space="preserve">
+    <value>Coefficient of variation: </value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMaxStdev_introduction" xml:space="preserve">
+    <value>Standard deviation of  the task maximum fluency calculated over 10 intervals (number of keystrokes)</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMaxStdev_label" xml:space="preserve">
+    <value>Standard deviation:</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMeanInterval_introduction" xml:space="preserve">
+    <value>Mean  of  the task maximum fluency calculated over 10 intervals (number of keystrokes)</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMeanInterval_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMedian_introduction" xml:space="preserve">
+    <value>Median  of  the task maximum fluency calculated over 10 intervals (number of keystrokes)</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMedian_label" xml:space="preserve">
+    <value>Median: </value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinCoefVar_introduction" xml:space="preserve">
+    <value>Coefficient of Variation  of  the task maximum fluency calculated over 10 intervals (number of key strokes per minute)</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinCoefVar_label" xml:space="preserve">
+    <value>Coefficient of variation: </value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinInterval_introduction" xml:space="preserve">
+    <value>Mean  of  the task maximum fluency calculated over 10 intervals (number of keystrokes  per minute))</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinInterval_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinMaxStdev_introduction" xml:space="preserve">
+    <value>Standard deviation of  the task maximum fluency calculated over 10 intervals (number of keystrokes  per minute)</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinMaxStdev_label" xml:space="preserve">
+    <value>Standard deviation:</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinMedian_introduction" xml:space="preserve">
+    <value>Median  of  the task maximum fluency calculated over 10 intervals (number of keystrokes  per minute))</value>
+  </data>
+  <data name="Fluency_TaskMaximum_StrokesMinMedian_label" xml:space="preserve">
+    <value>Median: </value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskCoefVar_introduction" xml:space="preserve">
+    <value>Coefficient of Variation  of  the task maximum fluency calculated over 10 intervals (percentage)</value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskCoefVar_label" xml:space="preserve">
+    <value>Coefficient of variation: </value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskMaxStdev_introduction" xml:space="preserve">
+    <value>Standard deviation of  the task maximum fluency calculated over 10 intervals (percentage)</value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskMaxStdev_label" xml:space="preserve">
+    <value>Standard deviation:</value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskMeanInterval_introduction" xml:space="preserve">
+    <value>Mean  of  the task maximum fluency calculated over 10 intervals (percentage)</value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskMeanInterval_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskMedian_introduction" xml:space="preserve">
+    <value>Median  of  the task maximum fluency calculated over 10 intervals (percentage)</value>
+  </data>
+  <data name="Fluency_TaskMaximum_TaskMedian_label" xml:space="preserve">
+    <value>Median: </value>
+  </data>
+  <data name="Pause_ActiveTime_1000_introduction" xml:space="preserve">
+    <value>Total active writing time (min). (threshold: 1000ms)</value>
+  </data>
+  <data name="Pause_ActiveTime_1000_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Pause_ActiveTime_2000_introduction" xml:space="preserve">
+    <value>Total active writing time (min). (threshold: 2000ms)</value>
+  </data>
+  <data name="Pause_ActiveTime_2000_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Pause_ActiveTime_30_introduction" xml:space="preserve">
+    <value>Total active writing time (min). (threshold: 30ms)</value>
+  </data>
+  <data name="Pause_ActiveTime_30_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Pause_ActiveTime_DEFAULT_introduction" xml:space="preserve">
+    <value>Total active writing time (min). (default threshold)</value>
+  </data>
+  <data name="Pause_ActiveTime_DEFAULT_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Pause_COV_1000_introduction" xml:space="preserve">
+    <value>Variation of mean pause length throughout the process. (threshold: 1000ms)</value>
+  </data>
+  <data name="Pause_COV_1000_label" xml:space="preserve">
+    <value>Coefficient of variation: </value>
+  </data>
+  <data name="Pause_COV_2000_introduction" xml:space="preserve">
+    <value>Variation of mean pause length throughout the process. (threshold: 2000ms)</value>
+  </data>
+  <data name="Pause_COV_2000_label" xml:space="preserve">
+    <value>Coefficient of variation: </value>
+  </data>
+  <data name="Pause_COV_30_introduction" xml:space="preserve">
+    <value>Variation of mean pause length throughout the process. (threshold: 30ms)</value>
+  </data>
+  <data name="Pause_COV_30_label" xml:space="preserve">
+    <value>Coefficient of variation: </value>
+  </data>
+  <data name="Pause_COV_DEFAULT_introduction" xml:space="preserve">
+    <value>Variation of mean pause length throughout the process. (default threshold)</value>
+  </data>
+  <data name="Pause_COV_DEFAULT_label" xml:space="preserve">
+    <value>Coefficient of variation: </value>
+  </data>
+  <data name="Pause_FirstKey_1000_introduction" xml:space="preserve">
+    <value>Length of initial pause time (from the start of the session till the first key). (threshold: 1000ms)</value>
+  </data>
+  <data name="Pause_FirstKey_1000_label" xml:space="preserve">
+    <value>Duration: </value>
+  </data>
+  <data name="Pause_FirstKey_2000_introduction" xml:space="preserve">
+    <value>Length of initial pause time (from the start of the session till the first key). (threshold: 2000ms)</value>
+  </data>
+  <data name="Pause_FirstKey_2000_label" xml:space="preserve">
+    <value>Duration: </value>
+  </data>
+  <data name="Pause_FirstKey_30_introduction" xml:space="preserve">
+    <value>Length of initial pause time (from the start of the session till the first key). (threshold: 30ms)</value>
+  </data>
+  <data name="Pause_FirstKey_30_label" xml:space="preserve">
+    <value>Duration: </value>
+  </data>
+  <data name="Pause_FirstKey_DEFAULT_introduction" xml:space="preserve">
+    <value>Length of initial pause time (from the start of the session till the first key). (default threshold)</value>
+  </data>
+  <data name="Pause_FirstKey_DEFAULT_label" xml:space="preserve">
+    <value>Duration: </value>
+  </data>
+  <data name="Pause_GeoMean_1000_introduction" xml:space="preserve">
+    <value>Pause length of all pauses (&gt; 30 ms). (threshold: 1000ms)</value>
+  </data>
+  <data name="Pause_GeoMean_1000_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Pause_GeoMean_2000_introduction" xml:space="preserve">
+    <value>Pause length of all pauses (&gt; 30 ms). (threshold: 2000ms)</value>
+  </data>
+  <data name="Pause_GeoMean_2000_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Pause_GeoMean_30_introduction" xml:space="preserve">
+    <value>Pause length of all pauses (&gt; 30 ms). (threshold: 30ms)</value>
+  </data>
+  <data name="Pause_GeoMean_30_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Pause_GeoMean_DEFAULT_introduction" xml:space="preserve">
+    <value>Pause length of all pauses (&gt; 30 ms). (default threshold)</value>
+  </data>
+  <data name="Pause_GeoMean_DEFAULT_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_1000_introduction" xml:space="preserve">
+    <value>Boxplot with mean pause length at three text levels: character, word and sentence level. (threshold: 1000ms)</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_1000_label" xml:space="preserve">
+    <value>Pause boxplot</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_2000_introduction" xml:space="preserve">
+    <value>Boxplot with mean pause length at three text levels: character, word and sentence level. (threshold: 2000ms)</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_2000_label" xml:space="preserve">
+    <value>Pause boxplot</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_30_introduction" xml:space="preserve">
+    <value>Boxplot with mean pause length at three text levels: character, word and sentence level. (threshold: 30ms)</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_30_label" xml:space="preserve">
+    <value>Pause boxplot</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_DEFAULT_introduction" xml:space="preserve">
+    <value>Boxplot with mean pause length at three text levels: character, word and sentence level. (default threshold)</value>
+  </data>
+  <data name="Pause_PauseLevels_BoxPlot_DEFAULT_label" xml:space="preserve">
+    <value>Pause boxplot</value>
+  </data>
+  <data name="Pause_PauseTime_1000_introduction" xml:space="preserve">
+    <value>Total pause time (min). (threshold: 1000ms)</value>
+  </data>
+  <data name="Pause_PauseTime_1000_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Pause_PauseTime_2000_introduction" xml:space="preserve">
+    <value>Total pause time (min). (threshold: 2000ms)</value>
+  </data>
+  <data name="Pause_PauseTime_2000_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Pause_PauseTime_30_introduction" xml:space="preserve">
+    <value>Total pause time (min). (threshold: 30ms)</value>
+  </data>
+  <data name="Pause_PauseTime_30_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_1000_introduction" xml:space="preserve">
+    <value>Pause time between words. (threshold: 1000ms)</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_1000_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_2000_introduction" xml:space="preserve">
+    <value>Pause time between words. (threshold: 2000ms)</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_2000_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_30_introduction" xml:space="preserve">
+    <value>Pause time between words. (threshold: 30ms)</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_30_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_DEFAULT_introduction" xml:space="preserve">
+    <value>Pause time between words. (default threshold)</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Avg_DEFAULT_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_1000_introduction" xml:space="preserve">
+    <value>Coefficient of Variation for pause  time between words (1000 ms)</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_1000_label" xml:space="preserve">
+    <value>Coefficient of variation: </value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_2000_introduction" xml:space="preserve">
+    <value>Coefficient of Variation for pause  time between words (2000 ms)</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_2000_label" xml:space="preserve">
+    <value>Coefficient of variation: </value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_30_introduction" xml:space="preserve">
+    <value>Coefficient of Variation for pause time between words (30 ms)</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_30_label" xml:space="preserve">
+    <value>Coefficient of variation: </value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_DEFAULT_introduction" xml:space="preserve">
+    <value>Coefficient of Variation for pause time between words (default: 200 ms)</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_COV_DEFAULT_label" xml:space="preserve">
+    <value>Coefficient of variation: </value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_1000_introduction" xml:space="preserve">
+    <value>Geometric mean of pause time between words (1000 ms)</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_1000_label" xml:space="preserve">
+    <value>Geometric mean:</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_2000_introduction" xml:space="preserve">
+    <value>Geometric mean of pause time between words (2000 ms)</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_2000_label" xml:space="preserve">
+    <value>Geometric mean:</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_30_introduction" xml:space="preserve">
+    <value>Geometric mean of pause time between words (30 ms)</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_30_label" xml:space="preserve">
+    <value>Geometric mean:</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_DEFAULT_introduction" xml:space="preserve">
+    <value>Geometric mean of pause time between words (default: 200 ms)</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_GeoMean_DEFAULT_label" xml:space="preserve">
+    <value>Geometric mean:</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_1000_introduction" xml:space="preserve">
+    <value>Pause time between words. (threshold: 1000ms)</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_1000_label" xml:space="preserve">
+    <value>Standard deviation: </value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_2000_introduction" xml:space="preserve">
+    <value>Pause time between words. (threshold: 2000ms)</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_2000_label" xml:space="preserve">
+    <value>Standard deviation: </value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_30_introduction" xml:space="preserve">
+    <value>Pause time between words. (threshold: 30ms)</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_30_label" xml:space="preserve">
+    <value>Standard deviation: </value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_DEFAULT_introduction" xml:space="preserve">
+    <value>Pause time between words. (default threshold)</value>
+  </data>
+  <data name="Pause_PauseTime_BetweenWords_Stdev_DEFAULT_label" xml:space="preserve">
+    <value>Standard deviation: </value>
+  </data>
+  <data name="Pause_PauseTime_DEFAULT_introduction" xml:space="preserve">
+    <value>Total pause time (min). (default threshold)</value>
+  </data>
+  <data name="Pause_PauseTime_DEFAULT_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Pause_PauseToActiveProp_1000_introduction" xml:space="preserve">
+    <value>Proportion of active writing time versus pause time. (threshold: 1000ms)</value>
+  </data>
+  <data name="Pause_PauseToActiveProp_1000_label" xml:space="preserve">
+    <value>Active time / pause time: </value>
+  </data>
+  <data name="Pause_PauseToActiveProp_2000_introduction" xml:space="preserve">
+    <value>Proportion of active writing time versus pause time. (threshold: 2000ms)</value>
+  </data>
+  <data name="Pause_PauseToActiveProp_2000_label" xml:space="preserve">
+    <value>Active time / pause time: </value>
+  </data>
+  <data name="Pause_PauseToActiveProp_30_introduction" xml:space="preserve">
+    <value>Proportion of active writing time versus pause time. (threshold: 30ms)</value>
+  </data>
+  <data name="Pause_PauseToActiveProp_30_label" xml:space="preserve">
+    <value>Active time / pause time: </value>
+  </data>
+  <data name="Pause_PauseToActiveProp_DEFAULT_introduction" xml:space="preserve">
+    <value>Proportion of active writing time versus pause time. (default threshold)</value>
+  </data>
+  <data name="Pause_PauseToActiveProp_DEFAULT_label" xml:space="preserve">
+    <value>Active time / pause time: </value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_1000_introduction" xml:space="preserve">
+    <value>Length of uninterrupted writing episode (pause threshold: 1000 ms)</value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_1000_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_2000_introduction" xml:space="preserve">
+    <value>Length of uninterrupted writing episode (pause threshold: 2000 ms)</value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_2000_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_30_introduction" xml:space="preserve">
+    <value>Length of uninterrupted writing episode  (pause threshold: 30 ms).</value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_30_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_DEFAULT_introduction" xml:space="preserve">
+    <value>Length of uninterrupted writing episode (default threshold).</value>
+  </data>
+  <data name="Pause_Pburst_AvgProd_DEFAULT_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_1000_introduction" xml:space="preserve">
+    <value>Duration of uninterrupted writing episode (pause threshold: 1000 ms)</value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_1000_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_2000_introduction" xml:space="preserve">
+    <value>Duration of uninterrupted writing episode (pause threshold: 2000 ms)</value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_2000_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_30_introduction" xml:space="preserve">
+    <value>Duration of uninterrupted writing episode (pause threshold: 30 ms).</value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_30_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_DEFAULT_introduction" xml:space="preserve">
+    <value>Duration of uninterrupted writing episode (default threshold).</value>
+  </data>
+  <data name="Pause_Pburst_AvgTime_DEFAULT_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_1000_introduction" xml:space="preserve">
+    <value>Length of uninterrupted writing episode (pause threshold: 1000 ms)</value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_1000_label" xml:space="preserve">
+    <value>Median: </value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_2000_introduction" xml:space="preserve">
+    <value>Length of uninterrupted writing episode  (pause threshold: 2000 ms)</value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_2000_label" xml:space="preserve">
+    <value>Median: </value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_30_introduction" xml:space="preserve">
+    <value>Length of uninterrupted writing episode(pause threshold: 30 ms).</value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_30_label" xml:space="preserve">
+    <value>Median: </value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_DEFAULT_introduction" xml:space="preserve">
+    <value>Length of uninterrupted writing episode (default threshold).</value>
+  </data>
+  <data name="Pause_Pburst_MedianProd_DEFAULT_label" xml:space="preserve">
+    <value>Median: </value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_1000_introduction" xml:space="preserve">
+    <value>Duration of uninterrupted writing episode (pause threshold: 1000 ms).</value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_1000_label" xml:space="preserve">
+    <value>Median: </value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_2000_introduction" xml:space="preserve">
+    <value>Duration of uninterrupted writing episode (pause threshold: 2000 ms).</value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_2000_label" xml:space="preserve">
+    <value>Median: </value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_30_introduction" xml:space="preserve">
+    <value>Duration of uninterrupted writing episode (pause threshold: 30 ms).</value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_30_label" xml:space="preserve">
+    <value>Median: </value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_DEFAULT_introduction" xml:space="preserve">
+    <value>Duration of uninterrupted writing episode (default threshold).</value>
+  </data>
+  <data name="Pause_Pburst_MedianTime_DEFAULT_label" xml:space="preserve">
+    <value>Median: </value>
+  </data>
+  <data name="Pause_Pburst_Nr_1000_introduction" xml:space="preserve">
+    <value>Number of uninterrupted writing episodes (pause threshold: 1000 ms)</value>
+  </data>
+  <data name="Pause_Pburst_Nr_1000_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Pause_Pburst_Nr_2000_introduction" xml:space="preserve">
+    <value>Number of uninterrupted writing episodes (pause threshold: 2000 ms)</value>
+  </data>
+  <data name="Pause_Pburst_Nr_2000_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Pause_Pburst_Nr_30_introduction" xml:space="preserve">
+    <value>Number of uninterrupted writing episodes (pause threshold: 30 ms).</value>
+  </data>
+  <data name="Pause_Pburst_Nr_30_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Pause_Pburst_Nr_DEFAULT_introduction" xml:space="preserve">
+    <value>Number of uninterrupted writing episodes (default threshold).</value>
+  </data>
+  <data name="Pause_Pburst_Nr_DEFAULT_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_1000_introduction" xml:space="preserve">
+    <value>Number of P-bursts per minute (pause threshold: 1000 ms)</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_1000_label" xml:space="preserve">
+    <value>Geometric mean:</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_2000_introduction" xml:space="preserve">
+    <value>Number of P-bursts per minute  (pause threshold: 2000 ms)</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_2000_label" xml:space="preserve">
+    <value>Geometric mean:</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_30_introduction" xml:space="preserve">
+    <value>Number of P-bursts per minute(pause threshold: 30 ms).</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_30_label" xml:space="preserve">
+    <value>Geometric mean:</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_DEFAULT_introduction" xml:space="preserve">
+    <value>Number of P-bursts per minute (default threshold)</value>
+  </data>
+  <data name="Pause_Pburst_PerMinute_DEFAULT_label" xml:space="preserve">
+    <value>Geometric mean:</value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_1000_introduction" xml:space="preserve">
+    <value>Length of uninterrupted writing episode(pause threshold: 1000 ms)</value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_1000_label" xml:space="preserve">
+    <value>Standard deviation: </value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_2000_introduction" xml:space="preserve">
+    <value>Length of uninterrupted writing episode  (pause threshold: 2000 ms)</value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_2000_label" xml:space="preserve">
+    <value>Standard deviation: </value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_30_introduction" xml:space="preserve">
+    <value>Length of uninterrupted writing episode (pause threshold: 30 ms).</value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_30_label" xml:space="preserve">
+    <value>Standard deviation: </value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_DEFAULT_introduction" xml:space="preserve">
+    <value>Length of uninterrupted writing episode (default threshold).</value>
+  </data>
+  <data name="Pause_Pburst_StdevProd_DEFAULT_label" xml:space="preserve">
+    <value>Standard deviation: </value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_1000_introduction" xml:space="preserve">
+    <value>Duration of uninterrupted writing episode (pause threshold: 1000 ms)</value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_1000_label" xml:space="preserve">
+    <value>Standard deviation: </value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_2000_introduction" xml:space="preserve">
+    <value>Duration of uninterrupted writing episode (pause threshold: 2000 ms)</value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_2000_label" xml:space="preserve">
+    <value>Standard deviation: </value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_30_introduction" xml:space="preserve">
+    <value>Duration of uninterrupted writing episode (pause threshold: 30 ms).</value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_30_label" xml:space="preserve">
+    <value>Standard deviation: </value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_DEFAULT_introduction" xml:space="preserve">
+    <value>Duration of uninterrupted writing episode (default threshold).</value>
+  </data>
+  <data name="Pause_Pburst_StdevTime_DEFAULT_label" xml:space="preserve">
+    <value>Standard deviation: </value>
+  </data>
+  <data name="Pause_Pburst_Threshold_1000_introduction" xml:space="preserve">
+    <value>The pause time used to define a P-Burst.</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_1000_label" xml:space="preserve">
+    <value>P-Burst Threshold:</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_2000_introduction" xml:space="preserve">
+    <value>The pause time used to define a P-Burst.</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_2000_label" xml:space="preserve">
+    <value>P-Burst Threshold:</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_30_introduction" xml:space="preserve">
+    <value>The pause time used to define a P-Burst.</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_30_label" xml:space="preserve">
+    <value>P-Burst Threshold:</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_DEFAULT_introduction" xml:space="preserve">
+    <value>The pause time used to define a P-Burst.</value>
+  </data>
+  <data name="Pause_Pburst_Threshold_DEFAULT_label" xml:space="preserve">
+    <value>P-Burst Threshold:</value>
+  </data>
+  <data name="Pause_TotalPauses_1000_introduction" xml:space="preserve">
+    <value>Number of pauses (threshold: 1000 ms).</value>
+  </data>
+  <data name="Pause_TotalPauses_1000_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Pause_TotalPauses_2000_introduction" xml:space="preserve">
+    <value>Number of pauses (threshold: 2000 ms).</value>
+  </data>
+  <data name="Pause_TotalPauses_2000_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Pause_TotalPauses_30_introduction" xml:space="preserve">
+    <value>Number of pauses (threshold: 30 ms).</value>
+  </data>
+  <data name="Pause_TotalPauses_30_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Pause_TotalPauses_DEFAULT_introduction" xml:space="preserve">
+    <value>Number of pauses (default threshold).</value>
+  </data>
+  <data name="Pause_TotalPauses_DEFAULT_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Process_ProcessGraph_introduction" xml:space="preserve">
+    <value>Graphic representation of your writing process</value>
+  </data>
+  <data name="Process_ProcessGraph_label" xml:space="preserve">
+    <value>Process Graph</value>
+  </data>
+  <data name="Revision_AverageDeletionLength_introduction" xml:space="preserve">
+    <value>Number of characters per deletion.</value>
+  </data>
+  <data name="Revision_AverageDeletionLength_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Revision_AverageInsertionLength_introduction" xml:space="preserve">
+    <value>Number of characters inserted. </value>
+  </data>
+  <data name="Revision_AverageInsertionLength_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Revision_CummulativeDeletionLength_introduction" xml:space="preserve">
+    <value>Total number of characters deleted</value>
+  </data>
+  <data name="Revision_CummulativeDeletionLength_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Revision_CummulativeInsertionLength_introduction" xml:space="preserve">
+    <value>Number of characters inserted. </value>
+  </data>
+  <data name="Revision_CummulativeInsertionLength_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Revision_NrOfDeletions_introduction" xml:space="preserve">
+    <value>Number of deletions</value>
+  </data>
+  <data name="Revision_NrOfDeletions_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Revision_NrOfInsertions_introduction" xml:space="preserve">
+    <value>Number of insertions</value>
+  </data>
+  <data name="Revision_NrOfInsertions_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Revision_Rburst_AvgProduction_introduction" xml:space="preserve">
+    <value>Length of revision bursts (characters)</value>
+  </data>
+  <data name="Revision_Rburst_AvgProduction_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Revision_Rburst_AvgTime_introduction" xml:space="preserve">
+    <value>Duration of revision bursts (seconds)</value>
+  </data>
+  <data name="Revision_Rburst_AvgTime_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Revision_Rburst_MedianProduction_introduction" xml:space="preserve">
+    <value>Median R-burst length (characters)</value>
+  </data>
+  <data name="Revision_Rburst_MedianProduction_label" xml:space="preserve">
+    <value>Median: </value>
+  </data>
+  <data name="Revision_Rburst_MedianTime_introduction" xml:space="preserve">
+    <value>Median R-burst duration (seconds)</value>
+  </data>
+  <data name="Revision_Rburst_MedianTime_label" xml:space="preserve">
+    <value>Median: </value>
+  </data>
+  <data name="Revision_Rburst_Nr_introduction" xml:space="preserve">
+    <value>Total number of R-bursts</value>
+  </data>
+  <data name="Revision_Rburst_Nr_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Revision_Rburst_StdevProduction_introduction" xml:space="preserve">
+    <value>R-burst length (characters)</value>
+  </data>
+  <data name="Revision_Rburst_StdevProduction_label" xml:space="preserve">
+    <value>Standard deviation: </value>
+  </data>
+  <data name="Revision_Rburst_StdevTime_introduction" xml:space="preserve">
+    <value>R-burst length (seconds)</value>
+  </data>
+  <data name="Revision_Rburst_StdevTime_label" xml:space="preserve">
+    <value>Standard deviation: </value>
+  </data>
+  <data name="Revision_RevisionsPer100Words_introduction" xml:space="preserve">
+    <value>Number of revisions per 100 words.</value>
+  </data>
+  <data name="Revision_RevisionsPer100Words_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Revision_RevisionsPerMinute_introduction" xml:space="preserve">
+    <value>Number of revisions per minute.</value>
+  </data>
+  <data name="Revision_RevisionsPerMinute_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="SNotation_Linear_Text_introduction" xml:space="preserve">
+    <value>Linear text.</value>
+  </data>
+  <data name="SNotation_Linear_Text_label" xml:space="preserve">
+    <value>Linear text</value>
+  </data>
+  <data name="Focus_Nr_introduction" xml:space="preserve">
+    <value>Number of sources consulted.</value>
+  </data>
+  <data name="Focus_Nr_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Focus_RelativeTime_MainDoc_introduction" xml:space="preserve">
+    <value>Time spent in the main document compared to the total process time.</value>
+  </data>
+  <data name="Focus_RelativeTime_MainDoc_label" xml:space="preserve">
+    <value>Proportion: </value>
+  </data>
+  <data name="Focus_TransitionLength_Avg_introduction" xml:space="preserve">
+    <value>Length of source transitions.</value>
+  </data>
+  <data name="Focus_TransitionLength_Avg_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Focus_TransitionsPerMinute_introduction" xml:space="preserve">
+    <value>Number of source transitions per minute.</value>
+  </data>
+  <data name="Focus_TransitionsPerMinute_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Summary_Process_AverageWordLength_introduction" xml:space="preserve">
+    <value>Word length of all words produced.</value>
+  </data>
+  <data name="Summary_Process_AverageWordLength_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Summary_Process_AverageWordLength_STDEV_introduction" xml:space="preserve">
+    <value>Word length of all words produced.</value>
+  </data>
+  <data name="Summary_Process_AverageWordLength_STDEV_label" xml:space="preserve">
+    <value>Standard deviation: </value>
+  </data>
+  <data name="Summary_Process_CharactersInclSpaces_introduction" xml:space="preserve">
+    <value>Number of characters produced.</value>
+  </data>
+  <data name="Summary_Process_CharactersInclSpaces_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Summary_Process_CPM_introduction" xml:space="preserve">
+    <value>Number of characters produced per minute.</value>
+  </data>
+  <data name="Summary_Process_CPM_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Summary_Process_NrOfWords_introduction" xml:space="preserve">
+    <value>Number of words produced.</value>
+  </data>
+  <data name="Summary_Process_NrOfWords_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Summary_Process_TotalTime_introduction" xml:space="preserve">
+    <value>Total process time (minutes).</value>
+  </data>
+  <data name="Summary_Process_TotalTime_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Summary_Process_WPM_introduction" xml:space="preserve">
+    <value>Number of words per minute produced.</value>
+  </data>
+  <data name="Summary_Process_WPM_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Summary_Product_CharactersInclSpaces_introduction" xml:space="preserve">
+    <value>Total number of characters in final text (incl. spaces).</value>
+  </data>
+  <data name="Summary_Product_CharactersInclSpaces_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Summary_Product_CPM_introduction" xml:space="preserve">
+    <value>Number of characters per minute in the final text.</value>
+  </data>
+  <data name="Summary_Product_CPM_label" xml:space="preserve">
+    <value>Mean: </value>
+  </data>
+  <data name="Summary_Product_NrOfWords_introduction" xml:space="preserve">
+    <value>Total number of words in final text.</value>
+  </data>
+  <data name="Summary_Product_NrOfWords_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Summary_Product_TotalWords_introduction" xml:space="preserve">
+    <value>Total number of words in final text.</value>
+  </data>
+  <data name="Summary_Product_TotalWords_label" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="Summary_Product_WPM_introduction" xml:space="preserve">
+    <value>Mean number of words per minute (product)</value>
+  </data>
+  <data name="Summary_Product_WPM_label" xml:space="preserve">
+    <value>Mean per minute:</value>
+  </data>
+  <data name="Summary_RevisionProportionInChar_introduction" xml:space="preserve">
+    <value>Revision proportion: number of characters in product divided by total number of characters typed. The lower the proportion, the more text that was deleted. If the proportion is higher than one, this is an indication that text was copied in(to) the document.</value>
+  </data>
+  <data name="Summary_RevisionProportionInChar_label" xml:space="preserve">
+    <value>Proportion: </value>
+  </data>
+  <data name="Summary_RevisionRatioInChar_introduction" xml:space="preserve">
+    <value>Revision ratio: number of characters in product divided by total number of keystrokes (incl. copied text). The lower the ratio, the more text that was deleted.</value>
+  </data>
+  <data name="Summary_RevisionRatioInChar_label" xml:space="preserve">
+    <value>Ratio: </value>
+  </data>
+  <data name="Focus_RelativeTime_Sources_introduction" xml:space="preserve">
+    <value>Time spent in sources</value>
+  </data>
+  <data name="Focus_RelativeTime_Sources_label" xml:space="preserve">
+    <value>Ratio:</value>
+  </data>
+  <data name="Summary_Process_WritingPausing_introduction" xml:space="preserve">
+    <value>Percentage writing / pausing time</value>
+  </data>
+  <data name="Summary_Process_WritingPausing_label" xml:space="preserve">
+    <value>Ratio:</value>
+  </data>
+  <data name="Focus_TimeInSources_Int1_introduction" xml:space="preserve">
+    <value>Time in sources, interval 1</value>
+  </data>
+  <data name="Focus_TimeInSources_Int1_label" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="Focus_TimeInSources_Int2_introduction" xml:space="preserve">
+    <value>Time in sources, interval 2</value>
+  </data>
+  <data name="Focus_TimeInSources_Int2_label" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="Focus_TimeInSources_Int3_introduction" xml:space="preserve">
+    <value>Time in sources, interval 3</value>
+  </data>
+  <data name="Focus_TimeInSources_Int3_label" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="Focus_TimeInSources_Tot_introduction" xml:space="preserve">
+    <value>Time in sources for 3 intervals</value>
+  </data>
+  <data name="Focus_TimeInSources_Tot_label" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Int1_introduction" xml:space="preserve">
+    <value>Switches between main document and the sources per minute, interval 1</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Int1_label" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Int2_introduction" xml:space="preserve">
+    <value>Switches between main document and the sources per minute, interval 2</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Int2_label" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Int3_introduction" xml:space="preserve">
+    <value>Switches between main document and the sources per minute, interval 3</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Int3_label" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Tot_introduction" xml:space="preserve">
+    <value>Switches between main document and the sources per minute for 3 intervals</value>
+  </data>
+  <data name="Focus_TransitionMain_Sources_Tot_label" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="Focus_Transition_Sources_Int1_introduction" xml:space="preserve">
+    <value>Switches between the sources per minute, interval 1</value>
+  </data>
+  <data name="Focus_Transition_Sources_Int1_label" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="Focus_Transition_Sources_Int2_introduction" xml:space="preserve">
+    <value>Switches between the sources per minute, interval 2</value>
+  </data>
+  <data name="Focus_Transition_Sources_Int2_label" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="Focus_Transition_Sources_Int3_introduction" xml:space="preserve">
+    <value>Switches between the sources per minute, interval 3</value>
+  </data>
+  <data name="Focus_Transition_Sources_Int3_label" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="Focus_Transition_Sources_Tot_introduction" xml:space="preserve">
+    <value>Switches between the sources per minute for 3 intervals</value>
+  </data>
+  <data name="Focus_Transition_Sources_Tot_label" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Int1_introduction" xml:space="preserve">
+    <value>Keystrokes per minute, interval 1</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Int1_label" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Int2_introduction" xml:space="preserve">
+    <value>Keystrokes per minute, interval 2</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Int2_label" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Int3_introduction" xml:space="preserve">
+    <value>Keystrokes per minute, interval 3</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Int3_label" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Tot_introduction" xml:space="preserve">
+    <value>Keystrokes per minute for 3 intervals</value>
+  </data>
+  <data name="Fluency_KeystrokesMin_Tot_label" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Int1_introduction" xml:space="preserve">
+    <value>Percentage strokes, interval 1</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Int1_label" xml:space="preserve">
+    <value>Perct.:</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Int2_introduction" xml:space="preserve">
+    <value>Percentage strokes, interval 2</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Int2_label" xml:space="preserve">
+    <value>Perct.:</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Int3_introduction" xml:space="preserve">
+    <value>Percentage strokes, interval 3</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Int3_label" xml:space="preserve">
+    <value>Perct.:</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Tot_introduction" xml:space="preserve">
+    <value>Percentage strokes for 3 intervals</value>
+  </data>
+  <data name="Fluency_KeystrokesPerct_Tot_label" xml:space="preserve">
+    <value>Perct.:</value>
+  </data>
+  <data name="Pause_PausePerct_Int1_introduction" xml:space="preserve">
+    <value>Percentage pause time, interval 1</value>
+  </data>
+  <data name="Pause_PausePerct_Int1_label" xml:space="preserve">
+    <value>Perct.:</value>
+  </data>
+  <data name="Pause_PausePerct_Int2_introduction" xml:space="preserve">
+    <value>Percentage pause time, interval 2</value>
+  </data>
+  <data name="Pause_PausePerct_Int2_label" xml:space="preserve">
+    <value>Perct.:</value>
+  </data>
+  <data name="Pause_PausePerct_Int3_introduction" xml:space="preserve">
+    <value>Percentage pause time, interval 3</value>
+  </data>
+  <data name="Pause_PausePerct_Int3_label" xml:space="preserve">
+    <value>Perct.:</value>
+  </data>
+  <data name="Pause_PausePerct_Tot_introduction" xml:space="preserve">
+    <value>Percentage pause time for 3 intervals</value>
+  </data>
+  <data name="Pause_PausePerct_Tot_label" xml:space="preserve">
+    <value>Perct.:</value>
+  </data>
+  <data name="Pause_ProcessTime_1000_introduction" xml:space="preserve">
+    <value>Total Process Time [1000]</value>
+  </data>
+  <data name="Pause_ProcessTime_1000_label" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="Pause_ProcessTime_2000_introduction" xml:space="preserve">
+    <value>Total Process Time [2000]</value>
+  </data>
+  <data name="Pause_ProcessTime_2000_label" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="Pause_ProcessTime_30_introduction" xml:space="preserve">
+    <value>Total Process Time [30]</value>
+  </data>
+  <data name="Pause_ProcessTime_30_label" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="Pause_ProcessTime_DEFAULT_introduction" xml:space="preserve">
+    <value>Total Process Time [DEFAULT]</value>
+  </data>
+  <data name="Pause_ProcessTime_DEFAULT_label" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="Pause_AvgPause_Int1_introduction" xml:space="preserve">
+    <value>Average pause time in interval 1</value>
+  </data>
+  <data name="Pause_AvgPause_Int1_label" xml:space="preserve">
+    <value>Mean:</value>
+  </data>
+  <data name="Pause_AvgPause_Int2_introduction" xml:space="preserve">
+    <value>Average pause time in interval 2</value>
+  </data>
+  <data name="Pause_AvgPause_Int2_label" xml:space="preserve">
+    <value>Mean:</value>
+  </data>
+  <data name="Pause_AvgPause_Int3_introduction" xml:space="preserve">
+    <value>Average pause time in interval 3</value>
+  </data>
+  <data name="Pause_AvgPause_Int3_label" xml:space="preserve">
+    <value>Mean:</value>
+  </data>
+  <data name="Pause_PausePerMin_Int1_introduction" xml:space="preserve">
+    <value>Number of pauses per minute in interval 1</value>
+  </data>
+  <data name="Pause_PausePerMin_Int1_label" xml:space="preserve">
+    <value>Nmbr/min.:</value>
+  </data>
+  <data name="Pause_PausePerMin_Int2_introduction" xml:space="preserve">
+    <value>Number of pauses per minute in interval 2</value>
+  </data>
+  <data name="Pause_PausePerMin_Int2_label" xml:space="preserve">
+    <value>Nmbr/min.:</value>
+  </data>
+  <data name="Pause_PausePerMin_Int3_introduction" xml:space="preserve">
+    <value>Number of pauses per minute in interval 3</value>
+  </data>
+  <data name="Pause_PausePerMin_Int3_label" xml:space="preserve">
+    <value>Nmbr/min.:</value>
+  </data>
+  <data name="Pause_RelativePause_Int1_introduction" xml:space="preserve">
+    <value>Relative pause time in interval 1</value>
+  </data>
+  <data name="Pause_RelativePause_Int1_label" xml:space="preserve">
+    <value>Perct.:</value>
+  </data>
+  <data name="Pause_RelativePause_Int2_introduction" xml:space="preserve">
+    <value>Relative pause time in interval 2</value>
+  </data>
+  <data name="Pause_RelativePause_Int2_label" xml:space="preserve">
+    <value>Perct.:</value>
+  </data>
+  <data name="Pause_RelativePause_Int3_introduction" xml:space="preserve">
+    <value>Relative pause time in interval 3</value>
+  </data>
+  <data name="Pause_RelativePause_Int3_label" xml:space="preserve">
+    <value>Perct.:</value>
+  </data>
+  <data name="Pause_RelativeWriting_Int1_introduction" xml:space="preserve">
+    <value>Relative writing time in interval 1</value>
+  </data>
+  <data name="Pause_RelativeWriting_Int1_label" xml:space="preserve">
+    <value>Perct.:</value>
+  </data>
+  <data name="Pause_RelativeWriting_Int2_introduction" xml:space="preserve">
+    <value>Relative writing time in interval 2</value>
+  </data>
+  <data name="Pause_RelativeWriting_Int2_label" xml:space="preserve">
+    <value>Perct.:</value>
+  </data>
+  <data name="Pause_RelativeWriting_Int3_introduction" xml:space="preserve">
+    <value>Relative writing time in interval 3</value>
+  </data>
+  <data name="Pause_RelativeWriting_Int3_label" xml:space="preserve">
+    <value>Perct.:</value>
+  </data>
+  <data name="Focus_RelativeTime_AvailableSources_introduction" xml:space="preserve">
+    <value>Time spent in available sources</value>
+  </data>
+  <data name="Focus_RelativeTime_AvailableSources_label" xml:space="preserve">
+    <value>Ratio:</value>
+  </data>
+  <data name="Focus_RelativeTime_OtherSources_introduction" xml:space="preserve">
+    <value>Time spent in other sources (not the available sources)</value>
+  </data>
+  <data name="Focus_RelativeTime_OtherSources_label" xml:space="preserve">
+    <value>Ratio:</value>
+  </data>
+</root>

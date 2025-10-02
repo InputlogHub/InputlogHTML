@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Administration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Administration</h2>
+<fieldset>
+    <legend>Administration Overview</legend>
+    <ul>
+        <li>@Html.ActionLink("User list", "Index", "User")</li>
+        <li>@Html.ActionLink("Tasks", "FullIndex", "Task")</li>
+        <li>@Html.ActionLink("Analyses", "Index", "Analysis")</li>
+        <li>@Html.ActionLink("Edit Mails", "MailIndex")</li>
+    </ul>
+</fieldset>
+<fieldset>
+    <legend>Administration Guide</legend>
+    <h3>User list</h3>
+    <p>Deze pagina toont alle geregistreerde gebruikers en hun email.
+    Gebruikersaccounts kunnen uitgeschakeld worden (om eventuele statistieken te behouden, wordt er niet verwijderd)
+    Verder kunnen gebruikers aangepast worden of administrator gemaakt met de links naast hun gegevens.</p>
+
+    <h3>Tasks</h3>
+    <p>Op deze pagina worden alle taken getoond (todo: enkel top-x of paginatie), de naam van de gebruiker en een unieke identifier per taak worden getoond.
+    Gebruikers krijgen deze identifier wanneer ze de taak starten, en kunnen deze in geval van storing doorgeven aan de administrator om de taak te cancellen/resetten.
+    Een taak heeft 4 mogelijke statusen:</p>
+    <ul>
+        <li>Queued: Taak staat in de wachtrij om door de serverapp uitgevoerd te worden</li>
+        <li>Pending: Taak wordt momenteel uitgevoerd door de serverapp, resultaten zijn nog niet beschikbaar</li>
+        <li>Completed: Taak is afgerond, resultaten zijn beschikbaar</li>
+        <li>Pruned: Taak is x dagen geleden afgerond, server is opgeruimd en resultaten zijn verwijderd</li>
+    </ul>
+    <p>Taken die niet afgewerkt zijn kunnen via de link "Cancel" geannuleerd worden indien ze nog niet afgerond zijn.
+    Taken die afgerond of in uitvoering zijn kunnen met de link "Reset" terug naar status Queued gezet worden.
+    De unieke identifier is niet gegarandeerd 100&#37; uniek, maar de kans dat het random gedeelte achteraan de identifier voor dezelfde gebruiker tweemaal voorkomt op korte tijd is zeer klein.
+    </p>
+
+    <h3>Analyses</h3>
+    <p>Via deze pagina kunnen nieuwe analyse-types toegevoegd worden aan de server. Deze feature is verder gedocumenteerd in de developer documentation.</p>
+</fieldset>
+
+

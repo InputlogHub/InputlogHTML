@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Inputlog - @ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/favicon.ico")" rel="shortcut icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Inputlog" />
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <div class="page">
+
+        <div id="header">
+            <div id="title" align=left>
+                <a href="https://www.inputlog.net">
+                    <img src="@Url.Content("~/Content/banner.PNG")" alt="Inputlog logo"/>
+                </a>
+                <h1>Inputlog</h1>
+            </div>     
+        </div>
+
+        <div id="topbar"></div>
+        <div id="contentwrapper">
+            <div id="menucontainer">
+                <ul class="menu">
+                    @if (User.IsInRole("Default") || User.IsInRole("Admin"))
+                    {
+                        <li @if(@ViewBag.CurrentLink != null && @ViewBag.CurrentLink == "My Account"){@Html.Raw("class=\"current\"")} >
+                            @Html.ActionLink("My Account", "Details", "User", new { ID = User.Identity.Name }, null)
+                        </li>
+                        <li @if(@ViewBag.CurrentLink != null && @ViewBag.CurrentLink == "Project Overview"){@Html.Raw("class=\"current\"")} >
+                            @Html.ActionLink("Project Overview", "Index", "Task")
+                        </li>
+                    }
+                </ul>
+            </div>
+
+            <div id="main">
+                @if (TempData["Message"] != null)
+                {
+                    <p class="message">@TempData["Message"]</p>
+                }
+                @if (TempData["ErrorMsg"] != null)
+                {
+                    <p class="error">@TempData["ErrorMsg"]</p>
+                }
+                @RenderBody()
+            </div>
+
+        </div>
+    </div>
+    <div id="footer">© copyright Marielle Leijten and Luuk Van Waes - University of Antwerp</div>
+</body>
+</html>

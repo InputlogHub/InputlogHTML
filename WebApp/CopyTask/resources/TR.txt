@@ -1,0 +1,154 @@
+﻿<resources>
+	<session_info>
+		<participant_information>Katılımcı bilgisi</participant_information>
+		<intro>Lütfen kendiniz ve kopyalama görevi oturumu hakkında bilgilerinizi giriniz.</intro>
+		<name_label>Adı Soyadı</name_label>
+		<age_label>Yaşı</age_label>
+		<gender>Cinsiyeti</gender>
+		<gender_types> 
+			<male>E (erkek)</male>
+			<female>K (kız)</female>
+			<undefined>X(diğer)</undefined>
+		</gender_types>
+		<session>Oturum</session>
+		<kblayout>Klavye</kblayout>
+	</session_info>
+	<buttons>
+		<start>Başla</start>
+		<continue>Devam</continue>
+		<finish>Bitti</finish>
+		<download>İndir</download>
+		<resend>Yeniden Gönder</resend>
+		<progress>İlerleme</progress>
+	</buttons>
+	<messages>
+		<!-- Alert for session identification: you must enter your name -->
+		<enter_name>Lütfen adınızı giriniz.</enter_name>
+		<!-- Alert for session identification: you must provide a valid age -->
+		<valid_age>Lütfen geçerli bir yaş giriniz.</valid_age>
+		<!-- Select gender -->
+		<select_gender>Lütfen cinsiyetinizi seçin.</select_gender>
+		<!-- Select a keyboard layout -->
+		<select_layout>Kullandığınız klavye türünü seçiniz.</select_layout>
+		<!-- Title for: successfully transmitted and copytask downloaded -->
+		<thanks>Bu kopyalama görevine katıldığınız için teşekkürler.</thanks>
+		<!-- Message for: Successfully transmitted and copytask completed -->
+		<download_finish>Şimdi .idfx dosyanızı indirebilirsiniz ya da başlangıç bölümüne gitmek için bitti tuşuna basınız.</download_finish>
+		<!-- Alert for: Time to complete a copytask has finished -->
+		<time_up>Süreniz doldu</time_up>
+		<!-- Alert for: message when trying to close the copytask before completing the task and or transmitting/downloading the results -->
+		<alert_closing>Bu kopyalama görevini iptal etmek istediğinizden emin misiniz?</alert_closing>
+		<!-- Title for: we are trying to transmit your data to the server -->
+		<contacting_server>Verileriniz sunucuya kaydediliyor...</contacting_server>
+		<!-- Message for: we are trying to transmit your data to the server (please wait) -->
+		<no_closing>Henüz bu pencereyi kapatmayınız.Bu arada, isterseniz siz de verilerinizi bilgisayarınıza indirebilirsiniz.</no_closing>
+		<!-- Message for: we could not transmit your data to the server -->
+		<fail>Dosya sunucuya yüklenemedi. Lütfen lokal olarak indiriniz, ya da yeniden gönder tuşuna basarak tekrar deneyiniz.</fail>
+	</messages>
+<agreement>
+Bu çalışmaya katılmayı kabul ediyorum. Bu projeye katılmış olmam, bu oturum esnasında yazdıklarımın kaydedileceğini içermektedir. Bu çalışmaya gönüllü olarak katıldığım; çalışmadan herhangi bir zaman çekilebileceğim ve çekilme nedenini belirtmek zorunda olmadığım bilgim dahilindedir.
+Verilerimin,  Antwerp Universitesi'nde güvenli Inputlog sunucusunda saklanacağı bilgim dahilindedir. Sadece kimliği doğrulanmış araştırmacılar, toplanan verilerin gizliliğini korumayı kabul ettikleri sürece, bu verilere erişebilir. 
+</agreement>
+
+<agreement_required>
+Bu çalışmaya katılmayı kabul ettiğinizi işaretlemelisiniz.
+</agreement_required>
+
+<mandatory_input>
+* Giriş gerekli
+</mandatory_input>
+
+<questionnaire>
+	<!-- Header of the questionnaire page -->
+	<questions_title> Son Sorular</questions_title>
+
+	<!-- Alerts for required questionnaire information -->
+	<alerts>
+			<error_required>Gerekli bütün alanları belirtmelisiniz (*)</error_required>
+	</alerts>
+
+<!-- Questions about handedness -->
+	<handedness_message>Lütfen kullanımınızdaki tercihlerinizi belirtiniz <em>eller</em> aşağıdaki etkinliklerde:</handedness_message>
+	<handedness_always_left> her zaman sol</handedness_always_left>
+		<handedness_usually_left>genellikle sol</handedness_usually_left>
+		<handedness_both_equally>tercihim yok</handedness_both_equally>
+		<handedness_usually_right>genellikle sağ</handedness_usually_right>
+		<handedness_always_right>her zaman sağ</handedness_always_right>
+		<label_handwriting>yazı yazmak</label_handwriting>
+		<label_throwing>atmak</label_throwing>
+		<label_brushing_teeth>diş fırçalamak</label_brushing_teeth>
+		<label_eating_with_spoon>kaşıkla yemek</label_eating_with_spoon>
+
+<!-- Other questions -->
+	<!-- Computer used -->
+	<label_question_computer>Bu testte kullanılan bilgisayar?</label_question_computer>
+	<options_question_computer>
+		<option_computer>masaüstü bilgisayarı</option_computer>
+		<option_computer> laptop</option_computer>
+	</options_question_computer>
+
+<!-- Browser used -->
+	<label_question_browser>Bu testte kullanılan tarayıcı?</label_question_browser>
+	<options_question_browser>
+		<option_browser>Google Chrome</option_browser>
+		<option_browser>Internet Explorer</option_browser>
+		<option_browser>Edge</option_browser>
+		<option_browser>Mozilla Firefox</option_browser>
+		<option_browser> Opera</option_browser>
+		<option_browser> Safari</option_browser>
+		<option_browser>diğer</option_browser>
+		<option_browser>bilmiyorum</option_browser>
+	</options_question_browser>
+
+		<!-- Keyboard familiarity -->
+	<label_question_keyboard>Bu testte kullanılan klavye?</label_question_keyboard>
+	<options_question_keyboard>
+		<option_keyboard>çok tanıdık</option_keyboard>
+		<option_keyboard>tanıdık</option_keyboard>
+		<option_keyboard>tanıdık değil</option_keyboard>
+	</options_question_keyboard>
+	
+	<!-- Dominant language -->
+	<label_question_language>Yazı yazmada hangi baskın dili/dilleri kullanıyorsunuz?</label_question_language>
+		<options_question_language>
+			<option_language>Türkçe</option_language>
+			<option_language>İngilizce </option_language>
+			<option_language>Almanca</option_language>
+			<option_language>Fransızca</option_language>
+			<option_language> İspanyolca</option_language>
+			<option_language>Hollandaca</option_language>
+			<option_language> İsveççe</option_language>
+			<option_language> Lehçe</option_language>
+			<option_language> Galler dili</option_language>
+			<option_language>diğer</option_language>
+		</options_question_language>
+
+	<!-- Language disorder -->
+	<label_question_disorder>Dil bozukluğu</label_question_disorder>
+		<label_question_disorder_specify>(eğer varsa) dil bozukluğunu belirtiniz</label_question_disorder_specify>
+		<options_question_disorder>
+			<option_disorder> evet</option_disorder>
+			<option_disorder>hayır</option_disorder>
+			<option_disorder> bilmiyorum</option_disorder>
+		</options_question_disorder>
+	
+<!-- Highest level of education -->
+	<label_question_education>En yüksek eğitim seviyeniz nedir?</label_question_education>
+		<options_question_education>
+			<option_education>ilköğretim</option_education>
+			<option_education> ortaöğretim</option_education>
+			<option_education> mesleki yükseköğretim</option_education>
+			<option_education> lisans derecesi</option_education>
+			<option_education>yüksek lisans derecesi</option_education>
+			<option_education> doktora derecesi</option_education>
+		</options_question_education>
+
+<!-- Highest level of repetition -->
+		<label_question_repetition>Bu görevi ilk defa mı yapıyorsunuz?</label_question_repetition>
+		<options_question_repetition>
+			<option_repetition>evet</option_repetition>
+			<option_repetition> hayır</option_repetition>
+		</options_question_repetition>
+
+	</questionnaire>
+</resources>

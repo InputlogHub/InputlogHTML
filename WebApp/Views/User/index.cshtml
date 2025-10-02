@@ -1,0 +1,85 @@
+﻿@model WebApp.Models.UserIndexViewModel
+
+@{
+    ViewBag.Title = "User Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>User list</h2>
+
+<table id="usertable" class="tablesorter">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Registration Date</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (MembershipUser user in Model.Users)
+    {
+        <tr>
+            <td>@Html.ActionLink(user.UserName, "Details", "User", new { ID = user.UserName }, null)</td>
+            <td>@user.Email</td>
+            <td>@user.CreationDate</td>
+        </tr>
+    }
+    </tbody>
+</table>
+<div id="pager" class="pager">
+	<form>
+		<img src="@Url.Content("~/Content/first.png")" class="first"/>
+		<img src="@Url.Content("~/Content/prev.png")" class="prev"/>
+		<input type="text" class="pagedisplay"/>
+		<img src="@Url.Content("~/Content/next.png")" class="next"/>
+		<img src="@Url.Content("~/Content/last.png")" class="last"/>
+		<select class="pagesize">
+			<option value="50">50 per page</option>
+			<option value="100" selected="selected">100 per page</option>
+			<option value="250">250 per page</option>
+			<option value="500">500 per page</option>
+            <option value="1000">1000 per page</option>
+		</select>
+	</form>
+</div>
+<p>
+    @Html.ActionLink("Show Disabled", "IndexDisabled", "User", null, null)
+</p>
+<p>
+    @Html.ActionLink("[Export users]", "Export", "User")
+</p>
+<p>
+    @using (Html.BeginForm("Import", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <input type="file" name="file" />
+        <input type="submit" name="Submit" id="Submit" value="Import legacy users" />
+    }
+</p>
+
+<script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.4.1.min.js")"></script> 
+<script type="text/javascript" src="@Url.Content("~/Scripts/jquery.tablesorter.js")"></script> 
+<script type="text/javascript" src="@Url.Content("~/Scripts/jquery.tablesorter.pager.js")"></script> 
+<script defer="defer">
+    $(document).ready(function () {
+        $.tablesorter.addParser({
+            id: "datetime",
+            is: function (s) {
+                return false;
+            },
+            format: function (s, table) {
+                s = s.replace(/\-/g, "/");
+                s = s.replace(/(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/, "$3/$2/$1");
+                return $.tablesorter.formatFloat(new Date(s).getTime());
+            },
+            type: "numeric"
+        });
+        $("#usertable")
+		.tablesorter({
+		    widthFixed: true, sortList: [[2, 1]],
+		    dateFormat: 'dd/mm/yyyy',
+		    headers: { 2: { sorter: 'datetime'} }
+		})
+		.tablesorterPager({ container: $("#pager") });
+    }
+	); 
+</script>

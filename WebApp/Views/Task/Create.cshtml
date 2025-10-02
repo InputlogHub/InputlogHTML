@@ -1,0 +1,30 @@
+﻿@model WebApp.Models.TaskCreateViewModel
+
+@{
+    ViewBag.Title = "Create Project";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create a new project</h2>
+
+@using (Html.BeginForm("Create", "Task", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div>
+        <fieldset>
+            <legend>Tools</legend>
+            @foreach (WebApp.Models.AnalysisModel an in Model.Analyses)
+            {
+	            <input type="checkbox" id="@an.Name" name="analyses" value="@an.ID" /><label>@an.Name</label><br />
+            }
+        </fieldset>
+        <fieldset>
+            <legend>Analysis file</legend>
+            <input type="file" id="File" name="file" /><br />
+        </fieldset>
+                
+        <p>
+            <input type="submit" id="Submit" value="Create Project" />
+        </p>
+    </div>
+}
+

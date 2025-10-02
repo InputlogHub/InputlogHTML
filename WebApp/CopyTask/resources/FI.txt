@@ -1,0 +1,157 @@
+<resources>
+ <session_info>
+      <participant_information>Osallistujan tiedot</participant_information>
+      <intro>Ilmoita tässä tiedot itsestäsi ja näppäimistöstäsi. </intro>
+	<name_label>Koko nimi</name_label>
+	<age_label>Ikä</age_label>
+	<gender>Sukupuoli</gender>
+	<gender_types> 
+	  <male>mies</male>
+	  <female>nainen</female>
+	  <undefined>muu</undefined>
+	</gender_types>
+	<session>Sessio</session>
+	<kblayout>Näppäimistö</kblayout>
+ </session_info>
+ 
+ <buttons>
+	<start>Aloita</start>
+	<continue>Jatka</continue>
+	<finish>Lopeta</finish>
+	<download>Lataa tiedot</download>
+	<resend>Lähetä uudelleen</resend>
+	<progress>Edistyminen</progress>
+</buttons>
+
+<messages>
+	<!-- Alert for session identification: you must enter your name -->
+	<enter_name>Ilmoita nimesi, ole hyvä.</enter_name>
+	<!-- Alert for session identification: you must provide a valid age -->
+	<valid_age>Ilmoita ikäsi, ole hyvä.</valid_age>
+     <!-- Select gender -->
+	<select_gender>Valitse sukupuolesi.</select_gender>
+	<!-- Select a keyboard layout -->
+	<select_layout>Valitse näppäimistö, jota käytät.</select_layout>
+	<!-- Title for: successfully transmitted and copytask downloaded -->
+	<thanks>Kiitos osallistumisesta</thanks>
+	<!-- Message for: Successfully transmitted and copytask completed -->
+	<download_finish>Voit ladata idfx-tiedoston tai lopettaa palataksesi alkuun.</download_finish>
+	<!-- Alert for: Time to complete a copytask has finished -->
+	<time_up>Aika päättyi</time_up>
+	<!-- Alert for: message when trying to close the copytask before completing the task and or transmitting/downloading the results -->
+	<alert_closing>Haluatko varmasti lopettaa tehtävän?</alert_closing>
+	<!-- Title for: we are trying to transmit your data to the server -->
+	<contacting_server>Tallennetaan tietojasi palvelimelle...</contacting_server>
+	<!-- Message for: we are trying to transmit your data to the server (please wait) -->
+	<no_closing>Älä sulje ikkunaa. Halutessasi voit ladata tiedot omalle tietokoneellesi.</no_closing>
+	<!-- Message for: we could not transmit your data to the server -->
+	<fail>Tiedostoa ei voitu ladata palvelimelle. Tallenna tiedosto paikallisesti tai yritä uudelleen painamalla lähetä uudelleen -painiketta.</fail>
+</messages>
+
+<agreement>
+Suostun osallistumaan tutkimukseen. Ymmärrän, että kirjoitustani nauhoitetaan tehtävän aikana.
+Ymmärrän, että osallistuminen on vapaaehtoista. Voin vetäytyä tutkimuksesta milloin vain, eikä minun tarvitse perustella vetäytymistäni.
+Ymmärrän, että tietoni tallennetaan Inputlogin suojatulle palvelimelle Antwerpenin yliopistolla. Vain luvan saaneilla tutkijoilla on pääsy tietoihini sillä ehdolla, että he ovat sitoutuneet käsittelemään tietoja luottamuksellisesti.
+</agreement>
+
+<agreement_required>
+Ymmärrän, että tietoni tallennetaan Inputlogin suojatulle palvelimelle Antwerpenin yliopistolla. Vain luvan saaneilla tutkijoilla on pääsy tietoihini sillä ehdolla, että he ovat sitoutuneet käsittelemään tietoja luottamuksellisesti.
+</agreement_required>
+
+<mandatory_input>
+* Syöte vaaditaan
+</mandatory_input>
+
+<questionnaire>
+	<!-- Header of the questionnaire page -->
+	<questions_title>Viimeiset kysymykset</questions_title>
+
+	<!-- Alerts for required questionnaire information -->
+	<alerts>
+			<error_required>Vastaa kaikkiin kysymyksiin(*)</error_required>
+	</alerts>
+
+<!-- Questions about handedness -->
+	<handedness_message>Kerro, millä kädellä suoritat seuraavat aktiviteetit:</handedness_message>
+	<handedness_always_left>aina vasen</handedness_always_left>
+		<handedness_usually_left>yleensä vasen</handedness_usually_left>
+		<handedness_both_equally>ei väliä</handedness_both_equally>
+		<handedness_usually_right>yleensä oikea</handedness_usually_right>
+		<handedness_always_right>aina oikea</handedness_always_right>
+		<label_handwriting>(käsin)kirjoittaminen</label_handwriting>
+		<label_throwing>heittäminen</label_throwing>
+		<label_brushing_teeth>hampaiden harjaus</label_brushing_teeth>
+		<label_eating_with_spoon>lusikalla syöminen</label_eating_with_spoon>
+
+<!-- Other questions -->
+	<!-- Computer used -->
+	<label_question_computer>Mitä konetta käytit tehtävässä?</label_question_computer>
+	<options_question_computer>
+		<option_computer>pöytäkone</option_computer>
+		<option_computer>kannettava</option_computer>
+	</options_question_computer>
+
+	<!-- Keyboard familiarity -->
+	<label_question_keyboard>Näppäimistön tuttuus?</label_question_keyboard>
+	<options_question_keyboard>
+		<option_keyboard>erittäin tuttu</option_keyboard>
+		<option_keyboard>tuttu</option_keyboard>
+		<option_keyboard>ei tuttu</option_keyboard>
+	</options_question_keyboard>
+
+<!-- Browser used -->
+	<label_question_browser>Mitä selainta käytit tehtävässä?</label_question_browser>
+	<options_question_browser>
+		<option_browser>Google Chrome</option_browser>
+		<option_browser>Internet Explorer</option_browser>
+		<option_browser>Edge</option_browser>
+		<option_browser>Mozilla Firefox</option_browser>
+		<option_browser>Opera</option_browser>
+		<option_browser>Safari</option_browser>
+		<option_browser>en tiedä</option_browser>
+		<option_browser>muu</option_browser>
+	</options_question_browser>
+
+	<!-- Which dominant language(s) do you use in writing? -->
+	<label_question_language>Käyttämäsi kielet?</label_question_language>
+		<options_question_language>
+			<option_language>englanti</option_language>
+			<option_language>suomi</option_language>
+			<option_language>ranska</option_language>
+			<option_language>saksa</option_language>
+			<option_language>hollanti</option_language>
+			<option_language>puola</option_language>
+			<option_language>espanja</option_language>
+			<option_language>ruotsi</option_language>
+			<option_language>turkki</option_language>
+			<option_language>muu</option_language>
+		</options_question_language>
+
+	<!-- Language disorder -->
+	<label_question_disorder>Onko sinulla kieleen, lukemiseen tai kirjoittamiseen liittyviä vaikeuksia? </label_question_disorder>
+	<options_question_disorder>
+		<option_disorder>kyllä</option_disorder>
+		<option_disorder>ei</option_disorder>
+		<option_disorder>en tiedä</option_disorder>
+	</options_question_disorder>
+	
+<!-- Highest level of education -->
+	<label_question_education>Korkein tutkintosi?</label_question_education>
+		<options_question_education>
+			<option_education>peruskoulu</option_education>
+			<option_education>toisen asteen koulutus</option_education>
+			<option_education>toisen asteen jälkeinen koulutus, ei tutkintoa</option_education>
+			<option_education>alempi korkeakoulututkinto</option_education>
+			<option_education>ylempi korkeakoulututkinto</option_education>
+			<option_education>tohtorin tutkinto</option_education>
+		</options_question_education>
+
+<!-- Highest level of repetition -->
+		<label_question_repetition>Suorititko tehtävän ensimmäistä kertaa?</label_question_repetition>
+		<options_question_repetition>
+			<option_repetition>kyllä</option_repetition>
+			<option_repetition>ei</option_repetition>
+		</options_question_repetition>
+
+	</questionnaire>
+</resources>

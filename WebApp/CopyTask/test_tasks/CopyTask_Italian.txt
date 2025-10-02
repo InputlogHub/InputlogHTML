@@ -1,0 +1,59 @@
+<copytask>
+  <title>Italian</title>
+  <description>procedura per misurare la tua abilità di battitura</description>
+  <language>IT</language>
+  <general_instructions>Benvenuto/a
+
+In questa sessione ti chiederemo di digitare lettere, parole e frasi che appariranno sullo schermo.
+Cerca di digitare più velocemente che puoi e senza fare errori.
+Se fai un errore, non c'è bisogno di correggerlo. Gli errori di battitura non sono un problema. Puoi continuare a digitare. La velocità di battitura è più importante della correttezza.
+</general_instructions>
+  <layouts>
+    <layout>AZERTY</layout>
+    <layout>QWERTY</layout>
+    <layout>QWERTZ</layout>
+  </layouts>
+  <task title="Typing speed" unlimited="true" timelimit="15">
+    <instructions>Digita le lettere 'd' e 'k' più velocemente che puoi per 15 secondi senza fermarti. L'obiettivo è inserire quante più lettere possibile.
+Il conto alla rovescia inizia appena digiti il primo carattere.</instructions>
+    <target>dkdkdkdkdkdkdkdkdkdkdkdkdkdk... </target>
+  </task>
+  <task title="Sentence" unlimited="true" timelimit="30">
+    <instructions>Digita la frase qui in basso più velocemente che puoi per 30 secondi.
+Non usare né lettere maiuscole né il punto. Premi 'Invio' dopo ogni frase.
+
+Il conto alla rovescia inizia appena digiti il primo carattere.</instructions>
+    <target>un gatto si perde tra quelle strade</target>
+  </task>
+  <task title="Example 1" repetition="7" example="true">
+    <instructions>Questo è un esempio. 
+Nelle attività successive, ti chiederemo di digitare gruppi di tre parole per sette volte.
+In questo esempio abbiamo ripetuto le parole 'una bella giornata'.
+Per queste attività, non c'è limite di tempo. 
+</instructions>
+    <target>una bella giornata</target>
+  </task>
+  <task title="Words 1" synthesize="true" repetition="7">
+    <instructions>Digita queste parole sette volte.
+Per andare a capo, premi 'Invio'.
+</instructions>
+    <target>tre meravigliosi equivoci</target>
+  </task>
+  <task title="Words 2" synthesize="true" repetition="7">
+    <instructions>Digita queste parole sette volte.
+</instructions>
+    <target>una sorprendente scoperta</target>
+  </task>
+  <task title="Words 3" synthesize="true" repetition="7">
+    <instructions>Digita queste parole sette volte.</instructions>
+    <target>due trionfanti straniere</target>
+  </task>
+  <task title="Words 4" repetition="7">
+    <instructions>Digita queste parole sette volte.</instructions>
+    <target>dei faraonici zigzag</target>
+  </task>
+  <task title="Consonants">
+    <instructions>Per concludere, digita questi quattro blocchi di consonanti una volta sola.</instructions>
+    <target>tjxgfl pgkfkq dtdrgt npwdvf</target>
+  </task>
+</copytask>

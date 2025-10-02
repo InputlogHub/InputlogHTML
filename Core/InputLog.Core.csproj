@@ -1,0 +1,1028 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E631E0E-B309-45F6-A9E3-F1B2B1F8F1A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InputLog.Core</RootNamespace>
+    <AssemblyName>InputLogCore</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>InputlogCore.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisLogFile>..\Debug\InputLogCore.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\Release\InputLogCore.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\ICSharpCode.SharpZipLib.dll.0.85.4.369\lib\net20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=2.6.0.29, Culture=neutral, PublicKeyToken=cd8b63ad3d691a37, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\OneDrive\Documents\Visual Studio 2022\Inputlog\Core\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics.IO, Version=2.6.0.29, Culture=neutral, PublicKeyToken=cd8b63ad3d691a37, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\OneDrive\Documents\Visual Studio 2022\Inputlog\Core\MathNet.Numerics.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=8.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.8.0.1\lib\net462\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=8.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.8.0.1\lib\net462\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.8.0.2\lib\net462\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.8.0.0\lib\net462\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MigraDoc.DocumentObjectModel, Version=6.2.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-MigraDoc-GDI.6.2.1\lib\net462\MigraDoc.DocumentObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.Rendering-gdi, Version=6.2.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-MigraDoc-GDI.6.2.1\lib\net462\MigraDoc.Rendering-gdi.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.RtfRendering-gdi, Version=6.2.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-MigraDoc-GDI.6.2.1\lib\net462\MigraDoc.RtfRendering-gdi.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp-gdi, Version=6.2.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-GDI.6.2.1\lib\net462\PdfSharp-gdi.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.BarCodes-gdi, Version=6.2.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-GDI.6.2.1\lib\net462\PdfSharp.BarCodes-gdi.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting-gdi, Version=6.2.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-GDI.6.2.1\lib\net462\PdfSharp.Charting-gdi.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Cryptography, Version=6.2.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-GDI.6.2.1\lib\net462\PdfSharp.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Quality-gdi, Version=6.2.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-GDI.6.2.1\lib\net462\PdfSharp.Quality-gdi.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Shared, Version=6.2.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-GDI.6.2.1\lib\net462\PdfSharp.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Snippets-gdi, Version=6.2.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-GDI.6.2.1\lib\net462\PdfSharp.Snippets-gdi.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.System, Version=6.2.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-GDI.6.2.1\lib\net462\PdfSharp.System.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.WPFonts, Version=6.2.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-GDI.6.2.1\lib\net462\PdfSharp.WPFonts.dll</HintPath>
+    </Reference>
+    <Reference Include="QUT.ShiftReduceParser, Version=1.4.6.0, Culture=neutral, PublicKeyToken=402396ef6102baec, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\OneDrive\Documents\Visual Studio 2022\InputlogGoogle\Core\QUT.ShiftReduceParser.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Pkcs, Version=8.0.0.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Pkcs.8.0.1\lib\net462\System.Security.Cryptography.Pkcs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analyses\Bigram\BigramAnalysis.cs" />
+    <Compile Include="Analyses\Bigram\BigramAnalysisSummary.cs" />
+    <Compile Include="Analyses\Bigram\BigramAnalysisXMLWriter.cs" />
+    <Compile Include="Analyses\Copytask\Bigrams\Bigram.cs" />
+    <Compile Include="Analyses\Copytask\Bigrams\BigramParser.cs" />
+    <Compile Include="Analyses\Copytask\CopytaskAnalysis.cs" />
+    <Compile Include="Analyses\Copytask\CopytaskAnalysisSummary.cs" />
+    <Compile Include="Analyses\Copytask\CopytaskAnalysisXMLWriter.cs" />
+    <Compile Include="Analyses\Copytask\PrettyPrintStatistics.cs" />
+    <Compile Include="Analyses\Copytask\QuestionsData.cs" />
+    <Compile Include="Analyses\Copytask\Resources\ResourceManager.cs" />
+    <Compile Include="Analyses\Copytask\StatisticsAccumulator.cs" />
+    <Compile Include="Analyses\Copytask\Elements\BigramContext.cs" />
+    <Compile Include="Analyses\Copytask\Elements\ComponentStructure.cs" />
+    <Compile Include="Analyses\Copytask\Elements\ComponentExecution.cs" />
+    <Compile Include="Analyses\Copytask\Elements\CopytaskExecution.cs" />
+    <Compile Include="Analyses\Fluency\FluencyAnalysis.cs" />
+    <Compile Include="Analyses\Fluency\FluencyAnalysisSummary.cs" />
+    <Compile Include="Analyses\Fluency\FluencyAnalysisXMLWriter.cs" />
+    <Compile Include="Analyses\GeneralEyetrack\GeneralEyetrackAnalysis.cs" />
+    <Compile Include="Analyses\GeneralEyetrack\GeneralEyetrackAnalysisDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\GeneralEyetrack\GeneralEyetrackAnalysisSummary.cs" />
+    <Compile Include="Analyses\GeneralEyetrack\GeneralEyetrackAnalysisXMLWriter.cs" />
+    <Compile Include="Analyses\General\GeneralAnalysisDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\Pause\SingularPauseAnalysisSummary.cs" />
+    <Compile Include="Analyses\WordPauses\WordPauseTargets.cs" />
+    <Compile Include="Events\WinLog\Questions.cs" />
+    <Compile Include="Events\WordLog\AuthorComment.cs" />
+    <Compile Include="IO\AnalysisXML\Input\ReportingXMLReader.cs" />
+    <Compile Include="IO\AnalysisXML\Input\WordPausesAnalysisReader.cs" />
+    <Compile Include="IO\CSV\CSVItem.cs" />
+    <Compile Include="IO\CSV\CSVLineGetters.cs" />
+    <Compile Include="IO\CSV\CSVMergeReader.cs" />
+    <Compile Include="Analyses\ProcessGraphAnalysis\ProcessGraphAnalysis.cs" />
+    <Compile Include="Analyses\ProcessGraphAnalysis\ProcessGraphAnalysisSummary.cs" />
+    <Compile Include="Analyses\ProcessGraphAnalysis\ProcessGraphAnalysisXMLWriter.cs" />
+    <Compile Include="IO\CSV\CSVMergeWriter.cs" />
+    <Compile Include="IO\CSV\CSVTextWriter.cs" />
+    <Compile Include="IO\CSV\ICSVLineGetter.cs" />
+    <Compile Include="IO\HTML\XmlToHtmlTranslator.cs" />
+    <Compile Include="Merging\Analyses\Processors\VerticalCSVProcessor.cs" />
+    <Compile Include="Preprocessing\Recode\NegativePauseRemover.cs" />
+    <Compile Include="Preprocessing\Recode\TaskbarRemover.cs" />
+    <Compile Include="Reporting\Graphs\BarChart.cs" />
+    <Compile Include="Reporting\Graphs\BoxPlot.cs" />
+    <Compile Include="Reporting\Graphs\ReportChart.cs" />
+    <Compile Include="Reporting\Output\FormatterFactory.cs" />
+    <Compile Include="Reporting\Output\XmlFormatter.cs" />
+    <Compile Include="Reporting\Report\Element.cs" />
+    <Compile Include="Reporting\Resources\ReportContentResources.en.Designer.cs">
+      <DependentUpon>ReportContentResources.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reporting\Resources\ReportContentResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportContentResources.resx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reporting\Output\Formatter.cs" />
+    <Compile Include="Reporting\Output\PdfFormatter.cs" />
+    <Compile Include="Reporting\Report\Block.cs" />
+    <Compile Include="Reporting\Report\Report.cs" />
+    <Compile Include="Reporting\IReportData.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\CombinedAnalysis\LT3Combination.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\BigramTable.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\InfoTable.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\TokenAnalysis.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\TokenAnalysisSummary.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\TokenAnalysisXMLWriter.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\TokenReconstructor.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\Tokens\DamerauLevenshtein.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\Tokens\NGramMaker.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\Tokens\ProductionInfo.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\Tokens\TokenEdits.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\Tokens\TokenTarget.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\Tokens\WordEdits.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\WordsReconstruction.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Webservice\LinguisticWebserviceHandler.cs" />
+    <Compile Include="Analyses\PauseLocationMarker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\PauseParser\AFiniteStateMachine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\PauseParser\AFSMFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\PauseParser\DeterministicFiniteStateMachine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\PauseParser\IActionLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\PauseParser\IEventLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\PauseParser\IRuleFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\PauseParser\NonDeterministicFiniteStateMachine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\PauseParser\Parser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\PauseParser\PauseLocationActionLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\PauseParser\PauseLocationEventLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\PauseParser\RegexRule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\PauseParser\Scanner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\PauseParser\StringFSMFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\PauseParser\StringRuleFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\Revision\Notations\Heatmap.cs" />
+    <Compile Include="Analyses\WordPauses\WordPausesAnalysis.cs" />
+    <Compile Include="Analyses\WordPauses\WordPausesAnalysisSummary.cs" />
+    <Compile Include="Analyses\WordPauses\WordPausesAnalysisXMLWriter.cs" />
+    <Compile Include="Events\DragonNS\DragonNSPart.cs" />
+    <Compile Include="Events\EyeTracking\IPLTimeConverter.cs" />
+    <Compile Include="Events\EyeTracking\SubParts\AOIPart.cs" />
+    <Compile Include="Events\EyeTracking\SubParts\ExternalEventPart.cs" />
+    <Compile Include="Events\EyeTracking\SubParts\EyePositionPart.cs" />
+    <Compile Include="Events\EyeTracking\EyetrackPart.cs" />
+    <Compile Include="Events\EyeTracking\SubParts\GazeEventPart.cs" />
+    <Compile Include="Events\EyeTracking\ISubPart.cs" />
+    <Compile Include="Events\EyeTracking\SubParts\IPLTimePart.cs" />
+    <Compile Include="Events\EyeTracking\SubParts\KeyboardEventPart.cs" />
+    <Compile Include="Events\EyeTracking\SubParts\MediaPart.cs" />
+    <Compile Include="Events\EyeTracking\SubParts\MouseEventPart.cs" />
+    <Compile Include="Events\EyeTracking\SubParts\SegmentPart.cs" />
+    <Compile Include="Events\EyeTracking\SubParts\StudioEventPart.cs" />
+    <Compile Include="Events\EyeTracking\SubParts\TimePart.cs" />
+    <Compile Include="IO\AnalysisXML\Input\GeneralEyetrackAnalysisReader.cs" />
+    <Compile Include="IO\AnalysisXML\Input\LinguisticAnalysisReader.cs" />
+    <Compile Include="IO\AnalysisXML\Input\LinearAnalysisReader.cs" />
+    <Compile Include="IO\AnalysisXML\Input\SNotationAnalysisReader.cs" />
+    <Compile Include="IO\AnalysisXML\Input\DefaultXMLReader.cs" />
+    <Compile Include="IO\AnalysisXML\Input\LogCreationReader.cs" />
+    <Compile Include="IO\AnalysisXML\Input\RevisionAnalysisReader.cs" />
+    <Compile Include="IO\Basic\EventIOHandlers.cs" />
+    <Compile Include="IO\Convert\FileFormatValidator\TranslogFileValidator.cs" />
+    <Compile Include="IO\Convert\TranslogConverter\DeleteKey.cs" />
+    <Compile Include="IO\Convert\TranslogConverter\EditKey.cs" />
+    <Compile Include="IO\Convert\ILConvertible.cs" />
+    <Compile Include="IO\Convert\TranslogConverter\ILConvertible.cs" />
+    <Compile Include="IO\Convert\TranslogConverter\InsertKey.cs" />
+    <Compile Include="IO\Convert\TranslogConverter\MouseClick.cs" />
+    <Compile Include="IO\Convert\TranslogConverter\NaviKey.cs" />
+    <Compile Include="IO\Convert\TranslogConverter\ReturnKey.cs" />
+    <Compile Include="IO\Convert\TranslogConverter\TextStatistics.cs" />
+    <Compile Include="IO\Convert\TranslogConverter\TranslogFactory.cs" />
+    <Compile Include="IO\Convert\TranslogConverter\TranslogReader.cs" />
+    <Compile Include="IO\Tobii\TAGS.cs" />
+    <Compile Include="IO\Txt\CsvReader\CsvFileCommon.cs" />
+    <Compile Include="IO\Txt\CsvReader\CsvFileReader.cs" />
+    <Compile Include="IO\Txt\CsvReader\EmptyLineBehavior.cs" />
+    <Compile Include="IO\Xml\IdfxMerger.cs" />
+    <Compile Include="IO\Xml\Input\XmlDragonNSReader.cs" />
+    <Compile Include="IO\Xml\Input\XmlEyetrackReader.cs" />
+    <Compile Include="IO\Xml\Output\XmlDragonNSWriter.cs" />
+    <Compile Include="IO\Xml\Output\XmlEyetrackWriter.cs" />
+    <Compile Include="IO\Xml\IdfxSegmenter.cs" />
+    <Compile Include="Merging\Analyses\AnalysisMerge.cs" />
+    <Compile Include="Merging\Analyses\AnalysisType.cs" />
+    <Compile Include="Merging\Analyses\Processors\BasicProcessor.cs" />
+    <Compile Include="Merging\Analyses\Processors\HorizontalCSVProcessor.cs" />
+    <Compile Include="Merging\Analyses\Processors\ProcessorFactory.cs" />
+    <Compile Include="Merging\DragonNaturallySpeakingData.cs" />
+    <Compile Include="Merging\MergeException.cs" />
+    <Compile Include="Merging\Sources\ProcessTasks\AbstractMergeTask.cs" />
+    <Compile Include="Merging\Sources\ProcessTasks\DragonMergeTask.cs" />
+    <Compile Include="Merging\Sources\ProcessTasks\DragonOffsetCalculator.cs" />
+    <Compile Include="Merging\Sources\ProcessTasks\IOffsetCalculator.cs" />
+    <Compile Include="Merging\Sources\ProcessTasks\OffsetCalculatorFactory.cs" />
+    <Compile Include="Merging\Sources\ProcessTasks\DragonMergeFileValidator.cs" />
+    <Compile Include="Merging\Sources\ProcessTasks\TobiiOffsetCalculator.cs" />
+    <Compile Include="Merging\Sources\ProcessTasks\TobiiMergeTask.cs" />
+    <Compile Include="Merging\Sources\ProcessTasks\TobiiUtilities.cs" />
+    <Compile Include="Mining\Process\Activity.cs" />
+    <Compile Include="Mining\Process\EventToXESConverter.cs" />
+    <Compile Include="Mining\Process\EventTypeSelector.cs" />
+    <Compile Include="Mining\Process\IActivitySelector.cs" />
+    <Compile Include="Mining\Process\Case.cs" />
+    <Compile Include="Mining\Process\ICaseSplitter.cs" />
+    <Compile Include="Mining\Process\WordCaseSplitter.cs" />
+    <Compile Include="Reporting\ReportController.cs" />
+    <Compile Include="Reporting\ReportValue.cs" />
+    <Compile Include="Reporting\ReportingBlocks.cs" />
+    <Compile Include="Reporting\ReportMethod.cs" />
+    <Compile Include="Reporting\Resources\ReportContentResources.nl.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportContentResources.nl.resx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reporting\Resources\ReportMappingResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportMappingResources.resx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reporting\ReportTemplate\BlockTemplate.cs" />
+    <Compile Include="Reporting\ReportTemplate\ElementTemplate.cs" />
+    <Compile Include="Reporting\ReportTemplate\Import\TemplateImporter.cs" />
+    <Compile Include="Reporting\ReportTemplate\Import\XmlTemplateImporter.cs" />
+    <Compile Include="Reporting\ReportTemplate\ReportTemplate.cs" />
+    <Compile Include="Reporting\ReportTemplate\ReportTemplateManager.cs" />
+    <Compile Include="Reporting\ReportTemplate\ValueTemplate.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="TemplateBuilder\TemplateBlock.cs" />
+    <Compile Include="TemplateBuilder\TemplateXMLReader.cs" />
+    <Compile Include="TemplateBuilder\TemplateXMLWriter.cs" />
+    <Compile Include="Util\Accumulator.cs" />
+    <Compile Include="Util\BigramUtils.cs" />
+    <Compile Include="Util\CompareDataTables.cs" />
+    <Compile Include="IO\CSV\CSVReader.cs" />
+    <Compile Include="Util\DateTimeUtils.cs" />
+    <Compile Include="Util\Filter.cs" />
+    <Compile Include="Util\IsNullOrEmptyExtension.cs" />
+    <Compile Include="Util\ObjectDumper.cs" />
+    <Compile Include="Util\PriorityQueue.cs" />
+    <Compile Include="Util\RollingAverage.cs" />
+    <Compile Include="Util\Server\ServerExceptions.cs" />
+    <Compile Include="Util\Server\SimpleWebappInteraction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\Server\TaskStatus.cs" />
+    <Compile Include="Util\Server\Upload.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Sort.cs" />
+    <Compile Include="Util\StringSearch.cs" />
+    <Compile Include="Util\Triple.cs" />
+    <Compile Include="Util\Validation\FileValidator.cs" />
+    <Compile Include="Preprocessing\Recode\RecoderIdfx.cs" />
+    <Compile Include="Util\Matching\DocumentMatchFinder.cs" />
+    <Compile Include="Util\Matching\IMatch.cs" />
+    <Compile Include="Util\Matching\Match.cs" />
+    <Compile Include="Util\Matching\MatchPolicies\FileExtensionMatching.cs" />
+    <Compile Include="Util\Matching\MatchPolicies\IMatchPolicy.cs" />
+    <Compile Include="Util\Matching\MatchPolicies\ParentSubDirExtensionMatching.cs" />
+    <Compile Include="Util\Matching\MatchPolicies\StringPrint_TestPolicy.cs" />
+    <Compile Include="Util\Matching\TraversalPolicies\ITraversalPolicy.cs" />
+    <Compile Include="Util\Matching\TraversalPolicies\RecursiveFolderTraversal.cs" />
+    <Compile Include="Util\Progress\ProcessTask.cs" />
+    <Compile Include="Util\Server\AccountSettingsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util\Server\AccountSettingsWindow.Designer.cs">
+      <DependentUpon>AccountSettingsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analyses\AbstractAnalysisSummary.cs" />
+    <Compile Include="Analyses\AbstractAnalysisXMLWriter.cs" />
+    <Compile Include="Analyses\Analysis.cs" />
+    <Compile Include="Analyses\AnalysisException.cs" />
+    <Compile Include="Preprocessing\Filter\EventIDFilter.cs" />
+    <Compile Include="Analyses\DoubleClick.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\LinguisticAnalysis\LinguisticAnalysisDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\LinguisticAnalysis\LinguisticAnalysisSummary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\LinguisticAnalysis\LinguisticAnalysisXMLWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\Inspector.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\MarkupRemover.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\TokenInspector.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\Tokens\Token.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\Tokens\RegexDefinition.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\Tokenizer\Tokens\TokenRegex.cs" />
+    <Compile Include="Analyses\LinguisticAnalysis\WordFrequency\WordFrequency.cs" />
+    <Compile Include="Analyses\Revision\Revisions\Edits\NoEdit.cs" />
+    <Compile Include="Pipes\BaseProcess.cs" />
+    <Compile Include="Pipes\IProcess.cs" />
+    <Compile Include="Pipes\IProcessChain.cs" />
+    <Compile Include="Pipes\ProcessPipeline.cs" />
+    <Compile Include="Preprocessing\Recode\FocusRewriter.cs" />
+    <Compile Include="Preprocessing\Preprocessor.cs" />
+    <Compile Include="Analyses\Revision\Notations\MarkupRewriter.cs" />
+    <Compile Include="Analyses\Revision\Notations\NotationBuilder.cs" />
+    <Compile Include="Analyses\Revision\Notations\RevisionMatrixAnalysis.cs" />
+    <Compile Include="Analyses\Revision\Notations\RevisionMatrixAnalysisXMLWriter.cs" />
+    <Compile Include="Analyses\Revision\Notations\RevisionMatrixEntry.cs" />
+    <Compile Include="Analyses\Revision\Notations\RevisionMatrixSummary.cs" />
+    <Compile Include="Analyses\Revision\Notations\SNotationAnalysis.cs" />
+    <Compile Include="Analyses\Revision\Notations\SNotationAnalysisXMLWriter.cs" />
+    <Compile Include="Analyses\Revision\Notations\SNotationSummary.cs" />
+    <Compile Include="Analyses\Revision\Notations\SymbolFactories\RevisionSnapshots\AbstractRSnapshot.cs" />
+    <Compile Include="Analyses\Revision\Notations\SymbolFactories\RevisionSnapshots\DeletionSnapshots.cs" />
+    <Compile Include="Analyses\Revision\Notations\SymbolFactories\RevisionSnapshots\ProductionSnapshots.cs" />
+    <Compile Include="Analyses\Revision\Notations\SymbolFactories\Symbols\BreakNode.cs" />
+    <Compile Include="Analyses\Revision\Notations\SymbolFactories\Symbols\CloseTagNode.cs" />
+    <Compile Include="Analyses\Revision\Notations\SymbolFactories\Symbols\MarkupNode.cs" />
+    <Compile Include="Analyses\Revision\Notations\SymbolFactories\Symbols\OpenTagNode.cs" />
+    <Compile Include="Analyses\Revision\Notations\WNotationAnalysis.cs" />
+    <Compile Include="Analyses\Revision\Notations\WNotationAnalysisXMLWriter.cs" />
+    <Compile Include="Analyses\Revision\Notations\WNotationSummary.cs" />
+    <Compile Include="Analyses\Focus\FocusAnalysis.cs" />
+    <Compile Include="Analyses\Focus\FocusAnalysisSummary.cs" />
+    <Compile Include="Analyses\Focus\FocusAnalysisXMLWriter.cs" />
+    <Compile Include="Preprocessing\Filter\EventFilter.cs" />
+    <Compile Include="Preprocessing\Filter\EventTypeFilter.cs" />
+    <Compile Include="Preprocessing\Filter\WindowFilter.cs" />
+    <Compile Include="Analyses\Manipulators\EventFilterManipulator.cs" />
+    <Compile Include="Analyses\Revision\Revisions\Edits\AbstractEdit.cs" />
+    <Compile Include="Analyses\Revision\Revisions\Edits\Insertion.cs" />
+    <Compile Include="Analyses\Revision\Revisions\Edits\Deletion.cs" />
+    <Compile Include="Analyses\Revision\Notations\SymbolFactories\ISymbolFactory.cs" />
+    <Compile Include="Analyses\Revision\Notations\SymbolFactories\SNotationMarkup.cs" />
+    <Compile Include="Analyses\Revision\Notations\SymbolFactories\Symbols\SymbolNode.cs" />
+    <Compile Include="Analyses\Revision\Notations\SymbolFactories\WNotationMarkup.cs" />
+    <Compile Include="Analyses\Revision\Replay\PlaybackEngine.cs" />
+    <Compile Include="Analyses\Revision\RevisionAnalysis\RevisionAnalysisXMLWriter.cs" />
+    <Compile Include="Analyses\Revision\Revisions\AbstractRevision.cs" />
+    <Compile Include="Analyses\Revision\Revisions\NormalProductionRevision.cs" />
+    <Compile Include="Analyses\AnalysisDescription.cs" />
+    <Compile Include="Plugin\WordLog\Keys\Key.cs" />
+    <Compile Include="Plugin\WordLog\Keys\NavigationKey.cs" />
+    <Compile Include="Analyses\Revision\Revisions\SelectionChangeRevision.cs" />
+    <Compile Include="Analyses\Revision\Revisions\InsertRevision.cs" />
+    <Compile Include="Analyses\Revision\Revisions\DeleteRevision.cs" />
+    <Compile Include="Analyses\Revision\Revisions\IRevision.cs" />
+    <Compile Include="Analyses\Revision\RevisionAnalysis\RevisionAnalysisSummary.cs" />
+    <Compile Include="Analyses\IAnalysisSummary.cs" />
+    <Compile Include="Analyses\IAnalysisWriter.cs" />
+    <Compile Include="Analyses\AnalysisWriterFactory.cs" />
+    <Compile Include="Analyses\AnalysisWriterException.cs" />
+    <Compile Include="Analyses\EventToString.cs" />
+    <Compile Include="Analyses\General\GeneralAnalysis.cs" />
+    <Compile Include="Analyses\General\GeneralAnalysisSummary.cs" />
+    <Compile Include="Analyses\General\GeneralAnalysisXMLWriter.cs" />
+    <Compile Include="Analyses\Lexical.cs" />
+    <Compile Include="Analyses\Linear\LinearAnalysis.cs" />
+    <Compile Include="Analyses\Linear\LinearAnalysisSummary.cs" />
+    <Compile Include="Analyses\Linear\LinearAnalysisXMLWriter.cs" />
+    <Compile Include="Analyses\PauseLocation.cs" />
+    <Compile Include="Analyses\PauseLocationEventArgs.cs" />
+    <Compile Include="Analyses\Pause\PauseAnalysis.cs" />
+    <Compile Include="Analyses\Pause\CompoundPauseAnalysisSummary.cs" />
+    <Compile Include="Analyses\Pause\PauseAnalysisXMLWriter.cs" />
+    <Compile Include="Analyses\Revision\Revisions\Edits\IEdit.cs" />
+    <Compile Include="Analyses\Revision\Revisions\Edits\SelectionChange.cs" />
+    <Compile Include="Analyses\Revision\Revisions\Edits\TypeChar.cs" />
+    <Compile Include="Analyses\Revision\Revisions\NotInRevisionException.cs" />
+    <Compile Include="Analyses\Revision\RevisionAnalysis\RevisionAnalysis.cs" />
+    <Compile Include="Analyses\Summary\SummaryAnalysis.cs" />
+    <Compile Include="Analyses\Summary\SummaryAnalysisSummary.cs" />
+    <Compile Include="Analyses\Summary\SummaryAnalysisXMLWriter.cs" />
+    <Compile Include="Events\EventType.cs" />
+    <Compile Include="Events\Manipulation\EventListManipulator.cs" />
+    <Compile Include="Events\WinLog\DocPath.cs" />
+    <Compile Include="Events\WordLog\Statistics.cs" />
+    <Compile Include="IO\AnalysisXML\Output\CSVLineBuilder.cs" />
+    <Compile Include="IO\AnalysisXML\Input\AnalysisReaderFactory.cs" />
+    <Compile Include="IO\AnalysisXML\Input\AnalysisXMLReader.cs" />
+    <Compile Include="IO\AnalysisXML\XML\AnalysisXML.cs" />
+    <Compile Include="IO\AnalysisXML\Input\BasicXMLReader.cs" />
+    <Compile Include="IO\AnalysisXML\Input\GeneralAnalysisReader.cs" />
+    <Compile Include="IO\AnalysisXML\Input\PauseAnalysisReader.cs" />
+    <Compile Include="IO\AnalysisXML\Input\SummaryAnalysisReader.cs" />
+    <Compile Include="IO\AnalysisXML\XML\GeneralAnalysisXML.cs" />
+    <Compile Include="IO\AnalysisXML\XML\Parts\AnalysisData.cs" />
+    <Compile Include="IO\AnalysisXML\XML\Parts\Block.cs" />
+    <Compile Include="IO\AnalysisXML\XML\Parts\Event.cs" />
+    <Compile Include="IO\AnalysisXML\XML\Parts\Header.cs" />
+    <Compile Include="IO\AnalysisXML\XML\Parts\Module.cs" />
+    <Compile Include="IO\AnalysisXML\XML\Parts\ExtraInfo.cs" />
+    <Compile Include="IO\AnalysisXML\XML\PauseAnalysisXML.cs" />
+    <Compile Include="IO\AnalysisXML\XML\SummaryAnalysisXML.cs" />
+    <Compile Include="IO\SessionIdentification.cs" />
+    <Compile Include="Events\WinLog\Click.cs" />
+    <Compile Include="Events\WinLog\Scroll.cs" />
+    <Compile Include="Events\WinLog\MouseMovement.cs" />
+    <Compile Include="Events\WinLog\FocusChange.cs" />
+    <Compile Include="Events\WinLog\KeyPress.cs" />
+    <Compile Include="Events\WinLog\AbstractMouseEvent.cs" />
+    <Compile Include="Events\IEventPart.cs" />
+    <Compile Include="Events\IFocusChangeEventPart.cs" />
+    <Compile Include="Events\IKeyboardEventPart.cs" />
+    <Compile Include="Events\IMouseEventPart.cs" />
+    <Compile Include="Events\WinLog\TimedEventPart.cs" />
+    <Compile Include="Events\WordLog\Insert.cs" />
+    <Compile Include="Events\WordLog\Keypress.cs" />
+    <Compile Include="Events\WordLog\MouseEvent.cs" />
+    <Compile Include="Events\WordLog\Replacement.cs" />
+    <Compile Include="Events\WordLog\SelectionChange.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Hooks\BasicEvent.cs" />
+    <Compile Include="Hooks\Keyboard\KeyboardEvent.cs" />
+    <Compile Include="Hooks\Mouse\MouseEvent.cs" />
+    <Compile Include="IO\Basic\Input\AbstractEventReader.cs" />
+    <Compile Include="IO\Basic\Output\AbstractEventWriter.cs" />
+    <Compile Include="IO\Basic\Output\EventLogWriter.cs" />
+    <Compile Include="IO\Convert\ConversionException.cs" />
+    <Compile Include="IO\Convert\LogFileConvertor.cs" />
+    <Compile Include="IO\Legacy_Xml\LegacyUtils.cs" />
+    <Compile Include="IO\Txt\Input\TxtEventReader.cs" />
+    <Compile Include="IO\Txt\Output\TxtEventWriter.cs" />
+    <Compile Include="IO\Txt\Output\TxtWinLogWriter.cs" />
+    <Compile Include="IO\Txt\Output\TxtWordLogWriter.cs" />
+    <Compile Include="IO\Xml\Input\XmlWordLogReader.cs" />
+    <Compile Include="IO\Xml\Input\XmlEventReader.cs" />
+    <Compile Include="IO\Xml\XmlElements.cs" />
+    <Compile Include="IO\Xml\Input\XmlWinLogReader.cs" />
+    <Compile Include="IO\Xml\Output\XmlWinLogWriter.cs" />
+    <Compile Include="Events\Event.cs" />
+    <Compile Include="IO\Basic\EventLogFactory.cs" />
+    <Compile Include="IO\Basic\Input\EventLogReader.cs" />
+    <Compile Include="IO\Basic\LogFormat.cs" />
+    <Compile Include="IO\Legacy_Xml\Input\LegacyXMLEventReader.cs" />
+    <Compile Include="IO\Xml\Output\XmlEventWriter.cs" />
+    <Compile Include="IO\Xml\Output\XmlWordLogWriter.cs" />
+    <Compile Include="Hooks\Keyboard\KeyboardEventListener.cs" />
+    <Compile Include="Hooks\Mouse\MouseEventListener.cs" />
+    <Compile Include="Hooks\NativeMethods.cs" />
+    <Compile Include="Hooks\SystemMonitor.cs" />
+    <Compile Include="Plugin\AbstractPlugin.cs" />
+    <Compile Include="Plugin\ChangeNotAllowedException.cs" />
+    <Compile Include="Plugin\PluginException.cs" />
+    <Compile Include="Plugin\WinLog\FocusLogger.cs" />
+    <Compile Include="Plugin\WinLog\KeyboardLogger.cs" />
+    <Compile Include="Plugin\WinLog\MouseLogger.cs" />
+    <Compile Include="Plugin\NativeMethods.cs" />
+    <Compile Include="Plugin\WordLog\InputlogDocument.cs" />
+    <Compile Include="Plugin\WordLog\LoggedDocument.cs" />
+    <Compile Include="Plugin\WordLog\TextRange.cs" />
+    <Compile Include="Plugin\WordLog\WordLog.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Hooks\WindowsEventListener.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SystemLogger.cs" />
+    <Compile Include="Util\Server\AccountSettings.cs" />
+    <Compile Include="Util\CollectionExtensionMethods.cs" />
+    <Compile Include="Util\CommandProcessing\ICommand.cs" />
+    <Compile Include="Util\CommandProcessing\Processor.cs" />
+    <Compile Include="Util\MessageLogger.cs" />
+    <Compile Include="Util\Progress\IProgressTrackableAction.cs" />
+    <Compile Include="Util\KeyConversion\DeadKey.cs" />
+    <Compile Include="Util\KeyConversion\KeyConverter.cs" />
+    <Compile Include="Util\KeyConversion\KeysEx.cs" />
+    <Compile Include="Util\KeyConversion\Keyboard.cs" />
+    <Compile Include="Util\KeyConversion\NativeMethods.cs" />
+    <Compile Include="Util\KeyConversion\ShiftState.cs" />
+    <Compile Include="Util\KeyConversion\VirtualKey.cs" />
+    <Compile Include="Util\MathExt.cs" />
+    <Compile Include="Util\Pair.cs" />
+    <Compile Include="Util\PathSanitizer.cs" />
+    <Compile Include="Util\Progress\ProgressTrackableAction.cs" />
+    <Compile Include="Util\Progress\ProgressEventArgs.cs" />
+    <Compile Include="Util\RegistryTools.cs" />
+    <Compile Include="Util\Server\ServerUtils.cs" />
+    <Compile Include="Util\Server\SimpleAES.cs" />
+    <Compile Include="Util\Settings.cs" />
+    <Compile Include="Util\IStatefullPredicate.cs" />
+    <Compile Include="Util\StringUtils.cs" />
+    <Compile Include="Util\Validation\IValidator.cs" />
+    <Compile Include="Merging\Sources\ProcessTasks\TobiiMergeFileValidator.cs" />
+    <Compile Include="Util\WordDocumentTools.cs" />
+    <Compile Include="Util\Xml\CustomXMLSerializer.cs" />
+    <Compile Include="Util\Xml\SerializableDictionary.cs" />
+    <Compile Include="Util\Xml\XmlSanitizingStream.cs" />
+    <Compile Include="Util\Xml\XMLSerializableList.cs" />
+    <Compile Include="Util\Xml\XmlUtils.cs" />
+    <Compile Include="Views\BasicView.cs" />
+    <Compile Include="Views\CompoundView.cs" />
+    <Compile Include="Views\ViewFactory.cs" />
+    <Compile Include="Views\ViewManager.cs" />
+    <Compile Include="Views\ViewType.cs" />
+    <Compile Include="Web References\be.ugent.lt3serv\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reporting\Resources\ReportContentResources.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReportContentResources.en.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Resources\ReportContentResources.nl.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReportContentResources.nl.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Resources\ReportContentResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReportContentResources.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Resources\ReportMappingResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReportMappingResources.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\Server\AccountSettingsWindow.resx">
+      <DependentUpon>AccountSettingsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Analyses\Copytask\Resources\bigr_CY.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Analyses\Copytask\Resources\bigr_DE.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Analyses\Copytask\Resources\bigr_EN.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Analyses\Copytask\Resources\bigr_ES.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Analyses\Copytask\Resources\bigr_FI.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Analyses\Copytask\Resources\bigr_FR.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Analyses\Copytask\Resources\bigr_IT.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Analyses\Copytask\Resources\bigr_NL.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Analyses\Copytask\Resources\bigr_NO.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Analyses\Copytask\Resources\bigr_PL.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Analyses\Copytask\Resources\bigr_PT.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Analyses\Copytask\Resources\bigr_SE.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Analyses\Copytask\Resources\bigr_TR.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Analyses\Copytask\Resources\kb_AZERTY.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Analyses\Copytask\Resources\kb_QWERTY.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Analyses\Copytask\Resources\kb_QWERTZ.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Analyses\PauseParser\generateParser.bat" />
+    <None Include="Analyses\PauseParser\generateScanner.bat" />
+    <None Include="Analyses\PauseParser\Parser.y" />
+    <None Include="Analyses\PauseParser\Scanner.lex" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InputlogCore.pfx" />
+    <None Include="IO\Convert\FileFormatValidator\Translog.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Log4Net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reporting\ReportTemplate\DefaultReport.template">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Reporting\ReportTemplate\LIFT.template">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\be.ugent.lt3serv\PreProWS.wsdl" />
+    <None Include="Web References\be.ugent.lt3serv\PreProWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\be.ugent.lt3serv\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Analyses\Bigram\DE.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\Bigram\Default.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\Bigram\EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\Bigram\FR.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\Bigram\NL.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\Style\HTML_README.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\Style\Style\copytask_analysis.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\PauseParser\FSMRules.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\PauseParser\Parser.report.html" />
+    <Content Include="Analyses\Style\Style\bigram_analysis.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\Style\Style\common.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\Style\Style\fluency_analysis.xsl">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\Style\Style\general_eyetrack_analysis.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\Style\Style\revisionmatrix_analysis.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\Style\Style\snotation_analysis.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Analyses\Style\Style\token_analysis.xsl">
+      <SubType>Designer</SubType>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\Style\Style\transition_analysis.xsl">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\Style\Style\source_analysis.xsl">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\Style\Style\linear_analysis.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Analyses\Style\Style\common.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Analyses\Style\Style\general_analysis.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Analyses\Style\Images\InputLog-Logo.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\Style\Style\pause_analysis.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Analyses\Style\Scripts\jquery-1.4.2.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\Style\Style\summary_analysis.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Analyses\Style\Style\linguistic_analysis.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Analyses\Style\Style\word_pause_analysis.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Core.csproj">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Legacy\iconv.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Legacy\Integrate.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Legacy\libiconv2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Legacy\libxml2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Legacy\zlib1.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="log4net.dll" />
+    <Content Include="MathNet.Numerics.dll" />
+    <Content Include="MathNet.Numerics.IO.dll" />
+    <Content Include="MigraDoc.DocumentObjectModel-WPF.dll" />
+    <Content Include="MigraDoc.Rendering-WPF.dll" />
+    <Content Include="MigraDoc.RtfRendering-WPF.dll" />
+    <Content Include="PdfSharp-WPF.dll" />
+    <Content Include="PdfSharp.Charting-WPF.dll" />
+    <Content Include="QUT.ShiftReduceParser.dll" />
+    <None Include="Resources\CC_Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\CC_Image.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reporting\ReportTemplate\Export\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://lt3serv.ugent.be/PreProService/PreProWS%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\be.ugent.lt3serv\</RelPath>
+      <UpdateFromURL>http://lt3serv.ugent.be/PreProService/PreProWS%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>InputLogCore_be_ugent_lt3serv_PreProWS</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>cd "$(ProjectDir)\Analyses\PauseParser\" &amp;&amp; generateScanner.bat &amp;&amp; cd "$(ProjectDir)\Analyses\PauseParser\"  &amp;&amp; generateParser.bat</PreBuildEvent>
+  </PropertyGroup>
+  <Import Project="..\packages\YaccLexTools.Gppg.1.5.3.1\build\net462\YaccLexTools.Gppg.targets" Condition="Exists('..\packages\YaccLexTools.Gppg.1.5.3.1\build\net462\YaccLexTools.Gppg.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\YaccLexTools.Gppg.1.5.3.1\build\net462\YaccLexTools.Gppg.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\YaccLexTools.Gppg.1.5.3.1\build\net462\YaccLexTools.Gppg.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

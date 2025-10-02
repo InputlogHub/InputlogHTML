@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<session_info>
+		<participant_information>Deelnemersgegevens</participant_information>
+		<intro>Gelieve enkele gegevens over jezelf en over deze sessie in te vullen.</intro>
+		<name_label>Naam</name_label>
+		<age_label>Leeftijd</age_label>
+		<gender>Geslacht</gender>
+		<gender_types> 
+			<male>M (man)</male>
+			<female>V (vrouw)</female>
+			<undefined>X (ander)</undefined>
+		</gender_types>
+		<session>Sessie</session>
+		<kblayout>Toetsenbord</kblayout>
+	</session_info>
+	<buttons>
+		<start>Begin</start>
+		<continue>Ga verder</continue>
+		<finish>Be&#235;indig</finish>
+		<download>Download gegevens</download>
+		<resend>Opnieuw verzenden</resend>
+		<progress>Voortgang</progress>
+	</buttons>
+	<messages>
+		<!-- Alert for session identification: you must enter your name -->
+		<enter_name>Gelieve je naam in te vullen.</enter_name>
+		<!-- Alert for session identification: you must provide a valid age -->
+		<valid_age>Gelieve een geldige leeftijd in te vullen.</valid_age>
+		<!-- Select gender -->
+		<select_gender>Selecteer alstublieft uw geslacht.</select_gender>
+		<!-- Select a keyboard layout -->
+		<select_layout>Selecteer de toetsenbordindeling die u gebruikt.</select_layout>
+		<!-- Title for: successfully transmitted and copytask downloaded -->
+		<thanks>Bedankt.</thanks>
+		<!-- Message for: Successfully transmitted and copytask completed -->
+		<download_finish>Wacht op de verdere instructies van de proefleider.</download_finish>
+		<!-- Alert for: Time to complete a copytask has finished -->
+		<time_up>De tijd is verstreken.</time_up>
+		<!-- Alert for: message when trying to close the copytask before completing the task and or transmitting/downloading the results -->
+		<alert_closing>Ben je zeker dat je deze kopieertaak wilt annuleren?</alert_closing>
+		<!-- Title for: we are trying to transmit your data to the server -->
+		<contacting_server>Je gegevens worden naar de server gestuurd...</contacting_server>
+		<!-- Message for: we are trying to transmit your data to the server (please wait) -->
+		<no_closing>Gelieve dit venster nog niet te sluiten. Ondertussen kan je ook je gegevens downloaden naar je computer.</no_closing>
+		<!-- Message for: we could not transmit your data to the server -->
+		<fail>Het bestand kon niet naar de server worden gestuurd. Gelieve het bestand lokaal te downloaden of opnieuw te proberen verzenden.</fail>
+	</messages>
+
+<agreement>
+Ik ga ermee akkoord om deel te nemen aan deze studie. Dat betekent dat ik ervan op de hoogte ben dat mijn toetsaanslagen tijdens deze sessie geregistreerd zullen worden. 
+Ik bevestig dat ik vrijwillig deelneem aan deze studie. Op elk moment kan ik de sessie be&#235;indigen. Ik hoef daarbij geen reden op te geven.
+Mijn data worden opgeslagen op de beveiligde Inputlogserver van de Universiteit Antwerpen. Alleen bevoegde onderzoekers zullen toegang hebben tot deze gegevens op voorwaarde dat zij ermee akkoord gaan de vertrouwelijkheid van de verzamelde gegevens te respecteren.
+</agreement>
+
+<agreement_required>
+Bevestig nog even dat je akkoord gaat om deel te nemen aan deze studie. 
+</agreement_required>
+
+<mandatory_input>
+* Verplichte gegevens
+</mandatory_input>
+
+<questionnaire>
+	<!-- Header of the questionnaire page -->
+	<questions_title>Afsluitende vragen</questions_title>
+
+	<!-- Alerts for required questionnaire information -->
+	<alerts>
+			<error_required>Vervolledig de antwoordvelden die met een asterisk (*) gemarkeerd zijn. </error_required>
+	</alerts>
+
+<!-- Questions about handedness -->
+	<handedness_message>Geef aan welke <em>hand</em> je bij voorkeur gebruikt bij de volgende handelingen:</handedness_message>
+	<handedness_always_left>altijd links</handedness_always_left>
+		<handedness_usually_left>meestal links</handedness_usually_left>
+		<handedness_both_equally>geen voorkeur</handedness_both_equally>
+		<handedness_usually_right>meestal rechts</handedness_usually_right>
+		<handedness_always_right>altijd rechts</handedness_always_right>
+		<label_handwriting>schrijven met de hand</label_handwriting>
+		<label_throwing>werpen</label_throwing>
+		<label_brushing_teeth>tanden poetsen</label_brushing_teeth>
+		<label_eating_with_spoon>eten met een lepel</label_eating_with_spoon>
+
+<!-- Other questions -->
+	<!-- Computer used -->
+	<label_question_computer>Computer die u gebruikte in deze test?</label_question_computer>
+	<options_question_computer>
+		<option_computer>desktop</option_computer>
+		<option_computer>laptop</option_computer>
+	</options_question_computer>
+
+	<!-- Keyboard familiarity -->
+	<label_question_keyboard>Toetsenbord dat u gebruikte in deze test?</label_question_keyboard>
+	<options_question_keyboard>
+		<option_keyboard>zeer vertrouwd </option_keyboard>
+		<option_keyboard>vertrouwd</option_keyboard>
+		<option_keyboard>niet vertrouwd</option_keyboard>
+	</options_question_keyboard>
+
+<!-- Browser used -->
+	<label_question_browser>Browser die u gebruikte in deze test?:</label_question_browser>
+	<options_question_browser>
+		<option_browser>Google Chrome</option_browser>
+		<option_browser>Internet Explorer</option_browser>
+		<option_browser>Edge</option_browser>
+		<option_browser>Mozilla Firefox</option_browser>
+		<option_browser>Opera</option_browser>
+		<option_browser>Safari</option_browser>
+		<option_browser>ander</option_browser>
+		<option_browser>ik weet het niet</option_browser>
+	</options_question_browser>
+
+	<!-- Dominant language -->
+	<label_question_language>Taal (of talen) die u meestal gebruikt als u schrijft?</label_question_language>
+		<options_question_language>
+			<option_language>Nederlands</option_language>
+			<option_language>Engels</option_language>
+			<option_language>Frans</option_language>
+			<option_language>Duits</option_language>
+			<option_language>Spaans</option_language>
+			<option_language>Turks</option_language>
+			<option_language>Arabisch</option_language>
+			<option_language>Pools</option_language>
+			<option_language>Italiaans</option_language>
+			<option_language>andere</option_language>
+		</options_question_language>
+
+	<!-- Language disorder -->
+	<label_question_disorder>Taalstoornissen:</label_question_disorder>
+		<label_question_disorder_specify>Ervaart u een taalstoornis bij leren, schrijven of lezen? </label_question_disorder_specify>
+		<options_question_disorder>
+			<option_disorder>ja</option_disorder>
+			<option_disorder>nee</option_disorder>
+			<option_disorder>ik weet het niet</option_disorder>
+		</options_question_disorder>
+	
+<!-- Highest level of education -->
+	<label_question_education>Wat is uw hoogste opleidingsniveau?</label_question_education>
+		<options_question_education>
+			<option_education>lagere school</option_education>
+			<option_education>middelbaar algemeen of technisch onderwijs</option_education>
+			<option_education>middelbaar beroepsonderwijs</option_education>
+			<option_education>bachelor</option_education>
+			<option_education>master</option_education>
+			<option_education>PhD</option_education>
+		</options_question_education>
+
+<!-- Highest level of repetition -->
+		<label_question_repetition>Deed u deze taak voor het eerst?</label_question_repetition>
+		<options_question_repetition>
+			<option_repetition>ja</option_repetition>
+			<option_repetition>nee</option_repetition>
+		</options_question_repetition>
+
+	</questionnaire>
+</resources>

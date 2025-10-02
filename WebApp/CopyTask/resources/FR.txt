@@ -1,0 +1,157 @@
+<resources>
+	<session_info>
+		<participant_information>Données des participants</participant_information>
+		<intro>Merci de remplir quelques informations sur vous-même et sur la session.</intro>
+		<name_label>Nom</name_label>
+		<age_label>Age</age_label>
+		<gender>Sexe</gender>
+		<gender_types> 
+			<male>M (masculin)</male>
+			<female>F (féminin)</female>
+			<undefined>X (autre)</undefined>
+		</gender_types>
+		<session>Session</session>
+		<kblayout>Clavier</kblayout>
+	</session_info>
+
+	<buttons>
+		<start>Commencez</start>
+		<continue>Continuez</continue>
+		<finish>Terminez</finish>
+		<download>Téléchargez</download>
+		<resend>Envoyer à nouveau</resend>
+		<progress>Progrès</progress>
+	</buttons>
+
+	<messages>
+		<!-- Alert for session identification: you must enter your name -->
+		<enter_name>S'il vous plaît, entrez votre nom.</enter_name>
+		<!-- Alert for session identification: you must provide a valid age -->
+		<valid_age>S'il vous plaît, entrez un âge valide.</valid_age>
+		<!-- Select gender -->
+		<select_gender>S'il vous plait selectionnez votre sexe.</select_gender>
+		<!-- Select a keyboard layout -->
+		<select_layout>Sélectionnez la disposition du clavier que vous utilisez.</select_layout>
+		<!-- Title for: successfully transmitted and copytask downloaded -->
+		<thanks>Merci.</thanks>
+		<!-- Message for: Successfully transmitted and copytask completed -->
+		<download_finish>Attendez d'autres consignes de l'expérimentateur.</download_finish>
+		<!-- Alert for: Time to complete a copytask has finished -->
+		<time_up>Le temps est écoulé.</time_up>
+		<!-- Alert for: message when trying to close the copytask before completing the task and or transmitting/downloading the results -->
+		<alert_closing>Êtes-vous sûr de vouloir annuler cette tâche de copie?</alert_closing>
+		<!-- Title for: we are trying to transmit your data to the server -->
+		<contacting_server>Vos données sont envoyées au serveur ...</contacting_server>
+		<!-- Message for: we are trying to transmit your data to the server (please wait) -->
+		<no_closing>S'il vous plaît, ne fermez pas cet écran. Pendant ce temps, vous pouvez télécharger vos données sur votre ordinateur.</no_closing>
+		<!-- Message for: we could not transmit your data to the server -->
+		<fail>Le fichier n'a pas pu être envoyé au serveur. S'il vous plaît, téléchargez le fichier localement ou essayez de nouveau d'envoyer le fichier.</fail>
+	</messages>
+
+ <agreement>
+J’accepte volontairement de participer à cette étude et que mon écriture soit enregistrée. 
+Je comprends que ma participation n’est pas obligatoire et que je peux stopper ma participation à tout moment sans encourir aucune responsabilité et sans avoir à donner de raison.
+Je comprends que mes données seront stockées sur un serveur sécurisé d’Inputlog à l’Université d’Anvers (Belgique). Seuls les chercheurs participant à ce projet auront accès à ces données à condition qu’ils acceptent de préserver la confidentialité des données me concernant.
+</agreement>
+
+<agreement_required>
+Vous devez indiquer que vous acceptez de participer librement à cette étude.
+</agreement_required>
+
+<mandatory_input>
+* Saisie obligatoire
+</mandatory_input>
+
+<questionnaire>
+	<!-- Header of the questionnaire page -->
+	<questions_title>Dernières questions</questions_title>
+
+	<!-- Alerts for required questionnaire information -->
+	<alerts>
+			<error_required>Vous devez obligatoirement remplir tous les champs signalés par un astérisque (*)</error_required>
+	</alerts>
+
+<!-- Questions about handedness -->
+	<handedness_message>S’il vous plait, pour chacune des activités ci-dessous, indiquez quelle <em>main</em> vous préférez utilizer :</handedness_message>
+	<handedness_always_left>Toujours la main gauche</handedness_always_left>
+		<handedness_usually_left>Généralement la main gauche </handedness_usually_left>
+		<handedness_both_equally>Pas de préférence</handedness_both_equally>
+		<handedness_usually_right>Généralement la main droite</handedness_usually_right>
+		<handedness_always_right>Toujours la main droite</handedness_always_right>
+		<label_handwriting>Ecrire avec un stylo</label_handwriting>
+		<label_throwing>Envoyer </label_throwing>
+		<label_brushing_teeth>Se brosser les dents</label_brushing_teeth>
+		<label_eating_with_spoon>Manger avec une cuillère</label_eating_with_spoon>
+
+<!-- Other questions -->
+	<!-- Computer used -->
+	<label_question_computer>Ordinateur utilisé pour ce test ?</label_question_computer>
+	<options_question_computer>
+		<option_computer>De bureau</option_computer>
+		<option_computer>Portable</option_computer>
+	</options_question_computer>
+
+<!-- Browser used -->
+	<label_question_browser>Navigateur utilisée pour ce test ?</label_question_browser>
+	<options_question_browser>
+		<option_browser>Google Chrome</option_browser>
+		<option_browser>Internet Explorer</option_browser>
+		<option_browser>Edge</option_browser>
+		<option_browser>Mozilla Firefox</option_browser>
+		<option_browser>Opera</option_browser>
+		<option_browser>Safari</option_browser>
+		<option_browser>Autre</option_browser>
+		<option_browser>Je ne sais pas</option_browser>
+	</options_question_browser>
+
+	<!-- Keyboard familiarity -->
+	<label_question_keyboard>Type de clavier utilisé pour ce test ?</label_question_keyboard>
+	<options_question_keyboard>
+		<option_keyboard>très familier</option_keyboard>
+		<option_keyboard>familier</option_keyboard>
+		<option_keyboard>pas familier</option_keyboard>
+	</options_question_keyboard>
+	
+	<!-- Dominant language -->
+      <label_question_language>Quel langue(s) utilisez-vous pour écrire ?</label_question_language>
+             <options_question_language>
+             <option_language>Français</option_language>
+             <option_language>Anglais</option_language>
+             <option_language>Arabe</option_language>
+             <option_language>Espagnol</option_language>
+             <option_language>Italien</option_language>
+             <option_language>Portugais</option_language>
+             <option_language>Allemand</option_language>
+             <option_language>Autre</option_language>
+             </options_question_language>
+
+	<!-- Language disorder -->
+	<label_question_disorder>Avez-vous un trouble du langage ?</label_question_disorder>
+		<label_question_disorder_specify>Si c’est le cas, indiquez quel est ce trouble</label_question_disorder_specify>
+		<options_question_disorder>
+			<option_disorder>Oui</option_disorder>
+			<option_disorder>Non</option_disorder>
+			<option_disorder>Je ne sais pas</option_disorder>
+		</options_question_disorder>
+	
+<!-- Highest level of education -->
+	<label_question_education>Diplôme le plus élevé ?</label_question_education>
+		<options_question_education>
+			<option_education>Ecole primaire</option_education>
+			<option_education>Collège</option_education>
+			<option_education>Bac professionnel</option_education>
+			<option_education>Bac général</option_education>
+		<option_education>Filière professionnelle post-bac</option_education>
+			<option_education>Maîtrise</option_education>
+			<option_education>Doctorat</option_education>
+		</options_question_education>
+
+<!-- Highest level of repetition -->
+		<label_question_repetition>Faites-vous ce test pour la première fois ?</label_question_repetition>
+		<options_question_repetition>
+			<option_repetition>Oui</option_repetition>
+			<option_repetition>Non</option_repetition>
+		</options_question_repetition>
+
+	</questionnaire>
+</resources>

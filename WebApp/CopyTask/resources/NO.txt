@@ -1,0 +1,160 @@
+﻿<resources>
+ <session_info>
+      <participant_information>Informasjon om deltakeren</participant_information>
+      <intro>Vennligst fyll inn litt informasjon om deg selv og gjennomføringen av kopieringsoppgaven.</intro>
+	<name_label>Fullt navn</name_label>
+	<age_label>Alder</age_label>
+	<gender>Kjønn</gender>
+	<gender_types> 
+	  <male>M (mann)</male>
+	  <female>K (kvinne)</female>
+	  <undefined>X (annet)</undefined>
+	</gender_types>
+	<session>Økt</session>
+	<kblayout>Tastatur</kblayout>
+ </session_info>
+ 
+ <buttons>
+	<start>Start</start>
+	<continue>Fortsett</continue>
+	<finish>Fullfør</finish>
+	<download>Last ned data</download>
+	<resend>Send på nytt</resend>
+	<progress>Fremdrift</progress>
+</buttons>
+
+<messages>
+	<!-- Alert for session identification: you must enter your name -->
+	<enter_name>Vennligst fyll inn navnet ditt.</enter_name>
+	<!-- Alert for session identification: you must provide a valid age -->
+	<valid_age>Vennligst fyll inn gyldig alder.</valid_age>
+	<!-- Select gender -->
+	<select_gender>Vennligst velg ditt kjønn.</select_gender>
+	<!-- Select a keyboard layout -->
+	<select_layout>Velg typen tastatur du bruker.</select_layout>
+	<!-- Title for: successfully transmitted and copytask downloaded -->
+	<thanks>Takk for at du deltar i denne kopieringsoppgaven</thanks>
+	<!-- Message for: Successfully transmitted and copytask completed -->
+	<download_finish>Du kan laste ned din idfx eller fullføre for å gå tilbake til oversikten.</download_finish>
+	<!-- Alert for: Time to complete a copytask has finished -->
+	<time_up>Tiden er ute</time_up>
+	<!-- Alert for: message when trying to close the copytask before completing the task and or transmitting/downloading the results -->
+	<alert_closing>Er du sikker på at du vil avbryte kopieringsoppgaven?</alert_closing>
+	<!-- Title for: we are trying to transmit your data to the server -->
+	<contacting_server>Dataene dine lagres til nettserver...</contacting_server>
+	<!-- Message for: we are trying to transmit your data to the server (please wait) -->
+	<no_closing>Ikke lukk vinduet ennå. Hvis du ønsker, kan du laste ned dataene til datamaskinen din mens du venter.</no_closing>
+	<!-- Message for: we could not transmit your data to the server -->
+	<fail>Kunne ikke laste opp filen til serveren. Vennligst last ned lokalt eller bruk knappen "Send på nytt" for å prøve igjen.</fail>
+</messages>
+
+<agreement>
+Jeg samtykker til deltakelse i denne studien. Jeg forstår at deltakelse i prosjektet betyr at det gjøres opptak av min skriving på tastaturet i løpet av denne økten. 
+Jeg forstår at deltakelse er frivillig; jeg kan trekke meg fra studien når som helst uten at jeg trenger å oppgi noen grunn for hvorfor jeg ikke lenger ønsker å delta.
+Jeg forstår at dataene mine fra denne kopieringsoppgaven vil bli lagret på den trygge serveren til Inputlog ved universitetet i Antwerpen. Bare autentiserte forskere vil ha tilgang til disse dataene, på betingelse av at de samtykker til å behandle de innsamlede dataene konfidensielt. 
+</agreement>
+
+<agreement_required>
+Vennligst kryss av for å bekrefte at du deltar i denne studien.
+</agreement_required>
+
+<mandatory_input>
+* Input nødvendig
+</mandatory_input>
+
+<questionnaire>
+	<!-- Header of the questionnaire page -->
+	<questions_title>Siste spørsmål</questions_title>
+
+	<!-- Alerts for required questionnaire information -->
+	<alerts>
+			<error_required>Vennligst svar på alle spørsmålene(*)</error_required>
+	</alerts>
+
+<!-- Questions about handedness -->
+	<handedness_message>Vennligst fyll inn foretrukket hånd/hender i forbindelse med disse aktivitetene:</handedness_message>
+	<handedness_always_left>alltid venstre</handedness_always_left>
+		<handedness_usually_left>vanligvis venstre</handedness_usually_left>
+		<handedness_both_equally>foretrekker ingen hånd framfor den andre</handedness_both_equally>
+		<handedness_usually_right>vanligvis høyre</handedness_usually_right>
+		<handedness_always_right>alltid høyre </handedness_always_right>
+		<label_handwriting>skrive for hånd</label_handwriting>
+		<label_throwing>kaste</label_throwing>
+		<label_brushing_teeth>pusse tenner</label_brushing_teeth>
+		<label_eating_with_spoon>spise med skje</label_eating_with_spoon>
+
+<!-- Other questions -->
+	<!-- Computer used -->
+	<label_question_computer>Datamaskin brukt til denne testen?</label_question_computer>
+	<options_question_computer>
+		<option_computer>stasjonær PC</option_computer>
+		<option_computer>bærbar PC</option_computer>
+	</options_question_computer>
+
+	<!-- Keyboard familiarity -->
+	<label_question_keyboard>Hvor godt kjent er du med tastaturet som brukes i denne testen?</label_question_keyboard>
+	<options_question_keyboard>
+		<option_keyboard>godt kjent</option_keyboard>
+		<option_keyboard>kjent</option_keyboard>
+		<option_keyboard>ikke kjent</option_keyboard>
+	</options_question_keyboard>
+
+<!-- Browser used -->
+	<label_question_browser>Nettleser brukt i denne testen?</label_question_browser>
+	<options_question_browser>
+		<option_browser>Google Chrome</option_browser>
+		<option_browser>Internet Explorer</option_browser>
+		<option_browser>Edge</option_browser>
+		<option_browser>Mozilla Firefox</option_browser>
+		<option_browser>Opera</option_browser>
+		<option_browser>Safari</option_browser>
+		<option_browser>annen</option_browser>
+		<option_browser>vet ikke</option_browser>
+	</options_question_browser>
+
+	<!-- Which dominant language(s) do you use in writing? -->
+	<label_question_language>Hvilke(t) av språkene du kan best bruker du oftest når du skriver?</label_question_language>
+		<options_question_language>
+			<option_language>Norsk bokmål</option_language>
+			<option_language>Norsk nynorsk</option_language>
+			<option_language>Engelsk</option_language>
+			<option_language>Fransk</option_language>
+			<option_language>Tysk</option_language>
+			<option_language>Polsk</option_language>
+			<option_language>Spansk</option_language>
+			<option_language>Svensk</option_language>
+			<option_language>Tyrkisk</option_language>
+			<option_language>annet</option_language>
+		</options_question_language>
+
+	<!-- Language disorder -->
+	<label_question_disorder>Opplever du noen utfordringer knyttet til språk, lesing eller skriving? </label_question_disorder>
+	<options_question_disorder>
+		<option_disorder>ja</option_disorder>
+		<option_disorder>nei</option_disorder>
+		<option_disorder>vet ikke</option_disorder>
+	</options_question_disorder>
+	
+<!-- Highest level of education -->
+	<label_question_education>Hva er ditt høyeste utdanningsnivå?</label_question_education>
+		<options_question_education>
+			<option_education>grunnskole, trinn 1-7</option_education>
+			<option_education>grunnskole, trinn 8-10 (ungdomsskole)</option_education>
+			<option_education>videregående skole</option_education>
+			<option_education>eksamener og emner i høyere utdanning uten at det utgjør en grad</option_education>
+			<option_education>lavere grad (bachelorgrad og cand.mag.-grad)</option_education>
+			<option_education>mastergrad/ hovedfag</option_education>
+			<option_education>doktorgrad</option_education>
+		</options_question_education>
+
+<!-- Highest level of repetition -->
+		<label_question_repetition>Er dette første gang du har gjort denne kopieringsoppgaven?</label_question_repetition>
+		<options_question_repetition>
+			<option_repetition>ja</option_repetition>
+			<option_repetition>nei</option_repetition>
+		</options_question_repetition>
+
+	</questionnaire>
+</resources>
+
+

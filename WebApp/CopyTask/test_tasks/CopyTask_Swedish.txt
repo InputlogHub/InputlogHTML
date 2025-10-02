@@ -1,0 +1,54 @@
+<copytask>
+  <title>Swedish</title>
+  <description>procedure to measure typing competence</description>
+  <language>SE</language>
+  <general_instructions>Välkommen
+
+I första omgången ber vi dig att skriva de bokstäver, ord och meningar som kommer att visas på skärmen.
+Försök göra det så fort och felfritt som möjligt.
+Du behöver inte korrigera om du råkar göra ett misstag. Att slinta på tangentbordet är lätt gjort. Du kan bara fortsätta att skriva. Det är mindre viktigt att det blir korrekt än att få reda på din tangentbordshastighet.
+</general_instructions>
+  <layouts>
+    <layout>AZERTY</layout>
+    <layout>QWERTY</layout>
+    <layout>QWERTZ</layout>
+  </layouts>
+  <task title="Skrivhastighet" unlimited="true" timelimit="15">
+    <instructions>Skriv bokstäverna d och k om och om igen så fort du kan i 15 sekunder. Målet är att hinna så många som möjligt.
+Tiden startar när du skriver den första bokstaven.</instructions>
+    <target>dkdkdkdkdkdkdkdkdkdkdkdkdkdk... </target>
+  </task>
+  <task title="Mening" unlimited="true" timelimit="30">
+    <instructions>Skriv meningen nedan så fort du kan och så många gånger du hinner under 30 sekunder.
+Använd varken stora bokstäver eller punkt: tryck "Enter" efter varje mening.
+Tiden startar när du skriver den första bokstaven.</instructions>
+    <target>en gammal katt kan vara pigg om natten </target>
+  </task>
+  <task title="Exempel 1" repetition="7" example="true">
+    <instructions>Det här är ett exempel.
+I kommande uppgifter kommer vi att be dig skriva ett antal treordsfraser sju gånger. I exemplet nedan visar vi hur det ska se ut vi med frasen "en underbar frukost". 
+Det finns ingen tidsgräns för den här uppgiften.</instructions>
+    <target>en underbar frukost</target>
+  </task>
+  <task title="Ord 1" synthesize="true" repetition="7">
+    <instructions>Skriv följande ord sju gånger.
+Tryck "Enter" för ny rad.</instructions>
+    <target>nio livligare engagemang</target>
+  </task>
+  <task title="Ord 2" synthesize="true" repetition="7">
+    <instructions>Skriv följande ord sju gånger.</instructions>
+    <target>tolv ovanliga universitet</target>
+  </task>
+  <task title="Ord 3" synthesize="true" repetition="7">
+    <instructions>Skriv följande ord sju gånger.</instructions>
+    <target>tio lama polisaspiranter</target>
+  </task>
+  <task title="Ord 4" repetition="7">
+    <instructions>Skriv följande ord sju gånger.</instructions>
+    <target>en zebrarandig cowboyhatt</target>
+  </task>
+  <task title="Konsonanter">
+    <instructions>Slutligen: kopiera följande fyra grupper av konsonanter en gång.</instructions>
+    <target>tjxgfl pgkfkq dtdrgt npwdvf</target>
+  </task>
+</copytask>

@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Delete User";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Validate @ViewBag.User's account?</h2>
+<div>
+@using (Html.BeginForm("AdminValidate", "Account"))
+{
+    <p>
+        <input type="hidden" name="ID" value="@ViewBag.User" />
+        <input type="submit" value="Validate" />
+    </p>
+}
+</div>
+<div>
+@using (Html.BeginForm("AdminRefuse", "Account"))
+{
+    <p>
+        <input type="hidden" name="ID" value="@ViewBag.User" />
+        <input type="submit" value="Refuse" />
+    </p>
+}
+</div>
+<div>
+@using (Html.BeginForm("AdminMoreInfo", "Account"))
+{
+    <p>
+        <input type="hidden" name="ID" value="@ViewBag.User" />
+        <input type="submit" value="More Info" />
+    </p>
+}
+</div>
+

@@ -1,0 +1,156 @@
+<resources>
+ <session_info>
+      <participant_information>Deltagarinformation</participant_information>
+      <intro>Vi skulle uppskatta om du kunde fylla i lite information om dig själv och ditt tangentbord </intro>
+	<name_label>Namn eller kod. </name_label>
+	<age_label>Ålder</age_label>
+	<gender>Kön</gender>
+	<gender_types> 
+	  <male>M (man)</male>
+	  <female>K (kvinna)</female>
+	  <undefined>X (annat alternativ/vill inte ange)</undefined>
+	</gender_types>
+	<session>Session</session>
+	<kblayout>Tangentbord</kblayout>
+ </session_info>
+
+ <buttons>
+	<start>Starta</start>
+	<continue>Fortsätt</continue>
+	<finish>Avsluta</finish>
+	<download>Ladda ned data</download>
+	<resend>Skicka igen</resend>
+	<progress>Fortsätt</progress>
+</buttons>
+
+<messages>
+	<!-- Alert for session identification: you must enter your name -->
+	<enter_name>Du har glömt fylla i ett namn eller en kod</enter_name>
+	<!-- Alert for session identification: you must provide a valid age -->
+	<valid_age>Du har glömt att fylla i ålder.</valid_age>
+	<!-- Select gender -->
+	<select_gender>Välj ditt kön.</select_gender>
+	<!-- Select a keyboard layout -->
+	<select_layout>Välj din tangentbordslayout.</select_layout>
+	<!-- Title for: successfully transmitted and copytask downloaded -->
+	<thanks>Tack för att du deltar i den här uppgiften.</thanks>
+	<!-- Message for: Successfully transmitted and copytask completed -->
+	<download_finish>Du kan nu ladda ned din idfx-fil om du vill eller avsluta och gå tillbaka till översikten.</download_finish>
+	<!-- Alert for: Time to complete a copytask has finished -->
+	<time_up>Tiden för uppgiften är slut.</time_up>
+	<!-- Alert for: message when trying to close the copytask before completing the task and or transmitting/downloading the results -->
+	<alert_closing>Är du säker på att du vill avbryta uppgiften?</alert_closing>
+	<!-- Title for: we are trying to transmit your data to the server -->
+	<contacting_server>Försöker spara dina data på servern...</contacting_server>
+	<!-- Message for: we are trying to transmit your data to the server (please wait) -->
+	<no_closing>Stäng inte det här fönstret riktigt än. Du kan dock ladda ner datan till din dator under tiden om du vill.</no_closing>
+	<!-- Message for: we could not transmit your data to the server -->
+	<fail>Kunde inte ladda upp filen till servern. Vad snäll och ladda ner den till din dator, eller försök igen genom att trycka på "Skicka igen".</fail>
+</messages>
+
+<agreement>
+Jag ger mitt medgivande till att delta i studien och att mina data lagras på den nedan nämnda servern. 
+Jag förstår att mitt deltagande kommer att innebära att mina tangentbordsaktiviteter spelas in.
+Jag förstår också att mitt deltagande är frivilligt, att jag kan avbryta mitt deltagande när som helst och att jag i så fall inte behöver uppge någon anledning till att jag avbryter.
+Jag förstår slutligen att mina tangentdata för den här uppgiften kommer att lagras på en säker server (InputLog-servern) som finns vid universitetet i Antwerpen, Belgien, och att endast forskare som är auktoriserade för att använda den kommer att kunna se dem.
+</agreement>
+
+<agreement_required>
+Ge ditt medgivande genom att kryssa i här.
+</agreement_required>
+
+<mandatory_input>
+* Inmatning krävs
+</mandatory_input>
+
+<questionnaire>
+	<!-- Header of the questionnaire page -->
+	<questions_title>Några sista frågor</questions_title>
+	<!-- Alerts for required questionnaire information -->
+	<alerts>
+			<error_required>Var vänlig och besvara alla frågorna(*).</error_required>
+	</alerts>
+
+<!-- Questions about handedness -->
+	<handedness_message>Vad snäll och ange vilken <em>hand</em> du föredrar i följande aktiviteter:</handedness_message>
+	<handedness_always_left>alltid vänster</handedness_always_left>
+		<handedness_usually_left>oftast vänster</handedness_usually_left>
+		<handedness_both_equally>det spelar ingen roll – båda fungerar</handedness_both_equally>
+		<handedness_usually_right>oftast höger</handedness_usually_right>
+		<handedness_always_right>alltid höger</handedness_always_right>
+		<label_handwriting>handskrift</label_handwriting>
+		<label_throwing>bollkastning</label_throwing>
+		<label_brushing_teeth>tandborstning</label_brushing_teeth>
+		<label_eating_with_spoon>äta med sked</label_eating_with_spoon>
+
+<!-- Other questions -->
+	<!-- Computer used -->
+	<label_question_computer>Vilken typ av dator använder du för den här uppgiften?</label_question_computer>
+	<options_question_computer>
+		<option_computer>stationär</option_computer>
+		<option_computer>bärbar</option_computer>
+	</options_question_computer>
+
+	<!-- Keyboard familiarity -->
+	<label_question_keyboard>Hur van är du vid tangentbordet på den dator du använder i den här uppgiften?</label_question_keyboard>
+	<options_question_keyboard>
+		<option_keyboard>mycket van</option_keyboard>
+		<option_keyboard>van</option_keyboard>
+		<option_keyboard>inte van</option_keyboard>
+	</options_question_keyboard>
+
+<!-- Browser used -->
+	<label_question_browser>Vilken webbläsare använder du för den här uppgiften?</label_question_browser>
+	<options_question_browser>
+		<option_browser>Google Chrome</option_browser>
+		<option_browser>Internet Explorer</option_browser>
+		<option_browser>Edge</option_browser>
+		<option_browser>Mozilla Firefox</option_browser>
+		<option_browser>Opera</option_browser>
+		<option_browser>Safari</option_browser>
+		<option_browser>Vet inte</option_browser>
+		<option_browser>Annan</option_browser>
+	</options_question_browser>
+
+	<!-- Vilket/vilka språk skriver du vanligen på när du skriver på dator? -->
+	<label_question_language>Vilket språk använder du för att skriva?</label_question_language>
+		<options_question_language>
+			<option_language>Svenska</option_language>
+			<option_language>Engelska</option_language>
+			<option_language>Franska</option_language>
+			<option_language>Tyska</option_language>
+			<option_language>Nederländska</option_language>
+			<option_language>Polska</option_language>
+			<option_language>Spanska</option_language>
+			<option_language>Walesiska</option_language>
+			<option_language>Turkiska</option_language>
+			<option_language>Annat</option_language>
+		</options_question_language>
+
+	<!-- Language disorder -->
+	<label_question_disorder>Upplever du att du har några språk-, läs- eller skrivsvårigheter?</label_question_disorder>
+	<options_question_disorder>
+		<option_disorder>ja</option_disorder>
+		<option_disorder>nej</option_disorder>
+		<option_disorder>vet inte</option_disorder>
+	</options_question_disorder>
+
+<!-- Highest level of education -->
+	<label_question_education>Ange din högsta utbildningsnivå</label_question_education>
+		<options_question_education>
+			<option_education>Grundskola</option_education>
+			<option_education>Gymnasium</option_education>
+			<option_education>Eftergymnasial utbildning som lett till en universitetsexamen</option_education>
+			<option_education>Kandidatexamen</option_education>
+			<option_education>Magister- eller masterexamen</option_education>
+			<option_education>Licentiat- eller doktorsexamen</option_education>
+		</options_question_education>
+
+<!-- Highest level of repetition -->
+		<label_question_repetition>Är detta första gången du gör den här uppgiften?</label_question_repetition>
+		<options_question_repetition>
+			<option_repetition>ja</option_repetition>
+			<option_repetition>nej</option_repetition>
+		</options_question_repetition>
+	</questionnaire>
+</resources>

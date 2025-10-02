@@ -1,0 +1,159 @@
+<resources>
+ <session_info>
+      <participant_information>Informazioni sul partecipante</participant_information>
+      <intro>Per favore, inserisci informazioni su di te e su questa sessione.</intro>
+	<name_label>Nome e cognome</name_label>
+	<age_label>Età</age_label>
+	<gender>Sesso</gender>
+	<gender_types> 
+	  <male>M (maschio)</male>
+	  <female>F (femmina)</female>
+	  <undefined>X (altro)</undefined>
+	</gender_types>
+	<session>Sessione</session>
+	<kblayout>Tastiera</kblayout>
+ </session_info>
+ 
+ <buttons>
+	<start>Inizia</start>
+	<continue>Continua</continue>
+	<finish>Termina</finish>
+	<download>Scarica i dati</download>
+	<resend>Rinvia</resend>
+	<progress>Avanzamento</progress>
+</buttons>
+
+<messages>
+	<!-- Alert for session identification: you must enter your name -->
+	<enter_name>Per favore, inserisci il tuo nome.</enter_name>
+	<!-- Alert for session identification: you must provide a valid age -->
+	<valid_age>Per favore, inserisci la tua età.</valid_age>
+	<!-- Select gender -->
+	<select_gender>Per favore seleziona il tuo genere.</select_gender>
+	<!-- Select a keyboard layout -->
+	<select_layout>Seleziona il layout di tastiera che stai usando.</select_layout>
+	<!-- Title for: successfully transmitted and copytask downloaded -->
+	<thanks>Grazie per aver partecipato a questa attività.</thanks>
+	<!-- Message for: Successfully transmitted and copytask completed -->
+	<download_finish>Puoi scaricare il tuo file idfx o terminare per tornare alla pagina iniziale.</download_finish>
+	<!-- Alert for: Time to complete a copytask has finished -->
+	<time_up>Tempo scaduto</time_up>
+	<!-- Alert for: message when trying to close the copytask before completing the task and or transmitting/downloading the results -->
+	<alert_closing>Sei sicuro/a di voler interrompere questa attività?</alert_closing>
+	<!-- Title for: we are trying to transmit your data to the server -->
+	<contacting_server>Salvataggio dei dati sul server...</contacting_server>
+	<!-- Message for: we are trying to transmit your data to the server (please wait) -->
+	<no_closing>Un momento, non chiudere questa finestra. Mentre aspetti, puoi anche scaricare i dati sul tuo computer.</no_closing>
+	<!-- Message for: we could not transmit your data to the server -->
+	<fail>Salvataggio dati fallito. Per favore, scarica i dati sul tuo computer, o riprova cliccando sul tasto di rinvio.</fail>
+</messages>
+
+<agreement>
+Accetto di partecipare a questo studio. Sono consapevole che, durante la mia partecipazione a questa sessione, le mie operazioni di battitura verranno registrate.
+Sono consapevole che la mia partecipazione è volontaria. Posso interrompere la mia partecipazione a questo studio in qualsiasi momento senza dare alcuna spiegazione.
+Sono consapevole che i miei dati saranno salvati sul server sicuro di Inputlog all'Università di Anversa. Soltanto i ricercatori autorizzati avranno accesso a questi dati, a condizione che accettino di proteggere la confidenzialità dei dati raccolti.
+</agreement>
+
+<agreement_required>
+Clicca qui per indicare che accetti di partecipare a questo studio.
+</agreement_required>
+
+<mandatory_input>
+* Ingresso richiesto
+</mandatory_input>
+
+<questionnaire>
+	<!-- Header of the questionnaire page -->
+	<questions_title>Domande finali</questions_title>
+
+	<!-- Alerts for required questionnaire information -->
+	<alerts>
+			<error_required>Per favore, rispondi a tutte le domande(*)</error_required>
+	</alerts>
+
+<!-- Questions about handedness -->
+	<handedness_message>Indica quali <em>mani</em> preferisci utilizzare per le seguenti attività:</handedness_message>
+	<handedness_always_left>sempre sinistra</handedness_always_left>
+		<handedness_usually_left>di solito sinistra</handedness_usually_left>
+		<handedness_both_equally>nessuna preferenza</handedness_both_equally>
+		<handedness_usually_right>di solito destra</handedness_usually_right>
+		<handedness_always_right>sempre destra</handedness_always_right>
+		<label_handwriting>scrivere a mano</label_handwriting>
+		<label_throwing>lanciare oggetti</label_throwing>
+		<label_brushing_teeth>spazzolare i denti</label_brushing_teeth>
+		<label_eating_with_spoon>mangiare con cucchiaio</label_eating_with_spoon>
+
+<!-- Other questions -->
+	<!-- Computer used -->
+	<label_question_computer>Che computer hai usato per questa attività?</label_question_computer>
+	<options_question_computer>
+		<option_computer>desktop</option_computer>
+		<option_computer>laptop</option_computer>
+	</options_question_computer>
+
+	<!-- Keyboard familiarity -->
+	<label_question_keyboard>Che tastiera hai usato per questa attività?</label_question_keyboard>
+	<options_question_keyboard>
+		<option_keyboard>una tastiera che conosco molto bene</option_keyboard>
+		<option_keyboard>una tastiera che conosco più o meno bene</option_keyboard>
+		<option_keyboard>una tastiera che non conosco bene</option_keyboard>
+	</options_question_keyboard>
+
+<!-- Browser used -->
+	<label_question_browser>Che browser hai usato per questa attività?</label_question_browser>
+	<options_question_browser>
+		<option_browser>Google Chrome</option_browser>
+		<option_browser>Internet Explorer</option_browser>
+		<option_browser>Edge</option_browser>
+		<option_browser>Mozilla Firefox</option_browser>
+		<option_browser>Opera</option_browser>
+		<option_browser>Safari</option_browser>
+		<option_browser>non so</option_browser>
+		<option_browser>altro</option_browser>
+	</options_question_browser>
+
+	<!-- Which dominant language(s) do you use in writing? -->
+	<label_question_language>Lingue che usi più spesso?</label_question_language>
+		<options_question_language>
+			<option_language>inglese</option_language>
+			<option_language>gallese</option_language>
+			<option_language>francese</option_language>
+			<option_language>tedesco</option_language>
+			<option_language>olandese</option_language>
+			<option_language>polacco</option_language>
+			<option_language>spagnolo</option_language>
+			<option_language>svedese</option_language>
+			<option_language>turco</option_language>
+			<option_language>altra</option_language>
+		</options_question_language>
+
+	<!-- Language disorder -->
+	<label_question_disorder>Hai difficoltà con la lingua, la lettura, o la scrittura?</label_question_disorder>
+	<options_question_disorder>
+		<option_disorder>sì</option_disorder>
+		<option_disorder>no</option_disorder>
+		<option_disorder>non so</option_disorder>
+	</options_question_disorder>
+	
+<!-- Highest level of education -->
+	<label_question_education>Ultimo titolo di studio conseguito?</label_question_education>
+		<options_question_education>
+			<option_education>scuola elementare</option_education>
+			<option_education>scuola media</option_education>
+			<option_education>scuola superiore</option_education>
+			<option_education>laurea triennale</option_education>
+			<option_education>laurea magistrale</option_education>
+			<option_education>dottorato di ricerca</option_education>
+		</options_question_education>
+
+<!-- Highest level of repetition -->
+		<label_question_repetition>È la prima volta che partecipi a questa attività?</label_question_repetition>
+		<options_question_repetition>
+			<option_repetition>sì</option_repetition>
+			<option_repetition>no</option_repetition>
+		</options_question_repetition>
+
+	</questionnaire>
+</resources>
+
+

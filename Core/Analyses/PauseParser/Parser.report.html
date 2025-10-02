@@ -1,0 +1,771 @@
+<html><head><title>Parser.y</title></head>
+<body bgcolor="white">
+<hr><pre>
+<b>Grammar Parser.y - 20/01/2020 21:25:19</b>
+
+<a name="prod1">    1</a> $accept: fsmstart EOF
+             ;
+
+<a name="prod2">    2</a> fsmstart: rulelist
+              ;
+
+<a name="prod3">    3</a> ruleend: SEMICOLON
+             ;
+
+<a name="prod4">    4</a> rulelist: rule ruleend rulelist
+<a name="prod5">    5</a>         | /* empty */
+              ;
+
+<a name="prod6">    6</a> identlist: IDENTIFIER identlist2
+               ;
+
+<a name="prod7">    7</a> identlist2: COMMA identlist
+<a name="prod8">    8</a>           | /* empty */
+                ;
+
+<a name="prod9">    9</a> actionlist: LBRACE identlist RBRACE
+<a name="prod10">   10</a>           | /* empty */
+                ;
+
+<a name="prod11">   11</a> eventinverse: EXCL
+<a name="prod12">   12</a>             | /* empty */
+                  ;
+
+<a name="prod13">   13</a> eventpeek: LANGLE NUMBER RANGLE
+<a name="prod14">   14</a>          | /* empty */
+               ;
+
+<a name="prod15">   15</a> eventlist: eventinverse IDENTIFIER eventpeek eventlist2
+               ;
+
+<a name="prod16">   16</a> eventlist2: COMMA eventlist
+<a name="prod17">   17</a>           | /* empty */
+                ;
+
+<a name="prod18">   18</a> rule: compoundRule
+<a name="prod19">   19</a>     | eventlist actionlist
+          ;
+
+<a name="prod20">   20</a> compoundRule: LPAR rule RPAR actionlist
+<a name="prod21">   21</a>             | rule STAR actionlist
+<a name="prod22">   22</a>             | rule PLUS actionlist
+<a name="prod23">   23</a>             | rule LBRACK NUMBER RBRACK actionlist
+<a name="prod24">   24</a>             | rule PERIOD rule actionlist
+<a name="prod25">   25</a>             | rule PIPE rule actionlist
+                  ;
+<b><a name="state0">State</a> <a href="#state0">0</a></b>
+
+  <b>Kernel Items</b>
+    1 $accept: . fsmstart EOF
+  <b>Parser Actions</b>
+    LPAR           shift, and go to state <a href="#state8">8</a>
+    EXCL           shift, and go to state <a href="#state41">41</a>
+    IDENTIFIER     reduce using <a href="#prod12">rule 12</a> (Erasing eventinverse)
+    EOF            reduce using <a href="#prod5">rule 5</a> (Erasing rulelist)
+
+  <b>Transitions</b>
+    fsmstart       go to state <a href="#state1">1</a>
+    rulelist       go to state <a href="#state3">3</a>
+    rule           go to state <a href="#state4">4</a>
+    compoundRule   go to state <a href="#state7">7</a>
+    eventlist      go to state <a href="#state33">33</a>
+    eventinverse   go to state <a href="#state35">35</a>
+
+
+<b><a name="state1">State</a> <a href="#state1">1</a></b>
+
+  <b>Kernel Items</b>
+    1 $accept: fsmstart . EOF
+  <b>Parser Actions</b>
+    EOF            shift, and go to state <a href="#state2">2</a>
+
+
+
+<b><a name="state2">State</a> <a href="#state2">2</a></b>
+
+  <b>Kernel Items</b>
+    1 $accept: fsmstart EOF .
+	-lookahead: {  }
+  <b>Parser Actions</b>
+    error          reduce using <a href="#prod1">rule 1</a> ($accept)
+    EOF            reduce using <a href="#prod1">rule 1</a> ($accept)
+    COMMENT        reduce using <a href="#prod1">rule 1</a> ($accept)
+    IDENTIFIER     reduce using <a href="#prod1">rule 1</a> ($accept)
+    DOLLAR         reduce using <a href="#prod1">rule 1</a> ($accept)
+    COMMA          reduce using <a href="#prod1">rule 1</a> ($accept)
+    HASH           reduce using <a href="#prod1">rule 1</a> ($accept)
+    COLON          reduce using <a href="#prod1">rule 1</a> ($accept)
+    SEMICOLON      reduce using <a href="#prod1">rule 1</a> ($accept)
+    ARROW          reduce using <a href="#prod1">rule 1</a> ($accept)
+    NUMBER         reduce using <a href="#prod1">rule 1</a> ($accept)
+    LPAR           reduce using <a href="#prod1">rule 1</a> ($accept)
+    RPAR           reduce using <a href="#prod1">rule 1</a> ($accept)
+    STAR           reduce using <a href="#prod1">rule 1</a> ($accept)
+    LBRACK         reduce using <a href="#prod1">rule 1</a> ($accept)
+    RBRACK         reduce using <a href="#prod1">rule 1</a> ($accept)
+    LBRACE         reduce using <a href="#prod1">rule 1</a> ($accept)
+    RBRACE         reduce using <a href="#prod1">rule 1</a> ($accept)
+    LANGLE         reduce using <a href="#prod1">rule 1</a> ($accept)
+    RANGLE         reduce using <a href="#prod1">rule 1</a> ($accept)
+    PIPE           reduce using <a href="#prod1">rule 1</a> ($accept)
+    PERIOD         reduce using <a href="#prod1">rule 1</a> ($accept)
+    EXCL           reduce using <a href="#prod1">rule 1</a> ($accept)
+    QST            reduce using <a href="#prod1">rule 1</a> ($accept)
+    PLUS           reduce using <a href="#prod1">rule 1</a> ($accept)
+    MINUS          reduce using <a href="#prod1">rule 1</a> ($accept)
+    EOL            reduce using <a href="#prod1">rule 1</a> ($accept)
+
+
+
+<b><a name="state3">State</a> <a href="#state3">3</a></b>
+
+  <b>Kernel Items</b>
+    2 fsmstart: rulelist .
+	-lookahead: { EOF }
+  <b>Parser Actions</b>
+    EOF            reduce using <a href="#prod2">rule 2</a> (fsmstart)
+
+
+
+<b><a name="state4">State</a> <a href="#state4">4</a></b>
+
+  <b>Kernel Items</b>
+    4 rulelist: rule . ruleend rulelist
+    21 compoundRule: rule . STAR actionlist
+    22 compoundRule: rule . PLUS actionlist
+    23 compoundRule: rule . LBRACK NUMBER RBRACK actionlist
+    24 compoundRule: rule . PERIOD rule actionlist
+    25 compoundRule: rule . PIPE rule actionlist
+  <b>Parser Actions</b>
+    STAR           shift, and go to state <a href="#state19">19</a>
+    PLUS           shift, and go to state <a href="#state21">21</a>
+    LBRACK         shift, and go to state <a href="#state23">23</a>
+    PERIOD         shift, and go to state <a href="#state27">27</a>
+    PIPE           shift, and go to state <a href="#state30">30</a>
+    SEMICOLON      shift, and go to state <a href="#state45">45</a>
+
+  <b>Transitions</b>
+    ruleend        go to state <a href="#state5">5</a>
+
+
+<b><a name="state5">State</a> <a href="#state5">5</a></b>
+
+  <b>Kernel Items</b>
+    4 rulelist: rule ruleend . rulelist
+  <b>Parser Actions</b>
+    LPAR           shift, and go to state <a href="#state8">8</a>
+    EXCL           shift, and go to state <a href="#state41">41</a>
+    IDENTIFIER     reduce using <a href="#prod12">rule 12</a> (Erasing eventinverse)
+    EOF            reduce using <a href="#prod5">rule 5</a> (Erasing rulelist)
+
+  <b>Transitions</b>
+    rulelist       go to state <a href="#state6">6</a>
+    rule           go to state <a href="#state4">4</a>
+    compoundRule   go to state <a href="#state7">7</a>
+    eventlist      go to state <a href="#state33">33</a>
+    eventinverse   go to state <a href="#state35">35</a>
+
+
+<b><a name="state6">State</a> <a href="#state6">6</a></b>
+
+  <b>Kernel Items</b>
+    4 rulelist: rule ruleend rulelist .
+	-lookahead: { EOF }
+  <b>Parser Actions</b>
+    EOF            reduce using <a href="#prod4">rule 4</a> (rulelist)
+
+
+
+<b><a name="state7">State</a> <a href="#state7">7</a></b>
+
+  <b>Kernel Items</b>
+    18 rule: compoundRule .
+	-lookahead: { STAR, PLUS, LBRACK, PERIOD, PIPE, SEMICOLON, RPAR, LBRACE }
+  <b>Parser Actions</b>
+    STAR           reduce using <a href="#prod18">rule 18</a> (rule)
+    PLUS           reduce using <a href="#prod18">rule 18</a> (rule)
+    LBRACK         reduce using <a href="#prod18">rule 18</a> (rule)
+    PERIOD         reduce using <a href="#prod18">rule 18</a> (rule)
+    PIPE           reduce using <a href="#prod18">rule 18</a> (rule)
+    SEMICOLON      reduce using <a href="#prod18">rule 18</a> (rule)
+    RPAR           reduce using <a href="#prod18">rule 18</a> (rule)
+    LBRACE         reduce using <a href="#prod18">rule 18</a> (rule)
+
+
+
+<b><a name="state8">State</a> <a href="#state8">8</a></b>
+
+  <b>Kernel Items</b>
+    20 compoundRule: LPAR . rule RPAR actionlist
+  <b>Parser Actions</b>
+    LPAR           shift, and go to state <a href="#state8">8</a>
+    EXCL           shift, and go to state <a href="#state41">41</a>
+    IDENTIFIER     reduce using <a href="#prod12">rule 12</a> (Erasing eventinverse)
+
+  <b>Transitions</b>
+    rule           go to state <a href="#state9">9</a>
+    compoundRule   go to state <a href="#state7">7</a>
+    eventlist      go to state <a href="#state33">33</a>
+    eventinverse   go to state <a href="#state35">35</a>
+
+
+<b><a name="state9">State</a> <a href="#state9">9</a></b>
+
+  <b>Kernel Items</b>
+    20 compoundRule: LPAR rule . RPAR actionlist
+    21 compoundRule: rule . STAR actionlist
+    22 compoundRule: rule . PLUS actionlist
+    23 compoundRule: rule . LBRACK NUMBER RBRACK actionlist
+    24 compoundRule: rule . PERIOD rule actionlist
+    25 compoundRule: rule . PIPE rule actionlist
+  <b>Parser Actions</b>
+    RPAR           shift, and go to state <a href="#state10">10</a>
+    STAR           shift, and go to state <a href="#state19">19</a>
+    PLUS           shift, and go to state <a href="#state21">21</a>
+    LBRACK         shift, and go to state <a href="#state23">23</a>
+    PERIOD         shift, and go to state <a href="#state27">27</a>
+    PIPE           shift, and go to state <a href="#state30">30</a>
+
+
+
+<b><a name="state10">State</a> <a href="#state10">10</a></b>
+
+  <b>Kernel Items</b>
+    20 compoundRule: LPAR rule RPAR . actionlist
+  <b>Parser Actions</b>
+    LBRACE         shift, and go to state <a href="#state12">12</a>
+    STAR           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    PLUS           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    LBRACK         reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    PERIOD         reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    PIPE           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    SEMICOLON      reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    RPAR           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+
+  <b>Transitions</b>
+    actionlist     go to state <a href="#state11">11</a>
+
+
+<b><a name="state11">State</a> <a href="#state11">11</a></b>
+
+  <b>Kernel Items</b>
+    20 compoundRule: LPAR rule RPAR actionlist .
+	-lookahead: { STAR, PLUS, LBRACK, PERIOD, PIPE, SEMICOLON, RPAR, LBRACE }
+  <b>Parser Actions</b>
+    STAR           reduce using <a href="#prod20">rule 20</a> (compoundRule)
+    PLUS           reduce using <a href="#prod20">rule 20</a> (compoundRule)
+    LBRACK         reduce using <a href="#prod20">rule 20</a> (compoundRule)
+    PERIOD         reduce using <a href="#prod20">rule 20</a> (compoundRule)
+    PIPE           reduce using <a href="#prod20">rule 20</a> (compoundRule)
+    SEMICOLON      reduce using <a href="#prod20">rule 20</a> (compoundRule)
+    RPAR           reduce using <a href="#prod20">rule 20</a> (compoundRule)
+    LBRACE         reduce using <a href="#prod20">rule 20</a> (compoundRule)
+
+
+
+<b><a name="state12">State</a> <a href="#state12">12</a></b>
+
+  <b>Kernel Items</b>
+    9 actionlist: LBRACE . identlist RBRACE
+  <b>Parser Actions</b>
+    IDENTIFIER     shift, and go to state <a href="#state15">15</a>
+
+  <b>Transitions</b>
+    identlist      go to state <a href="#state13">13</a>
+
+
+<b><a name="state13">State</a> <a href="#state13">13</a></b>
+
+  <b>Kernel Items</b>
+    9 actionlist: LBRACE identlist . RBRACE
+  <b>Parser Actions</b>
+    RBRACE         shift, and go to state <a href="#state14">14</a>
+
+
+
+<b><a name="state14">State</a> <a href="#state14">14</a></b>
+
+  <b>Kernel Items</b>
+    9 actionlist: LBRACE identlist RBRACE .
+	-lookahead: { STAR, PLUS, LBRACK, PERIOD, PIPE, SEMICOLON, RPAR, LBRACE }
+  <b>Parser Actions</b>
+    STAR           reduce using <a href="#prod9">rule 9</a> (actionlist)
+    PLUS           reduce using <a href="#prod9">rule 9</a> (actionlist)
+    LBRACK         reduce using <a href="#prod9">rule 9</a> (actionlist)
+    PERIOD         reduce using <a href="#prod9">rule 9</a> (actionlist)
+    PIPE           reduce using <a href="#prod9">rule 9</a> (actionlist)
+    SEMICOLON      reduce using <a href="#prod9">rule 9</a> (actionlist)
+    RPAR           reduce using <a href="#prod9">rule 9</a> (actionlist)
+    LBRACE         reduce using <a href="#prod9">rule 9</a> (actionlist)
+
+
+
+<b><a name="state15">State</a> <a href="#state15">15</a></b>
+
+  <b>Kernel Items</b>
+    6 identlist: IDENTIFIER . identlist2
+  <b>Parser Actions</b>
+    COMMA          shift, and go to state <a href="#state17">17</a>
+    RBRACE         reduce using <a href="#prod8">rule 8</a> (Erasing identlist2)
+
+  <b>Transitions</b>
+    identlist2     go to state <a href="#state16">16</a>
+
+
+<b><a name="state16">State</a> <a href="#state16">16</a></b>
+
+  <b>Kernel Items</b>
+    6 identlist: IDENTIFIER identlist2 .
+	-lookahead: { RBRACE }
+  <b>Parser Actions</b>
+    RBRACE         reduce using <a href="#prod6">rule 6</a> (identlist)
+
+
+
+<b><a name="state17">State</a> <a href="#state17">17</a></b>
+
+  <b>Kernel Items</b>
+    7 identlist2: COMMA . identlist
+  <b>Parser Actions</b>
+    IDENTIFIER     shift, and go to state <a href="#state15">15</a>
+
+  <b>Transitions</b>
+    identlist      go to state <a href="#state18">18</a>
+
+
+<b><a name="state18">State</a> <a href="#state18">18</a></b>
+
+  <b>Kernel Items</b>
+    7 identlist2: COMMA identlist .
+	-lookahead: { RBRACE }
+  <b>Parser Actions</b>
+    RBRACE         reduce using <a href="#prod7">rule 7</a> (identlist2)
+
+
+
+<b><a name="state19">State</a> <a href="#state19">19</a></b>
+
+  <b>Kernel Items</b>
+    21 compoundRule: rule STAR . actionlist
+  <b>Parser Actions</b>
+    LBRACE         shift, and go to state <a href="#state12">12</a>
+    STAR           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    PLUS           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    LBRACK         reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    PERIOD         reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    PIPE           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    SEMICOLON      reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    RPAR           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+
+  <b>Transitions</b>
+    actionlist     go to state <a href="#state20">20</a>
+
+
+<b><a name="state20">State</a> <a href="#state20">20</a></b>
+
+  <b>Kernel Items</b>
+    21 compoundRule: rule STAR actionlist .
+	-lookahead: { STAR, PLUS, LBRACK, PERIOD, PIPE, SEMICOLON, RPAR, LBRACE }
+  <b>Parser Actions</b>
+    STAR           reduce using <a href="#prod21">rule 21</a> (compoundRule)
+    PLUS           reduce using <a href="#prod21">rule 21</a> (compoundRule)
+    LBRACK         reduce using <a href="#prod21">rule 21</a> (compoundRule)
+    PERIOD         reduce using <a href="#prod21">rule 21</a> (compoundRule)
+    PIPE           reduce using <a href="#prod21">rule 21</a> (compoundRule)
+    SEMICOLON      reduce using <a href="#prod21">rule 21</a> (compoundRule)
+    RPAR           reduce using <a href="#prod21">rule 21</a> (compoundRule)
+    LBRACE         reduce using <a href="#prod21">rule 21</a> (compoundRule)
+
+
+
+<b><a name="state21">State</a> <a href="#state21">21</a></b>
+
+  <b>Kernel Items</b>
+    22 compoundRule: rule PLUS . actionlist
+  <b>Parser Actions</b>
+    LBRACE         shift, and go to state <a href="#state12">12</a>
+    STAR           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    PLUS           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    LBRACK         reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    PERIOD         reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    PIPE           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    SEMICOLON      reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    RPAR           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+
+  <b>Transitions</b>
+    actionlist     go to state <a href="#state22">22</a>
+
+
+<b><a name="state22">State</a> <a href="#state22">22</a></b>
+
+  <b>Kernel Items</b>
+    22 compoundRule: rule PLUS actionlist .
+	-lookahead: { STAR, PLUS, LBRACK, PERIOD, PIPE, SEMICOLON, RPAR, LBRACE }
+  <b>Parser Actions</b>
+    STAR           reduce using <a href="#prod22">rule 22</a> (compoundRule)
+    PLUS           reduce using <a href="#prod22">rule 22</a> (compoundRule)
+    LBRACK         reduce using <a href="#prod22">rule 22</a> (compoundRule)
+    PERIOD         reduce using <a href="#prod22">rule 22</a> (compoundRule)
+    PIPE           reduce using <a href="#prod22">rule 22</a> (compoundRule)
+    SEMICOLON      reduce using <a href="#prod22">rule 22</a> (compoundRule)
+    RPAR           reduce using <a href="#prod22">rule 22</a> (compoundRule)
+    LBRACE         reduce using <a href="#prod22">rule 22</a> (compoundRule)
+
+
+
+<b><a name="state23">State</a> <a href="#state23">23</a></b>
+
+  <b>Kernel Items</b>
+    23 compoundRule: rule LBRACK . NUMBER RBRACK actionlist
+  <b>Parser Actions</b>
+    NUMBER         shift, and go to state <a href="#state24">24</a>
+
+
+
+<b><a name="state24">State</a> <a href="#state24">24</a></b>
+
+  <b>Kernel Items</b>
+    23 compoundRule: rule LBRACK NUMBER . RBRACK actionlist
+  <b>Parser Actions</b>
+    RBRACK         shift, and go to state <a href="#state25">25</a>
+
+
+
+<b><a name="state25">State</a> <a href="#state25">25</a></b>
+
+  <b>Kernel Items</b>
+    23 compoundRule: rule LBRACK NUMBER RBRACK . actionlist
+  <b>Parser Actions</b>
+    LBRACE         shift, and go to state <a href="#state12">12</a>
+    STAR           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    PLUS           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    LBRACK         reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    PERIOD         reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    PIPE           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    SEMICOLON      reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    RPAR           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+
+  <b>Transitions</b>
+    actionlist     go to state <a href="#state26">26</a>
+
+
+<b><a name="state26">State</a> <a href="#state26">26</a></b>
+
+  <b>Kernel Items</b>
+    23 compoundRule: rule LBRACK NUMBER RBRACK actionlist .
+	-lookahead: { STAR, PLUS, LBRACK, PERIOD, PIPE, SEMICOLON, RPAR, LBRACE }
+  <b>Parser Actions</b>
+    STAR           reduce using <a href="#prod23">rule 23</a> (compoundRule)
+    PLUS           reduce using <a href="#prod23">rule 23</a> (compoundRule)
+    LBRACK         reduce using <a href="#prod23">rule 23</a> (compoundRule)
+    PERIOD         reduce using <a href="#prod23">rule 23</a> (compoundRule)
+    PIPE           reduce using <a href="#prod23">rule 23</a> (compoundRule)
+    SEMICOLON      reduce using <a href="#prod23">rule 23</a> (compoundRule)
+    RPAR           reduce using <a href="#prod23">rule 23</a> (compoundRule)
+    LBRACE         reduce using <a href="#prod23">rule 23</a> (compoundRule)
+
+
+
+<b><a name="state27">State</a> <a href="#state27">27</a></b>
+
+  <b>Kernel Items</b>
+    24 compoundRule: rule PERIOD . rule actionlist
+  <b>Parser Actions</b>
+    LPAR           shift, and go to state <a href="#state8">8</a>
+    EXCL           shift, and go to state <a href="#state41">41</a>
+    IDENTIFIER     reduce using <a href="#prod12">rule 12</a> (Erasing eventinverse)
+
+  <b>Transitions</b>
+    rule           go to state <a href="#state28">28</a>
+    compoundRule   go to state <a href="#state7">7</a>
+    eventlist      go to state <a href="#state33">33</a>
+    eventinverse   go to state <a href="#state35">35</a>
+
+
+<b><a name="state28">State</a> <a href="#state28">28</a></b>
+
+  <b>Kernel Items</b>
+    24 compoundRule: rule PERIOD rule . actionlist
+    21 compoundRule: rule . STAR actionlist
+    22 compoundRule: rule . PLUS actionlist
+    23 compoundRule: rule . LBRACK NUMBER RBRACK actionlist
+    24 compoundRule: rule . PERIOD rule actionlist
+    25 compoundRule: rule . PIPE rule actionlist
+  <b>Parser Actions</b>
+    STAR           shift, and go to state <a href="#state19">19</a>
+    PLUS           shift, and go to state <a href="#state21">21</a>
+    LBRACK         shift, and go to state <a href="#state23">23</a>
+    PERIOD         shift, and go to state <a href="#state27">27</a>
+    PIPE           shift, and go to state <a href="#state30">30</a>
+    LBRACE         shift, and go to state <a href="#state12">12</a>
+    SEMICOLON      reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    RPAR           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+
+  <b>Transitions</b>
+    actionlist     go to state <a href="#state29">29</a>
+
+
+<b><a name="state29">State</a> <a href="#state29">29</a></b>
+
+  <b>Kernel Items</b>
+    24 compoundRule: rule PERIOD rule actionlist .
+	-lookahead: { STAR, PLUS, LBRACK, PERIOD, PIPE, SEMICOLON, RPAR, LBRACE }
+  <b>Parser Actions</b>
+    STAR           reduce using <a href="#prod24">rule 24</a> (compoundRule)
+    PLUS           reduce using <a href="#prod24">rule 24</a> (compoundRule)
+    LBRACK         reduce using <a href="#prod24">rule 24</a> (compoundRule)
+    PERIOD         reduce using <a href="#prod24">rule 24</a> (compoundRule)
+    PIPE           reduce using <a href="#prod24">rule 24</a> (compoundRule)
+    SEMICOLON      reduce using <a href="#prod24">rule 24</a> (compoundRule)
+    RPAR           reduce using <a href="#prod24">rule 24</a> (compoundRule)
+    LBRACE         reduce using <a href="#prod24">rule 24</a> (compoundRule)
+
+
+
+<b><a name="state30">State</a> <a href="#state30">30</a></b>
+
+  <b>Kernel Items</b>
+    25 compoundRule: rule PIPE . rule actionlist
+  <b>Parser Actions</b>
+    LPAR           shift, and go to state <a href="#state8">8</a>
+    EXCL           shift, and go to state <a href="#state41">41</a>
+    IDENTIFIER     reduce using <a href="#prod12">rule 12</a> (Erasing eventinverse)
+
+  <b>Transitions</b>
+    rule           go to state <a href="#state31">31</a>
+    compoundRule   go to state <a href="#state7">7</a>
+    eventlist      go to state <a href="#state33">33</a>
+    eventinverse   go to state <a href="#state35">35</a>
+
+
+<b><a name="state31">State</a> <a href="#state31">31</a></b>
+
+  <b>Kernel Items</b>
+    25 compoundRule: rule PIPE rule . actionlist
+    21 compoundRule: rule . STAR actionlist
+    22 compoundRule: rule . PLUS actionlist
+    23 compoundRule: rule . LBRACK NUMBER RBRACK actionlist
+    24 compoundRule: rule . PERIOD rule actionlist
+    25 compoundRule: rule . PIPE rule actionlist
+  <b>Parser Actions</b>
+    STAR           shift, and go to state <a href="#state19">19</a>
+    PLUS           shift, and go to state <a href="#state21">21</a>
+    LBRACK         shift, and go to state <a href="#state23">23</a>
+    PERIOD         shift, and go to state <a href="#state27">27</a>
+    PIPE           shift, and go to state <a href="#state30">30</a>
+    LBRACE         shift, and go to state <a href="#state12">12</a>
+    SEMICOLON      reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    RPAR           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+
+  <b>Transitions</b>
+    actionlist     go to state <a href="#state32">32</a>
+
+
+<b><a name="state32">State</a> <a href="#state32">32</a></b>
+
+  <b>Kernel Items</b>
+    25 compoundRule: rule PIPE rule actionlist .
+	-lookahead: { STAR, PLUS, LBRACK, PERIOD, PIPE, SEMICOLON, RPAR, LBRACE }
+  <b>Parser Actions</b>
+    STAR           reduce using <a href="#prod25">rule 25</a> (compoundRule)
+    PLUS           reduce using <a href="#prod25">rule 25</a> (compoundRule)
+    LBRACK         reduce using <a href="#prod25">rule 25</a> (compoundRule)
+    PERIOD         reduce using <a href="#prod25">rule 25</a> (compoundRule)
+    PIPE           reduce using <a href="#prod25">rule 25</a> (compoundRule)
+    SEMICOLON      reduce using <a href="#prod25">rule 25</a> (compoundRule)
+    RPAR           reduce using <a href="#prod25">rule 25</a> (compoundRule)
+    LBRACE         reduce using <a href="#prod25">rule 25</a> (compoundRule)
+
+
+
+<b><a name="state33">State</a> <a href="#state33">33</a></b>
+
+  <b>Kernel Items</b>
+    19 rule: eventlist . actionlist
+  <b>Parser Actions</b>
+    LBRACE         shift, and go to state <a href="#state12">12</a>
+    STAR           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    PLUS           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    LBRACK         reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    PERIOD         reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    PIPE           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    SEMICOLON      reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+    RPAR           reduce using <a href="#prod10">rule 10</a> (Erasing actionlist)
+
+  <b>Transitions</b>
+    actionlist     go to state <a href="#state34">34</a>
+
+
+<b><a name="state34">State</a> <a href="#state34">34</a></b>
+
+  <b>Kernel Items</b>
+    19 rule: eventlist actionlist .
+	-lookahead: { STAR, PLUS, LBRACK, PERIOD, PIPE, SEMICOLON, RPAR, LBRACE }
+  <b>Parser Actions</b>
+    STAR           reduce using <a href="#prod19">rule 19</a> (rule)
+    PLUS           reduce using <a href="#prod19">rule 19</a> (rule)
+    LBRACK         reduce using <a href="#prod19">rule 19</a> (rule)
+    PERIOD         reduce using <a href="#prod19">rule 19</a> (rule)
+    PIPE           reduce using <a href="#prod19">rule 19</a> (rule)
+    SEMICOLON      reduce using <a href="#prod19">rule 19</a> (rule)
+    RPAR           reduce using <a href="#prod19">rule 19</a> (rule)
+    LBRACE         reduce using <a href="#prod19">rule 19</a> (rule)
+
+
+
+<b><a name="state35">State</a> <a href="#state35">35</a></b>
+
+  <b>Kernel Items</b>
+    15 eventlist: eventinverse . IDENTIFIER eventpeek eventlist2
+  <b>Parser Actions</b>
+    IDENTIFIER     shift, and go to state <a href="#state36">36</a>
+
+
+
+<b><a name="state36">State</a> <a href="#state36">36</a></b>
+
+  <b>Kernel Items</b>
+    15 eventlist: eventinverse IDENTIFIER . eventpeek eventlist2
+  <b>Parser Actions</b>
+    LANGLE         shift, and go to state <a href="#state42">42</a>
+    COMMA          reduce using <a href="#prod14">rule 14</a> (Erasing eventpeek)
+    LBRACE         reduce using <a href="#prod14">rule 14</a> (Erasing eventpeek)
+    STAR           reduce using <a href="#prod14">rule 14</a> (Erasing eventpeek)
+    PLUS           reduce using <a href="#prod14">rule 14</a> (Erasing eventpeek)
+    LBRACK         reduce using <a href="#prod14">rule 14</a> (Erasing eventpeek)
+    PERIOD         reduce using <a href="#prod14">rule 14</a> (Erasing eventpeek)
+    PIPE           reduce using <a href="#prod14">rule 14</a> (Erasing eventpeek)
+    SEMICOLON      reduce using <a href="#prod14">rule 14</a> (Erasing eventpeek)
+    RPAR           reduce using <a href="#prod14">rule 14</a> (Erasing eventpeek)
+
+  <b>Transitions</b>
+    eventpeek      go to state <a href="#state37">37</a>
+
+
+<b><a name="state37">State</a> <a href="#state37">37</a></b>
+
+  <b>Kernel Items</b>
+    15 eventlist: eventinverse IDENTIFIER eventpeek . eventlist2
+  <b>Parser Actions</b>
+    COMMA          shift, and go to state <a href="#state39">39</a>
+    LBRACE         reduce using <a href="#prod17">rule 17</a> (Erasing eventlist2)
+    STAR           reduce using <a href="#prod17">rule 17</a> (Erasing eventlist2)
+    PLUS           reduce using <a href="#prod17">rule 17</a> (Erasing eventlist2)
+    LBRACK         reduce using <a href="#prod17">rule 17</a> (Erasing eventlist2)
+    PERIOD         reduce using <a href="#prod17">rule 17</a> (Erasing eventlist2)
+    PIPE           reduce using <a href="#prod17">rule 17</a> (Erasing eventlist2)
+    SEMICOLON      reduce using <a href="#prod17">rule 17</a> (Erasing eventlist2)
+    RPAR           reduce using <a href="#prod17">rule 17</a> (Erasing eventlist2)
+
+  <b>Transitions</b>
+    eventlist2     go to state <a href="#state38">38</a>
+
+
+<b><a name="state38">State</a> <a href="#state38">38</a></b>
+
+  <b>Kernel Items</b>
+    15 eventlist: eventinverse IDENTIFIER eventpeek eventlist2 .
+	-lookahead: { LBRACE, STAR, PLUS, LBRACK, PERIOD, PIPE, SEMICOLON, RPAR }
+  <b>Parser Actions</b>
+    LBRACE         reduce using <a href="#prod15">rule 15</a> (eventlist)
+    STAR           reduce using <a href="#prod15">rule 15</a> (eventlist)
+    PLUS           reduce using <a href="#prod15">rule 15</a> (eventlist)
+    LBRACK         reduce using <a href="#prod15">rule 15</a> (eventlist)
+    PERIOD         reduce using <a href="#prod15">rule 15</a> (eventlist)
+    PIPE           reduce using <a href="#prod15">rule 15</a> (eventlist)
+    SEMICOLON      reduce using <a href="#prod15">rule 15</a> (eventlist)
+    RPAR           reduce using <a href="#prod15">rule 15</a> (eventlist)
+
+
+
+<b><a name="state39">State</a> <a href="#state39">39</a></b>
+
+  <b>Kernel Items</b>
+    16 eventlist2: COMMA . eventlist
+  <b>Parser Actions</b>
+    EXCL           shift, and go to state <a href="#state41">41</a>
+    IDENTIFIER     reduce using <a href="#prod12">rule 12</a> (Erasing eventinverse)
+
+  <b>Transitions</b>
+    eventlist      go to state <a href="#state40">40</a>
+    eventinverse   go to state <a href="#state35">35</a>
+
+
+<b><a name="state40">State</a> <a href="#state40">40</a></b>
+
+  <b>Kernel Items</b>
+    16 eventlist2: COMMA eventlist .
+	-lookahead: { LBRACE, STAR, PLUS, LBRACK, PERIOD, PIPE, SEMICOLON, RPAR }
+  <b>Parser Actions</b>
+    LBRACE         reduce using <a href="#prod16">rule 16</a> (eventlist2)
+    STAR           reduce using <a href="#prod16">rule 16</a> (eventlist2)
+    PLUS           reduce using <a href="#prod16">rule 16</a> (eventlist2)
+    LBRACK         reduce using <a href="#prod16">rule 16</a> (eventlist2)
+    PERIOD         reduce using <a href="#prod16">rule 16</a> (eventlist2)
+    PIPE           reduce using <a href="#prod16">rule 16</a> (eventlist2)
+    SEMICOLON      reduce using <a href="#prod16">rule 16</a> (eventlist2)
+    RPAR           reduce using <a href="#prod16">rule 16</a> (eventlist2)
+
+
+
+<b><a name="state41">State</a> <a href="#state41">41</a></b>
+
+  <b>Kernel Items</b>
+    11 eventinverse: EXCL .
+	-lookahead: { IDENTIFIER }
+  <b>Parser Actions</b>
+    IDENTIFIER     reduce using <a href="#prod11">rule 11</a> (eventinverse)
+
+
+
+<b><a name="state42">State</a> <a href="#state42">42</a></b>
+
+  <b>Kernel Items</b>
+    13 eventpeek: LANGLE . NUMBER RANGLE
+  <b>Parser Actions</b>
+    NUMBER         shift, and go to state <a href="#state43">43</a>
+
+
+
+<b><a name="state43">State</a> <a href="#state43">43</a></b>
+
+  <b>Kernel Items</b>
+    13 eventpeek: LANGLE NUMBER . RANGLE
+  <b>Parser Actions</b>
+    RANGLE         shift, and go to state <a href="#state44">44</a>
+
+
+
+<b><a name="state44">State</a> <a href="#state44">44</a></b>
+
+  <b>Kernel Items</b>
+    13 eventpeek: LANGLE NUMBER RANGLE .
+	-lookahead: { COMMA, LBRACE, STAR, PLUS, LBRACK, PERIOD, PIPE, SEMICOLON, 
+                RPAR }
+  <b>Parser Actions</b>
+    COMMA          reduce using <a href="#prod13">rule 13</a> (eventpeek)
+    LBRACE         reduce using <a href="#prod13">rule 13</a> (eventpeek)
+    STAR           reduce using <a href="#prod13">rule 13</a> (eventpeek)
+    PLUS           reduce using <a href="#prod13">rule 13</a> (eventpeek)
+    LBRACK         reduce using <a href="#prod13">rule 13</a> (eventpeek)
+    PERIOD         reduce using <a href="#prod13">rule 13</a> (eventpeek)
+    PIPE           reduce using <a href="#prod13">rule 13</a> (eventpeek)
+    SEMICOLON      reduce using <a href="#prod13">rule 13</a> (eventpeek)
+    RPAR           reduce using <a href="#prod13">rule 13</a> (eventpeek)
+
+
+
+<b><a name="state45">State</a> <a href="#state45">45</a></b>
+
+  <b>Kernel Items</b>
+    3 ruleend: SEMICOLON .
+	-lookahead: { LPAR, EXCL, IDENTIFIER, EOF }
+  <b>Parser Actions</b>
+    LPAR           reduce using <a href="#prod3">rule 3</a> (ruleend)
+    EXCL           reduce using <a href="#prod3">rule 3</a> (ruleend)
+    IDENTIFIER     reduce using <a href="#prod3">rule 3</a> (ruleend)
+    EOF            reduce using <a href="#prod3">rule 3</a> (ruleend)
+
+
+
+</pre></hr></body></html>

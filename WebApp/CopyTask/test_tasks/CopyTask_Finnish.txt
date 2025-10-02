@@ -1,0 +1,57 @@
+<copytask>
+  <title>Finnish</title>
+  <description>procedure to measure typing competence</description>
+  <language>FI</language>
+  <general_instructions>Tervetuloa
+
+Tässä osiossa sinun tulee kirjoittaa näytöllä näkyvät kirjaimet, sanat ja virkkeet.
+Yritä kirjoittaa mahdollisimman nopeasti ja virheettömästi.
+Sinun ei tarvitse korjata tekemiäsi virheitä. Kirjoitusvirheet eivät haittaa. Voit jatkaa kirjoittamista. Kirjoitusnopeus on tärkeämpää kuin virheettömyys.
+</general_instructions>
+  <layouts>
+    <layout>AZERTY</layout>
+    <layout>QWERTY</layout>
+    <layout>QWERTZ</layout>
+  </layouts>
+  <task title="Kirjoitusnopeus" unlimited="true" timelimit="15">
+    <instructions>Kirjoita kirjaimia ‘d’ ja ‘k’ niin nopeasti kuin mahdollista 15 sekunnin ajan. Tavoitteena on tuottaa niin paljon kirjaimia kuin mahdollista.
+Aika alkaa, kun kirjoitat ensimmäisen kirjaimen.</instructions>
+    <target>dkdkdkdkdkdkdkdkdkdkdkdkdkdk... </target>
+  </task>
+  <task title="Virke" unlimited="true" timelimit="30">
+    <instructions>Toista alla olevaa virkettä niin nopeasti kuin mahdollista 30 sekunnin ajan.
+Älä käytä isoja kirjaimia tai välimerkkejä: paina ‘Enter’ jokaisen virkkeen jälkeen. Aika alkaa, kun kirjoitat ensimmäisen kirjaimen. .</instructions>
+    <target>vanha musta kissa nukkuu pienen tuolin alla</target>
+  </task>
+  <task title="Esimerkki 1" repetition="7" example="true">
+    <instructions>Tämä on esimerkki. 
+Seuraavissa tehtävissä sinun tulee kirjoittaa kolmen sanan sarjoja seitsemän kertaa.
+Tässä esimerkissä kirjoitettiin 'joku kaunis kukka'.
+ Tässä tehtävässä ei ole aikarajaa. 
+</instructions>
+    <target>joku kaunis kukka</target>
+  </task>
+  <task title="Sanat 1" synthesize="true" repetition="7">
+    <instructions>Kirjoita nämä sanat seitsemän kertaa.
+Siirtyäksesi seuraavalle riville paina ‘Enter’.
+</instructions>
+    <target>kolme arvokasta asuntoa</target>
+  </task>
+  <task title="Sanat 2" synthesize="true" repetition="7">
+    <instructions>Kirjoita nämä sanat seitsemän kertaa.
+</instructions>
+    <target>liian erikoinen soitin</target>
+  </task>
+  <task title="Sanat 3" synthesize="true" repetition="7">
+    <instructions>Kirjoita nämä sanat seitsemän kertaa.</instructions>
+    <target>useita valkoisia koreja</target>
+  </task>
+  <task title="Sanat 4" repetition="7">
+    <instructions>Kirjoita nämä sanat seitsemän kertaa.</instructions>
+    <target>yksi hybridi jazzklubi</target>
+  </task>
+  <task title="Konsonantit">
+    <instructions>Lopuksi, kirjoita nämä neljä konsonanttisarjaa kerran.  </instructions>
+    <target>tjxgfl pgkfkq dtdrgt npwdvf</target>
+  </task>
+</copytask>

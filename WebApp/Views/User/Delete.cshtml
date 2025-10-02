@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Disable account";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Disable user @ViewBag.ID</h2>
+<p class="warning">Are you sure you wish to disable this account?</p>
+@using (Html.BeginForm())
+{
+    <div>
+        <p>
+            <input type="submit" value="Disable" />
+        </p>
+    </div>
+}
+

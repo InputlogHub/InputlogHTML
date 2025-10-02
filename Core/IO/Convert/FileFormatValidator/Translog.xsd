@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xsd:element name="LogFile">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="VersionString" type="xsd:string" />
+        <xsd:element name="startTime" type="xsd:dateTime" />
+        <xsd:element name="endTime" type="xsd:dateTime" />
+        <xsd:element name="Project">
+          <xsd:complexType>
+            <xsd:sequence>      
+              <xsd:element name="FileName" type="xsd:string" />
+              <xsd:element name="Description" type="xsd:string" />
+              <xsd:element name="versionString" />
+              <xsd:element name="useSourceText" type="xsd:boolean" />
+              <xsd:element name="promptSubjectName" type="xsd:boolean" />
+              <xsd:element name="useExtendedTranslations" type="xsd:boolean" />         
+              <!--<xsd:element name="syncEnabled" type="xsd:boolean" />
+              <xsd:element name="broadcastEnabled" type="xsd:boolean" />
+              <xsd:element name="udpIP" />
+              <xsd:element name="udpPort" type="xsd:string" />
+              <xsd:element name="signalInterval" type="xsd:string" />-->
+              <xsd:element name="showTimer" type="xsd:boolean" />
+              <xsd:element name="maxWindow" type="xsd:boolean" />
+              <xsd:element name= "offlineGWM" type="xsd:boolean" />
+              <!--<xsd:element name="ChineseKeys" type="xsd:boolean" />-->
+              <xsd:element name="fullScreen" type="xsd:boolean" />
+              <xsd:element name="lockWindows" type="xsd:boolean" />
+              <xsd:element name="Plugins">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="Key_Logger" />
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="Interface">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="Standard">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="pluginDependances" />
+                          <xsd:element name="Settings">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element name="TargetBackgroundColor">
+                                  <xsd:complexType>
+                                    <xsd:attribute name="RGB" type="xsd:byte" use="required" />
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element name="SourceBackgroundColor">
+                                  <xsd:complexType>
+                                    <xsd:attribute name="RGB" type="xsd:byte" use="required" />
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element name="lineHeight">
+                                  <xsd:complexType>
+                                    <xsd:attribute name="source" type="xsd:string" use="required" />
+                                    <xsd:attribute name="target" type="xsd:string" use="required" />
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element name="SourceText" type="xsd:string" />
+                                <xsd:element name="TargetText" type="xsd:string" />
+                                <xsd:element name="SourceTextUTF8" type="xsd:string" />
+                                <xsd:element name="TargetTextUTF8" type="xsd:string" />
+                                <xsd:element name="TranslationWindow">
+                                  <xsd:complexType>
+                                    <xsd:attribute name="X" type="xsd:string" use="required" />
+                                    <xsd:attribute name="Y" type="xsd:string" use="required" />
+                                    <xsd:attribute name="Width" type="xsd:string" use="required" />
+                                    <xsd:attribute name="Height" type="xsd:string" use="required" />
+                                    <xsd:attribute name="Split" type="xsd:string" use="required" />
+                                    <xsd:attribute name="STO" type="xsd:string" use="required" />
+                                    <xsd:attribute name="VHO" type="xsd:string" use="required" />
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element name="SourceField">
+                            <xsd:complexType>
+                              <xsd:attribute name="X" type="xsd:string" use="required" />
+                              <xsd:attribute name="Y" type="xsd:string" use="required" />
+                              <xsd:attribute name="Width" type="xsd:string" use="required" />
+                              <xsd:attribute name="Height" type="xsd:string" use="required" />
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element name="TargetField">
+                            <xsd:complexType>
+                              <xsd:attribute name="X" type="xsd:string" use="required" />
+                              <xsd:attribute name="Y" type="xsd:string" use="required" />
+                              <xsd:attribute name="Width" type="xsd:string" use="required" />
+                              <xsd:attribute name="Height" type="xsd:string" use="required" />
+                            </xsd:complexType>
+                          </xsd:element>
+                         <xsd:element name="Import2006Flag" type="xsd:boolean" />
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="Events">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:choice maxOccurs="unbounded">
+                <xsd:element name="System">
+                  <xsd:complexType>
+                    <xsd:attribute name="Time" type="xsd:string" use="required" />
+                    <xsd:attribute name="Value" type="xsd:string" use="required" />
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element maxOccurs="unbounded" name="Mouse">
+                  <xsd:complexType>
+                    <xsd:attribute name="Time" type="xsd:string" use="required" />
+                    <xsd:attribute name="Cursor" type="xsd:string" use="required" />
+                    <xsd:attribute name="Value" type="xsd:string" use="required" />
+                    <xsd:attribute name="Text" type="xsd:string" use="optional" />
+                    <xsd:attribute name="Block" type="xsd:string" use="optional" />
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element maxOccurs="unbounded" name="Key">
+                  <xsd:complexType>
+                    <xsd:attribute name="Time" type="xsd:string" use="required" />
+                    <xsd:attribute name="Cursor" type="xsd:string" use="required" />
+                    <xsd:attribute name="Type" type="xsd:string" use="required" />
+                    <xsd:attribute name="Value" type="xsd:string" use="required" />
+                    <xsd:attribute name="X" type="xsd:string" use="optional" />
+                    <xsd:attribute name="Y" type="xsd:string" use="optional" />
+                    <xsd:attribute name="Width" type="xsd:string" use="optional" />
+                    <xsd:attribute name="Height" type="xsd:string" use="optional" />
+                    <xsd:attribute name="Text" type="xsd:string" use="optional" />
+                    <xsd:attribute name="Block" type="xsd:string" use="optional" />
+                    <xsd:attribute name="Paste" type="xsd:string" use="optional" />
+                  </xsd:complexType>
+                </xsd:element>
+				 <xsd:element name="Interface">
+                  <xsd:complexType>
+                    <xsd:attribute name="Time" type="xsd:string" use="required" />
+                    <xsd:attribute name="Xw" type="xsd:string" use="required" />
+                    <xsd:attribute name="Yw" type="xsd:string" use="required" />
+                    <xsd:attribute name="Ww" type="xsd:string" use="required" />
+                    <xsd:attribute name="Hw" type="xsd:string" use="required" />
+                    <xsd:attribute name="Sw" type="xsd:string" use="required" />
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="FinalTextUTF8" type="xsd:string" />
+        <xsd:element name="TargetTextChar" />
+        <xsd:element name="SourceTextChar">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="CharPos">
+                <xsd:complexType>
+                  <xsd:attribute name="Cursor" type="xsd:string" use="optional" />
+                  <xsd:attribute name="Value" type="xsd:string" use="optional" />
+                  <xsd:attribute name="X" type="xsd:string" use="optional" />
+                  <xsd:attribute name="Y" type="xsd:string" use="optional" />
+                  <xsd:attribute name="Width" type="xsd:string" use="optional" />
+                  <xsd:attribute name="Height" type="xsd:string" use="optional" />
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>     
+        <xsd:element name="FinalTextChar">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="CharPos">
+                <xsd:complexType>
+                  <xsd:attribute name="Cursor" type="xsd:string" use="required" />
+                  <xsd:attribute name="Value" type="xsd:string" use="required" />
+                  <xsd:attribute name="X" type="xsd:string" use="required" />
+                  <xsd:attribute name="Y" type="xsd:string" use="required" />
+                  <xsd:attribute name="Width" type="xsd:string" use="required" />
+                  <xsd:attribute name="Height" type="xsd:string" use="required" />
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xs:schema>

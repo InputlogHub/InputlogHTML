@@ -1,0 +1,72 @@
+﻿@model WebApp.Models.UserDetailsViewModel
+
+@{
+    ViewBag.Title = "User Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.UserName's Details</h2>
+<b>Email: </b> @Model.Email <br />
+@Html.ActionLink("Edit", "Edit", "User", new { ID = Model.UserName }, null)
+@if (!Roles.IsUserInRole(Model.UserName, "Disabled") && User.IsInRole("Admin"))
+{
+    @Html.Raw("&#124;&nbsp;") // display pipe
+    @Html.ActionLink("Disable", "Delete", "User", new { ID = Model.UserName }, null)
+}
+else if (User.IsInRole("Admin"))
+{
+    @Html.Raw("&#124;&nbsp;") // display pipe
+    @Html.ActionLink("Activate", "AdminValidate", "Account", new { ID = Model.UserName }, null)
+}
+@if (!Roles.IsUserInRole(Model.UserName, "Admin") && User.IsInRole("Admin"))
+{
+    @Html.Raw("&nbsp;&#124;&nbsp;") // display pipe
+    @Html.ActionLink("Make Admin", "MakeAdmin", "User", new { ID = Model.UserName }, null)
+}
+
+<h3>Personal Information</h3>
+<b>Full name: </b> @Model.Name <br />
+<b>Affiliation: </b> @Model.Affiliation <br />
+<b>Address: </b> @Model.Address <br />
+<b>Postal Code: </b> @Model.Postal <br />
+<b>City: </b> @Model.City <br />
+<b>Country: </b> @Model.Country
+<p style="margin-top: 0;">
+    <b>Information about research: </b> <br />
+    @Model.Research
+</p>
+
+<h3>Uploaded Idfx files</h3>
+@Html.ActionLink("Download", "Download", "Idfx")
+<br />
+<br />
+<h3>Recent Tasks</h3>
+<table>
+    <tr>
+        <th>Unique ID</th>
+        <th>Status</th>
+        <th>Actions</th>
+        <th>Date &amp; Time</th>
+    </tr>
+@foreach (WebApp.Models.TaskModel task in Model.Tasks)
+{
+        <tr>
+            <td>@task.Guid</td>
+            <td>@task.StatusString()</td>
+            <td>
+                @Html.ActionLink("Details", "Details", "Task", new { task.ID }, null)
+                @if (!task.Done())
+                {
+                    @Html.Raw("&#124;&nbsp;") // display pipe
+                    @Html.ActionLink("Cancel", "Delete", "Task", new { task.ID, ViewBag.Full }, null)
+                }
+                @if (task.HasStarted() && (User.IsInRole("Admin")))
+                {
+                    @Html.Raw("&nbsp;&#124;&nbsp;") // display pipe
+                    @Html.ActionLink("Reset", "Reset", "Task", new { task.ID }, null)
+                }
+            </td>
+            <td>@task.Time</td>
+        </tr>
+    }
+</table>

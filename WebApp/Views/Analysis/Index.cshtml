@@ -1,0 +1,53 @@
+﻿@model WebApp.Models.AnalysisIndexViewModel
+
+@{
+    ViewBag.Title = "Analysis Administration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Analysis Administration</h2>
+@using (Html.BeginForm("Create", "Analysis"))
+{
+        <fieldset>
+            <legend>Create new analysis</legend>
+            <div class="editor-label">
+                <label>Name</label>
+            </div>
+            <div class="editor-field">
+                <input type="text" name="Name" placeholder="Analysis" />
+            </div>
+            <div><p><input type="submit" value="Create" /></p></div>
+        </fieldset>
+}
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Status</th>
+        <th>Actions</th>
+    </tr>
+	@foreach (WebApp.Models.AnalysisModel analysis in Model.Analyses)
+    {
+        <tr>
+            <td>@analysis.Name</td>
+            <td>@(analysis.Active ? "Active" : "Inactive")</td>
+            <td>
+                @if (analysis.Active) 
+                {
+                    using (Html.BeginForm("Deactivate", "Analysis", new {analysis.ID }))
+                    {
+                        <input type="submit" value="Deactivate" />
+                    }
+                } 
+                else 
+                {
+                    using (Html.BeginForm("Activate", "Analysis", new {analysis.ID }))
+                    {
+                        <input type="submit" value="Activate" />
+                    }
+                }
+            </td>
+        </tr>
+    }
+</table>
+

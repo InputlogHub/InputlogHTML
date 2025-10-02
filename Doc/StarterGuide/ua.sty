@@ -1,0 +1,113 @@
+\ProvidesPackage{ua}
+\usepackage{wallpaper}
+
+\renewcommand{\date}[1]{\renewcommand\@date{#1}}
+\renewcommand{\author}[1]{\renewcommand\@author{#1}}
+\renewcommand{\title}[1]{\renewcommand\@title{#1}}
+\newcommand{\assignment}[1]{\newcommand\@assignment{#1}}
+\newcommand{\course}[1]{\newcommand\@course{#1}}
+\newcommand{\subtitle}[1]{\newcommand\@subtitle{#1}}
+\newcommand{\authors}[1]{\newcommand\@authors{#1}}
+
+\newcommand{\clap}[1]{\makebox[\textwidth]{#1}}
+\newcommand{\lowr}[1]{
+  \hbox to \hsize{
+    \llap{\vbox{\raggedleft #1}}}}
+\newcommand{\aline}[1]{\vbox{\centering #1}}
+
+\newcommand{\maketitledoc}{
+  \begin{titlepage}
+  \thispagestyle{empty}\vbox to \vsize{
+		\ThisLRCornerWallPaper{1}{latex_img/uabottomwave.pdf}
+		\ThisURCornerWallPaper{0.2}{latex_img/logo_UA_U_kl3.pdf}
+		\ThisLLCornerWallPaper{0.3}{latex_img/logo_UA_tekst_kl.pdf}
+    \vfill
+    \aline{\Large \@title}
+    \vspace{7mm}
+    \aline{\large \@author}
+    \vspace{5mm}
+    \aline{\@date}
+    \vspace{10mm}
+	\vfill
+    \vfill
+    \vfill
+  }
+  \cleardoublepage
+  \end{titlepage}
+}
+
+\newcommand{\maketitlehomework}{
+  \begin{titlepage}
+  \thispagestyle{empty}\vbox to \vsize{
+		\ThisLRCornerWallPaper{1}{latex_img/uabottomwave.pdf}
+		\ThisURCornerWallPaper{0.2}{latex_img/logo_UA_U_kl3.pdf}
+		\ThisLLCornerWallPaper{0.3}{latex_img/logo_UA_tekst_kl.pdf}
+    \vfill
+    \aline{\Large \@title}
+    \vspace{7mm}
+    \aline{\large \@course}
+    \vspace{3mm}
+    \aline{\large \@author}
+    \vspace{5mm}
+    \aline{\@date}
+    \vspace{10mm}
+	\vfill
+    \vfill
+    \vfill
+  }
+  \cleardoublepage
+  \end{titlepage}
+}
+
+\newcommand{\maketitleassignment}{
+  \begin{titlepage}
+  \thispagestyle{empty}\vbox to \vsize{
+		\ThisLRCornerWallPaper{1}{latex_img/uabottomwave.pdf}
+		\ThisURCornerWallPaper{0.2}{latex_img/logo_UA_U_kl3.pdf}
+		\ThisLLCornerWallPaper{0.3}{latex_img/logo_UA_tekst_kl.pdf}
+    \vfill
+    \aline{\Large \@title}
+    \vspace{5mm}
+    \aline{\large \@author}
+    \vspace{2mm}
+    \aline{\@date}
+    \vspace{40mm}
+    \aline{\it \@assignment}
+    \vfill
+    \vfill
+    \vfill
+    }
+  \cleardoublepage
+  \end{titlepage}
+}
+
+\newcommand{\maketitlegroup}{
+		\ThisLRCornerWallPaper{1}{latex_img/uabottomwave.pdf}
+		\ThisURCornerWallPaper{0.2}{latex_img/logo_UA_U_kl3.pdf}
+		\ThisLLCornerWallPaper{0.3}{latex_img/logo_UA_tekst_kl.pdf}
+  \begin{titlepage}
+  \thispagestyle{empty}\vbox to \vsize{
+    \vfill
+    \aline{\huge \@title}
+    \vspace{6mm}
+    \aline{\Large \@subtitle}
+    \vspace{2mm}    
+    \aline{\@date}
+    \vspace{32mm}
+    \vfill
+    \begin{flushright}
+    	\@authors
+    \end{flushright}
+    }
+  \cleardoublepage
+  \end{titlepage}
+}
+
+\newcommand{\TOCpage}[0]{ 
+	\pagenumbering{Roman}
+	\setcounter{tocdepth}{2}
+	\tableofcontents
+	\setcounter{tocdepth}{2}
+	\newpage
+	\pagenumbering{arabic}
+}

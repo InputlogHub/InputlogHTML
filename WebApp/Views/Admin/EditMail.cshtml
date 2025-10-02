@@ -1,0 +1,36 @@
+﻿@model WebApp.Models.UserDetailsViewModel
+
+@{
+    ViewBag.Title = "Edit Mail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit mail</h2>
+@using (Html.BeginForm())
+{
+    <input type="hidden" name="id" value="@ViewBag.ID" />
+    <textarea name="content">
+        @ViewBag.Content
+    </textarea>
+    <div>
+        <p>
+            <input type="submit" value="Edit" />
+        </p>
+    </div>
+}
+
+<script
+    type="text/javascript"
+    src="https://cdn.tiny.cloud/1/dz63jtgz9in34ur51a9b7c7izl6e9byn1ajbyh4t21o8ekrx/tinymce/6/tinymce.min.js" referrerpolicy="origin">
+</script>
+
+<script type="text/javascript">
+    tinymce.init({
+        selector: 'textarea',
+        height: 600,
+        plugins: ['link autosave autoresize paste help'],
+        menubar: 'file edit view',
+        toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | outdent indent',
+        content_css: 'css/content.css'
+    });
+</script>

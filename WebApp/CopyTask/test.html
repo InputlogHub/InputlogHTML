@@ -1,0 +1,161 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Inputlog Copy Task
+    </title>
+    <script src="scripts/library/jquery-2.1.0.js"></script>
+    <script src="scripts/library/date.format.js"></script>
+    <script src="scripts/library/jquery.form.js"></script>
+    <script src="scripts/CopyTask.js"></script>
+    <script type='text/javascript' src="scripts/library/behave.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $("#showoutput").click(function () {
+                message = '';
+                for (i = 0; i < events.length; i++) {
+                    var myevent = events[i];
+                    message += toHtml(myevent);
+                }
+                $("#output").html(message);
+                return false;
+            });
+
+            $("#clearoutput").click(function () {
+                message = '';
+                events = [];
+                $("#output").html(message);
+                return false;
+            });
+
+            $("#resettimer").click(function () {
+                location.reload();
+            });
+
+            $("#downloaddata").click(function () {
+                var dataToDownload = eventsToXML(events);
+                download("test.idfx", dataToDownload);
+            });
+
+            $("#logontest").click(function () {
+                testLogOn();
+            });
+
+            $("#posttest").click(function () {
+                testPost();
+            });
+
+
+            function testLogOn() {
+                $.post("/Account/LogOnAjax", { username: "lvanwaes", password: "npy702" })
+                    .done(function (data) {
+                        loginResponse(data);
+                    });
+            }
+
+            function loginResponse(data) {
+                $("#logondiv").html(data.Message);
+            }
+
+            function testPost() {
+                var xmlfile = encodeURIComponent(eventsToXML(events));
+                $("#debug").append('testPost() called');
+                $.post("/Idfx/UploadAjax",
+                    {
+                        file: xmlfile,
+                        copyTask: "copyTask-name",
+                        filename: "idfx-name",
+                        session: "copyTask-session"
+                    })
+                    .done(function (data) {
+                        alert("Data Loaded: " + data);
+                        $("#debug").append("testPost() post completed.");
+                    }
+                    );
+            }
+
+            function upload() {
+
+                var xmlfile = eventsToXML(events);
+
+
+                var xhr = new XMLHttpRequest();
+                var fd = new FormData(postform);
+
+                fd.append("file", encodeURIComponent(xmlfile));
+                xhr.open("POST", "../Idfx/UploadAjax");
+                xhr.send(fd);
+                xhr.addEventListener("load", function (event) {
+                    if (event.target.response == 'True') {
+                        $("#uploadStatus").html('<p style="color:#74ac12;margin-left:19%;">Your Request Submitted Successfully</p>');
+                    } else {
+                        $("#uploadStatus").html('<pre>"fail"</pre>');
+                    }
+
+                }, false);
+            };
+
+            $("#postform").ajaxSubmit({
+                type: "POST",
+
+                success: function () {
+                    $("#uploadStatus").html('<p style="color:#74ac12;margin-left:19%;">Your Request Submitted Successfully</p>');
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    $("#uploadStatus").html('<pre>"fail"</pre>');
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+
+
+    <div>
+    <h1>Inputlog Copy Task</h1>
+        <h2> <a href="tasks.html">Start copy task</a></h2>
+        <div>
+            <button id="logontest">Test logon</button>
+        <div id="logondiv"></div></div>
+        <br/>
+        <button id="posttest">Test post</button>
+    <br/><br/>
+    </div>
+    <div>
+        <form>
+            <fieldset>
+                <h3>Preview</h3>
+                <label for="target">Voer iets in:</label>
+                <textarea id="inputarea" name="inputarea" rows="4" style="width:300px"></textarea>
+            </fieldset>
+        </form>
+        <br>
+        <button id="showoutput">Toon gelogde gegevens</button>
+        <button id="clearoutput">Verwijder gelogde gegevens</button>
+        <button id="resettimer">Reset</button>
+        <button id="downloaddata">Download gelogde gegevens</button>
+        <br><br>
+    </div>
+    <div>
+        <form id="postform">
+            Project: <input type="text" id="project" name="project" />
+            Document: <input type="text" id="document" name="document" />
+            Comment: <input type="text" id="comment" name="comment" />
+            <input type="button" value="Upload" id="btnUpload" onclick="upload()"/>
+            <!--<input type="file" value="" name="file" id="file"/>-->
+        </form>
+        <div id="uploadStatus"></div>
+    </div><br/>
+    <div id="debug">
+        
+    </div>
+  <table id="output" align="center">
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "User unsubscribe successful";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<h2>The user with email address @ViewBag.EmailAddress will soon be unsubscribed from the Inputlog mailing list.</h2>*@
+<h2>Unsubscribe from Inputlog mailinglist</h2>
+
+    <form action="/Home/Unsubscribe" method="post">
+        <input type="text" name="email">
+        <input type="submit" value="Unsubscribe" />
+    </form>
+
+
+

@@ -1,0 +1,324 @@
+﻿<report>
+  <id>Default user report</id>
+  <language>EN-US</language>
+  <title>Process report: #__SESSION_Participant | #__SESSION_Date - #__SESSION_Time</title>
+   <block>
+    <title>Intro</title>
+    <prepend format="complex">
+      <paragraph>Dear #__SESSION_Participant</paragraph>
+      <paragraph/>
+      <paragraph>This feedback report provides you with some process and product writing characteristics. Together they describe and typify your writing process of the composition task at hand. </paragraph>
+      <paragraph>This report will help you to reflect upon the way you completed this task. It is also useful to compare your writing process for different writing tasks, or as a basis to compare your writing strategies with those of your fellow students. </paragraph>
+      <paragraph/>
+      <paragraph>Mariëlle Leijten and Luuk Van Waes</paragraph>
+      <paragraph>Research group Professional Communication</paragraph>
+    </prepend>
+  </block>
+  
+  <block>
+    <title>Overview</title>
+    <prepend format="complex">
+      <paragraph>This report contains the following sections:</paragraph>
+      <list>
+        <item>Time characteristics</item>
+        <item>Process description</item>
+        <item>Pausing behavior</item>
+        <item>Revision behavior</item>
+        <item>Typing characteristics</item>
+        <item>Process and Fluency graphs</item>
+      </list>
+    </prepend>
+  </block>
+ 
+  <block>
+    <title>Time</title>
+    <prepend format="simple">In general when composing this writing task you divided your time as follows: </prepend>
+    <elements>
+      <element>
+    <introduction></introduction>
+        <value>
+          <label bold="false">Total process time (hh:mm:ss): </label>
+          <value_id>Summary_Process_TotalTime</value_id>
+    </value>
+      </element>
+      <element>
+    <introduction/>
+        <value>
+          <label bold="false">Total pausing time (taking into account a pause threshold of 2000 ms):</label>
+          <value_id>Pause_PauseTime_2000</value_id>
+    </value>
+      </element>
+      <element>
+    <introduction/>
+        <value>
+          <label bold="false">Total active writing time (taking into account a pause threshold of 2000 ms):</label>
+          <value_id>Pause_ActiveTime_2000</value_id>
+    </value>
+    </element>
+      <element>
+    <introduction/>
+        <value>
+          <label bold="false">The ratio of the time you spent 'thinking' versus the time you spent 'typing' fluently (threshold 2000 ms): </label>
+          <value_id>Pause_PauseToActiveProp_2000</value_id>
+    </value>			
+        
+      </element>
+    </elements>
+  </block>
+  
+   <block>
+    <title>Process</title>
+    <prepend format="simple">The following process indicators characterize the way in which you produced your text: </prepend>
+
+    <elements>
+      <element>
+    <introduction/>
+        <value>
+          <label bold="false">To compose your text of </label>
+          <value_id>Summary_Product_TotalWords</value_id>
+          <append> words </append>
+    </value>			
+          
+    <value>
+          <label bold="false">(or </label>
+          <value_id>Summary_Product_CharactersInclSpaces</value_id>
+          <append> characters)</append>
+    </value>			
+    <value>
+          <label bold="false">, you produced </label>
+          <value_id>Summary_Process_NrOfWords</value_id>
+          <append> words </append>
+    </value>			
+    <value>
+          <label bold="false">(or </label>
+          <value_id>Summary_Process_CharactersInclSpaces</value_id>
+          <append> characters) during this writing process (excl. copied text). </append>
+    </value>			
+     </element>
+
+      <element>
+    <introduction/>
+        <value>
+          <label bold="false">Characters per minute (product): </label>
+          <value_id>Summary_Product_CPM</value_id>
+    </value>
+      </element>
+      <element>
+    <introduction/>
+        <value>
+          <label bold="false">Characters per minute (process): </label>
+          <value_id>Summary_Process_CPM</value_id>
+    </value>		
+      </element>
+      <element>
+    <introduction/>
+        <value>
+          <label bold="false">Proportion product/process: </label>
+          <value_id>Summary_RevisionRatioInChar</value_id>
+          <append> [Note: the lower the percentage, the more revisions you made.]
+          </append>
+    </value>			
+        
+      </element>
+    </elements>
+  </block>
+  
+  <block>
+    <title>Pausing behavior</title>
+    <prepend format="simple">An analysis of your pausing behavior tells you more about the cognitive efforts that was needed to produce your text. The pauses in your text production are analyzed from different perspectives: 
+  </prepend>
+    <append format="complex">
+      <paragraph></paragraph>
+    </append>
+      <elements>
+      <element>
+    <introduction/>
+        <value>
+          <label bold="false">Total number of pauses (larger than 200 ms): </label>
+          <value_id>Pause_TotalPauses_DEFAULT</value_id>
+    </value>
+    </element>
+    
+      <element>
+    <introduction/>
+        <value>
+          <label bold="false">Average pause duration (larger than 200 ms): </label>
+          <value_id>Pause_GeoMean_DEFAULT</value_id>
+          <append> ms </append>
+    </value>
+      </element>
+    
+      <element>
+    <introduction/>
+        <value>
+        <label bold="false">Median Pause burst length: </label>
+        <value_id>Pause_Pburst_MedianProd_DEFAULT</value_id>
+    </value>
+    <value>		
+        <label bold="false"> characters (standard deviation: </label>
+        <value_id>Pause_Pburst_StdevProd_DEFAULT</value_id>
+        <append>) [Note: A P-burst is defined as the writing activity between two pauses that exceed the defined pause threshold, i.c 2000 ms.]</append>
+    </value>
+    </element>
+    
+      <element>
+    <introduction/>
+        <value>
+        <label bold="false">Median Pause burst duration: </label>
+        <value_id>Pause_Pburst_MedianTime_DEFAULT</value_id>
+    </value>
+    <value>		
+        <label bold="false"> seconds (standard deviation: </label>
+        <value_id>Pause_Pburst_StdevTime_DEFAULT</value_id>
+        <append>) [Note: A P-burst is defined as the writing activity between two pauses that exceed the defined pause threshold, i.c 2000 ms.]</append>
+    </value>
+    </element>
+   </elements>
+  </block>
+
+<block>
+    <title>Pausing levels</title>
+    <elements>	  
+      <element>
+    <introduction/>
+        <value>
+        <label bold="false">The graph below shows a boxplot of your pausing behavior at the following text levels: within words, between words and between sentences (pause threshold > 30 ms): </label>
+        <value_id>Pause_PauseLevels_BoxPlot_30</value_id>
+    </value>
+    </element>
+    </elements>
+  </block>
+  
+  <block>
+  <title>Revision behavior</title>
+    <prepend format="simple">The analysis of your revision behavior shows the extent to which you deleted and inserted text while composing.  </prepend>
+    <elements>
+      <element>
+    <introduction/>
+        <value>
+      <label bold="false">Total number of revisions: </label>
+      <value_id>Revision_NrOfDeletions</value_id>
+      <append> deletions</append>
+    </value>
+    <value>
+      <label bold="false"> | </label>
+      <value_id>Revision_NrOfInsertions</value_id>
+      <append> insertions </append>
+    </value>
+      </element>
+    
+      <element>
+    <introduction/>
+        <value>
+      <label bold="false">Mean number of revisions per 100 words: </label>
+      <value_id>Revision_RevisionsPer100Words</value_id>
+      <append> per 100 words</append>
+    </value>
+      </element>
+
+      <element>
+    <introduction/>
+        <value>
+      <label bold="false">Mean number of revisions per minute: </label>
+      <value_id>Revision_RevisionsPerMinute</value_id>
+      <append> revisions per min.</append>
+    </value>
+      </element>
+
+      <element>
+    <introduction/>
+        <value>
+      <label bold="false">Median length of Revision bursts: </label>
+      <value_id>Revision_Rburst_MedianProduction</value_id>
+    </value>
+    <value>
+      <label bold="false"> | stdev. </label>
+      <value_id>Revision_Rburst_StdevProduction</value_id>
+    </value>
+      </element>
+
+    </elements>
+  </block>
+  
+    <block>
+  <title>Typing characteristics</title>
+    <prepend format="simple">The analysis of your (motoric) typing behavior shows that: </prepend>
+    <elements>
+  
+      <element>
+    <introduction/>
+        <value>
+      <label bold="false">Your average typing speed is:  </label>
+      <value_id>Fluency_Avg_StrokesPerMinute</value_id>
+      <append> characters per minute.</append>
+    </value>
+    <value>
+      <label bold="false"> (stdev. </label>
+      <value_id>Fluency_Stdev_StrokesPerMinute</value_id>
+      <append>). </append>
+    </value>
+      </element>
+    
+      <element>
+    <introduction/>
+        <value>
+      <label bold="false">Your average interkey interval between two characters is: </label>
+      <value_id>Bigram_TransitionTime_CharChar_Avg</value_id>
+      <append> ms </append>
+    </value>
+    <value>
+      <label bold="false">(stdev. </label>
+      <value_id>Bigram_TransitionTime_CharChar_Stdev</value_id>
+      <append>). </append>
+    </value>
+      </element>
+
+    </elements>
+  </block>
+  
+  
+   <block>
+  <title>Process graph</title>
+    <prepend format="complex">
+  <paragraph>The process graph (see appendix 1) shows a graphic representation of the dynamics that characterize your writing process. </paragraph>
+   <list>
+        <item>The blue top line represents the number of characters that were produced over time (x-axis). The steeper the line, the more text you produced (fluency).</item>
+    <item>The green line represent the document length at every stage in the process. The further the green and the blue line diverge from each other, the more text was deleted.</item>
+    <item>The green dotted line shows in which part of the text you were revising or inserting new text. It is an indicator of non-linearity. When the green dotted lines overlaps with the green line, you have been producing text at the point of utterance. When you get closer to the x-axis, it means that you are composing or revising text at the beginning of the document.</item>
+    <item>The orange dots represent the location of the pauses that exceed the given pause threshold (i.c. 200 ms).</item>
+    <item>Finally, The line graph at the bottom of the figure represents the interaction between your main document and the sources you consulted.</item>
+    </list>
+  </prepend>
+    <elements>
+      <element>
+    <introduction/>
+        <value>
+          <label bold="false">Process graph</label>
+          <value_id>Process_ProcessGraph</value_id>
+        </value>
+      </element>
+    </elements>
+  </block>
+
+ <block>
+  <title>Fluency graph</title>
+    <prepend format="complex">
+  <paragraph>The fluency graph (see appendix 2) shows a graphic representation of the proportion of text that is produced in the different intervals of your writing process. </paragraph>
+   <list>
+        <item>Task variation: The green lines represents the proportion of characters that were produced per interval. The higher the text production in that interval, the closer the line will reach the 100% mark. The maximum score of 100% is attributed to that time zone in the task execution that is characterized by the most fluent text production (see green shaded vertical zone).</item>
+    <item>Absolute variation: The blue line represents a comparable view to the variation in the text production. However, the maximum for this line is based on an absoulte measure that is defined at 400 cpm (corresponding to a highly fluent text production). This line enables you to easily compare your fluency variation to other writers or for different writing processes.</item>
+    <item>Personal variation: The red line also represents your variation in text production, but in this case relative to your personal maximum fluency (either based on this specific task, or on the results of a copy task). </item>
+    </list>
+  </prepend>
+    <elements>
+    <element>
+    <introduction/>
+        <value>
+          <label bold="false">Fluency graph</label>
+          <value_id>Fluency_FluencyGraph</value_id>
+        </value>
+      </element>
+    </elements>
+  </block>
+  
+</report>
