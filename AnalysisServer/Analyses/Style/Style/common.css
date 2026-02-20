@@ -1,0 +1,172 @@
+﻿/**
+ * common.css
+ * Stylesheet containing common styles for InputLog Analyses.
+ */
+body
+{
+    background-color: #F7F7F7;
+    font-family: verdana;
+    color: #333366;
+    font-size: 11px;
+}
+
+abbr
+{
+    border-bottom: 1px dotted;
+}
+
+hr
+{
+    border: 0px;
+    color: #333366;
+    background-color: #333366;
+    height: 1px;
+}
+
+h1
+{
+    color: #993300;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h2
+{
+    color: #993300;
+    font-size: 12px;
+    font-weight: bold;
+    float: left;
+}
+
+.windowTitle a:link,
+.windowTitle a:visited,
+.windowTitle a:active
+{
+    text-decoration: underline;
+}
+
+.windowTitle a:hover
+{
+    color: #3333aa;
+    text-decoration: underline;
+}
+
+a:link
+{
+    color: #333366;
+    text-decoration: none;
+}
+a:visited
+{
+    color: #333366;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #333366;
+    text-decoration: none;
+}
+a:active
+{
+    color: #333366;
+    text-decoration: none;
+}
+
+/* Classes */
+
+/* still needed ? */
+.filename
+{
+    font-size: 11px;
+}
+
+.clear
+{
+    clear: both;
+}
+
+/* S-Notation & W-Notation */
+
+.subscript
+{
+    position: relative;
+    top: 0.3em;
+    font-size: 0.8em;
+}
+
+.superscript
+{
+    position: relative;
+    bottom: 0.5em;
+    font-size: 0.8em;
+}
+
+/* Header */
+
+#header
+{
+    height: 48px;
+    border-bottom: 1px solid #333366;
+}
+
+#header .logo
+{
+    float: right;
+    margin: 5px 0;
+}
+
+/* Tables */
+
+table
+{
+    border-collapse: collapse;
+}
+
+table.content tr td
+{
+    border: solid 1px #E9EEF3;
+    font-size: 11px;
+}
+
+table.content tr th
+{
+    border: solid 1px #E9EEF3;
+    color: #660000;
+    font-size: 12px;
+}
+
+table.content .moduleHeader
+{
+    color: #660000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+table.markup tr td
+{
+    border: solid 1px #E9EEF3;
+    font-size: 11px;
+    line-height: 22px;
+}
+
+td.col_text
+{
+    word-break: break-all;
+}
+span.wordwrap
+{
+    display: inline-block;
+}
+
+.tdElement
+{
+    display: block;
+}
+
+table.content tr.section > th
+{ 
+    padding-top: 8px;
+    color: #993300;
+    font-size: 18px;
+    font-weight: bold;
+}
