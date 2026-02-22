@@ -26,6 +26,8 @@ namespace InputLog.Core.Analyses.Copytask
         /// </summary>
         private Dictionary<string, GroupStatistics> _groupData;
 
+        public Dictionary<string, GroupStatistics> GroupData { get { return _groupData; } }
+
         /// <summary>
         /// Return the statistics of a group with given name.
         /// </summary>

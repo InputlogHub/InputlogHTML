@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Xsl;
 
@@ -72,6 +73,11 @@ namespace InputLog.Core.IO.HTML
         {
             foreach (var sourceDir in dirInfoList)
             {
+                MessageBox.Show(sourceDir);
+            }
+
+                foreach (var sourceDir in dirInfoList)
+            {
                 var destDir = Path.Combine(targetDir, Path.GetFileName(sourceDir));
                 CopyMissingFilesRecursively(sourceDir, destDir);
             }
@@ -84,6 +90,8 @@ namespace InputLog.Core.IO.HTML
             {
                 Directory.CreateDirectory(destDir);
             }
+
+            //MessageBox.Show(sourceDir);
 
             // Copy files
             foreach (var file in Directory.GetFiles(sourceDir))

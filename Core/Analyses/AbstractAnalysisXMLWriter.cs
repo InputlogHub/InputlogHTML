@@ -318,7 +318,6 @@ namespace InputLog.Core.Analyses
             }
 
             // copy scripts
-            if (scripts == null) return;
             try
             {
                 // creates source & destination scripts path 
@@ -329,6 +328,9 @@ namespace InputLog.Core.Analyses
                 {
                     Directory.CreateDirectory(dstScriptPath);
                 }
+
+                if (scripts == null) return;
+
                 foreach (var script in scripts)
                 {
                     var srcScript = Path.Combine(srcScriptPath, script);

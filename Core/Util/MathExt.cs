@@ -211,6 +211,8 @@ namespace InputLog.Core.Util
             }
 
             double[] sortedNumbers = elements.ToArray<double>();
+            double[] reverseSortedNumbers = elements.ToArray<double>();
+            reverseSortedNumbers.Reverse();
             Array.Sort(sortedNumbers);
 
             Func<double, double> noConvert = (n => n);
@@ -239,7 +241,7 @@ namespace InputLog.Core.Util
             IEnumerable<double> lowerBoundList = sortedNumbers.Where(x => x >= lowerBound);
             double min = lowerBoundList.Any() ? lowerBoundList.First() : sortedNumbers.First();
 
-            IEnumerable<double> upperBoundList = sortedNumbers.Reverse().Where(x => x <= upperBound);
+            IEnumerable<double> upperBoundList = reverseSortedNumbers.Where(x => x <= upperBound);
             double max = upperBoundList.Any() ? upperBoundList.First() : sortedNumbers.Last();
 
             return new Tuple<double, double, double, double, double>(min, firstQuartile, median, thirdQuartile, max);
