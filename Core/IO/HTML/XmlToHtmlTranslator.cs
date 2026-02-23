@@ -32,12 +32,12 @@ namespace InputLog.Core.IO.HTML
 
             string xmlDir = Path.Combine(inputFolder, "xml");
             Directory.CreateDirectory(xmlDir);
-       
+
             var scriptsDir = Path.Combine(inputFolder, "Scripts");
             var imagesDir = Path.Combine(inputFolder, "Images");
             var styleDir = Path.Combine(inputFolder, "Style");
             var dirInfoList = new List<string> { scriptsDir, imagesDir, styleDir };
-          
+
             var cssFile = Path.Combine(styleDir, "common.css");
             if (!File.Exists(cssFile))
                 throw new FileNotFoundException("Shared CSS not found.", cssFile);
@@ -72,11 +72,6 @@ namespace InputLog.Core.IO.HTML
         private static void MoveStylingFolders(string targetDir, List<string> dirInfoList)
         {
             foreach (var sourceDir in dirInfoList)
-            {
-                MessageBox.Show(sourceDir);
-            }
-
-                foreach (var sourceDir in dirInfoList)
             {
                 var destDir = Path.Combine(targetDir, Path.GetFileName(sourceDir));
                 CopyMissingFilesRecursively(sourceDir, destDir);
@@ -161,7 +156,7 @@ namespace InputLog.Core.IO.HTML
         /// </summary>
         private static string GetAnalysisKey(string fileName, IEnumerable<string> keys)
         {
-           try
+            try
             {
                 // Normalize the filename to avoid extension confusion or trailing artifacts
                 string cleanName = Path.GetFileNameWithoutExtension(fileName);
