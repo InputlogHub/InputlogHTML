@@ -63,6 +63,10 @@ namespace InputLog.Core.IO.Basic.Output
         {
             var handle = EventIOHandlers.GetWriteHandler(part.GetType(), eType, LogFormat);
             Type t = Assembly.GetCallingAssembly().GetType(handle.Item1);
+            if (t.Name == "Questions")
+            {
+                Console.WriteLine("OPS");
+            }
             MethodInfo meth = t.GetMethod(handle.Item2);
             meth.Invoke(null, new[] { part, arg });
         }
