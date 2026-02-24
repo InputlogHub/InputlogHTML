@@ -1,0 +1,1283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="Style/copytask_analysis.xsl"?>
+<session>
+  <meta>
+    <entry name="Logfile" value="305.idfx" />
+    <entry name="MainDocument" value="" />
+    <entry name="LogCreationDate" value="02/06/21 18:02:22.522" />
+    <entry name="LogGUID" value="e957a029-d55c-42e9-84ab-140b9c37cbfa" />
+    <entry name="LogProgramVersion" value="6.1.2.0" />
+    <entry name="AnalysisCreationDate" value="22/09/21 05:19:59" />
+    <entry name="AnalysisGUID" value="32a4e310-b4ac-4f78-a10f-c65f79b408fd" />
+  </meta>
+  <sessionIdentification>
+    <entry name="Participant" value="E81E9025094CCF29" />
+    <entry name="Text Language" value="EN" />
+    <entry name="Age" value="18" />
+    <entry name="Gender" value="F (Female)" />
+    <entry name="Session" value="1" />
+    <entry name="Keyboard" value="QWERTY" />
+    <entry name="Group" value="" />
+    <entry name="Experience" value="" />
+    <entry name="Restricted Logging" value="" />
+    <entry name="Handedness Score" value="50" />
+    <entry name="Computer" value="laptop" />
+    <entry name="Keyboard Familiarity" value="50" />
+    <entry name="Browser" value="Internet Explorer" />
+    <entry name="Dominant Languages" value="English" />
+    <entry name="Disorder" value="False" />
+    <entry name="Education" value="undergraduate" />
+    <entry name="Repetition" value="True" />
+  </sessionIdentification>
+  <group_title>Correctness Scores</group_title>
+  <module name="Correctness per component">
+    <block name="header">
+      <element name="component" value="Component" />
+      <element name="pch_targetted" value="Count (targetted)" />
+      <element name="pch_not_targetted" value="Count (not targetted)" />
+      <element name="pch_correct" value="Correct" />
+    </block>
+    <block name="component_scores__Typing_speed">
+      <element name="name" value="Typing speed" />
+      <element name="targetted" value="108" />
+      <element name="not_targetted" value="0" />
+      <element name="correct" value="100.0%" />
+    </block>
+    <block name="component_scores__Sentence">
+      <element name="name" value="Sentence" />
+      <element name="targetted" value="68" />
+      <element name="not_targetted" value="1" />
+      <element name="correct" value="98.6%" />
+    </block>
+    <block name="component_scores__Words_1*">
+      <element name="name" value="Words 1*" />
+      <element name="targetted" value="145" />
+      <element name="not_targetted" value="2" />
+      <element name="correct" value="98.6%" />
+    </block>
+    <block name="component_scores__Words_2*">
+      <element name="name" value="Words 2*" />
+      <element name="targetted" value="139" />
+      <element name="not_targetted" value="6" />
+      <element name="correct" value="95.9%" />
+    </block>
+    <block name="component_scores__Words_3*">
+      <element name="name" value="Words 3*" />
+      <element name="targetted" value="139" />
+      <element name="not_targetted" value="11" />
+      <element name="correct" value="92.7%" />
+    </block>
+    <block name="component_scores__Words_4">
+      <element name="name" value="Words 4" />
+      <element name="targetted" value="102" />
+      <element name="not_targetted" value="8" />
+      <element name="correct" value="92.7%" />
+    </block>
+    <block name="component_scores__Consonants">
+      <element name="name" value="Consonants" />
+      <element name="targetted" value="20" />
+      <element name="not_targetted" value="0" />
+      <element name="correct" value="100.0%" />
+    </block>
+  </module>
+  <module name="Statistics">
+    <block name="header">
+      <element name="stats_type" value="" />
+      <element name="stats_overall" value="Overall" />
+      <element name="stats_selected_components" value="Selected Components" />
+      <element name="dummy" value="" />
+    </block>
+    <block name="stat_values__Aggr_Targetted">
+      <element name="stat_type" value="Aggr Targetted" />
+      <element name="stat_0" value="721" />
+      <element name="stat_1" value="423" />
+      <element name="dummy" value="" />
+    </block>
+    <block name="stat_values__Aggr_Not_Targetted">
+      <element name="stat_type" value="Aggr Not Targetted" />
+      <element name="stat_0" value="28" />
+      <element name="stat_1" value="19" />
+      <element name="dummy" value="" />
+    </block>
+    <block name="stat_values__Aggr_Correctness">
+      <element name="stat_type" value="Aggr Correctness" />
+      <element name="stat_0" value="96.3%" />
+      <element name="stat_1" value="95.7%" />
+      <element name="dummy" value="" />
+    </block>
+    <block name="stat_values__Mean">
+      <element name="stat_type" value="Mean" />
+      <element name="stat_0" value="96.9%" />
+      <element name="stat_1" value="95.7%" />
+      <element name="dummy" value="" />
+    </block>
+    <block name="stat_values__Stdev">
+      <element name="stat_type" value="Stdev" />
+      <element name="stat_0" value="3.0" />
+      <element name="stat_1" value="2.4" />
+      <element name="dummy" value="" />
+    </block>
+    <block name="stat_values__Median">
+      <element name="stat_type" value="Median" />
+      <element name="stat_0" value="98.6%" />
+      <element name="stat_1" value="95.9%" />
+      <element name="dummy" value="" />
+    </block>
+    <block name="stat_values__Min">
+      <element name="stat_type" value="Min" />
+      <element name="stat_0" value="92.7%" />
+      <element name="stat_1" value="92.7%" />
+      <element name="dummy" value="" />
+    </block>
+    <block name="stat_values__Max">
+      <element name="stat_type" value="Max" />
+      <element name="stat_0" value="100.0%" />
+      <element name="stat_1" value="98.6%" />
+      <element name="dummy" value="" />
+    </block>
+  </module>
+  <group_title>Overall Synthesis</group_title>
+  <module name="InterKey Intervals (IKI)">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+    </block>
+    <block name="row-Targeted Bigrams">
+      <element name="value" value="Targeted Bigrams" />
+      <element name="Count (targeted)" value="721" />
+      <element name="Count (not targeted)" value="28" />
+      <element name="Mean IKI" value="272.2" />
+      <element name="StdDev" value="607.9" />
+      <element name="Median" value="188" />
+      <element name="LogMean (trimmed)" value="199.1" />
+      <element name="Coef. of Variation" value="68.1 %" />
+      <element name="CPM" value="220" />
+    </block>
+    <block name="row-High Frequency Bigrams">
+      <element name="value" value="High Frequency Bigrams" />
+      <element name="Count (targeted)" value="525" />
+      <element name="Count (not targeted)" value="18" />
+      <element name="Mean IKI" value="234.6" />
+      <element name="StdDev" value="200.8" />
+      <element name="Median" value="203" />
+      <element name="LogMean (trimmed)" value="198.0" />
+      <element name="Coef. of Variation" value="57.3 %" />
+      <element name="CPM" value="256" />
+    </block>
+    <block name="row-Selected Components' Bigrams">
+      <element name="value" value="Selected Components' Bigrams" />
+      <element name="Count (targeted)" value="423" />
+      <element name="Count (not targeted)" value="19" />
+      <element name="Mean IKI" value="245.5" />
+      <element name="StdDev" value="212.0" />
+      <element name="Median" value="204" />
+      <element name="LogMean (trimmed)" value="203.1" />
+      <element name="Coef. of Variation" value="60.6 %" />
+      <element name="CPM" value="244" />
+    </block>
+  </module>
+  <group_title>Components</group_title>
+  <module name="Overall">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+      <element name="Absolute CPM" value="Absolute CPM" />
+    </block>
+    <block name="row-Typing speed">
+      <element name="value" value="Typing speed" />
+      <element name="Count (targeted)" value="108" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="138.0" />
+      <element name="StdDev" value="25.0" />
+      <element name="Median" value="138" />
+      <element name="LogMean (trimmed)" value="135.7" />
+      <element name="Coef. of Variation" value="18.6 %" />
+      <element name="CPM" value="435" />
+      <element name="Absolute CPM" value="435" />
+    </block>
+    <block name="row-Sentence">
+      <element name="value" value="Sentence" />
+      <element name="Count (targeted)" value="68" />
+      <element name="Count (not targeted)" value="1" />
+      <element name="Mean IKI" value="218.3" />
+      <element name="StdDev" value="93.2" />
+      <element name="Median" value="200" />
+      <element name="LogMean (trimmed)" value="201.4" />
+      <element name="Coef. of Variation" value="41.4 %" />
+      <element name="CPM" value="275" />
+      <element name="Absolute CPM" value="137" />
+    </block>
+    <block name="row-Words 1*">
+      <element name="value" value="Words 1*" />
+      <element name="Count (targeted)" value="145" />
+      <element name="Count (not targeted)" value="2" />
+      <element name="Mean IKI" value="213.4" />
+      <element name="StdDev" value="119.7" />
+      <element name="Median" value="201" />
+      <element name="LogMean (trimmed)" value="190.0" />
+      <element name="Coef. of Variation" value="48.8 %" />
+      <element name="CPM" value="281" />
+      <element name="Absolute CPM" value="172" />
+    </block>
+    <block name="row-Words 2*">
+      <element name="value" value="Words 2*" />
+      <element name="Count (targeted)" value="139" />
+      <element name="Count (not targeted)" value="6" />
+      <element name="Mean IKI" value="274.7" />
+      <element name="StdDev" value="263.3" />
+      <element name="Median" value="214" />
+      <element name="LogMean (trimmed)" value="219.4" />
+      <element name="Coef. of Variation" value="64.0 %" />
+      <element name="CPM" value="218" />
+      <element name="Absolute CPM" value="116" />
+    </block>
+    <block name="row-Words 3*">
+      <element name="value" value="Words 3*" />
+      <element name="Count (targeted)" value="139" />
+      <element name="Count (not targeted)" value="11" />
+      <element name="Mean IKI" value="249.9" />
+      <element name="StdDev" value="224.9" />
+      <element name="Median" value="206" />
+      <element name="LogMean (trimmed)" value="201.6" />
+      <element name="Coef. of Variation" value="68.0 %" />
+      <element name="CPM" value="240" />
+      <element name="Absolute CPM" value="100" />
+    </block>
+    <block name="row-Words 4">
+      <element name="value" value="Words 4" />
+      <element name="Count (targeted)" value="102" />
+      <element name="Count (not targeted)" value="8" />
+      <element name="Mean IKI" value="256.8" />
+      <element name="StdDev" value="213.8" />
+      <element name="Median" value="211" />
+      <element name="LogMean (trimmed)" value="204.0" />
+      <element name="Coef. of Variation" value="72.9 %" />
+      <element name="CPM" value="234" />
+      <element name="Absolute CPM" value="76" />
+    </block>
+    <block name="row-Consonants">
+      <element name="value" value="Consonants" />
+      <element name="Count (targeted)" value="20" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="1822.4" />
+      <element name="StdDev" value="3094.9" />
+      <element name="Median" value="874" />
+      <element name="LogMean (trimmed)" value="880.1" />
+      <element name="Coef. of Variation" value="162.8 %" />
+      <element name="CPM" value="33" />
+      <element name="Absolute CPM" value="26" />
+    </block>
+  </module>
+  <module name="Trial Cut &gt;2">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+      <element name="Absolute CPM" value="Absolute CPM" />
+    </block>
+    <block name="row-Sentence">
+      <element name="value" value="Sentence" />
+      <element name="Count (targeted)" value="17" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="231.8" />
+      <element name="StdDev" value="81.9" />
+      <element name="Median" value="227" />
+      <element name="LogMean (trimmed)" value="218.4" />
+      <element name="Coef. of Variation" value="36.8 %" />
+      <element name="CPM" value="259" />
+      <element name="Absolute CPM" value="144" />
+    </block>
+    <block name="row-Words 1*">
+      <element name="value" value="Words 1*" />
+      <element name="Count (targeted)" value="103" />
+      <element name="Count (not targeted)" value="2" />
+      <element name="Mean IKI" value="211.0" />
+      <element name="StdDev" value="121.8" />
+      <element name="Median" value="199" />
+      <element name="LogMean (trimmed)" value="186.7" />
+      <element name="Coef. of Variation" value="50.5 %" />
+      <element name="CPM" value="284" />
+      <element name="Absolute CPM" value="177" />
+    </block>
+    <block name="row-Words 2*">
+      <element name="value" value="Words 2*" />
+      <element name="Count (targeted)" value="99" />
+      <element name="Count (not targeted)" value="5" />
+      <element name="Mean IKI" value="274.4" />
+      <element name="StdDev" value="274.2" />
+      <element name="Median" value="214" />
+      <element name="LogMean (trimmed)" value="219.6" />
+      <element name="Coef. of Variation" value="62.5 %" />
+      <element name="CPM" value="219" />
+      <element name="Absolute CPM" value="125" />
+    </block>
+    <block name="row-Words 3*">
+      <element name="value" value="Words 3*" />
+      <element name="Count (targeted)" value="100" />
+      <element name="Count (not targeted)" value="4" />
+      <element name="Mean IKI" value="269.0" />
+      <element name="StdDev" value="245.6" />
+      <element name="Median" value="214" />
+      <element name="LogMean (trimmed)" value="216.6" />
+      <element name="Coef. of Variation" value="67.0 %" />
+      <element name="CPM" value="223" />
+      <element name="Absolute CPM" value="117" />
+    </block>
+    <block name="row-Words 4">
+      <element name="value" value="Words 4" />
+      <element name="Count (targeted)" value="73" />
+      <element name="Count (not targeted)" value="6" />
+      <element name="Mean IKI" value="244.3" />
+      <element name="StdDev" value="169.4" />
+      <element name="Median" value="216" />
+      <element name="LogMean (trimmed)" value="202.4" />
+      <element name="Coef. of Variation" value="66.8 %" />
+      <element name="CPM" value="246" />
+      <element name="Absolute CPM" value="99" />
+    </block>
+    <block name="row-Consonants">
+      <element name="value" value="Consonants" />
+      <element name="Count (targeted)" value="20" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="1822.4" />
+      <element name="StdDev" value="3094.9" />
+      <element name="Median" value="874" />
+      <element name="LogMean (trimmed)" value="880.1" />
+      <element name="Coef. of Variation" value="162.8 %" />
+      <element name="CPM" value="33" />
+      <element name="Absolute CPM" value="26" />
+    </block>
+  </module>
+  <module name="Time Filtered 10%">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+      <element name="Absolute CPM" value="Absolute CPM" />
+    </block>
+    <block name="row-Typing speed">
+      <element name="value" value="Typing speed" />
+      <element name="Count (targeted)" value="88" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="135.5" />
+      <element name="StdDev" value="25.6" />
+      <element name="Median" value="133" />
+      <element name="LogMean (trimmed)" value="133.1" />
+      <element name="Coef. of Variation" value="19.2 %" />
+      <element name="CPM" value="443" />
+      <element name="Absolute CPM" value="443" />
+    </block>
+    <block name="row-Sentence">
+      <element name="value" value="Sentence" />
+      <element name="Count (targeted)" value="52" />
+      <element name="Count (not targeted)" value="1" />
+      <element name="Mean IKI" value="222.8" />
+      <element name="StdDev" value="100.2" />
+      <element name="Median" value="209" />
+      <element name="LogMean (trimmed)" value="203.7" />
+      <element name="Coef. of Variation" value="43.9 %" />
+      <element name="CPM" value="269" />
+      <element name="Absolute CPM" value="129" />
+    </block>
+    <block name="row-Words 1*">
+      <element name="value" value="Words 1*" />
+      <element name="Count (targeted)" value="117" />
+      <element name="Count (not targeted)" value="2" />
+      <element name="Mean IKI" value="210.9" />
+      <element name="StdDev" value="120.3" />
+      <element name="Median" value="199" />
+      <element name="LogMean (trimmed)" value="187.2" />
+      <element name="Coef. of Variation" value="49.6 %" />
+      <element name="CPM" value="285" />
+      <element name="Absolute CPM" value="179" />
+    </block>
+    <block name="row-Words 2*">
+      <element name="value" value="Words 2*" />
+      <element name="Count (targeted)" value="107" />
+      <element name="Count (not targeted)" value="4" />
+      <element name="Mean IKI" value="256.5" />
+      <element name="StdDev" value="233.9" />
+      <element name="Median" value="214" />
+      <element name="LogMean (trimmed)" value="211.7" />
+      <element name="Coef. of Variation" value="58.4 %" />
+      <element name="CPM" value="234" />
+      <element name="Absolute CPM" value="116" />
+    </block>
+    <block name="row-Words 3*">
+      <element name="value" value="Words 3*" />
+      <element name="Count (targeted)" value="108" />
+      <element name="Count (not targeted)" value="4" />
+      <element name="Mean IKI" value="249.4" />
+      <element name="StdDev" value="208.0" />
+      <element name="Median" value="207" />
+      <element name="LogMean (trimmed)" value="203.6" />
+      <element name="Coef. of Variation" value="66.8 %" />
+      <element name="CPM" value="241" />
+      <element name="Absolute CPM" value="105" />
+    </block>
+    <block name="row-Words 4">
+      <element name="value" value="Words 4" />
+      <element name="Count (targeted)" value="73" />
+      <element name="Count (not targeted)" value="6" />
+      <element name="Mean IKI" value="226.6" />
+      <element name="StdDev" value="138.7" />
+      <element name="Median" value="207" />
+      <element name="LogMean (trimmed)" value="191.7" />
+      <element name="Coef. of Variation" value="65.1 %" />
+      <element name="CPM" value="265" />
+      <element name="Absolute CPM" value="68" />
+    </block>
+    <block name="row-Consonants">
+      <element name="value" value="Consonants" />
+      <element name="Count (targeted)" value="12" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="2407.6" />
+      <element name="StdDev" value="3829.7" />
+      <element name="Median" value="1192" />
+      <element name="LogMean (trimmed)" value="1076.0" />
+      <element name="Coef. of Variation" value="197.6 %" />
+      <element name="CPM" value="25" />
+      <element name="Absolute CPM" value="20" />
+    </block>
+  </module>
+  <module name="Typing speed">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+    </block>
+    <block name="row-Trial 1">
+      <element name="value" value="Trial 1" />
+      <element name="Count (targeted)" value="108" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="138.0" />
+      <element name="StdDev" value="25.0" />
+      <element name="Median" value="138" />
+      <element name="LogMean (trimmed)" value="135.7" />
+      <element name="Coef. of Variation" value="18.6 %" />
+      <element name="CPM" value="435" />
+    </block>
+  </module>
+  <module name="Sentence">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+    </block>
+    <block name="row-Trial 1">
+      <element name="value" value="Trial 1" />
+      <element name="Count (targeted)" value="26" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="209.7" />
+      <element name="StdDev" value="80.1" />
+      <element name="Median" value="193" />
+      <element name="LogMean (trimmed)" value="196.6" />
+      <element name="Coef. of Variation" value="36.9 %" />
+      <element name="CPM" value="286" />
+    </block>
+    <block name="row-Trial 2">
+      <element name="value" value="Trial 2" />
+      <element name="Count (targeted)" value="25" />
+      <element name="Count (not targeted)" value="1" />
+      <element name="Mean IKI" value="218.0" />
+      <element name="StdDev" value="110.4" />
+      <element name="Median" value="220" />
+      <element name="LogMean (trimmed)" value="195.3" />
+      <element name="Coef. of Variation" value="49.2 %" />
+      <element name="CPM" value="275" />
+    </block>
+    <block name="row-Trial 3">
+      <element name="value" value="Trial 3" />
+      <element name="Count (targeted)" value="17" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="231.8" />
+      <element name="StdDev" value="81.9" />
+      <element name="Median" value="227" />
+      <element name="LogMean (trimmed)" value="218.4" />
+      <element name="Coef. of Variation" value="36.8 %" />
+      <element name="CPM" value="259" />
+    </block>
+  </module>
+  <module name="Words 1*">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+    </block>
+    <block name="row-Trial 1">
+      <element name="value" value="Trial 1" />
+      <element name="Count (targeted)" value="21" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="222.9" />
+      <element name="StdDev" value="123.9" />
+      <element name="Median" value="210" />
+      <element name="LogMean (trimmed)" value="199.3" />
+      <element name="Coef. of Variation" value="48.3 %" />
+      <element name="CPM" value="269" />
+    </block>
+    <block name="row-Trial 2">
+      <element name="value" value="Trial 2" />
+      <element name="Count (targeted)" value="21" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="216.0" />
+      <element name="StdDev" value="102.7" />
+      <element name="Median" value="199" />
+      <element name="LogMean (trimmed)" value="197.7" />
+      <element name="Coef. of Variation" value="42.8 %" />
+      <element name="CPM" value="278" />
+    </block>
+    <block name="row-Trial 3">
+      <element name="value" value="Trial 3" />
+      <element name="Count (targeted)" value="21" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="233.5" />
+      <element name="StdDev" value="175.3" />
+      <element name="Median" value="201" />
+      <element name="LogMean (trimmed)" value="192.6" />
+      <element name="Coef. of Variation" value="65.4 %" />
+      <element name="CPM" value="257" />
+    </block>
+    <block name="row-Trial 4">
+      <element name="value" value="Trial 4" />
+      <element name="Count (targeted)" value="21" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="211.8" />
+      <element name="StdDev" value="134.6" />
+      <element name="Median" value="199" />
+      <element name="LogMean (trimmed)" value="181.4" />
+      <element name="Coef. of Variation" value="60.2 %" />
+      <element name="CPM" value="283" />
+    </block>
+    <block name="row-Trial 5">
+      <element name="value" value="Trial 5" />
+      <element name="Count (targeted)" value="21" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="203.3" />
+      <element name="StdDev" value="83.3" />
+      <element name="Median" value="197" />
+      <element name="LogMean (trimmed)" value="188.6" />
+      <element name="Coef. of Variation" value="40.6 %" />
+      <element name="CPM" value="295" />
+    </block>
+    <block name="row-Trial 6">
+      <element name="value" value="Trial 6" />
+      <element name="Count (targeted)" value="21" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="208.6" />
+      <element name="StdDev" value="103.9" />
+      <element name="Median" value="201" />
+      <element name="LogMean (trimmed)" value="188.5" />
+      <element name="Coef. of Variation" value="47.0 %" />
+      <element name="CPM" value="288" />
+    </block>
+    <block name="row-Trial 7">
+      <element name="value" value="Trial 7" />
+      <element name="Count (targeted)" value="19" />
+      <element name="Count (not targeted)" value="2" />
+      <element name="Mean IKI" value="196.2" />
+      <element name="StdDev" value="77.9" />
+      <element name="Median" value="192" />
+      <element name="LogMean (trimmed)" value="182.2" />
+      <element name="Coef. of Variation" value="40.6 %" />
+      <element name="CPM" value="306" />
+    </block>
+  </module>
+  <module name="Words 2*">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+    </block>
+    <block name="row-Trial 1">
+      <element name="value" value="Trial 1" />
+      <element name="Count (targeted)" value="20" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="289.2" />
+      <element name="StdDev" value="252.1" />
+      <element name="Median" value="228" />
+      <element name="LogMean (trimmed)" value="228.0" />
+      <element name="Coef. of Variation" value="70.6 %" />
+      <element name="CPM" value="207" />
+    </block>
+    <block name="row-Trial 2">
+      <element name="value" value="Trial 2" />
+      <element name="Count (targeted)" value="20" />
+      <element name="Count (not targeted)" value="1" />
+      <element name="Mean IKI" value="261.8" />
+      <element name="StdDev" value="213.7" />
+      <element name="Median" value="207" />
+      <element name="LogMean (trimmed)" value="210.6" />
+      <element name="Coef. of Variation" value="68.6 %" />
+      <element name="CPM" value="229" />
+    </block>
+    <block name="row-Trial 3">
+      <element name="value" value="Trial 3" />
+      <element name="Count (targeted)" value="20" />
+      <element name="Count (not targeted)" value="1" />
+      <element name="Mean IKI" value="271.7" />
+      <element name="StdDev" value="283.3" />
+      <element name="Median" value="212" />
+      <element name="LogMean (trimmed)" value="219.6" />
+      <element name="Coef. of Variation" value="58.0 %" />
+      <element name="CPM" value="221" />
+    </block>
+    <block name="row-Trial 4">
+      <element name="value" value="Trial 4" />
+      <element name="Count (targeted)" value="19" />
+      <element name="Count (not targeted)" value="2" />
+      <element name="Mean IKI" value="206.6" />
+      <element name="StdDev" value="72.5" />
+      <element name="Median" value="206" />
+      <element name="LogMean (trimmed)" value="194.0" />
+      <element name="Coef. of Variation" value="38.5 %" />
+      <element name="CPM" value="290" />
+    </block>
+    <block name="row-Trial 5">
+      <element name="value" value="Trial 5" />
+      <element name="Count (targeted)" value="20" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="268.6" />
+      <element name="StdDev" value="197.9" />
+      <element name="Median" value="215" />
+      <element name="LogMean (trimmed)" value="224.8" />
+      <element name="Coef. of Variation" value="62.1 %" />
+      <element name="CPM" value="223" />
+    </block>
+    <block name="row-Trial 6">
+      <element name="value" value="Trial 6" />
+      <element name="Count (targeted)" value="20" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="290.4" />
+      <element name="StdDev" value="339.5" />
+      <element name="Median" value="220" />
+      <element name="LogMean (trimmed)" value="217.5" />
+      <element name="Coef. of Variation" value="72.8 %" />
+      <element name="CPM" value="207" />
+    </block>
+    <block name="row-Trial 7">
+      <element name="value" value="Trial 7" />
+      <element name="Count (targeted)" value="20" />
+      <element name="Count (not targeted)" value="2" />
+      <element name="Mean IKI" value="331.5" />
+      <element name="StdDev" value="353.1" />
+      <element name="Median" value="206" />
+      <element name="LogMean (trimmed)" value="243.4" />
+      <element name="Coef. of Variation" value="80.6 %" />
+      <element name="CPM" value="181" />
+    </block>
+  </module>
+  <module name="Words 3*">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+    </block>
+    <block name="row-Trial 1">
+      <element name="value" value="Trial 1" />
+      <element name="Count (targeted)" value="20" />
+      <element name="Count (not targeted)" value="4" />
+      <element name="Mean IKI" value="181.4" />
+      <element name="StdDev" value="69.3" />
+      <element name="Median" value="185" />
+      <element name="LogMean (trimmed)" value="166.6" />
+      <element name="Coef. of Variation" value="47.0 %" />
+      <element name="CPM" value="331" />
+    </block>
+    <block name="row-Trial 2">
+      <element name="value" value="Trial 2" />
+      <element name="Count (targeted)" value="19" />
+      <element name="Count (not targeted)" value="3" />
+      <element name="Mean IKI" value="221.1" />
+      <element name="StdDev" value="199.3" />
+      <element name="Median" value="169" />
+      <element name="LogMean (trimmed)" value="169.0" />
+      <element name="Coef. of Variation" value="86.8 %" />
+      <element name="CPM" value="271" />
+    </block>
+    <block name="row-Trial 3">
+      <element name="value" value="Trial 3" />
+      <element name="Count (targeted)" value="20" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="283.6" />
+      <element name="StdDev" value="180.7" />
+      <element name="Median" value="232" />
+      <element name="LogMean (trimmed)" value="243.5" />
+      <element name="Coef. of Variation" value="58.1 %" />
+      <element name="CPM" value="212" />
+    </block>
+    <block name="row-Trial 4">
+      <element name="value" value="Trial 4" />
+      <element name="Count (targeted)" value="20" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="251.6" />
+      <element name="StdDev" value="187.5" />
+      <element name="Median" value="207" />
+      <element name="LogMean (trimmed)" value="210.7" />
+      <element name="Coef. of Variation" value="62.3 %" />
+      <element name="CPM" value="238" />
+    </block>
+    <block name="row-Trial 5">
+      <element name="value" value="Trial 5" />
+      <element name="Count (targeted)" value="19" />
+      <element name="Count (not targeted)" value="1" />
+      <element name="Mean IKI" value="303.7" />
+      <element name="StdDev" value="331.6" />
+      <element name="Median" value="204" />
+      <element name="LogMean (trimmed)" value="227.1" />
+      <element name="Coef. of Variation" value="77.2 %" />
+      <element name="CPM" value="198" />
+    </block>
+    <block name="row-Trial 6">
+      <element name="value" value="Trial 6" />
+      <element name="Count (targeted)" value="20" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="207.1" />
+      <element name="StdDev" value="97.0" />
+      <element name="Median" value="216" />
+      <element name="LogMean (trimmed)" value="184.0" />
+      <element name="Coef. of Variation" value="55.7 %" />
+      <element name="CPM" value="290" />
+    </block>
+    <block name="row-Trial 7">
+      <element name="value" value="Trial 7" />
+      <element name="Count (targeted)" value="21" />
+      <element name="Count (not targeted)" value="3" />
+      <element name="Mean IKI" value="299.3" />
+      <element name="StdDev" value="328.6" />
+      <element name="Median" value="213" />
+      <element name="LogMean (trimmed)" value="222.4" />
+      <element name="Coef. of Variation" value="83.4 %" />
+      <element name="CPM" value="200" />
+    </block>
+  </module>
+  <module name="Words 4">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+    </block>
+    <block name="row-Trial 1">
+      <element name="value" value="Trial 1" />
+      <element name="Count (targeted)" value="14" />
+      <element name="Count (not targeted)" value="2" />
+      <element name="Mean IKI" value="374.4" />
+      <element name="StdDev" value="394.9" />
+      <element name="Median" value="197" />
+      <element name="LogMean (trimmed)" value="243.0" />
+      <element name="Coef. of Variation" value="111.9 %" />
+      <element name="CPM" value="160" />
+    </block>
+    <block name="row-Trial 2">
+      <element name="value" value="Trial 2" />
+      <element name="Count (targeted)" value="15" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="207.9" />
+      <element name="StdDev" value="98.0" />
+      <element name="Median" value="192" />
+      <element name="LogMean (trimmed)" value="180.1" />
+      <element name="Coef. of Variation" value="67.3 %" />
+      <element name="CPM" value="289" />
+    </block>
+    <block name="row-Trial 3">
+      <element name="value" value="Trial 3" />
+      <element name="Count (targeted)" value="15" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="258.9" />
+      <element name="StdDev" value="185.3" />
+      <element name="Median" value="205" />
+      <element name="LogMean (trimmed)" value="203.8" />
+      <element name="Coef. of Variation" value="87.4 %" />
+      <element name="CPM" value="232" />
+    </block>
+    <block name="row-Trial 4">
+      <element name="value" value="Trial 4" />
+      <element name="Count (targeted)" value="15" />
+      <element name="Count (not targeted)" value="2" />
+      <element name="Mean IKI" value="213.3" />
+      <element name="StdDev" value="95.4" />
+      <element name="Median" value="218" />
+      <element name="LogMean (trimmed)" value="192.6" />
+      <element name="Coef. of Variation" value="50.2 %" />
+      <element name="CPM" value="281" />
+    </block>
+    <block name="row-Trial 5">
+      <element name="value" value="Trial 5" />
+      <element name="Count (targeted)" value="14" />
+      <element name="Count (not targeted)" value="2" />
+      <element name="Mean IKI" value="199.6" />
+      <element name="StdDev" value="118.4" />
+      <element name="Median" value="168" />
+      <element name="LogMean (trimmed)" value="173.4" />
+      <element name="Coef. of Variation" value="57.2 %" />
+      <element name="CPM" value="301" />
+    </block>
+    <block name="row-Trial 6">
+      <element name="value" value="Trial 6" />
+      <element name="Count (targeted)" value="14" />
+      <element name="Count (not targeted)" value="2" />
+      <element name="Mean IKI" value="246.9" />
+      <element name="StdDev" value="164.4" />
+      <element name="Median" value="222" />
+      <element name="LogMean (trimmed)" value="203.8" />
+      <element name="Coef. of Variation" value="70.6 %" />
+      <element name="CPM" value="243" />
+    </block>
+    <block name="row-Trial 7">
+      <element name="value" value="Trial 7" />
+      <element name="Count (targeted)" value="15" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="299.9" />
+      <element name="StdDev" value="227.7" />
+      <element name="Median" value="223" />
+      <element name="LogMean (trimmed)" value="242.3" />
+      <element name="Coef. of Variation" value="70.8 %" />
+      <element name="CPM" value="200" />
+    </block>
+  </module>
+  <module name="Consonants">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+    </block>
+    <block name="row-Trial 1">
+      <element name="value" value="Trial 1" />
+      <element name="Count (targeted)" value="20" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="1822.4" />
+      <element name="StdDev" value="3094.9" />
+      <element name="Median" value="874" />
+      <element name="LogMean (trimmed)" value="880.1" />
+      <element name="Coef. of Variation" value="162.8 %" />
+      <element name="CPM" value="33" />
+    </block>
+  </module>
+  <group_title>Characteristics</group_title>
+  <module name="Frequency">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+    </block>
+    <block name="row-HF">
+      <element name="value" value="HF" />
+      <element name="Count (targeted)" value="525" />
+      <element name="Count (not targeted)" value="18" />
+      <element name="Mean IKI" value="234.6" />
+      <element name="StdDev" value="200.8" />
+      <element name="Median" value="203" />
+      <element name="LogMean (trimmed)" value="198.0" />
+      <element name="Coef. of Variation" value="57.3 %" />
+      <element name="CPM" value="256" />
+    </block>
+    <block name="row-LF">
+      <element name="value" value="LF" />
+      <element name="Count (targeted)" value="44" />
+      <element name="Count (not targeted)" value="2" />
+      <element name="Mean IKI" value="958.5" />
+      <element name="StdDev" value="2194.5" />
+      <element name="Median" value="406" />
+      <element name="LogMean (trimmed)" value="467.3" />
+      <element name="Coef. of Variation" value="130.1 %" />
+      <element name="CPM" value="63" />
+    </block>
+  </module>
+  <module name="Frequency (Trial excl. &gt; 2)">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+    </block>
+    <block name="row-HF">
+      <element name="value" value="HF" />
+      <element name="Count (targeted)" value="344" />
+      <element name="Count (not targeted)" value="11" />
+      <element name="Mean IKI" value="241.2" />
+      <element name="StdDev" value="221.9" />
+      <element name="Median" value="209" />
+      <element name="LogMean (trimmed)" value="201.7" />
+      <element name="Coef. of Variation" value="57.7 %" />
+      <element name="CPM" value="249" />
+    </block>
+    <block name="row-LF">
+      <element name="value" value="LF" />
+      <element name="Count (targeted)" value="36" />
+      <element name="Count (not targeted)" value="1" />
+      <element name="Mean IKI" value="1070.1" />
+      <element name="StdDev" value="2407.0" />
+      <element name="Median" value="416" />
+      <element name="LogMean (trimmed)" value="493.7" />
+      <element name="Coef. of Variation" value="142.1 %" />
+      <element name="CPM" value="56" />
+    </block>
+  </module>
+  <module name="Frequency (Only repetitions &amp; Trial excl. &gt;2)">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+    </block>
+    <block name="row-HF">
+      <element name="value" value="HF" />
+      <element name="Count (targeted)" value="342" />
+      <element name="Count (not targeted)" value="11" />
+      <element name="Mean IKI" value="234.0" />
+      <element name="StdDev" value="181.4" />
+      <element name="Median" value="208" />
+      <element name="LogMean (trimmed)" value="199.9" />
+      <element name="Coef. of Variation" value="55.6 %" />
+      <element name="CPM" value="256" />
+    </block>
+    <block name="row-LF">
+      <element name="value" value="LF" />
+      <element name="Count (targeted)" value="20" />
+      <element name="Count (not targeted)" value="1" />
+      <element name="Mean IKI" value="376.7" />
+      <element name="StdDev" value="230.7" />
+      <element name="Median" value="302" />
+      <element name="LogMean (trimmed)" value="308.3" />
+      <element name="Coef. of Variation" value="75.7 %" />
+      <element name="CPM" value="159" />
+    </block>
+  </module>
+  <module name="Hand combination">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+    </block>
+    <block name="row-LR">
+      <element name="value" value="LR" />
+      <element name="Count (targeted)" value="155" />
+      <element name="Count (not targeted)" value="6" />
+      <element name="Mean IKI" value="208.4" />
+      <element name="StdDev" value="201.4" />
+      <element name="Median" value="160" />
+      <element name="LogMean (trimmed)" value="176.5" />
+      <element name="Coef. of Variation" value="50.0 %" />
+      <element name="CPM" value="288" />
+    </block>
+    <block name="row-RL">
+      <element name="value" value="RL" />
+      <element name="Count (targeted)" value="143" />
+      <element name="Count (not targeted)" value="8" />
+      <element name="Mean IKI" value="298.5" />
+      <element name="StdDev" value="1233.6" />
+      <element name="Median" value="125" />
+      <element name="LogMean (trimmed)" value="149.0" />
+      <element name="Coef. of Variation" value="82.7 %" />
+      <element name="CPM" value="201" />
+    </block>
+    <block name="row-LL">
+      <element name="value" value="LL" />
+      <element name="Count (targeted)" value="136" />
+      <element name="Count (not targeted)" value="6" />
+      <element name="Mean IKI" value="289.6" />
+      <element name="StdDev" value="278.5" />
+      <element name="Median" value="221" />
+      <element name="LogMean (trimmed)" value="241.6" />
+      <element name="Coef. of Variation" value="57.1 %" />
+      <element name="CPM" value="207" />
+    </block>
+    <block name="row-RR">
+      <element name="value" value="RR" />
+      <element name="Count (targeted)" value="99" />
+      <element name="Count (not targeted)" value="2" />
+      <element name="Mean IKI" value="258.9" />
+      <element name="StdDev" value="110.2" />
+      <element name="Median" value="235" />
+      <element name="LogMean (trimmed)" value="246.4" />
+      <element name="Coef. of Variation" value="29.1 %" />
+      <element name="CPM" value="232" />
+    </block>
+  </module>
+  <module name="Hand combination (Trial excl. &gt;2)">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+    </block>
+    <block name="row-LL">
+      <element name="value" value="LL" />
+      <element name="Count (targeted)" value="89" />
+      <element name="Count (not targeted)" value="4" />
+      <element name="Mean IKI" value="300.9" />
+      <element name="StdDev" value="309.8" />
+      <element name="Median" value="221" />
+      <element name="LogMean (trimmed)" value="247.8" />
+      <element name="Coef. of Variation" value="58.2 %" />
+      <element name="CPM" value="199" />
+    </block>
+    <block name="row-LR">
+      <element name="value" value="LR" />
+      <element name="Count (targeted)" value="69" />
+      <element name="Count (not targeted)" value="5" />
+      <element name="Mean IKI" value="256.9" />
+      <element name="StdDev" value="281.7" />
+      <element name="Median" value="170" />
+      <element name="LogMean (trimmed)" value="199.5" />
+      <element name="Coef. of Variation" value="66.1 %" />
+      <element name="CPM" value="234" />
+    </block>
+    <block name="row-RL">
+      <element name="value" value="RL" />
+      <element name="Count (targeted)" value="61" />
+      <element name="Count (not targeted)" value="6" />
+      <element name="Mean IKI" value="486.2" />
+      <element name="StdDev" value="1862.7" />
+      <element name="Median" value="132" />
+      <element name="LogMean (trimmed)" value="175.3" />
+      <element name="Coef. of Variation" value="117.2 %" />
+      <element name="CPM" value="123" />
+    </block>
+    <block name="row-RR">
+      <element name="value" value="RR" />
+      <element name="Count (targeted)" value="64" />
+      <element name="Count (not targeted)" value="0" />
+      <element name="Mean IKI" value="268.1" />
+      <element name="StdDev" value="128.6" />
+      <element name="Median" value="236" />
+      <element name="LogMean (trimmed)" value="252.8" />
+      <element name="Coef. of Variation" value="31.0 %" />
+      <element name="CPM" value="224" />
+    </block>
+  </module>
+  <module name="Adjacency">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+    </block>
+    <block name="row-False">
+      <element name="value" value="False" />
+      <element name="Count (targeted)" value="573" />
+      <element name="Count (not targeted)" value="25" />
+      <element name="Mean IKI" value="268.9" />
+      <element name="StdDev" value="668.6" />
+      <element name="Median" value="160" />
+      <element name="LogMean (trimmed)" value="188.2" />
+      <element name="Coef. of Variation" value="72.1 %" />
+      <element name="CPM" value="223" />
+    </block>
+    <block name="row-True">
+      <element name="value" value="True" />
+      <element name="Count (targeted)" value="148" />
+      <element name="Count (not targeted)" value="3" />
+      <element name="Mean IKI" value="285.0" />
+      <element name="StdDev" value="263.1" />
+      <element name="Median" value="219" />
+      <element name="LogMean (trimmed)" value="247.7" />
+      <element name="Coef. of Variation" value="43.8 %" />
+      <element name="CPM" value="211" />
+    </block>
+  </module>
+  <module name="Adjacency (Trial excl. &gt;2)">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+    </block>
+    <block name="row-False">
+      <element name="value" value="False" />
+      <element name="Count (targeted)" value="314" />
+      <element name="Count (not targeted)" value="16" />
+      <element name="Mean IKI" value="335.2" />
+      <element name="StdDev" value="888.2" />
+      <element name="Median" value="187" />
+      <element name="LogMean (trimmed)" value="212.8" />
+      <element name="Coef. of Variation" value="83.9 %" />
+      <element name="CPM" value="179" />
+    </block>
+    <block name="row-True">
+      <element name="value" value="True" />
+      <element name="Count (targeted)" value="98" />
+      <element name="Count (not targeted)" value="1" />
+      <element name="Mean IKI" value="293.6" />
+      <element name="StdDev" value="291.5" />
+      <element name="Median" value="219" />
+      <element name="LogMean (trimmed)" value="252.0" />
+      <element name="Coef. of Variation" value="45.3 %" />
+      <element name="CPM" value="204" />
+    </block>
+  </module>
+  <module name="Repetition">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+    </block>
+    <block name="row-False">
+      <element name="value" value="False" />
+      <element name="Count (targeted)" value="714" />
+      <element name="Count (not targeted)" value="23" />
+      <element name="Mean IKI" value="272.6" />
+      <element name="StdDev" value="610.7" />
+      <element name="Median" value="189" />
+      <element name="LogMean (trimmed)" value="199.1" />
+      <element name="Coef. of Variation" value="68.3 %" />
+      <element name="CPM" value="220" />
+    </block>
+    <block name="row-True">
+      <element name="value" value="True" />
+      <element name="Count (targeted)" value="7" />
+      <element name="Count (not targeted)" value="5" />
+      <element name="Mean IKI" value="228.1" />
+      <element name="StdDev" value="121.9" />
+      <element name="Median" value="184" />
+      <element name="LogMean (trimmed)" value="205.0" />
+      <element name="Coef. of Variation" value="49.2 %" />
+      <element name="CPM" value="263" />
+    </block>
+  </module>
+  <module name="Repetition (Trial excl. &gt;2)">
+    <block name="header">
+      <element name="group" value="" />
+      <element name="Count (targeted)" value="Count (targeted)" />
+      <element name="Count (not targeted)" value="Count (not targeted)" />
+      <element name="Mean IKI" value="Mean IKI" />
+      <element name="StdDev" value="StdDev" />
+      <element name="Median" value="Median" />
+      <element name="LogMean (trimmed)" value="LogMean (trimmed)" />
+      <element name="Coef. of Variation" value="Coef. of Variation" />
+      <element name="CPM" value="CPM" />
+    </block>
+    <block name="row-False">
+      <element name="value" value="False" />
+      <element name="Count (targeted)" value="411" />
+      <element name="Count (not targeted)" value="14" />
+      <element name="Mean IKI" value="325.7" />
+      <element name="StdDev" value="789.4" />
+      <element name="Median" value="215" />
+      <element name="LogMean (trimmed)" value="221.7" />
+      <element name="Coef. of Variation" value="76.0 %" />
+      <element name="CPM" value="184" />
+    </block>
+    <block name="row-True">
+      <element name="value" value="True" />
+      <element name="Count (targeted)" value="1" />
+      <element name="Count (not targeted)" value="3" />
+      <element name="Mean IKI" value="165.0" />
+      <element name="StdDev" value="0.0" />
+      <element name="Median" value="165" />
+      <element name="LogMean (trimmed)" value="1.0" />
+      <element name="Coef. of Variation" value="0.0 %" />
+      <element name="CPM" value="364" />
+    </block>
+  </module>
+</session>

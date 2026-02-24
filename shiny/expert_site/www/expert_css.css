@@ -1,0 +1,112 @@
+h3 {
+	color: #881133
+}
+
+h4 {
+	color: #004466
+}
+
+body {
+	color: #666
+}
+
+.panel-title>a {
+	color: #004466;
+}
+
+.irs--shiny .irs-bar {
+	background-color: #004466;
+	border-top-color: #004466;
+	border-bottom-color: #004466;
+}
+
+.irs--shiny .irs-from {
+	background-color: #004466
+}
+
+.irs--shiny .irs-to {
+	background-color: #004466
+}
+
+.irs--shiny .irs-handle {
+	background-color: #004466
+}
+
+
+.irs--shiny .irs-single {
+	background-color: #004466
+}
+
+.nav-tabs>li>a {
+	color: #004466
+}
+
+.nav-tabs>li.active>a {
+	color: #004466
+}
+
+.nav-tabs>li.active>a:focus {
+	color: #004466
+} 
+
+input[type='checkbox']{
+  width: 13px !important;
+  height: 13px !important;
+  margin: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: 1px solid #666;
+  box-shadow: none;
+  font-size: 0.9em;
+  text-align: justify;
+  line-height: 1em;
+  border-radius: 2px;
+}
+
+input[type='checkbox']:checked:after {
+  width: 13px;
+  height: 13px;
+  border-radius: 2px;
+  position: relative;
+  background-color: #881133;
+  display: inline-block;
+  visibility: visible;
+  content: '✔';
+  color: white;
+}
+
+input[type='checkbox']:focus {
+  outline: 1px solid #666;
+  outline-offset: 0px;
+}
+
+input[type='radio']:after {
+	width: 13px;
+	height: 13px;
+	border-radius: 13px;
+	position: relative;
+	background-color: inherit;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid #666;
+}
+
+input[type='radio']:checked:after {
+	width: 13px;
+	height: 13px;
+	border-radius: 13px;
+	position: relative;
+	background-color: #881133;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid #666;
+}
+
+input[type='radio']:focus {
+  outline: 0px;
+  outline-offset: 0px;
+}
