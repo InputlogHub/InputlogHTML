@@ -1,0 +1,54 @@
+<Project>
+	<PropertyGroup Condition="$(TargetFramework.Contains('net4')) Or $(TargetFrameworks.Contains('net4')) Or $(TargetFrameworkVersion.Contains('v4.'))">
+		<_GppgTool>"$(MSBuildThisFileDirectory)net462/Gppg.exe"</_GppgTool>
+	</PropertyGroup>
+	<PropertyGroup Condition="$(TargetFramework.Contains('net6.0')) Or $(TargetFrameworks.Contains('net6.0'))">
+		<_GppgTool>dotnet "$(MSBuildThisFileDirectory)net6.0/Gppg.dll"</_GppgTool>
+	</PropertyGroup>
+	<PropertyGroup Condition="$(TargetFramework.Contains('net8.0')) Or $(TargetFrameworks.Contains('net8.0'))">
+		<_GppgTool>dotnet "$(MSBuildThisFileDirectory)net8.0/Gppg.dll"</_GppgTool>
+	</PropertyGroup>
+	<PropertyGroup Condition="$(TargetFramework.Contains('net9.0')) Or $(TargetFrameworks.Contains('net9.0'))">
+		<_GppgTool>dotnet "$(MSBuildThisFileDirectory)net9.0/Gppg.dll"</_GppgTool>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(_GppgTool)' == ''">
+		<_GppgTool>dotnet "$(MSBuildThisFileDirectory)net8.0/Gppg.dll"</_GppgTool>
+	</PropertyGroup>
+
+	<!-- Defaults for YaccFile items -->
+	<ItemDefinitionGroup>
+		<YaccFile>
+			<OutputFile>%(Identity).cs</OutputFile>
+			<Arguments>/gplex /nolines</Arguments>
+		</YaccFile>
+	</ItemDefinitionGroup>
+
+	<!-- Run once from outer build in cross targeting projects. Imported and called from crossTargetingBuild/*.targets -->
+	<Target Name="YaccLexToolsGppgCrossTarget" BeforeTargets="DispatchToInnerBuilds" Condition="'$(IsCrossTargetingBuild)' != ''" Inputs="@(YaccFile)" Outputs="@(YaccFile->'%(OutputFile)')">
+		<CallTarget Targets="YaccLexToolsGppg" />
+	</Target>
+
+	<!-- Run once in single targeting projects. Imported and called from build/[framework]/*.targets -->
+	<!-- Don't run in VS design time builds. Otherwise VS compiles eagerly and discards the output -->
+	<Target Name="YaccLexToolsGppgSingleTarget" BeforeTargets="CoreCompile" Condition="'$(DesignTimeBuild)' == '' AND '$(IsCrossTargetingBuild)' == ''" Inputs="@(YaccFile)" Outputs="@(YaccFile->'%(OutputFile)')">
+		<CallTarget Targets="YaccLexToolsGppg" />
+	</Target>
+
+	<Target Name="YaccLexToolsGppg">
+		<Exec Command="$(_GppgTool) %(YaccFile.Arguments) /out:&quot;./%(YaccFile.OutputFile)&quot; %(YaccFile.Identity)" />
+
+		<!-- Ensure the generated files are included in the build. Otherwise first build fails because the source files are collected already -->
+		<ItemGroup>
+			<Compile Remove="@(YaccFile->'%(OutputFile)')" />
+			<Compile Remove="ShiftReduceParserCode.cs" />
+			<Compile Include="@(YaccFile->'%(OutputFile)')" />
+			<Compile Include="ShiftReduceParserCode.cs" />
+		</ItemGroup>
+	</Target>
+
+	<!-- Make it work with VS' FastUpToDateCheck -->
+	<ItemGroup>
+		<UpToDateCheckInput Include="@(YaccFile)" />
+	</ItemGroup>
+
+</Project>

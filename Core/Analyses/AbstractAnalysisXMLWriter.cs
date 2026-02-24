@@ -326,6 +326,11 @@ namespace InputLog.Core.Analyses
                 var dstScriptPath = GetScriptsDestinationPath();
                 var srcScriptPath = PathSanitizer.Sanitize(Path.Combine(Application.StartupPath, SCRIPTS_LOCATION));
 
+                if (!Directory.Exists(dstScriptPath))
+                {
+                    Directory.CreateDirectory(dstScriptPath);
+                }
+
                 if (scripts != null)
                 {
                     foreach (var script in scripts)
