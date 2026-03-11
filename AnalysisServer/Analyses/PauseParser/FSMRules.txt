@@ -1,0 +1,96 @@
+/***************************************************************
+ * PAUSE LOCATION RULES                                        *
+ *     Within one pause type, priority goes from top to bottom *
+ ***************************************************************/
+
+/***********************************
+ * Between paragraphs - Priority 1 *
+ ***********************************/
+ 
+// P0
+(IsSentenceReadingMark,IsReturn<1>) {LogP0, MarkAfterParagraphs};
+
+// P1
+(IsParagraphChar {NotifyParagraphChar})[3] . (IsParagraphChar {NotifyParagraphChar})*
+	. (((IsTab,IsReturn<1>)|(IsSpace,IsReturn<1>)) {LogP1, MarkAfterParagraphs})*
+	. IsReturn {LogP1, MarkBeforeParagraphs}
+	. ((IsTab|IsSpace|IsReturn|IsBackSpace) {LogP1, MarkBeforeParagraphs})*
+	. (!IsTab,!IsSpace,!IsReturn,!IsBackSpace) {NotifyParagraph, Reset};
+
+// P2
+IsReturn {LogP2, MarkBeforeParagraphs, NotifyParagraph, Reset};
+/*******************************
+ * Within words - Priority 1.5 *
+ *******************************/
+
+// C4 (example: m.a.w.)
+((IsDot,IsWithinWordChar<1>) {LogC4, MarkWithinWords} . IsWithinWordChar {LogC4, MarkWithinWords})+
+	. (IsDot,IsSpace<1>,!IsCapitalLetter<2>) {LogC4, MarkWithinWords, Reset};
+
+// C3 (example: 1 + 2 = 3)
+(IsArithmeticOperation){LogC3, MarkWithinWords, Reset};
+
+/**********************************
+ * Between sentences - Priority 2 *
+ **********************************/
+
+// S5
+IsFirstAlphaNumericEvent {LogS5, NotifySentence, MarkBeforeSentences, Reset};
+
+// S2
+(IsSentenceChar {NotifySentenceChar})[3] . (IsSentenceChar {NotifySentenceChar})* 
+	. IsCharacter . (IsTab|IsSpace)* . IsReturn . IsSpace {LogS2, NotifySentence, MarkBeforeSentences, Reset};
+
+// S1
+(IsSentenceChar {NotifySentenceChar})[3] . (IsSentenceChar {NotifySentenceChar})* 
+	. IsCharacter . (IsTab|IsSpace)* . IsReturn {LogS1, NotifySentence, MarkBeforeSentences, Reset};
+
+// S3 (NOTE: removed NotifySentence)
+(IsSentenceChar {NotifySentenceChar})[3] . (IsSentenceChar {NotifySentenceChar})* 
+	. ((IsSentenceReadingMark,!IsAlphaNumeric<1>) {LogS3, MarkAfterSentences, Reset});
+
+// S6
+(IsTab|IsSpace)+ . (IsSentenceChar {NotifySentenceChar}) . IsSentenceReadingMark {LogS6, NotifySentence, MarkAfterSentences}
+. ((IsTab|IsSpace) {LogS6, MarkBeforeSentences})+
+. IsSentenceChar {LogS6, MarkBeforeSentences, Reset};
+
+// S4
+(IsSentenceChar {NotifySentenceChar})[3] . (IsSentenceChar {NotifySentenceChar})* 
+	. IsSentenceReadingMark {NotifySentence} . ((IsTab|IsSpace) {LogS4, MarkBeforeSentences})+
+	. IsSentenceChar {LogS4, MarkBeforeSentences, Reset};
+
+/******************************
+ * Between words - Priority 3 *
+ ******************************/
+
+// W1
+(IsSentenceReadingMark {LogW1, MarkAfterWords})+ . !IsSentenceReadingMark {Reset};
+
+// W4
+(IsWithinWordChar {LogW4, MarkBeforeWords}) . (IsWithinWordChar)*
+	. IsWordReadingMark {LogW4, NotifyWord, MarkAfterWords, Reset};
+
+// W2
+IsWordReadingMark {LogW2, MarkAfterWords, Reset};
+
+// W3
+IsWithinWordChar* . (IsTab|IsSpace) {LogW3, NotifyWord, MarkAfterWords}
+	. ((IsTab|IsSpace) {LogW3, MarkBeforeWords})* . (!IsTab,!IsSpace) {Reset};
+
+// W7
+IsWithinWordChar* . (IsTab|IsSpace)+ . (IsBindingChar {LogW7, MarkWithinWords})+
+	. ((!IsTab,!IsSpace) {Reset} | (IsTab|IsSpace) {LogW7, NotifyWord, MarkAfterWords})
+	. ((IsTab|IsSpace) {LogW7, MarkBeforeWords})* . (!IsTab,!IsSpace) {Reset};
+
+// W5
+IsWithinWordChar* . IsCtrlBackSpace {LogW5, NotifyWord, MarkAfterWords, Reset};
+
+// W6
+IsReturn {LogW6, MarkAfterWords, Reset};
+
+/*****************************
+ * Within words - Priority 4 *
+ *****************************/
+
+// C2
+(IsWithinWordChar|IsBindingChar) {LogC2, MarkWithinWords, Reset};

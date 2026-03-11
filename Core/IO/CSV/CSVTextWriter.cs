@@ -28,7 +28,7 @@ namespace InputLog.Core.IO.CSV
                     if(item.IsNullOrEmpty()) continue;
                     foreach (var element in item)
                     {
-                        writer.WriteLine(string.Join(_separator, element));
+                        writer.WriteLine(string.Join(_separator, (string[])element));
                     }
                    
                 }

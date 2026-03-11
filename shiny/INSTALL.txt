@@ -1,0 +1,52 @@
+INSTALLATION GUIDE
+==================
+
+I)Install the needed components
+-------------------------------
+
+- install R : https://cran.r-project.org/mirrors.html
+- install python 3 : https://www.python.org/downloads/   (CHECK 'install python to path')
+- install postgresql : https://www.postgresql.org/download/  
+- install C# (I assume this is already present)
+
+II) Install the libraries used for R and python
+-----------------------------------------------
+
+- install python libraries, by opening a powershell window in the folder 'database' and executing the command 'pip install -r requirements.txt'
+- install R libraries, by executing the file initial.r
+
+III) Setup the database
+-----------------------
+
+1. First modify the username & password in database/db_manager.py, to the username & password set during the installation of postgresql
+2. Run the file database/initial.py and follow the instructions.
+3. In the file database/db_frontend.py, change the value of database at line 1, to the database name provided in the previous step
+4. In the file expert_site/download.R, change the value of corpus_directory to the root directory provided in step 2
+
+IV) Ports
+---------
+
+- By default, the user site and expert site both run on port 4344. To change this, you need to edit the line in user_site.R / expert_site.R the line with RunApp, and change the port to the desired value.
+	- The port for these sites should be open for outside visitors
+
+- By default, the psql database is running on port 5432. 
+	- !! If you changed this during the installation process of psql, you should update the value of port in database/db_manager.py
+
+- By default, the database frontend is running on port 5000, to change this, you should change the value of port in database/db_frontend.py
+	- !! If you changed this port, you should change the value of port in both user_site/rest.R & expert_site/rest.R
+	
+- By default, the analysis server is running on port 4343. To change this, you need to provide a different value to the command in section V
+	- !! If you changed this port, you should change the value of analysis_port in both user_site/rest.R & expert_site/rest.R
+	
+	
+V) RUNNING
+----------
+
+- To run the user site, execute the following files / commands : 
+	- user_site.R, 
+	- database/db_frontend.py, 
+	- iisexpress /path:**path of inputlog/AnalysisServer** /port:4343
+- To run the expert site, execute the following files : 
+	- expert_site.R, 
+	- database/db_frontend.py, 
+	- iisexpress /path:**path of inputlog/AnalysisServer** /port:4343

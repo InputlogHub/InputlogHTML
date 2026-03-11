@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Xsl;
 
@@ -31,12 +32,12 @@ namespace InputLog.Core.IO.HTML
 
             string xmlDir = Path.Combine(inputFolder, "xml");
             Directory.CreateDirectory(xmlDir);
-       
+
             var scriptsDir = Path.Combine(inputFolder, "Scripts");
             var imagesDir = Path.Combine(inputFolder, "Images");
             var styleDir = Path.Combine(inputFolder, "Style");
             var dirInfoList = new List<string> { scriptsDir, imagesDir, styleDir };
-          
+
             var cssFile = Path.Combine(styleDir, "common.css");
             if (!File.Exists(cssFile))
                 throw new FileNotFoundException("Shared CSS not found.", cssFile);
@@ -84,6 +85,8 @@ namespace InputLog.Core.IO.HTML
             {
                 Directory.CreateDirectory(destDir);
             }
+
+            //MessageBox.Show(sourceDir);
 
             // Copy files
             foreach (var file in Directory.GetFiles(sourceDir))
@@ -153,7 +156,7 @@ namespace InputLog.Core.IO.HTML
         /// </summary>
         private static string GetAnalysisKey(string fileName, IEnumerable<string> keys)
         {
-           try
+            try
             {
                 // Normalize the filename to avoid extension confusion or trailing artifacts
                 string cleanName = Path.GetFileNameWithoutExtension(fileName);

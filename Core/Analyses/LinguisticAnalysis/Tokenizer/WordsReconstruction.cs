@@ -473,7 +473,9 @@ namespace InputLog.Core.Analyses.LinguisticAnalysis.Tokenizer
             // only if this string is different from the front.
             var back = t.Substring(Math.Max(0, t.Length - 3));
             if (front.Equals(back)) return;
-            var revStr = new string(back.ToCharArray().Reverse().ToArray());
+            var backArr = back.ToCharArray();
+            backArr.Reverse();
+            var revStr = new string(backArr.ToArray());
 
             //Console.WriteLine("back: " + back);
 

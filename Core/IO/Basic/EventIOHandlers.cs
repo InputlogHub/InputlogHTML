@@ -34,6 +34,7 @@ namespace InputLog.Core.IO.Basic
             { typeof(Scroll).GUID, WINLOG },
             { typeof(EyetrackPart).GUID, EYETRACK },
             { typeof(DragonNSPart).GUID, DRAGON },
+            { typeof(Questions).GUID, WINLOG }
         };
 
         public static readonly Dictionary<string, string> ReadHandlers = new Dictionary<string, string>

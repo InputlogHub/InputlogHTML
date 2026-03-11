@@ -31,7 +31,7 @@ namespace InputLog.Core.Analyses
         private const string ANALYSIS_PROGRAM_VERSION = "AnalysisProgramVersion";
         private const string LOG_PROGRAM_VERSION = "LogProgramVersion";
         private const string PROGRAM_CONVERTED_FROM = "ConvertedFrom";
-        
+
         private const string EXTRA_INFO_TAG = "extraInfo";
         private const string EXTRA_INFO_TITLE_ATTR = "title";
 
@@ -70,7 +70,7 @@ namespace InputLog.Core.Analyses
         /// <param name="destinationFilePath">Path where the the analysis document should be created.</param>
         protected AbstractAnalysisXMLWriter(string destinationFilePath)
         {
-            XMLWriter = new XmlTextWriter(destinationFilePath, Encoding.UTF8) {Formatting = Formatting.Indented};
+            XMLWriter = new XmlTextWriter(destinationFilePath, Encoding.UTF8) { Formatting = Formatting.Indented };
             DestinationFilePath = destinationFilePath;
         }
 
@@ -258,18 +258,19 @@ namespace InputLog.Core.Analyses
             string[] htmltext = null)
         {
             // copy .stylesheets
-            if (stylesheets != null)
+            try
             {
-                try
-                {
-                    // creates source & destination styles path 
-                    var dstStylesPath = GetStylesDestinationPath();
-                    var srcStylesPath = PathSanitizer.Sanitize(Path.Combine(Application.StartupPath, STYLES_LOCATION));
+                // creates source & destination styles path 
+                var dstStylesPath = GetStylesDestinationPath();
+                var srcStylesPath = PathSanitizer.Sanitize(Path.Combine(Application.StartupPath, STYLES_LOCATION));
 
-                    if (!Directory.Exists(dstStylesPath))
-                    {
-                        Directory.CreateDirectory(dstStylesPath);
-                    }
+                if (!Directory.Exists(dstStylesPath))
+                {
+                    Directory.CreateDirectory(dstStylesPath);
+                }
+
+                if (stylesheets != null)
+                {
                     foreach (var stylesheet in stylesheets)
                     {
                         var srcStyleSheet = Path.Combine(srcStylesPath, stylesheet);
@@ -281,25 +282,26 @@ namespace InputLog.Core.Analyses
                         }
                     }
                 }
-                catch (AnalysisException e)
-                {
-                    MessageLogger.CatchException(this, e, Severity.ERROR, "Style sheets not copied");
-                }
+            }
+            catch (AnalysisException e)
+            {
+                MessageLogger.CatchException(this, e, Severity.ERROR, "Style sheets not copied");
             }
 
             // copy images
-            if (images != null)
+            try
             {
-                try
-                {
-                    // creates source & destination image path 
-                    var dstImagesPath = GetImagesDestinationPath();
-                    var srcImagesPath = PathSanitizer.Sanitize(Path.Combine(Application.StartupPath, IMAGES_LOCATION));
+                // creates source & destination image path 
+                var dstImagesPath = GetImagesDestinationPath();
+                var srcImagesPath = PathSanitizer.Sanitize(Path.Combine(Application.StartupPath, IMAGES_LOCATION));
 
-                    if (!Directory.Exists(dstImagesPath))
-                    {
-                        Directory.CreateDirectory(dstImagesPath);
-                    }
+                if (!Directory.Exists(dstImagesPath))
+                {
+                    Directory.CreateDirectory(dstImagesPath);
+                }
+
+                if (images != null)
+                {
                     foreach (var image in images)
                     {
                         var srcImage = Path.Combine(srcImagesPath, image);
@@ -311,14 +313,13 @@ namespace InputLog.Core.Analyses
                         }
                     }
                 }
-                catch (AnalysisException e)
-                {
-                    MessageLogger.CatchException(this, e, Severity.ERROR, "Image files not copied");
-                }
+            }
+            catch (AnalysisException e)
+            {
+                MessageLogger.CatchException(this, e, Severity.ERROR, "Image files not copied");
             }
 
             // copy scripts
-            if (scripts == null) return;
             try
             {
                 // creates source & destination scripts path 
@@ -329,14 +330,18 @@ namespace InputLog.Core.Analyses
                 {
                     Directory.CreateDirectory(dstScriptPath);
                 }
-                foreach (var script in scripts)
-                {
-                    var srcScript = Path.Combine(srcScriptPath, script);
-                    var dstScript = Path.Combine(dstScriptPath, script);
 
-                    if (File.Exists(srcScript))
+                if (scripts != null)
+                {
+                    foreach (var script in scripts)
                     {
-                        File.Copy(srcScript, dstScript, true /* overwrite if file exists */);
+                        var srcScript = Path.Combine(srcScriptPath, script);
+                        var dstScript = Path.Combine(dstScriptPath, script);
+
+                        if (File.Exists(srcScript))
+                        {
+                            File.Copy(srcScript, dstScript, true /* overwrite if file exists */);
+                        }
                     }
                 }
             }
@@ -479,7 +484,7 @@ namespace InputLog.Core.Analyses
         public void Abort()
         {
             Dispose();
-            File.Delete(DestinationFilePath);     
+            File.Delete(DestinationFilePath);
         }
 
         /// <summary>

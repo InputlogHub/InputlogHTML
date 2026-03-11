@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
@@ -72,7 +73,7 @@ namespace InputLog.Core.Analyses.Copytask.Resources
         {
             this._bigramData = new Dictionary<string, Dictionary<string, Bigrams.Bigram>>();
 
-            this.EXECUTION_PATH = Path.GetDirectoryName(Application.ExecutablePath);
+            this.EXECUTION_PATH = AppContext.BaseDirectory;
             string resourcePath = Path.Combine(this.EXECUTION_PATH, RESOURCES_FOLDER);
 
             this._supported_languages = _DetectPostfixInFileNames(resourcePath, LANGUAGE_PREFIX);

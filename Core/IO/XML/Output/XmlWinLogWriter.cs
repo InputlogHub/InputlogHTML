@@ -130,5 +130,27 @@ namespace InputLog.Core.IO.Xml.Output
 
             writer.WriteEndElement(); // </part>
         }
+
+        /// <summary>
+        /// Write the given EventPart.
+        /// </summary>
+        /// <param name="e">The EventPart to write.</param>
+        /// <param name="writer"></param>
+        public static void WriteQuestions(Questions e, XmlWriter writer)
+        {
+            writer.WriteStartElement(Part.TAG); // <part>        
+            writer.WriteAttributeString(Part.ATTRIBUTES.Type.KEY, Part.ATTRIBUTES.Type.VALUES.WinLog);
+
+            writer.WriteElementString("handedness", e.Handedness);
+            writer.WriteElementString("computer", e.Computer);
+            writer.WriteElementString("keyboard", e.Keyboard);
+            writer.WriteElementString("browser", e.Browser);
+            writer.WriteElementString("language", e.Language);
+            writer.WriteElementString("disorder", e.Disorder.ToString());
+            writer.WriteElementString("education", e.Education);
+            writer.WriteElementString("repetition", e.Repetition.ToString());
+
+            writer.WriteEndElement(); // </part>
+        }
     }
 }
