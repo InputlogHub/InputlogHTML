@@ -49,9 +49,9 @@
             this.OuterLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
             this.OuterLayoutPanel.Name = "OuterLayoutPanel";
             this.OuterLayoutPanel.RowCount = 2;
-            this.OuterLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.OuterLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.OuterLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.OuterLayoutPanel.Size = new System.Drawing.Size(735, 50);
+            this.OuterLayoutPanel.Size = new System.Drawing.Size(980, 62);
             this.OuterLayoutPanel.TabIndex = 0;
             // 
             // TitleLayout
@@ -61,7 +61,7 @@
             this.TitleLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.TitleLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55F));
             this.TitleLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.TitleLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.TitleLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
             this.TitleLayout.Controls.Add(this.AnalysisTitle, 1, 0);
             this.TitleLayout.Controls.Add(this.CheckBox, 0, 0);
             this.TitleLayout.Controls.Add(this.AnalysisBlock, 2, 0);
@@ -71,7 +71,7 @@
             this.TitleLayout.Name = "TitleLayout";
             this.TitleLayout.RowCount = 1;
             this.TitleLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TitleLayout.Size = new System.Drawing.Size(735, 30);
+            this.TitleLayout.Size = new System.Drawing.Size(980, 37);
             this.TitleLayout.TabIndex = 0;
             // 
             // AnalysisTitle
@@ -79,12 +79,12 @@
             this.AnalysisTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.AnalysisTitle.AutoSize = true;
             this.AnalysisTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AnalysisTitle.Location = new System.Drawing.Point(78, 7);
-            this.AnalysisTitle.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.AnalysisTitle.MinimumSize = new System.Drawing.Size(200, 16);
+            this.AnalysisTitle.Location = new System.Drawing.Point(105, 8);
+            this.AnalysisTitle.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.AnalysisTitle.MinimumSize = new System.Drawing.Size(267, 20);
             this.AnalysisTitle.Name = "AnalysisTitle";
-            this.AnalysisTitle.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.AnalysisTitle.Size = new System.Drawing.Size(399, 16);
+            this.AnalysisTitle.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.AnalysisTitle.Size = new System.Drawing.Size(532, 20);
             this.AnalysisTitle.TabIndex = 0;
             this.AnalysisTitle.Text = "Title of Analysis";
             // 
@@ -93,11 +93,11 @@
             this.CheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.CheckBox.AutoSize = true;
             this.CheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CheckBox.Location = new System.Drawing.Point(0, 8);
+            this.CheckBox.Location = new System.Drawing.Point(0, 10);
             this.CheckBox.Margin = new System.Windows.Forms.Padding(0);
             this.CheckBox.Name = "CheckBox";
-            this.CheckBox.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.CheckBox.Size = new System.Drawing.Size(73, 14);
+            this.CheckBox.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.CheckBox.Size = new System.Drawing.Size(98, 17);
             this.CheckBox.TabIndex = 2;
             this.CheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CheckBox.UseVisualStyleBackColor = true;
@@ -108,10 +108,10 @@
             this.AnalysisBlock.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.AnalysisBlock.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AnalysisBlock.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.AnalysisBlock.Location = new System.Drawing.Point(482, 5);
-            this.AnalysisBlock.Margin = new System.Windows.Forms.Padding(5, 5, 16, 5);
+            this.AnalysisBlock.Location = new System.Drawing.Point(644, 6);
+            this.AnalysisBlock.Margin = new System.Windows.Forms.Padding(7, 6, 21, 6);
             this.AnalysisBlock.Name = "AnalysisBlock";
-            this.AnalysisBlock.Size = new System.Drawing.Size(237, 21);
+            this.AnalysisBlock.Size = new System.Drawing.Size(315, 24);
             this.AnalysisBlock.Sorted = true;
             this.AnalysisBlock.TabIndex = 3;
             // 
@@ -120,23 +120,24 @@
             this.Data.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Data.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Data.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Data.Location = new System.Drawing.Point(0, 30);
+            this.Data.Location = new System.Drawing.Point(0, 37);
             this.Data.Margin = new System.Windows.Forms.Padding(0);
             this.Data.Name = "Data";
-            this.Data.Size = new System.Drawing.Size(735, 20);
+            this.Data.Size = new System.Drawing.Size(980, 25);
             this.Data.TabIndex = 1;
             this.Data.WrapContents = false;
             // 
             // AnalysisReportingTargets
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.OuterLayoutPanel);
             this.DoubleBuffered = true;
-            this.MinimumSize = new System.Drawing.Size(735, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(979, 2);
             this.Name = "AnalysisReportingTargets";
-            this.Size = new System.Drawing.Size(735, 50);
+            this.Size = new System.Drawing.Size(980, 62);
             this.OuterLayoutPanel.ResumeLayout(false);
             this.TitleLayout.ResumeLayout(false);
             this.TitleLayout.PerformLayout();

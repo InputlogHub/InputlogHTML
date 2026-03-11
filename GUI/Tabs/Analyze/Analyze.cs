@@ -717,7 +717,7 @@ namespace GUI.Tabs.Analyze
 
             MessageBox.Show("Do not forget to check the number of intervals in the selected analyses.\n" +
                             "The intervals in the analyses may differ from what the report assumes.\n" +
-                            "They should be the same. Default interval value is 3",
+                            "They should be the same. The assumed default interval value is 3",
                             "Check the Number of Intervals", MessageBoxButtons.OK, MessageBoxIcon.Information);
            
             foreach (var analysisName in requiredAnalyses)
