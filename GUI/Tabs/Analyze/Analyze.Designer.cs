@@ -71,8 +71,10 @@
             // 
             // SrcFileDialog
             // 
+            // change the Filter to include an "Other files" choice (All files)
             this.SrcFileDialog.DefaultExt = "idfx";
-            this.SrcFileDialog.Filter = "Log files (*.idfx)|*.idfx";
+            this.SrcFileDialog.Filter = "Log files (*.idfx)|*.idfx|Other files (*.*)|*.*";
+            this.SrcFileDialog.FilterIndex = 1; // keep "Log files" selected by default
             this.SrcFileDialog.Multiselect = true;
             // 
             // ImportConfigurationDialog
