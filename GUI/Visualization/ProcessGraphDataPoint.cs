@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows.Forms;
 using InputLog.Core.Analyses.General;
 using InputLog.Core.Util;
 
@@ -44,8 +45,11 @@ namespace GUI.Visualization
             var lastStartTime = 0UL;
             var prevFocus = "Focus Unknown";
             int separator = thisMainDoc.IndexOf(".", StringComparison.Ordinal);
-            var mainDoc = thisMainDoc.Substring(0, separator - 1).ToLower();
-
+            var mainDoc = thisMainDoc;
+            if (separator != -1)
+            {
+                mainDoc = thisMainDoc.Substring(0, separator - 1).ToLower();
+            }
             GeneralAnalysisSummary.GeneralAnalysisEvent placeHolderEvent = null;
             //  GeneralAnalysisSummary.GeneralAnalysisEvent prevEvent = null;
 
