@@ -134,7 +134,8 @@ namespace GUI.Visualization
 
                 // Adding focus points.
                 DataPoint p;
-                if (point.Focus.ToLower().Contains("wordlog"))
+                // TODO: check with lead and discuss compatibility with previous versions
+                if (point.Focused)
                 {
                     p = new DataPoint
                         {

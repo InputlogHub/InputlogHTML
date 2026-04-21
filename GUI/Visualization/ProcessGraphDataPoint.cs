@@ -19,6 +19,8 @@ namespace GUI.Visualization
         public int Characters;
         public int PauseTime;
         public string Focus;
+        // TODO: check with lead and discuss compatibility with previous versions
+        public bool Focused;
         #endregion
 
         public override bool Equals(object obj)
@@ -44,8 +46,9 @@ namespace GUI.Visualization
             var lastDocLength = 0;
             var lastStartTime = 0UL;
             var prevFocus = "Focus Unknown";
+            bool prevFocused = false;
             int separator = thisMainDoc.IndexOf(".", StringComparison.Ordinal);
-            var mainDoc = thisMainDoc;
+            var mainDoc = thisMainDoc.ToLower();
             if (separator != -1)
             {
                 mainDoc = thisMainDoc.Substring(0, separator - 1).ToLower();
@@ -110,7 +113,16 @@ namespace GUI.Visualization
                         var output = StringUtils.ReplaceNonPrintableCharacters(outputEvent.Output);
                         if (null != output)
                         {
-                            point.Focus = output.ToLower().Contains(mainDoc) ? "wordlog" : output;
+                            if (output.ToLower().Contains(mainDoc))
+                            {
+                                point.Focus = "wordlog";
+                                point.Focused = true;
+                            }
+                            else
+                            {
+                                point.Focus = output;
+                                point.Focused = false;
+                            }
                             if (point.Focus.Equals(string.Empty))
                             {
                                 point.Focus = "Focus Unknown";
@@ -120,9 +132,11 @@ namespace GUI.Visualization
                     else
                     {
                         point.Focus = prevFocus;
+                        point.Focused = prevFocused;
                     } 
                 }
                 prevFocus = point.Focus;
+                prevFocused = point.Focused;
                 points.Add(point);
             }
             return points;
