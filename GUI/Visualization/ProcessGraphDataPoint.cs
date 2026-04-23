@@ -113,7 +113,7 @@ namespace GUI.Visualization
                         var output = StringUtils.ReplaceNonPrintableCharacters(outputEvent.Output);
                         if (null != output)
                         {
-                            if (output.ToLower().Contains(mainDoc))
+                            if (output.ToLower().Contains(mainDoc) || output.ToLower().Contains("maindoc"))
                             {
                                 point.Focus = "wordlog";
                                 point.Focused = true;
