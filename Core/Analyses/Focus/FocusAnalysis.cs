@@ -328,7 +328,7 @@ namespace InputLog.Core.Analyses.Focus
                         }
 
                         // Defining the main document
-                        if (currentWindowTitle.ToLower().Contains(_mainDocument.ToLower()))
+                        if (currentWindowTitle.ToLower().Contains(_mainDocument.ToLower()))  // TODO: add maindoc check!
                         {
                             summary.MainDoc = currentWindowTitle;
                         }

@@ -115,7 +115,7 @@ namespace GUI.Visualization
                         {
                             if (output.ToLower().Contains(mainDoc) || output.ToLower().Contains("maindoc"))
                             {
-                                point.Focus = "wordlog";
+                                point.Focus = output;
                                 point.Focused = true;
                             }
                             else
