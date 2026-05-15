@@ -125,7 +125,7 @@ namespace GUI.Tabs.Analyze.AnalysesControls.Fluency
         /// <param name="e">Event arguments.</param>
         private void IntervalSizeFieldValidating(object sender, CancelEventArgs e)
         {
-            e.Cancel = !InputValidation.AssertParse<ulong>(IntervalSizeField.Text, 5, 3600);
+            e.Cancel = !InputValidation.AssertParse<ulong>(IntervalSizeField.Text, 10, 3600);
             IntervalSizeErrorProvider.SetError(FixedIntervalSizePanel, e.Cancel
                 ? "The size of the interval in seconds must be >= 10 and <= 3600."
                 : "");

@@ -191,7 +191,7 @@ namespace GUI.Tabs.Analyze
             return new AnalysisWriterFactory().Create(analysis, outputFilePath);
         }
 
-        public void DoAnalysis()
+        public bool DoAnalysis()
         {
             CurrentAnalysis = GetAnalysis();
            
@@ -201,12 +201,18 @@ namespace GUI.Tabs.Analyze
             {
                 CurrentSummary = CurrentAnalysis.DoAnalysis();
                 AfterAnalysis(CurrentAnalysis, CurrentSummary);
-            }
 
-            ReportProgress(this, new ProgressEventArgs("Analysis finished, creating report"));
+                ReportProgress(this, new ProgressEventArgs("Analysis finished, creating report"));
+                return true;
+            }
+            else
+            {
+                ReportProgress(this, new ProgressEventArgs("Analysis aborted, creating report"));
+                return false;
+            }
         }
 
-        public void WriteAnalysis()
+        public bool WriteAnalysis()
         {
             using (IAnalysisWriter writer = GetWriter(CurrentAnalysis, OutputFilePath))
             {
@@ -214,13 +220,16 @@ namespace GUI.Tabs.Analyze
                 {
                     writer.WriteDocument(SessionId, _extraInfo, CurrentSummary);
                     AfterWrite(writer);
+                    ReportProgress(this, new ProgressEventArgs("Done"));
+                    return true;
                 }
                 else
                 {
                     writer.Abort();
+                    ReportProgress(this, new ProgressEventArgs("Aborted"));
+                    return false;
                 }
             }
-            ReportProgress(this, new ProgressEventArgs("Done"));
         }
 
         private static bool BeforeAnalysis()

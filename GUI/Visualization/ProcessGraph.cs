@@ -79,7 +79,7 @@ namespace GUI.Visualization
         public void Process(GeneralAnalysisSummary summ, int pauseThreshold, string mainDoc)
         {
             PauseThreshold = pauseThreshold;
-            MainDocument = mainDoc.Equals(string.Empty) ? "Wordlog" : mainDoc;
+            MainDocument = mainDoc.Equals(string.Empty) ? "MainDoc" : mainDoc;
             Points = ProcessGraphDataPoint.ReadFromGeneralAnalysisSummary(summ, MainDocument);
             DrawPoints(Points);
         }

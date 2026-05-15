@@ -117,7 +117,7 @@ namespace GUI.Tabs.Preprocess.Recoders
         }
 
         /// <summary>
-        /// Puting the sources into the 'ungrouped' panel of the FocusRewriteDialog.
+        /// Putting the sources into the 'ungrouped' panel of the FocusRewriteDialog.
         /// </summary>
         private void UngroupedFiller()
         {
@@ -125,7 +125,7 @@ namespace GUI.Tabs.Preprocess.Recoders
             _mainDocs = _fRewriter.GetMainDocs();
             foreach (string title in _titles)
             {
-                if (title.ToLowerInvariant().Contains("wordlog"))
+                if (_mainDocs.ContainsKey(title) || title.ToLowerInvariant().Contains("wordlog") || title.ToLowerInvariant().Contains("maindoc"))
                 {
                     var tmpName = "** " + title + " **";
                     _mainDocs[title] = tmpName;
@@ -221,6 +221,7 @@ namespace GUI.Tabs.Preprocess.Recoders
         /// </summary>
         private void UngroupedToActiveListbox()
         {
+            _isMainDocGroup = false;
             if (Ungrouped.SelectedItems.Count > 0)
             {
                 // Copying content of the enumerator
@@ -228,14 +229,13 @@ namespace GUI.Tabs.Preprocess.Recoders
                 // Changing the lists.
                 foreach (string entry in ungroupedSelected)
                 {
-                    if (entry.ToLowerInvariant().Contains("wordlog"))
+                    if (_mainDocs.ContainsKey(entry) || entry.ToLowerInvariant().Contains("wordlog") || entry.ToLowerInvariant().Contains("maindoc"))
                     {
                         _isMainDocGroup = true;
                         ActiveGroupListbox.Items.Add(_mainDocs.FirstOrDefault(x => x.Value == entry).Key);
                     }
                     else
                     {
-                        _isMainDocGroup = false;
                         ActiveGroupListbox.Items.Add(entry);
                     }
                     Ungrouped.Items.Remove(entry);
@@ -295,7 +295,7 @@ namespace GUI.Tabs.Preprocess.Recoders
             {
                 ActiveGroupListbox.Items.Remove(entry);
 
-                if (entry.ToLowerInvariant().Contains("wordlog"))
+                if (_mainDocs.ContainsKey(entry) || entry.ToLowerInvariant().Contains("wordlog") || entry.ToLowerInvariant().Contains("maindoc"))
                 {
                     var tmpName = "** " + entry + " **";
                     _mainDocs[entry] = tmpName;
@@ -461,13 +461,13 @@ namespace GUI.Tabs.Preprocess.Recoders
                     }
                 }
 
-                // The main document group name should contain 'wordlog'.
-                if (_isMainDocGroup && !GroupNameField.Text.ToLowerInvariant().Contains("wordlog"))
-                {
-                    MessageBox.Show("The new name for the main documents must include the word 'wordlog'" +
-                                  " to avoid confusion with other documents.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    GroupNameField.Text = "Wordlog_" + GroupNameField.Text;
-                }
+                // The main document group name should contain 'wordlog' or 'maindoc'. (unnecessary)
+                //if (_isMainDocGroup && !GroupNameField.Text.ToLowerInvariant().Contains("wordlog") && !GroupNameField.Text.ToLowerInvariant().Contains("maindoc"))
+                //{
+                //    MessageBox.Show("The new name for the main documents must include the word 'wordlog' or 'maindoc'" +
+                //                  " to avoid confusion with other documents.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //    GroupNameField.Text = "Wordlog_" + GroupNameField.Text;
+                //}
 
                 // If there's currently an error on the ErrorProvider we can't save the group. 
                 if (!string.IsNullOrEmpty(ErrorProvider.GetError(GroupNameField)))
@@ -563,7 +563,7 @@ namespace GUI.Tabs.Preprocess.Recoders
             // Run over the ungrouped list. Any items, that are also in OriginalItems get removed.
             foreach (string entry in originalItems)
             {
-                if (entry.ToLowerInvariant().Contains("wordlog"))
+                if (_mainDocs.ContainsKey(entry) || entry.ToLowerInvariant().Contains("wordlog") || entry.ToLowerInvariant().Contains("maindoc"))
                 {
                     var tmpName = "** " + entry + " **";
                     _mainDocs[entry] = tmpName;
@@ -581,7 +581,7 @@ namespace GUI.Tabs.Preprocess.Recoders
             {
                 if (!originalItems.Contains(entry))
                 {
-                    if (entry.ToLowerInvariant().Contains("wordlog"))
+                    if (_mainDocs.ContainsKey(entry) || entry.ToLowerInvariant().Contains("wordlog") || entry.ToLowerInvariant().Contains("maindoc"))
                     {
                         var tmpName = "** " + entry + " **";
                         _mainDocs[entry] = tmpName;

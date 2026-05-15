@@ -276,10 +276,10 @@ namespace InputLog.Core
             // Is this a focus change? 
             if (e.ToString().Contains("[WinLog.FocusChange"))
             { 
-              // There was often no match because of main doc naming. The IEventPart should contain 'WordLog'
+              // There was often no match because of main doc naming. The IEventPart should contain 'Maindoc'
               // to be considered as 'main document'.
               //  if (Regex.IsMatch(e.ToString(), _sessionId.GetMainDocument(), RegexOptions.Compiled))
-              if (e.ToString().Contains("WordLog")) 
+              if (e.ToString().ToLower().Equals(_sessionId.GetMainDocument().ToLower()) || e.ToString().ToLower().Contains("wordlog") || e.ToString().ToLower().Contains("maindoc")) 
               {
                   _allowKeyLogging = true;
               }
