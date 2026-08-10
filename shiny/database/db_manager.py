@@ -11,8 +11,8 @@ import os
 import io
 import math
 
-username = "postgres"
-password = "postgres"
+username = "inputlog"
+password = "X(@#5_/U9kpa5?]a_8"
 port = 5432
 
 # Convert a list of 1-item tuples to a list of items.
@@ -36,14 +36,14 @@ def fetch_dictionary(cursor):
 
 # Connect with the default database and create a new database.
 def create_database(db_name):
-    conn = psycopg2.connect(dbname="postgres", user=username, password=password, port=port)
+    conn = psycopg2.connect(dbname="inputlog", user=username, password=password, port=port)
     conn.set_isolation_level(psycopg2.extensions.ISOLATION_LEVEL_AUTOCOMMIT)
     cursor = conn.cursor()
     cursor.execute(sql.SQL("CREATE DATABASE {}").format(sql.Identifier(db_name)))
     
 # Setup the structure of all the tables in the database.
 def initial_setup(db_name:str):
-    with psycopg2.connect(dbname=db_name, user=username, password=password, port=port) as conn:
+    with psycopg2.connect(dbname=inputlog, user=username, password=password, port=port) as conn:
         cursor = conn.cursor()
 
         cursor.execute("""CREATE TABLE session(
@@ -240,7 +240,7 @@ def get_random(db_name:str, table_name:str, amount:int):
         return values
 
 # Retrieve a set of records from a table in a database where the id occurs in the given list of ids.
-def retrieve_by_id(db_name:str, table_name:str, ids:list[int]):
+def retrieve_by_id(db_name:str, table_name:str, ids:[int]):
     with psycopg2.connect(dbname=db_name, user=username, password=password, port=port) as conn:
         cursor = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 

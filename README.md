@@ -1,44 +1,28 @@
 Inputlog
 ========
 
-Installatie
+Installation
 -----------
 
-### Git
-Inputlog gebruikt [Git](http://www.git-scm.com/download) als versie controlesysteem. Volg de instructies op [Atlassian Documentation](https://confluence.atlassian.com/bitbucket/set-up-a-repository-877174034.html) om het repository te installeren.
-
 ### Visual Studio
-Voor de ontwikkeling van Inputlog is [Visual Studio 2015 - Community Edition](https://www.visualstudio.com/en-us/news/releasenotes/vs2015-update3-vs) vereist. Zorg bij de installatie van Visual Studio dat volgende componenten mee geïnstalleerd worden:
+Development for Inputlog has been done using [Visual Studio](https://learn.microsoft.com/en-gb/visualstudio/releases/), but any IDE with support for C# should work. Make sure to have the following tools available on your system:
 
-* Visual C#
-* Visual Web Developer
-* .NET Framework 4.5
-* Office Developer Tools
-* VS Installer Project Extension (Using the Visual Studio Extension Manager)
+* [Git](http://www.git-scm.com/download)
+* [.NET Framework 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
 
-### Projecten signen
-Volgende projecten dienen eerst gesigned te worden voordat je ze kan builden:
+The project can then be imported using `Git -> Clone Repository`
 
-* EmbeddedWord
-* GUI
-* InputLog.Core
-
-Open hiervoor het `Signing` tabblad in de `Properties` van elk project. Klik op de `Change Password...` knop en voer 3 maal hetzelfde wachtwoord in. Dit wachtwoord vind je terug in het document met wachtwoorden en URLs.9
-
-Project overzicht
+Project overview
 -----------------
 
 ### InputLog.Core
-Dit project bevat alle basisfunctionaliteit die gedeeld wordt door de andere projecten. Hiertoe behoren onder andere de Analyses, IO functionaliteit, de eigenlijke Logging, en een hoop diverse Utilities die kort beschreven zijn in de InputLog Reference Guide. Ieder ander project steunt op de InputLog Core.
+This project contains all code that is required in multiple other projects, such as the actual analyses and logging. Every other project depends on this core project.
 
 ### EmbeddedWord
-Lowlevel project dat de functionaliteit achter de `Play` tab van InputLog voorziet. Het project zelf is solide, het linken van het output OCX bestand loopt regelmatig mis om onduidelijke redenen. Best om hier geen veranderingen te maken.
+This project provides all functionality for the `Play` tab. This project contains bugs and/or is incomplete for the time being (keep as-is).
 
 ### GUI
-Output project dat de normale InputLog GUI genereert. Met deze GUI lopen ook regelmatig dingen mis in verband met uitlijning van elementen, zeker in geval van resolutiewijziging of uitrekken van de GUI. Aanraken op eigen risico. Verder bevat dit project ook klasses die voor de functionaliteit achter de tabbladen zorgen, zoals de Recorder, de verschillende Analyzers en Preprocessors, enz. Maakt voor de merging in de PreProcess tab gebruik van een ingenieus Wizard-systeem dat beschreven wordt in de Reference Guide, courtesy of Tom Pauwaert.
-
-### LiteInterface
-WPF project voor de InputLog lite versie. De Lite versie voorziet een zo eenvoudig mogelijke interface die enkel logging ondersteunt (en backups maakt van het oorspronkelijke document). De resultante IDFX bestanden worden geupload naar de Inputlog server. Het proces om een Inputlog Lite onderzoeksproject op te starten is gedefinieerd in de reference guide.
+This project contains all code related to the interface of the Inputlog app. This is also the project that should be used as startup project when using Visual Studio.
 
 ### WebApp
 MVC ASP project dat de administratie van de Inputlog Server regelt. Accounts aanmaken, mails sturen, overzicht voor de gebruiker en tevens een administratie gedeelte voor de beheerders. Projecten worden gestart via een HTTP formulier waar gebruikers de URL niet van weten, dit formulier wordt achter de schermen door de Client ingevuld. Projecten worden dan in de database ingeschreven en de schijf geplaatst waar de Server deze verder afhandelt. Precieze gang van zaken is beschreven in de reference guide.
@@ -58,8 +42,10 @@ NUnit tests voor het GUI project.
 ### InputlogInstaller
 Project voor de Inputlog installer.
 
-Meer informatie
----------------
+More information
+----------------
 
-* Starter guide: `Doc\StarterGuide\starterguide.pdf`
-* Reference guide: `Doc\ReferenceGuide\referenceguide.pdf`
+Additional documentation can be found in the following locations:
+
+* Starter guide for users: [starterguide.pdf](Doc\StarterGuide\starterguide.pdf)
+* Reference guide for developers: [referenceguide.pdf](Doc/ReferenceGuide/referenceguide.pdf)
