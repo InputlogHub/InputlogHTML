@@ -48,3 +48,5 @@ Additional documentation can be found in the following locations:
 
 * Starter guide for users: [starterguide.pdf](Doc\StarterGuide\starterguide.pdf)
 * Reference guide for developers: [referenceguide.pdf](Doc/ReferenceGuide/referenceguide.pdf)
+
+Keep in mind that these guides possibly need an update as well to correspond to changes made since publishing the project.
