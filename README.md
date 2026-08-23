@@ -30,13 +30,13 @@ This project provides all functionality for the `Play` tab. The code contains bu
 This project contains all code related to the interface of the Inputlog app. This is also the project that should be used as startup project when using Visual Studio.
 
 ### WebApp
-MVC ASP project dat de administratie van de Inputlog Server regelt. Accounts aanmaken, mails sturen, overzicht voor de gebruiker en tevens een administratie gedeelte voor de beheerders. Projecten worden gestart via een HTTP formulier waar gebruikers de URL niet van weten, dit formulier wordt achter de schermen door de Client ingevuld. Projecten worden dan in de database ingeschreven en de schijf geplaatst waar de Server deze verder afhandelt. Precieze gang van zaken is beschreven in de reference guide.
+*Under construction*
 
 ### Server
-Project dat Inputlog taken afhandelt op de server, in verschillende threads. Resultaten worden op de server bewaard en opgehaald door de GUI of manueel door de gebruiker langs de WebApp.
+*Under construction*
 
 ### ServerConfig
-Simpele administratietool voor InputLog zaken op de server. Dient met een adminaccount geconfigureerd te worden en kan vervolgens periodiek opruimen en mails versturen (scheduling door Windows).
+*Under construction*
 
 ### InputlogInstaller
 This project is no longer available as making the installer is now handled by external dedicated software (Advanced Installer).
