@@ -180,8 +180,11 @@ namespace GUI.Tabs.Analyze
 
                     if (preprocessOnly) continue;
 
-                    analyzer.DoAnalysis();
-                    DifferenceForReportGeneration(it.SourcePath, analyzer);
+                    if (analyzer.DoAnalysis())
+                    {
+                        DifferenceForReportGeneration(it.SourcePath, analyzer);
+                    }
+                    else continue;
                 }
                 catch (Exception exc)
                 {
@@ -295,9 +298,15 @@ namespace GUI.Tabs.Analyze
             }
             else
             {
-                analyzer.WriteAnalysis();
-                string outputPath = Path.Combine(Path.GetDirectoryName(idfxPath), "output");
-                XmlToHtmlTranslator.Transform(outputPath);
+                if (analyzer.WriteAnalysis())
+                {
+                    string outputPath = Path.Combine(Path.GetDirectoryName(idfxPath), "output");
+                    XmlToHtmlTranslator.Transform(outputPath);
+                }
+                else
+                {
+                    // Writing (succesful) analysis failed, should never happen for a failed analysis as we already catch these earlier.
+                }
             }
 
         }

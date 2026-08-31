@@ -91,6 +91,8 @@ namespace InputLog.Core.Analyses.Pause
         /// </summary>
         private ulong _initialStartTime;
 
+        private string mainDocTitle;
+
         private bool _fromMainDoc;
         // focus event 
         private Event _lastFocus;
@@ -233,8 +235,8 @@ namespace InputLog.Core.Analyses.Pause
             PBPauseTimeList = new List<ulong>();
             PBProcessTimeList = new List<ulong>();
             // Do we have a standard main document?
-            string docTitle = sessionID.GetMainDocument().ToLower();
-            _fromMainDoc = docTitle.Contains("wordlog");
+            mainDocTitle = sessionID.GetMainDocument().ToLower();
+            _fromMainDoc = true;
         }
 
         /// <summary>
@@ -968,7 +970,7 @@ namespace InputLog.Core.Analyses.Pause
         {
             _lastFocus = eventArgs.Event;
             string docTitle = eventArgs.Event.GetWindowTitle(eventArgs.Event).ToLower();
-            _fromMainDoc = docTitle.Contains("wordlog") || docTitle.Contains("microsoft");
+            _fromMainDoc = docTitle.Equals(mainDocTitle);
         }
 
         /// <summary>

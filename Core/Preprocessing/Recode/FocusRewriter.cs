@@ -109,6 +109,7 @@ namespace InputLog.Core.Preprocessing.Recode
                 {
                     var focus = e.Parts.OfType<FocusChange>().Single();
                     var newTitle = _titleToGroup[_titleKeyMap[focus.WindowTitle]];
+                    string mainTitle = sessionId.GetMainDocument().ToLower();
 
                     // Focus event is in a group -> replace name and if it's a main document, 
                     // replace the name in the SessionIdentification as well.
@@ -117,12 +118,12 @@ namespace InputLog.Core.Preprocessing.Recode
                         if (newTitle != STANDARD)
                         {
                             var oldTitle = _keyTitleMap[_titleKeyMap[focus.WindowTitle]];
-                            if (oldTitle.ToLowerInvariant().Contains("wordlog"))
+                            if (oldTitle.ToLower().Equals(mainTitle) || oldTitle.ToLowerInvariant().Contains("wordlog") || oldTitle.ToLowerInvariant().Contains("maindoc"))
                             {
-                                if (!newTitle.ToLowerInvariant().Contains("wordlog"))
-                                {
-                                    newTitle = "Wordlog_" + newTitle;
-                                }
+                                //if (!newTitle.ToLower().Equals(mainTitle) || !newTitle.ToLowerInvariant().Contains("wordlog"))
+                                //{
+                                //    newTitle = "MainDoc_" + newTitle;
+                                //} // (unnecessary)
                                 RenameMainDocSessionId(sessionId, newTitle);
                             }
                             ((FocusChange)e.Parts[e.Parts.IndexOf(focus)]).WindowTitle = newTitle;

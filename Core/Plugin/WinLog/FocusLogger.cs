@@ -44,7 +44,10 @@ namespace InputLog.Core.Plugin.WinLog
                 // If the title of a Word document in focus equals the name of the main document
                 // in the session identification, we simplify it to 'WordLog MainDoc'.
                 // This solves issues with templates that are not recognized as the main logging doc.
-                return FocusMainDoc.Contains(newTitle) ? "WordLog MainDoc" : newTitle;
+
+                // return FocusMainDoc.Contains(newTitle) ? "WordLog MainDoc" : newTitle;
+                // TODO: check with lead and discuss compatibility with previous versions
+                return newTitle;
             }
         }
 

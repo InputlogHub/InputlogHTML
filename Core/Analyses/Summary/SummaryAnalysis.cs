@@ -157,7 +157,7 @@ namespace InputLog.Core.Analyses.Summary
             EventTypeSwitches = new Dictionary<Tuple<string, string>, ulong>();
             // Do we have a standard main document?
             string docTitle = sessionID.GetMainDocument().ToLower();
-            FromMainDoc = docTitle.Contains("wordlog");
+            FromMainDoc = docTitle.Equals(MainDocument.ToLower()) || docTitle.Contains("wordlog") || docTitle.Contains("maindoc");
         }
 
         /// <summary>
@@ -809,7 +809,7 @@ namespace InputLog.Core.Analyses.Summary
         {
             _lastFocus = eventArgs.Event;
             string docTitle = eventArgs.Event.GetWindowTitle(eventArgs.Event).ToLower();
-            FromMainDoc = docTitle.Contains("wordlog"); //|| docTitle.Contains("microsoft");
+            FromMainDoc = docTitle.Equals(MainDocument.ToLower()) || docTitle.Contains("wordlog") || docTitle.Contains("maindoc"); //|| docTitle.Contains("microsoft");
         }
 
         /// <summary>

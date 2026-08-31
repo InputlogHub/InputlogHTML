@@ -254,7 +254,7 @@ namespace InputLog.Core.Events
                 return "UNKNOWN";
             }
             // This could be a candidate...
-            if (title.Contains("wordlog"))
+            if (title.Contains("wordlog") || title.Contains("maindoc"))
             {
                 return aName;
             }
